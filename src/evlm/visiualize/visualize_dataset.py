@@ -38,7 +38,7 @@ def main():
 
             dataset_dict              = {}
             dataset_dict["data_path"] = Path(args.data_root) /datasets_ 
-            dataset_dict["dataset"] =  JsonDataset(dataset_path = dataset_dict["data_path"],split=args.split, limit=500)
+            dataset_dict["dataset"] =  JsonDataset(dataset_path = dataset_dict["data_path"],split=args.split, limit=5)
             for data_point in dataset_dict["dataset"]: 
                 import pdb;pdb.set_trace()
                 data_point["metadata"]['name'] = dataset_dict["dataset"].path   / data_point["metadata"]['name']
