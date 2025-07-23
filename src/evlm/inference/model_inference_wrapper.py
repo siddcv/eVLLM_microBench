@@ -65,10 +65,11 @@ def main():
         for datasets_ in dataset_list:
             dataset_dict = {}
             dataset_dict["data_path"] = Path(args.data_root) /datasets_ 
-            if datasets_ == "cognition":
-                dataset_dict["dataset"] =  JsonDataset(dataset_path = dataset_dict["data_path"],split=args.split, limit=args.limit)
-            else:
-                dataset_dict["dataset"] =  JsonlDataset(dataset_path = dataset_dict["data_path"],split=args.split, limit=args.limit)
+            # if datasets_ == "cognition":
+            #     dataset_dict["dataset"] =  JsonDataset(dataset_path = dataset_dict["data_path"],split=args.split, limit=args.limit)
+            # else:
+            #     dataset_dict["dataset"] =  JsonlDataset(dataset_path = dataset_dict["data_path"],split=args.split, limit=args.limit)
+            dataset_dict["dataset"] =  JsonDataset(dataset_path = dataset_dict["data_path"],split=args.split, limit=args.limit)
             dataset_dict["loader"]  =  dataset_dict["dataset"] #DataLoader(dataset, batch_size=1, collate_fn=collate_fn)
             output_file:str       = dataset_dict["dataset"].name + ".csv"
             output_dir_name:Path = Path(args.output_dir) / model_dict['name'] / output_file
