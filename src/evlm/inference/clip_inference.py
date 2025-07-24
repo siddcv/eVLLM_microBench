@@ -16,7 +16,7 @@ def evaluate_dataset( dataset:dict,
                        split:str,
                        transform,
                        output_dir,
-                       question_key:str = "captions",
+                       question_key:str = "questions",
                        DEBUG:bool=False) -> None:
     """
     Evaluates a dataset using a given model.
@@ -43,14 +43,21 @@ def evaluate_dataset( dataset:dict,
             pass
         print(f"Doing infernece with {question_key}")
         questions:dict[str,str] = data_point['custom_metadata'][question_key]
+        # image_id:str = data_point["metadata"]['image_id']
+        # if dataset['dataset'].name == "cognition":
+        #     image:Path = dataset['dataset'].path / image_id
+        # else:
+        #     image:Path = dataset['dataset'].path / dataset['dataset'].split / image_id
         image_id:str = data_point["metadata"]['image_id']
+        image_filename:str = data_point["metadata"]['image']  # Use the actual image filename
         if dataset['dataset'].name == "cognition":
-            image:Path = dataset['dataset'].path / image_id
+            image:Path = dataset['dataset'].path / "images" / image_filename
         else:
-            image:Path = dataset['dataset'].path / dataset['dataset'].split / image_id
+            # Look for images in the same directory as the JSONL file
+            image:Path = dataset['dataset'].path / "images"/ image_filename
         sub_results:dict[str,str] = init_sub_results(data_point)
         
-          
+        count=1
         for question_class in questions.keys():
             #import pdb;pdb.set_trace()
             result:dict  = {}
@@ -67,11 +74,25 @@ def evaluate_dataset( dataset:dict,
                 options = [question + " " + option for option in options]
 
             #import pdb; pdb.set_trace()
-            try:
-                output:dict = model_dict["model"].forward(image,options)
-            except Exception as e:
-                    print(f"Could not run inference for {image_id}, error: {e}")
+            # try:
+            #     output:dict = model_dict["model"].forward(image,options)
+            # except Exception as e:
+            #         print(f"Could not run inference for {image_id}, error: {e}")
 
+            print(f"image: {image}")
+            print(f"type(image): {type(image)}")
+            # print(f"text: {options}")
+            print(f"type(options): {type(options)}")
+            try:
+                count=count+1
+                #output:dict = model_dict["model"].forward(image,options)
+                output:dict = model_dict["model"].forward([str(image)],options)
+
+            except Exception as e:
+                print(f"Could not run inference for {image_id}, error: {e}")
+                # Skip this data point and continue
+                continue
+            print(f"************************:{count}")
             #import pdb;pdb.set_trace()
 
             result["question_class"] = question_class
