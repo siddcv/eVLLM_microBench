@@ -59,7 +59,21 @@ def evaluate_dataset( dataset:dict,
         
         count=1
         for question_class in questions.keys():
-            #import pdb;pdb.set_trace()
+            q_data = questions.get(question_class)
+        
+            # Check q_data is a dict (not None/null/str) and has valid structure
+            if not isinstance(q_data, dict):
+                print(f"Skipping {image_id} | {question_class} — invalid question block (q_data={q_data})")
+                continue
+        
+            question = q_data.get("question")
+            answer = q_data.get("answer")
+            options = q_data.get("options")
+        
+            # Skip if any are missing or invalid
+            if not question or not answer or not options or answer not in options:
+                print(f"Skipping {image_id} | {question_class} — question/answer/options invalid")
+                continue
             result:dict  = {}
             question:str = questions[question_class]["question"]
             answer:str   = questions[question_class]["answer"]

@@ -1,8 +1,9 @@
 from datasets import load_dataset
 import json
+import os
 
 # Load dataset
-dataset_dict = load_dataset("teamasap/cardiovascular-pathology-dataset")
+dataset_dict = load_dataset("teamasap/gastrointestinal-and-liver-pathology-dataset")
 dataset = dataset_dict["test"]  # or "train" if exists
 
 # List all metadata fields you want to extract
@@ -28,7 +29,9 @@ metadata_fields = [
 ]
 
 # output_file = "/workspace/organData/cardiovascular/cardiovascular.jsonl"
-output_file="/workspace/eVLLM_Sidd/eVLLM_microBench/organData/cardiovascular/cardiovascular.jsonl"
+output_file="/workspace/eVLLM_Sidd/eVLLM_microBench/organData/gastrointestinal/gastrointestinal-liver.jsonl"
+os.makedirs(os.path.dirname(output_file), exist_ok=True)
+
 
 with open(output_file, "w") as fout:
     for row in dataset:

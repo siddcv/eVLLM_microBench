@@ -6,11 +6,11 @@ from io import BytesIO
 
 # Output directory for images
 #output_dir = Path("/workspace/datasets/cardiovascular")
-output_dir=Path("/workspace/eVLLM_Sidd/eVLLM_microBench/organData/cardiovascular/images")
+output_dir=Path("/workspace/eVLLM_Sidd/eVLLM_microBench/organData/gastrointestinal/images")
 output_dir.mkdir(parents=True, exist_ok=True)
 
 # Load the test split of the dataset
-dataset = load_dataset("teamasap/cardiovascular-pathology-dataset", split="test")
+dataset = load_dataset("teamasap/gastrointestinal-and-liver-pathology-dataset", split="test")
 
 # Download and save each image
 # Download and save each image

@@ -63,8 +63,8 @@
 import json
 from pathlib import Path
 
-input_path = Path("../organData/cardiovascular/cardiovascular.jsonl")
-output_path = Path("../organData/cardiovascular/test_200.jsonl")
+input_path = Path("../organData/gastrointestinal/gastrointestinal-liver.jsonl")
+output_path = Path("../organData/gastrointestinal/test_150.jsonl")
 
 with input_path.open("r") as fin, output_path.open("w") as fout:
     for line in fin:
