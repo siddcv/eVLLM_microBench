@@ -81,59 +81,37 @@ class JsonlDataset(Dataset):
     def get_name():
         return self.name
 
-    # def get_files(self):
-    #     data_path = os.path.join(self.path,"test_200.jsonl")
-    #     data  = read_jsonl(data_path)
-    #     files_raw = [ os.path.join(self.path,data_point['json_file']) for data_point in data]
-    #     files = [ file for file in files_raw if check_json_file(file)]
-    #     files_lost = len(files_raw) -len(files)
-
-    #     print(f"files lost {files_lost}")
-
-    #     #xsimport pdb;pdb.set_trace()
-    #     if self.shuffle_dataset:
-    #         shuffle(files)
-
-    #     if self.limit != None:
-    #         files = files[:self.limit]
-
-        
-    #     print("="*80)
-    #     print(f"Dataset {self.path} initilized with \n {len(files)}  datapoints")
-    #     print("="*80)
-
-    #     return files
-
     def get_files(self):
-    # For self-contained JSONL, just return the path to the JSONL file as a single "file"
-        data_path = os.path.join(self.path, f"{self.split}.jsonl")
+        # Try to use test_200.jsonl, otherwise use the first .jsonl file found
+        data_path = os.path.join(self.path, "test_200.jsonl")
         if not os.path.exists(data_path):
-            data_path = os.path.join(self.path, f"{self.split}_200.jsonl")
-        if not os.path.exists(data_path):
-            raise FileNotFoundError(f"Could not find {self.split}.jsonl or {self.split}_200.jsonl in {self.path}")
-        return [data_path]
-    
+            jsonl_files = list(Path(self.path).glob("*.jsonl"))
+            if not jsonl_files:
+                raise FileNotFoundError(f"No .jsonl file found in {self.path}")
+            data_path = str(jsonl_files[0])
+            print(f"[JsonlDataset] test_200.jsonl not found, using {data_path}")
+        else:
+            print(f"[JsonlDataset] Using {data_path}")
+        data = read_jsonl(data_path)
+        print(f"Loaded {len(data)} datapoints from {data_path}")
 
-    # def __len__(self):
-    #     return len(self.files)
+        if self.shuffle_dataset:
+            shuffle(data)
+
+        if self.limit is not None:
+            data = data[:self.limit]
+
+        print("="*80)
+        print(f"Dataset {self.path} initialized with {len(data)} datapoints")
+        print("="*80)
+
+        return data
 
     def __len__(self):
-    # Count the number of lines in the JSONL file
-        with open(self.files[0], 'r') as f:
-            return sum(1 for _ in f)
-
-    # def __getitem__(self, idx):
-    #     with open(self.files[idx], 'r') as f:
-    #         data = json.load(f)
-    #     return data
+        return len(self.files)
 
     def __getitem__(self, idx):
-        # Read the idx-th line from the JSONL file
-        with open(self.files[0], 'r') as f:
-            for i, line in enumerate(f):
-                if i == idx:
-                    return json.loads(line)
-        raise IndexError("Index out of range")
+        return self.files[idx]
 
 def collate_fn(batch):
     """

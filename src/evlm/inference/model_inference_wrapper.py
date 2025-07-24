@@ -50,7 +50,7 @@ def main():
 
     for model_name in model_list:
         model_dict:dict = model_configuration(model_name) 
-
+        print("Length of model list:", len(model_list))
         logger = logging.getLogger(__name__)
         output_name = Path(args.output_dir)/  f"{model_dict['name']}_logger_error.log"
         logging.basicConfig(filename=output_name, level=logging.INFO)
@@ -62,18 +62,15 @@ def main():
             dataset_list:list[str]  = [args.dataset_name]
         
         print(f"Infernence over: {dataset_list}")
+        print(f"MODEL: {model_name}")
+        print(f"MODEL DICT: {model_dict['name']}")
         for datasets_ in dataset_list:
             dataset_dict = {}
             dataset_dict["data_path"] = Path(args.data_root) /datasets_ 
-            # if datasets_ == "cognition":
-            #     dataset_dict["dataset"] =  JsonDataset(dataset_path = dataset_dict["data_path"],split=args.split, limit=args.limit)
-            # else:
-            #     dataset_dict["dataset"] =  JsonlDataset(dataset_path = dataset_dict["data_path"],split=args.split, limit=args.limit)
-            # dataset_dict["dataset"] =  JsonDataset(dataset_path = dataset_dict["data_path"],split=args.split, limit=args.limit)
-            if (dataset_dict["data_path"] / f"{args.split}.jsonl").exists():
-                dataset_dict["dataset"] = JsonlDataset(dataset_path=dataset_dict["data_path"], split=args.split, limit=args.limit)
+            if datasets_ == "cognition":
+                dataset_dict["dataset"] =  JsonDataset(dataset_path = dataset_dict["data_path"],split=args.split, limit=args.limit)
             else:
-                dataset_dict["dataset"] = JsonDataset(dataset_path=dataset_dict["data_path"], split=args.split, limit=args.limit)
+                dataset_dict["dataset"] =  JsonlDataset(dataset_path = dataset_dict["data_path"],split=args.split, limit=args.limit)
             dataset_dict["loader"]  =  dataset_dict["dataset"] #DataLoader(dataset, batch_size=1, collate_fn=collate_fn)
             output_file:str       = dataset_dict["dataset"].name + ".csv"
             output_dir_name:Path = Path(args.output_dir) / model_dict['name'] / output_file
@@ -95,7 +92,8 @@ def do_inference(
     model_dict:dict,
     args:dict,
     logger=None) -> None:
-
+    print(f"do inference: {model_dict['model_type']}")
+    print(f"datasete: {dataset_dict['dataset'].name}")
     # try:
     if 1:
         if model_dict["model_type"] == "ENCODER":

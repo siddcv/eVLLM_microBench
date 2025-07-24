@@ -43,7 +43,7 @@ def evaluate_dataset( dataset:dict,
             pass
         print(f"Doing infernece with {question_key}")
         questions:dict[str,str] = data_point['custom_metadata'][question_key]
-        image_id:str = data_point["metadata"]['name']
+        image_id:str = data_point["metadata"]['image_id']
         if dataset['dataset'].name == "cognition":
             image:Path = dataset['dataset'].path / image_id
         else:
