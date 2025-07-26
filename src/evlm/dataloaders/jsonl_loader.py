@@ -82,35 +82,36 @@ class JsonlDataset(Dataset):
         return self.name
 
     def get_files(self):
-        data_path = os.path.join(self.path,"test_200.jsonl")
-        data  = read_jsonl(data_path)
-        files_raw = [ os.path.join(self.path,data_point['json_file']) for data_point in data]
-        files = [ file for file in files_raw if check_json_file(file)]
-        files_lost = len(files_raw) -len(files)
+        # Try to use test_200.jsonl, otherwise use the first .jsonl file found
+        data_path = os.path.join(self.path, "test_200.jsonl")
+        if not os.path.exists(data_path):
+            jsonl_files = list(Path(self.path).glob("*.jsonl"))
+            if not jsonl_files:
+                raise FileNotFoundError(f"No .jsonl file found in {self.path}")
+            data_path = str(jsonl_files[0])
+            print(f"[JsonlDataset] test_200.jsonl not found, using {data_path}")
+        else:
+            print(f"[JsonlDataset] Using {data_path}")
+        data = read_jsonl(data_path)
+        print(f"Loaded {len(data)} datapoints from {data_path}")
 
-        print(f"files lost {files_lost}")
-
-        #xsimport pdb;pdb.set_trace()
         if self.shuffle_dataset:
-            shuffle(files)
+            shuffle(data)
 
-        if self.limit != None:
-            files = files[:self.limit]
+        if self.limit is not None:
+            data = data[:self.limit]
 
-        
         print("="*80)
-        print(f"Dataset {self.path} initilized with \n {len(files)}  datapoints")
+        print(f"Dataset {self.path} initialized with {len(data)} datapoints")
         print("="*80)
 
-        return files
+        return data
 
     def __len__(self):
         return len(self.files)
 
     def __getitem__(self, idx):
-        with open(self.files[idx], 'r') as f:
-            data = json.load(f)
-        return data
+        return self.files[idx]
 
 def collate_fn(batch):
     """
