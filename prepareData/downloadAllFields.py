@@ -29,7 +29,7 @@ metadata_fields = [
 ]
 
 # output_file = "/workspace/organData/cardiovascular/cardiovascular.jsonl"
-output_file="/workspace/eVLLM_Sidd/eVLLM_microBench/organData/gastrointestinal/gastrointestinal-liver.jsonl"
+output_file="/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/gastrointestinal/gastrointestinal-liver.jsonl"
 os.makedirs(os.path.dirname(output_file), exist_ok=True)
 
 

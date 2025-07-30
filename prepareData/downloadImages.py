@@ -6,7 +6,7 @@ from io import BytesIO
 
 # Output directory for images
 #output_dir = Path("/workspace/datasets/cardiovascular")
-output_dir=Path("/workspace/eVLLM_Sidd/eVLLM_microBench/organData/gastrointestinal/images")
+output_dir=Path("/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/gastrointestinal/images")
 output_dir.mkdir(parents=True, exist_ok=True)
 
 # Load the test split of the dataset

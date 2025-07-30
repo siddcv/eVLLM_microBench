@@ -91,8 +91,8 @@ def evaluate_dataset( dataset:dict,
                 #     output:dict = model_dict["model"].forward(image,options)
                 # except Exception as e:
                 #         print(f"Could not run inference for {image_id}, error: {e}")
-                if(question_class=="classification"):
-                    continue
+                # if(question_class=="classification"):
+                #     continue
                 print(f"image: {image}")
                 print(f"question: {question_class}")
                 print(f"type(image): {type(image)}")
