@@ -16,7 +16,7 @@ def evaluate_dataset( dataset:dict,
                        split:str,
                        transform,
                        output_dir,
-                       question_key:str = "captions",
+                       question_key:str = "questions",
                        DEBUG:bool=False) -> None:
     """
     Evaluates a dataset using a given model.
@@ -91,11 +91,14 @@ def evaluate_dataset( dataset:dict,
                 #     output:dict = model_dict["model"].forward(image,options)
                 # except Exception as e:
                 #         print(f"Could not run inference for {image_id}, error: {e}")
-    
+                # if(question_class=="classification"):
+                #     continue
                 print(f"image: {image}")
+                print(f"question: {question_class}")
                 print(f"type(image): {type(image)}")
                 # print(f"text: {options}")
                 print(f"type(options): {type(options)}")
+                
                 try:
                     #output:dict = model_dict["model"].forward(image,options)
                     output:dict = model_dict["model"].forward([str(image)],options)
