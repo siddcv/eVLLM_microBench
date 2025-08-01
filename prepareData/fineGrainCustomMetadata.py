@@ -1,8 +1,8 @@
 import json
 from pathlib import Path
 
-input_path = Path("../organData/fineGrain/gastrointestinal/gastrointestinal-liver.jsonl")
-output_path = Path("../organData/fineGrain/gastrointestinal/test_150.jsonl")
+input_path = Path("../organData/fineGrain/completeDataset/completeDataset.jsonl")
+output_path = Path("../organData/fineGrain/completeDataset/test_200.jsonl")
 
 custom_fields = [
     "questions", "captions", "microns_per_pixel",

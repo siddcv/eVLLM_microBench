@@ -3,7 +3,7 @@ import json
 import os
 
 # Load dataset
-dataset_dict = load_dataset("teamasap/gastrointestinal-and-liver-pathology-dataset")
+dataset_dict = load_dataset("teamasap/complete-dataset")
 dataset = dataset_dict["test"]  # or "train" if exists
 
 # List all metadata fields you want to extract
@@ -29,7 +29,7 @@ metadata_fields = [
 ]
 
 # output_file = "/workspace/organData/cardiovascular/cardiovascular.jsonl"
-output_file="/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/gastrointestinal/gastrointestinal-liver.jsonl"
+output_file="/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/completeDataset/completeDataset.jsonl"
 os.makedirs(os.path.dirname(output_file), exist_ok=True)
 
 

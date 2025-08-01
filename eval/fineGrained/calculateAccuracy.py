@@ -4,7 +4,7 @@ import re
 import math
 
 # Load the CSV
-df = pd.read_csv("../../output_results/fine_grained_tasks/BioMedCLIP/questions/cardiovascular.csv")
+df = pd.read_csv("../../output_results/fine_grained_tasks/BioMedCLIP/questions/completeDataset.csv")
 
 right_answers = 0
 questions = 0
@@ -20,11 +20,14 @@ for idx, row in df.iterrows():
 
         if pred_prompt_list and isinstance(pred_prompt_list[0], str):
             match = re.search(r'\?(.*)', pred_prompt_list[0])
-            #match = re.search(r':(.*)', pred_prompt_list[0])
             if match:
                 predicted_ans = match.group(1).strip()
             else:
-                print(f"Row {idx + 1}: No match after '?'")
+                match = re.search(r':(.*)', pred_prompt_list[0])
+                if match:
+                    predicted_ans = match.group(1).strip()
+                else:
+                    print(f"Row {idx + 1}: No match after '?'")
         else:
             print(f"Row {idx + 1}: pred_prompt missing or malformed")
     except Exception as e:
@@ -45,7 +48,7 @@ lower_ci = (accuracy_prop - ci_range) * 100
 upper_ci = (accuracy_prop + ci_range) * 100
 accuracy = accuracy_prop * 100
 
-print("cardiovascular")
+print("completeDataset")
 print(f"Number of questions used: {questions}")
 print(f"Number of correct answers: {right_answers}")
 print(f"Accuracy: {accuracy:.3f}%")
