@@ -45,12 +45,74 @@
 # # Example usage:
 # process_jsonl("cardiovascular.jsonl", "fineTuningData.jsonl")
 
+
+
+
+# import json
+# import re
+
+# def extract_task(caption_key):
+#     # Extracts the task name like "modality", "stain", "domain", etc. from "modality_0"
+#     return caption_key.split("_")[0]
+
+# def process_jsonl(input_file_path, output_file_path):
+#     output_data = []
+
+#     with open(input_file_path, 'r') as f:
+#         for line in f:
+#             data = json.loads(line)
+
+#             image_id = data["image_id"]
+#             image_path = f"images/{data['image']}"  # assumes images/<image_name>.png format
+#             caption_data = data["captions"]
+
+#             for caption_key, caption_data in data.get("captions", {}).items():
+#                 name = caption_data["name"]  # e.g., "modality", "classification"
+#                 options = caption_data["options"]
+#                 answer_idx = int(caption_data["answer_idx"])
+#                 task_name = extract_task(caption_key)
+#                 for idx, option in enumerate(options):
+#                     caption_text = options[idx]
+#                     output_data.append({
+#                         "image_id": image_id,
+#                         "image_path": image_path,
+#                         "text": caption_text,
+#                         "is_positive": idx == answer_idx,
+#                         "task": task_name,
+#                         "caption": caption_key
+#                     })
+
+#     with open(output_file_path, 'w') as out_f:
+#         for item in output_data:
+#             out_f.write(json.dumps(item) + "\n")
+
+#     print(f"Processed {len(output_data)} entries from {input_file_path} into {output_file_path}")
+
+# # Run once for all tasks
+# process_jsonl("cardiovascular.jsonl", "fineTuningData.jsonl")
+
+
+
+
+
 import json
 import re
 
 def extract_task(caption_key):
     # Extracts the task name like "modality", "stain", "domain", etc. from "modality_0"
     return caption_key.split("_")[0]
+
+def resolve_caption_task(name: str) -> str:
+    # Define which names are considered coarse or fine grained
+    coarse_keys = {"modality", "submodality", "stain", "domain", "subdomain"}
+    fine_keys = {"classification"}
+
+    if name in coarse_keys:
+        return "coarse_caption"
+    elif name in fine_keys:
+        return "fine_caption"
+    else:
+        return "unknown_caption"
 
 def process_jsonl(input_file_path, output_file_path):
     output_data = []
@@ -75,7 +137,7 @@ def process_jsonl(input_file_path, output_file_path):
                         "image_path": image_path,
                         "text": caption_text,
                         "is_positive": idx == answer_idx,
-                        "task": task_name,
+                        "task": resolve_caption_task(name),
                         "caption": caption_key
                     })
 
@@ -87,4 +149,3 @@ def process_jsonl(input_file_path, output_file_path):
 
 # Run once for all tasks
 process_jsonl("cardiovascular.jsonl", "fineTuningData.jsonl")
-
