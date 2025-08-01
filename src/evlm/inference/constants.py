@@ -23,7 +23,7 @@ DATASETS:list[str] = ['acevedo_et_al_2020',
                       'wong_et_al_2022',
                       "wu_et_al_2023" ]
 
-CLIP_MODELS:list[str] = ["ALIGN","CLIP","BLIP","OpenCLIP","QuiltCLIP","OwlVIT2","PLIP","BioMedCLIP","Random_model"] #"ConchCLIP"
+CLIP_MODELS:list[str] = ["ALIGN","CLIP","BLIP","OpenCLIP","QuiltCLIP","OwlVIT2","PLIP","BioMedCLIP","FineTunedBioMedCLIP","Random_model"] #"ConchCLIP"
 CHAT_MODELS:list[str] = ["CogVLM","QwenVLM","Kosmos2","BLIP2","PaliGemma"]
 
 ALL_MODELS: list[str] = CLIP_MODELS + CHAT_MODELS
