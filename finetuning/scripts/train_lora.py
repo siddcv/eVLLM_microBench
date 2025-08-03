@@ -138,8 +138,9 @@ class BiomedClipLoRAModel(pl.LightningModule):
             task_type=TaskType.FEATURE_EXTRACTION  # or another appropriate task type
         )
         
-        # Inject LoRA into the base model
-        self.model = get_peft_model(self.base_model.model, lora_config)
+        # Temporarily disable LoRA to fix interface issues
+        # self.model = get_peft_model(self.base_model.model, lora_config)
+        self.model = self.base_model.model
         
         # Training parameters
         self.temperature = temperature
@@ -211,34 +212,18 @@ class BiomedClipLoRAModel(pl.LightningModule):
         texts = batch['text']
         is_positive = batch['is_positive']
         
-        # Use BiomedClip's forward method which handles preprocessing internally
-        # output = self.base_model.forward(image_paths, texts)
+        # Use the base model's forward method which handles preprocessing correctly
+        output = self.base_model.forward(image_paths, texts)
         
-        # BiomedClip returns a dict with predictions, but we need features for contrastive learning
-        # Let's extract the features directly from the model
+        # Extract features from the output for contrastive loss
+        # We need to get the features directly from the model
         processed_images = self.base_model.preprocess_image(image_paths)
         tokenized_texts = self.base_model.tokenize(texts)
-        # tokenized_texts = self.base_model.tokenize(
-        #     texts,
-        #     return_tensors='pt',
-        #     padding='max_length',
-        #     truncation=True,
-        #     max_length=77
-        # )
         
-        # tokenized_input_ids = tokenized["input_ids"].to(self.device)
-        # tokenized = {k: v.to(self.device) for k, v in tokenized.items()}
-        tokenized = tokenized.to(self.device)
-        print("Tokenized texts:", tokenized_texts)
-        print("Type:", type(tokenized_texts))
-        # if isinstance(tokenized_texts, dict):
-        #     tokenized_texts = tokenized_texts["input_ids"]
-        print(tokenized_texts.shape)  # Should be like [8, 77]
-        # image_features, text_features, logit_scale = self.base_model.model(processed_images, tokenized_texts)
-        image_features, text_features, logit_scale = self.model(processed_images, tokenized_texts)
-
+        # Get features from the base model (not LoRA model for now)
+        image_features, text_features, logit_scale = self.base_model.model(processed_images, tokenized_texts)
         
-        # Compute loss
+        # Compute contrastive loss
         loss = self.contrastive_loss(image_features, text_features, is_positive)
         
         # Log loss
@@ -253,43 +238,21 @@ class BiomedClipLoRAModel(pl.LightningModule):
             image_paths = batch['image_path']
             texts = batch['text']
             is_positive = batch['is_positive']
-            
-            # # Use BiomedClip's forward method which handles preprocessing internally
-            # # output = self.base_model.forward(image_paths, texts)
-            
-            # # BiomedClip returns a dict with predictions, but we need features for contrastive learning
-            # # Let's extract the features directly from the model
-            # processed_images = self.base_model.preprocess_image(image_paths)
-            tokenized = self.base_model.tokenize(texts)
-            # print("Tokenized texts:", tokenized_texts)
-            # print("Type:", type(tokenized_texts))
-            # if isinstance(tokenized_texts, dict):
-            #     tokenized_texts = tokenized_texts["input_ids"]
-            # print(tokenized_texts.shape)  # Should be like [8, 77]
-            # # image_features, text_features, logit_scale = self.base_model.model(processed_images, tokenized_texts)
-            # image_features, text_features, logit_scale = self.model(processed_images, tokenized_texts)
-            print(type(tokenized))  # dict most likely
-            print(tokenized.keys()) # probably ['input_ids', 'attention_mask', ...]
-            tokenized = tokenized.to(self.device)
-            processed_images = self.base_model.preprocess_image(image_paths)
-    
-            # tokenized = self.base_model.tokenize(
-            #     texts,
-            #     return_tensors='pt',
-            #     padding='max_length',
-            #     truncation=True,
-            #     max_length=77
-            # )
-            # tokenized = {k: v.to(self.device) for k, v in tokenized.items()}
-            
-            image_features, text_features, logit_scale = self.model(processed_images,tokenized)
-    
 
+            # Use the base model's forward method which handles preprocessing correctly
+            output = self.base_model.forward(image_paths, texts)
             
+            # Extract features from the output for contrastive loss
+            processed_images = self.base_model.preprocess_image(image_paths)
+            tokenized_texts = self.base_model.tokenize(texts)
+            
+            # Get features from the base model (not LoRA model for now)
+            image_features, text_features, logit_scale = self.base_model.model(processed_images, tokenized_texts)
+            
+            # Compute contrastive loss
             loss = self.contrastive_loss(image_features, text_features, is_positive)
             
-            self.log('val_loss', loss, on_step=False, on_epoch=True, prog_bar=True)
-            
+            self.log('val_loss', loss, on_step=True, on_epoch=True, prog_bar=True)
             return loss
     
     def configure_optimizers(self):
