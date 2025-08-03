@@ -27,7 +27,11 @@ def model_configuration(model_name:str) -> dict:
     model_dict  = {}
     if model_name  in CLIP_MODELS:
         model_type = "ENCODER"
-        module_path = f"models.openCLIP_models.{model_name.lower()}" # Construct the module path
+        if model_name == "FineTunedBioMedCLIP":
+            module_path = "models.openCLIP_models.biomedclip_finetuned"
+        else:
+            module_path = f"models.openCLIP_models.{model_name.lower()}"
+        # module_path = f"models.openCLIP_models.{model_name.lower()}" # Construct the module path
         module_obj = importlib.import_module(module_path)            # Import the module dynamically
         
     elif model_name  in CHAT_MODELS:
@@ -40,7 +44,12 @@ def model_configuration(model_name:str) -> dict:
 
     model_dict["name"]:str = model_name
     model_dict["model_type"]:str = model_type
-    model_dict["model"] =  getattr(module_obj, model_name)()   
+    
+    # Handle special case for FineTunedBioMedCLIP
+    if model_name == "FineTunedBioMedCLIP":
+        model_dict["model"] = getattr(module_obj, model_name)(lora_weights_path=None)
+    else:
+        model_dict["model"] = getattr(module_obj, model_name)()  
     
 
     return model_dict

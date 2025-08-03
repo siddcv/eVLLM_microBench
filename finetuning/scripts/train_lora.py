@@ -11,6 +11,7 @@ from pathlib import Path
 from typing import List, Dict, Any, Tuple
 import sys
 import os
+from peft import LoraConfig, get_peft_model, TaskType
 
 # Add the src directory to the path to import the BiomedClip model
 sys.path.append(str(Path(__file__).parent.parent.parent / "src"))
@@ -116,19 +117,29 @@ class BiomedClipLoRAModel(pl.LightningModule):
         
         # Load the base BiomedClip model
         self.base_model = BioMedCLIP(eval_mode=False, verbose=False)
+
+
+        # print("All model modules:")
+        # for name, module in self.base_model.model.named_modules():
+        #     print(name)
         
-        # Configure LoRA
-        self.lora_config = LoraConfig(
-            task_type=TaskType.FEATURE_EXTRACTION,
-            inference_mode=False,
-            r=lora_r,
-            lora_alpha=lora_alpha,
-            lora_dropout=lora_dropout,
-            target_modules=["q_proj", "v_proj", "k_proj", "out_proj", "fc1", "fc2"]  # Target attention and MLP layers
+        # For now, use the base model directly without LoRA
+        # TODO: Add LoRA support later
+        # self.model = self.base_model.model
+
+        # Create LoRA config
+        lora_config = LoraConfig(
+            r=self.hparams.lora_r,
+            lora_alpha=self.hparams.lora_alpha,
+            lora_dropout=self.hparams.lora_dropout,
+            bias="none",
+            # target_modules=["q_proj", "v_proj"],  # adjust if needed based on your model
+            target_modules = ["qkv", "query", "value", "key"],
+            task_type=TaskType.FEATURE_EXTRACTION  # or another appropriate task type
         )
         
-        # Apply LoRA to the model
-        self.model = get_peft_model(self.base_model.model, self.lora_config)
+        # Inject LoRA into the base model
+        self.model = get_peft_model(self.base_model.model, lora_config)
         
         # Training parameters
         self.temperature = temperature
@@ -148,9 +159,21 @@ class BiomedClipLoRAModel(pl.LightningModule):
                 trainable_params += param.numel()
         print(f"trainable params: {trainable_params:,} || all params: {all_param:,} || trainable%: {100 * trainable_params / all_param:.2f}")
     
-    def forward(self, images, texts):
-        """Forward pass through the model."""
-        return self.model(images, texts)
+    # def forward(self, images, texts):
+    #     """Forward pass through the model."""
+    #     return self.model(images, texts)
+
+    def forward(self, images, texts=None):
+        # Here, if texts is None but kwargs contains tokens, extract them accordingly
+        # if texts is None and 'input_ids' in kwargs:
+        #     # Extract tokens dict
+        #     tokens = {k: v for k, v in kwargs.items()}
+        #     # Then call underlying model with images and tokens dict
+        #     return self.model(images, tokens)
+        # else:
+            # Original forward logic
+            return self.model(images, texts)
+
     
     def contrastive_loss(self, image_features, text_features, labels):
         """
@@ -188,19 +211,32 @@ class BiomedClipLoRAModel(pl.LightningModule):
         texts = batch['text']
         is_positive = batch['is_positive']
         
-        # Load and preprocess images
-        images = []
-        for img_path in image_paths:
-            # Load image using the model's preprocessing
-            img = self.base_model.preprocess_image(img_path)
-            images.append(img)
-        images = torch.stack(images).to(self.device)
+        # Use BiomedClip's forward method which handles preprocessing internally
+        # output = self.base_model.forward(image_paths, texts)
         
-        # Tokenize texts
+        # BiomedClip returns a dict with predictions, but we need features for contrastive learning
+        # Let's extract the features directly from the model
+        processed_images = self.base_model.preprocess_image(image_paths)
         tokenized_texts = self.base_model.tokenize(texts)
+        # tokenized_texts = self.base_model.tokenize(
+        #     texts,
+        #     return_tensors='pt',
+        #     padding='max_length',
+        #     truncation=True,
+        #     max_length=77
+        # )
         
-        # Forward pass
-        image_features, text_features, logit_scale = self.model(images, tokenized_texts)
+        # tokenized_input_ids = tokenized["input_ids"].to(self.device)
+        # tokenized = {k: v.to(self.device) for k, v in tokenized.items()}
+        tokenized = tokenized.to(self.device)
+        print("Tokenized texts:", tokenized_texts)
+        print("Type:", type(tokenized_texts))
+        # if isinstance(tokenized_texts, dict):
+        #     tokenized_texts = tokenized_texts["input_ids"]
+        print(tokenized_texts.shape)  # Should be like [8, 77]
+        # image_features, text_features, logit_scale = self.base_model.model(processed_images, tokenized_texts)
+        image_features, text_features, logit_scale = self.model(processed_images, tokenized_texts)
+
         
         # Compute loss
         loss = self.contrastive_loss(image_features, text_features, is_positive)
@@ -218,15 +254,37 @@ class BiomedClipLoRAModel(pl.LightningModule):
             texts = batch['text']
             is_positive = batch['is_positive']
             
-            images = []
-            for img_path in image_paths:
-                img = self.base_model.preprocess_image(img_path)
-                images.append(img)
-            images = torch.stack(images).to(self.device)
+            # # Use BiomedClip's forward method which handles preprocessing internally
+            # # output = self.base_model.forward(image_paths, texts)
             
-            tokenized_texts = self.base_model.tokenize(texts)
+            # # BiomedClip returns a dict with predictions, but we need features for contrastive learning
+            # # Let's extract the features directly from the model
+            # processed_images = self.base_model.preprocess_image(image_paths)
+            tokenized = self.base_model.tokenize(texts)
+            # print("Tokenized texts:", tokenized_texts)
+            # print("Type:", type(tokenized_texts))
+            # if isinstance(tokenized_texts, dict):
+            #     tokenized_texts = tokenized_texts["input_ids"]
+            # print(tokenized_texts.shape)  # Should be like [8, 77]
+            # # image_features, text_features, logit_scale = self.base_model.model(processed_images, tokenized_texts)
+            # image_features, text_features, logit_scale = self.model(processed_images, tokenized_texts)
+            print(type(tokenized))  # dict most likely
+            print(tokenized.keys()) # probably ['input_ids', 'attention_mask', ...]
+            tokenized = tokenized.to(self.device)
+            processed_images = self.base_model.preprocess_image(image_paths)
+    
+            # tokenized = self.base_model.tokenize(
+            #     texts,
+            #     return_tensors='pt',
+            #     padding='max_length',
+            #     truncation=True,
+            #     max_length=77
+            # )
+            # tokenized = {k: v.to(self.device) for k, v in tokenized.items()}
             
-            image_features, text_features, logit_scale = self.model(images, tokenized_texts)
+            image_features, text_features, logit_scale = self.model(processed_images,tokenized)
+    
+
             
             loss = self.contrastive_loss(image_features, text_features, is_positive)
             

@@ -1,0 +1,6 @@
+learning_rate: 2.0e-05
+lora_alpha: 32
+lora_dropout: 0.1
+lora_r: 8
+temperature: 0.07
+weight_decay: 0.01

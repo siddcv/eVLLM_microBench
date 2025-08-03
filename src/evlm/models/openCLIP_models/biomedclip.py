@@ -17,7 +17,7 @@ class BioMedCLIP(BaseCLIP):
         context_length (int, optional): Length of input context. Defaults to 256.
     """
 
-    def __init__(self,eval_mode:bool=True,context_length:int=256,verbose:bool=True):
+    def __init__(self,eval_mode:bool=True,context_length:int=256,verbose:bool=True, device: str = None):
         """
         Initialize the Model object.
 
@@ -29,9 +29,12 @@ class BioMedCLIP(BaseCLIP):
             device: Device to run the model on (e.g., "cuda" or "cpu").
         """
         super().__init__(eval_mode,context_length,verbose)
+        self.device = device or ("cuda" if torch.cuda.is_available() else "cpu")
         self.model, self.preprocess = create_model_from_pretrained('hf-hub:microsoft/BiomedCLIP-PubMedBERT_256-vit_base_patch16_224')
         self.tokenizer = get_tokenizer('hf-hub:microsoft/BiomedCLIP-PubMedBERT_256-vit_base_patch16_224')
+        self.model = self.model.to(self.device)
         self.load_model()
+        
 
     def forward_vision_only(self,images:list[str]) -> dict[str,list[float]]:
         processed_images = self.preprocess_image(images)

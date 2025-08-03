@@ -3,8 +3,9 @@ import ast
 import re
 import math
 # Load the CSV
-df = pd.read_csv("../../output_results/coarse_grained_tasks/BioMedCLIP/questions/completeDataset.csv")
+df = pd.read_csv("../../output_results/fineTune/cardiovascular/FineTunedBioMedCLIP/questions/cardiovascular.csv")
 # workspace/eVLLM_Sidd/eVLLM_microBench/output_results/coarse_grained_tasks/BioMedCLIP/questions/hematopathology.csv
+# workspace/eVLLM_Sidd/eVLLM_microBench/output_results/fineTune/cardiovascular/FineTunedBioMedCLIP/questions/cardiovascular.csv
 
 right_answers=0
 questions=0
@@ -47,7 +48,7 @@ ci_range = 1.96 * se  # for 95% CI
 lower_ci = (accuracy_prop - ci_range) * 100
 upper_ci = (accuracy_prop + ci_range) * 100
 accuracy=accuracy_prop*100
-print("completeDataset")
+print("cardiovascular")
 print(f"Number of questions: {questions}")
 print(f"Number of correct answers: {right_answers}")
 print(f"Accuracy: {accuracy:.3f}%")
