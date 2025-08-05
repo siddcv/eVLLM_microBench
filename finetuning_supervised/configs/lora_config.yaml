@@ -1,0 +1,112 @@
+# LoRA Configuration for BioMedCLIP Fine-tuning
+# This configuration file contains all parameters for LoRA fine-tuning
+
+# Model Configuration
+model:
+  name: "microsoft/BiomedCLIP-PubMedBERT_256-vit_base_patch16_224"
+  freeze_base: true  # Freeze base model parameters
+  device: "cuda"
+
+# LoRA Configuration
+lora:
+  # Target modules for LoRA
+  target_modules:
+    text_encoder: ["q_proj", "k_proj", "v_proj", "out_proj"]  # Attention layers
+    vision_encoder: ["qkv", "proj"]  # Vision transformer layers
+    alignment: ["text_projection", "visual_projection"]  # Alignment layers
+  
+  # LoRA ranks for different components
+  r:
+    text_encoder: 16
+    vision_encoder: 32
+    alignment: 16
+  
+  # Alpha parameter (scaling)
+  alpha:
+    text_encoder: 32
+    vision_encoder: 64
+    alignment: 32
+  
+  # Dropout for LoRA layers
+  dropout: 0.1
+  
+  # Bias configuration
+  bias: "none"  # "none", "all", or "lora_only"
+  
+  # Task type
+  task_type: "CAUSAL_LM"
+
+# Training Configuration
+training:
+  # Learning rate
+  learning_rate: 1e-4
+  
+  # Batch size (adjust based on GPU memory)
+  batch_size: 32
+  
+  # Number of epochs
+  num_epochs: 10
+  
+  # Optimizer
+  optimizer: "adamw"
+  weight_decay: 0.01
+  
+  # Learning rate scheduler
+  scheduler: "cosine"
+  warmup_steps: 100
+  
+  # Mixed precision training
+  use_amp: true
+  
+  # Gradient accumulation
+  gradient_accumulation_steps: 1
+  
+  # Validation
+  validation_split: 0.1
+  
+  # Early stopping
+  early_stopping_patience: 3
+  early_stopping_min_delta: 0.001
+
+# Data Configuration
+data:
+  # Data splits
+  splits: [0.1, 0.25, 0.5, 0.75]
+  
+  # Random seed for reproducibility
+  random_seed: 42
+  
+  # Question types to track
+  question_types: ["modality", "submodality", "domain", "stain", "classification"]
+  
+  # Organ domains
+  organ_domains: ["cardiovascular", "neuropathology", "hematopathology", "gastrointestinal"]
+  
+  # Task types
+  task_types: ["coarse", "fine"]
+
+# Evaluation Configuration
+evaluation:
+  # Metrics to track
+  metrics: ["accuracy", "confidence", "per_question_type"]
+  
+  # Save predictions
+  save_predictions: true
+  
+  # Confidence threshold
+  confidence_threshold: 0.5
+
+# Output Configuration
+output:
+  # Base directory for outputs
+  base_dir: "finetuning_supervised"
+  
+  # Model save directory
+  model_dir: "models"
+  
+  # Results directory
+  results_dir: "results"
+  
+  # Logging
+  log_level: "INFO"
+  save_logs: true 
