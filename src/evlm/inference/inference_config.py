@@ -47,7 +47,7 @@ def model_configuration(model_name:str) -> dict:
     
     # Handle special case for FineTunedBioMedCLIP
     if model_name == "FineTunedBioMedCLIP":
-        model_dict["model"] = getattr(module_obj, model_name)(lora_weights_path=None)
+        model_dict["model"] = getattr(module_obj, model_name)(lora_weights_path="finetuning/checkpoints/cardiovascular_25%/biomedclip_lora_epoch=09_val_loss=2.7420.ckpt")
     else:
         model_dict["model"] = getattr(module_obj, model_name)()  
     

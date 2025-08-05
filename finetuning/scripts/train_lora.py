@@ -134,7 +134,7 @@ class BiomedClipLoRAModel(pl.LightningModule):
             lora_dropout=self.hparams.lora_dropout,
             bias="none",
             # target_modules=["q_proj", "v_proj"],  # adjust if needed based on your model
-            target_modules = ["qkv", "query", "value", "key"],
+            target_modules = ["qkv", "query", "value", "key"], #TODO
             task_type=TaskType.FEATURE_EXTRACTION  # or another appropriate task type
         )
         
@@ -149,6 +149,14 @@ class BiomedClipLoRAModel(pl.LightningModule):
         
         # Print trainable parameters
         self.print_trainable_parameters()
+        
+        # Store initial weights for comparison
+        self.initial_weights = {}
+        for name, param in self.named_parameters():
+            if param.requires_grad:
+                self.initial_weights[name] = param.data.clone()
+        
+        print("🔍 Initial weights stored for comparison")
     
     def print_trainable_parameters(self):
         """Print the number of trainable parameters."""
@@ -158,7 +166,74 @@ class BiomedClipLoRAModel(pl.LightningModule):
             all_param += param.numel()
             if param.requires_grad:
                 trainable_params += param.numel()
+        print("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%")
         print(f"trainable params: {trainable_params:,} || all params: {all_param:,} || trainable%: {100 * trainable_params / all_param:.2f}")
+    
+    def check_weight_changes(self, step_info=""):
+        """Check if weights have changed since initialization."""
+        print(f"\n{'='*60}")
+        print(f"WEIGHT CHANGE CHECK {step_info}")
+        print(f"{'='*60}")
+        
+        total_change = 0
+        changed_params = 0
+        unchanged_params = 0
+        
+        for name, param in self.named_parameters():
+            if param.requires_grad and name in self.initial_weights:
+                initial_weight = self.initial_weights[name]
+                current_weight = param.data
+                
+                # Calculate change
+                weight_diff = torch.abs(current_weight - initial_weight)
+                max_change = torch.max(weight_diff).item()
+                mean_change = torch.mean(weight_diff).item()
+                
+                if max_change > 1e-8:  # Meaningful change
+                    # print(f"✅ {name}: CHANGED")
+                    # print(f"   Max change: {max_change:.2e}")
+                    # print(f"   Mean change: {mean_change:.2e}")
+                    changed_params += 1
+                    total_change += mean_change
+                else:
+                    # print(f"❌ {name}: NO CHANGE")
+                    unchanged_params += 1
+        
+        print(f"\n📊 SUMMARY:")
+        print(f"   Changed parameters: {changed_params}")
+        print(f"   Unchanged parameters: {unchanged_params}")
+        print(f"   Total mean change: {total_change:.2e}")
+        
+        if changed_params > 0:
+            print("🎉 TRAINING IS HAPPENING - Weights are updating!")
+        else:
+            print("🚨 NO TRAINING - Weights are NOT changing!")
+        
+        print(f"{'='*60}\n")
+    
+    def quick_weight_check(self):
+        """Quick check if any weights have changed."""
+        print("\n🔍 QUICK WEIGHT CHECK:")
+        any_change = False
+        
+        for name, param in self.named_parameters():
+            if param.requires_grad and name in self.initial_weights:
+                initial = self.initial_weights[name]
+                current = param.data
+                max_diff = torch.max(torch.abs(current - initial)).item()
+                
+                if max_diff > 1e-8:
+                    # print(f"✅ {name}: CHANGED (max diff: {max_diff:.2e})")
+                    any_change = True
+                else:
+                    # print(f"❌ {name}: NO CHANGE")
+                    any_change=False
+        
+        if any_change:
+            print("🎉 Model weights are being updated!")
+        else:
+            print("🚨 Model weights are NOT changing!")
+        print()
     
     # def forward(self, images, texts):
     #     """Forward pass through the model."""
@@ -213,7 +288,7 @@ class BiomedClipLoRAModel(pl.LightningModule):
         is_positive = batch['is_positive']
         
         # Use the base model's forward method which handles preprocessing correctly
-        output = self.base_model.forward(image_paths, texts)
+        # output = self.base_model.forward(image_paths, texts)
         
         # Extract features from the output for contrastive loss
         # We need to get the features directly from the model
@@ -221,13 +296,17 @@ class BiomedClipLoRAModel(pl.LightningModule):
         tokenized_texts = self.base_model.tokenize(texts)
         
         # Get features from the base model (not LoRA model for now)
-        image_features, text_features, logit_scale = self.base_model.model(processed_images, tokenized_texts)
+        image_features, text_features, logit_scale = self.model(processed_images, tokenized_texts)
         
         # Compute contrastive loss
         loss = self.contrastive_loss(image_features, text_features, is_positive)
         
         # Log loss
         self.log('train_loss', loss, on_step=True, on_epoch=True, prog_bar=True)
+        
+        # Check weight changes every 50 steps
+        if batch_idx % 50 == 0:
+            self.check_weight_changes(f"(Step {batch_idx})")
         
         return loss
     
@@ -240,14 +319,14 @@ class BiomedClipLoRAModel(pl.LightningModule):
             is_positive = batch['is_positive']
 
             # Use the base model's forward method which handles preprocessing correctly
-            output = self.base_model.forward(image_paths, texts)
+            # output = self.base_model.forward(image_paths, texts)
             
             # Extract features from the output for contrastive loss
             processed_images = self.base_model.preprocess_image(image_paths)
             tokenized_texts = self.base_model.tokenize(texts)
             
             # Get features from the base model (not LoRA model for now)
-            image_features, text_features, logit_scale = self.base_model.model(processed_images, tokenized_texts)
+            image_features, text_features, logit_scale = self.model(processed_images, tokenized_texts)
             
             # Compute contrastive loss
             loss = self.contrastive_loss(image_features, text_features, is_positive)
@@ -274,6 +353,11 @@ class BiomedClipLoRAModel(pl.LightningModule):
                 "monitor": "val_loss"
             }
         }
+    
+    def on_train_epoch_end(self):
+        """Called at the end of each training epoch."""
+        super().on_train_epoch_end()
+        self.check_weight_changes(f"(Epoch {self.current_epoch})")
     
     def on_save_checkpoint(self, checkpoint):
         """Save LoRA weights when checkpoint is saved."""
@@ -335,6 +419,9 @@ def main():
         learning_rate=args.learning_rate
     )
     
+    print("🔍 BEFORE TRAINING:")
+    model.quick_weight_check()
+    
     # Create callbacks
     checkpoint_callback = ModelCheckpoint(
         dirpath=args.output_dir,
@@ -380,6 +467,8 @@ def main():
             lora_save_path = Path(args.output_dir) / "final_lora_weights.pt"
             torch.save(lora_weights, lora_save_path)
             print(f"LoRA weights saved at: {lora_save_path}")
+    print("AFTER TRAINING:")
+    model.quick_weight_check()
 
 if __name__ == "__main__":
     main() 

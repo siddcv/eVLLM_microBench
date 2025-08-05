@@ -112,9 +112,22 @@ class FineTunedBioMedCLIP(BioMedCLIP):
             print("Falling back to base model.")
 
         print("Trainable parameters:")
+        # for name, param in self.model.named_parameters():
+        #     if param.requires_grad:
+        #         print(name)
+        # Add this debugging section:
+        print("🔍 DEBUGGING: Checking if weights were actually loaded...")
+        
+        # Get a sample of weights from the model
+        sample_weights = {}
         for name, param in self.model.named_parameters():
-            if param.requires_grad:
-                print(name)
+            if 'visual.trunk.cls_token' in name or 'logit_scale' in name:
+                sample_weights[name] = param.data.clone()
+                print(f"📊 {name}: {param.data.mean().item():.6f}")
+        
+        # Store these for comparison
+        self.sample_weights = sample_weights
+        print("🔍 Sample weights stored for comparison")
 
 
         
@@ -143,20 +156,46 @@ class FineTunedBioMedCLIP(BioMedCLIP):
         """
         return super().forward_vision_only(images)
 
+    # def forward(self, images: list[str], texts: list[str]) -> dict[str, list[float]]:
+    #     """
+    #     Forward pass through the fine-tuned model.
+        
+    #     Args:
+    #         images: Input images 
+    #         texts: Input texts.
+
+    #     Returns:
+    #         dict: Dictionary containing predictions and optionally class probabilities.
+    #     """
+    #     # Use the same forward pass as the base class
+    #     # The LoRA weights are already integrated into the model
+    #     return super().forward(images, texts)
     def forward(self, images: list[str], texts: list[str]) -> dict[str, list[float]]:
         """
         Forward pass through the fine-tuned model.
-        
-        Args:
-            images: Input images 
-            texts: Input texts.
-
-        Returns:
-            dict: Dictionary containing predictions and optionally class probabilities.
         """
+        print(f"🔍 Forward pass with {len(images)} images and {len(texts)} texts")
+        
         # Use the same forward pass as the base class
-        # The LoRA weights are already integrated into the model
-        return super().forward(images, texts)
+        result = super().forward(images, texts)
+        
+        # Add some debugging info
+        if hasattr(self, 'sample_weights'):
+            print("🔍 Checking if weights changed during inference...")
+            for name, param in self.model.named_parameters():
+                if name in self.sample_weights:
+                    current_mean = param.data.mean().item()
+                    original_mean = self.sample_weights[name].mean().item()
+                    print(f"📊 {name}: {original_mean:.6f} -> {current_mean:.6f}")
+
+        print(f"🔍 PREDICTIONS: {result.get('pred', 'No pred key')}")
+        if 'probs' in result:
+            probs = result['probs']
+            print(f"🔍 PROBABILITIES shape: {probs.shape}")
+            print(f"🔍 TOP 3 PROBS: {probs[0][:3].tolist()}")
+            print(f"�� MAX PROB: {probs[0].max().item():.4f}")
+        
+        return result
 
 
 if __name__ == "__main__":
