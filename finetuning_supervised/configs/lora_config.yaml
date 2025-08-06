@@ -10,10 +10,51 @@ model:
 # LoRA Configuration
 lora:
   # Target modules for LoRA
+  # target_modules:
+  #   text_encoder: ["q_proj", "k_proj", "v_proj", "out_proj"]  # Attention layers
+  #   vision_encoder: ["qkv", "proj"]  # Vision transformer layers
+  #   alignment: ["text_projection", "visual_projection"]  # Alignment layers
+  # target_modules:
+  #   - "qkv"           # Vision attention
+  #   - "proj"          # Vision attention output
+  #   - "fc1"           # Vision MLP
+  #   - "fc2"           # Vision MLP
+  #   - "query"         # Text attention
+  #   - "key"           # Text attention  
+  #   - "value"         # Text attention
+  #   - "dense"         # Text attention output and MLP
   target_modules:
-    text_encoder: ["q_proj", "k_proj", "v_proj", "out_proj"]  # Attention layers
-    vision_encoder: ["qkv", "proj"]  # Vision transformer layers
-    alignment: ["text_projection", "visual_projection"]  # Alignment layers
+    - "visual.trunk.blocks.0.attn.proj"
+    - "visual.trunk.blocks.1.attn.proj"
+    - "visual.trunk.blocks.2.attn.proj"
+    - "visual.trunk.blocks.0.mlp.fc1"
+    - "visual.trunk.blocks.0.mlp.fc2"
+    - "visual.trunk.blocks.1.mlp.fc1"
+    
+    - "text.transformer.encoder.layer.0.attention.self.query"
+    - "text.transformer.encoder.layer.0.attention.output.dense"
+    - "text.transformer.encoder.layer.0.intermediate.dense"
+    - "text.transformer.encoder.layer.0.output.dense"
+    - "text.transformer.encoder.layer.1.attention.self.query"
+    
+    - "text.transformer.embeddings.word_embeddings"
+    - "text.transformer.embeddings.position_embeddings"
+    - "text.transformer.embeddings.token_type_embeddings"
+
+    - "visual.head.proj"
+    - "text.proj.0"
+    - "text.proj.2"
+  # target_modules:
+  #   - "visual.trunk.blocks.*.attn.qkv"
+  #   - "visual.trunk.blocks.*.attn.proj" 
+  #   - "visual.trunk.blocks.*.mlp.fc1"
+  #   - "visual.trunk.blocks.*.mlp.fc2"
+  #   - "text.transformer.encoder.layer.*.attention.self.query"
+  #   - "text.transformer.encoder.layer.*.attention.self.key"
+  #   - "text.transformer.encoder.layer.*.attention.self.value"
+  #   - "text.transformer.encoder.layer.*.attention.output.dense"
+  #   - "text.transformer.encoder.layer.*.intermediate.dense"
+  #   - "text.transformer.encoder.layer.*.output.dense"
   
   # LoRA ranks for different components
   r:
@@ -99,7 +140,7 @@ evaluation:
 # Output Configuration
 output:
   # Base directory for outputs
-  base_dir: "finetuning_supervised"
+  base_dir: "/workspace/eVLLM_Sidd/eVLLM_microBench/finetuning_supervised"
   
   # Model save directory
   model_dir: "models"

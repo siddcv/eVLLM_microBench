@@ -59,8 +59,13 @@ class DataPreprocessor:
         flattened_data = []
         
         for item in data:
-            image_id = item.get('image_id', '')
-            image_path = item.get('image', '')
+            metadata = item.get('metadata', {})
+            image_id = metadata.get('image_id', '')
+            ########################################################################################################################
+            workspace = '/workspace/eVLLM_Sidd/eVLLM_microBench'
+            image_file = metadata.get('image', '')
+            image_path = f"{workspace}/organData/{task_type}Grain/{organ_domain}/images/{image_file}"
+            # workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/0a304668-bc79-4428-83e0-bcb09ae55e76.png
             
             # Handle both coarse and fine-grained formats
             if 'captions' in item:
