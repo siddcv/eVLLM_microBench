@@ -1,60 +1,20 @@
 {
   "cardiovascular": {
-    "coarse": {
-      "0.1": {
-        "train_samples": 200,
-        "val_samples": 1800,
-        "total_samples": 2000
-      },
-      "0.25": {
-        "train_samples": 500,
-        "val_samples": 1500,
-        "total_samples": 2000
-      },
-      "0.5": {
-        "train_samples": 1000,
-        "val_samples": 1000,
-        "total_samples": 2000
-      },
-      "0.75": {
-        "train_samples": 1500,
-        "val_samples": 500,
-        "total_samples": 2000
-      }
-    },
-    "fine": {
-      "0.1": {
-        "train_samples": 40,
-        "val_samples": 360,
-        "total_samples": 400
-      },
-      "0.25": {
-        "train_samples": 100,
-        "val_samples": 300,
-        "total_samples": 400
-      },
-      "0.5": {
-        "train_samples": 200,
-        "val_samples": 200,
-        "total_samples": 400
-      },
-      "0.75": {
-        "train_samples": 300,
-        "val_samples": 100,
-        "total_samples": 400
-      }
+    "combined": {
+      "train_samples": 1440,
+      "val_samples": 360,
+      "test_samples": 600,
+      "total_samples": 2400
     }
   },
   "neuropathology": {
-    "coarse": {},
-    "fine": {}
+    "combined": {
+      "train_samples": 4647,
+      "val_samples": 1162,
+      "test_samples": 1937,
+      "total_samples": 7746
+    }
   },
-  "hematopathology": {
-    "coarse": {},
-    "fine": {}
-  },
-  "gastrointestinal": {
-    "coarse": {},
-    "fine": {}
-  }
+  "hematopathology": {},
+  "gastrointestinal": {}
 }

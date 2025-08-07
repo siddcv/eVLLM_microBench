@@ -127,9 +127,28 @@ class DataPreprocessor:
             json.dump(data, f, indent=2, ensure_ascii=False)
         logger.info(f"Saved processed data to {output_path}")
     
-    def save_split_data(self, train_data: List[Dict], val_data: List[Dict], 
+    # def save_split_data(self, train_data: List[Dict], val_data: List[Dict], 
+    #                    organ_domain: str, task_type: str, split_ratio: str):
+    #     """Save train/validation splits."""
+    #     split_dir = self.splits_dir / organ_domain / task_type / split_ratio
+    #     split_dir.mkdir(parents=True, exist_ok=True)
+        
+    #     # Save train data
+    #     train_path = split_dir / 'train.json'
+    #     with open(train_path, 'w', encoding='utf-8') as f:
+    #         json.dump(train_data, f, indent=2, ensure_ascii=False)
+        
+    #     # Save validation data
+    #     val_path = split_dir / 'val.json'
+    #     with open(val_path, 'w', encoding='utf-8') as f:
+    #         json.dump(val_data, f, indent=2, ensure_ascii=False)
+        
+    #     logger.info(f"Saved splits to {split_dir}")
+    #     logger.info(f"Train samples: {len(train_data)}, Val samples: {len(val_data)}")
+
+    def save_split_data(self, train_data: List[Dict], val_data: List[Dict], test_data: List[Dict],
                        organ_domain: str, task_type: str, split_ratio: str):
-        """Save train/validation splits."""
+        """Save train/validation/test splits."""
         split_dir = self.splits_dir / organ_domain / task_type / split_ratio
         split_dir.mkdir(parents=True, exist_ok=True)
         
@@ -143,45 +162,113 @@ class DataPreprocessor:
         with open(val_path, 'w', encoding='utf-8') as f:
             json.dump(val_data, f, indent=2, ensure_ascii=False)
         
+        # Save test data
+        test_path = split_dir / 'test.json'
+        with open(test_path, 'w', encoding='utf-8') as f:
+            json.dump(test_data, f, indent=2, ensure_ascii=False)
+        
         logger.info(f"Saved splits to {split_dir}")
-        logger.info(f"Train samples: {len(train_data)}, Val samples: {len(val_data)}")
+        logger.info(f"Train samples: {len(train_data)}, Val samples: {len(val_data)}, Test samples: {len(test_data)}")
     
+    
+    # def process_organ_domain(self, organ_domain: str):
+    #     """Process data for a specific organ domain."""
+    #     logger.info(f"Processing {organ_domain} domain...")
+        
+    #     for task_type in self.task_types:
+    #         logger.info(f"Processing {task_type}-grained tasks...")
+            
+    #         # Define input file path
+    #         if task_type == 'coarse':
+    #             input_file = f"organData/coarseGrain/{organ_domain}/test_200.jsonl"
+    #         else:
+    #             input_file = f"organData/fineGrain/{organ_domain}/test_200.jsonl"
+            
+    #         if not os.path.exists(input_file):
+    #             logger.warning(f"File not found: {input_file}")
+    #             continue
+            
+    #         # Load and flatten data
+    #         raw_data = self.load_jsonl_data(input_file)
+    #         flattened_data = self.flatten_data(raw_data, organ_domain, task_type)
+            
+    #         logger.info(f"Flattened {len(flattened_data)} samples for {organ_domain} {task_type}")
+            
+    #         # Create splits for different ratios
+    #         for split_ratio in self.splits:
+    #             logger.info(f"Creating {split_ratio*100}% split...")
+                
+    #             # Create stratified split
+    #             train_data, val_data = self.create_stratified_splits(flattened_data, split_ratio)
+                
+    #             # Save splits
+    #             self.save_split_data(train_data, val_data, organ_domain, task_type, str(split_ratio))
+                
+    #             # Save full processed data (for reference)
+    #             full_filename = f"{organ_domain}_{task_type}_processed.json"
+    #             self.save_processed_data(flattened_data, full_filename)
+
+
+    # def process_organ_domain(self, organ_domain: str):
+    #     """Process data for a specific organ domain."""
+    #     logger.info(f"Processing {organ_domain} domain...")
+        
+    #     # Load both coarse and fine data
+    #     coarse_file = f"organData/coarseGrain/{organ_domain}/test_200.jsonl"
+    #     fine_file = f"organData/fineGrain/{organ_domain}/test_200.jsonl"
+        
+    #     combined_data = []
+        
+    #     # Process coarse data
+    #     if os.path.exists(coarse_file):
+    #         raw_coarse = self.load_jsonl_data(coarse_file)
+    #         coarse_flattened = self.flatten_data(raw_coarse, organ_domain, 'coarse')
+    #         combined_data.extend(coarse_flattened)
+        
+    #     # Process fine data  
+    #     if os.path.exists(fine_file):
+    #         raw_fine = self.load_jsonl_data(fine_file)
+    #         fine_flattened = self.flatten_data(raw_fine, organ_domain, 'fine')
+    #         combined_data.extend(fine_flattened)
+        
+    #     logger.info(f"Combined {len(combined_data)} samples for {organ_domain}")
+        
+    #     # Create splits for different ratios
+    #     for split_ratio in self.splits:
+    #         train_data, val_data = self.create_stratified_splits(combined_data, split_ratio)
+    #         self.save_split_data(train_data, val_data, organ_domain, 'combined', str(split_ratio))
+
     def process_organ_domain(self, organ_domain: str):
         """Process data for a specific organ domain."""
         logger.info(f"Processing {organ_domain} domain...")
         
-        for task_type in self.task_types:
-            logger.info(f"Processing {task_type}-grained tasks...")
-            
-            # Define input file path
-            if task_type == 'coarse':
-                input_file = f"organData/coarseGrain/{organ_domain}/test_200.jsonl"
-            else:
-                input_file = f"organData/fineGrain/{organ_domain}/test_200.jsonl"
-            
-            if not os.path.exists(input_file):
-                logger.warning(f"File not found: {input_file}")
-                continue
-            
-            # Load and flatten data
-            raw_data = self.load_jsonl_data(input_file)
-            flattened_data = self.flatten_data(raw_data, organ_domain, task_type)
-            
-            logger.info(f"Flattened {len(flattened_data)} samples for {organ_domain} {task_type}")
-            
-            # Create splits for different ratios
-            for split_ratio in self.splits:
-                logger.info(f"Creating {split_ratio*100}% split...")
-                
-                # Create stratified split
-                train_data, val_data = self.create_stratified_splits(flattened_data, split_ratio)
-                
-                # Save splits
-                self.save_split_data(train_data, val_data, organ_domain, task_type, str(split_ratio))
-                
-                # Save full processed data (for reference)
-                full_filename = f"{organ_domain}_{task_type}_processed.json"
-                self.save_processed_data(flattened_data, full_filename)
+        # Load both coarse and fine data
+        coarse_file = f"organData/coarseGrain/{organ_domain}/test_200.jsonl"
+        fine_file = f"organData/fineGrain/{organ_domain}/test_200.jsonl"
+        
+        combined_data = []
+        
+        # Process coarse data
+        if os.path.exists(coarse_file):
+            raw_coarse = self.load_jsonl_data(coarse_file)
+            coarse_flattened = self.flatten_data(raw_coarse, organ_domain, 'coarse')
+            combined_data.extend(coarse_flattened)
+        
+        # Process fine data  
+        if os.path.exists(fine_file):
+            raw_fine = self.load_jsonl_data(fine_file)
+            fine_flattened = self.flatten_data(raw_fine, organ_domain, 'fine')
+            combined_data.extend(fine_flattened)
+        
+        logger.info(f"Combined {len(combined_data)} samples for {organ_domain}")
+        
+        # Create three-way splits (60/15/25)
+        train_data, val_data, test_data = self.create_three_way_splits(combined_data)
+        self.save_split_data(train_data, val_data, test_data, organ_domain, 'combined', '0.75')
+        
+        # Save full processed data (for reference)
+        full_filename = f"{organ_domain}_combined_processed.json"
+        self.save_processed_data(combined_data, full_filename)
     
     def process_all_domains(self):
         """Process all organ domains."""
@@ -192,6 +279,44 @@ class DataPreprocessor:
         
         logger.info("Data preprocessing completed!")
     
+    # def generate_data_summary(self):
+    #     """Generate a summary of processed data."""
+    #     summary = {}
+        
+    #     for organ_domain in self.organ_domains:
+    #         summary[organ_domain] = {}
+            
+    #         for task_type in self.task_types:
+    #             summary[organ_domain][task_type] = {}
+                
+    #             for split_ratio in self.splits:
+    #                 split_dir = self.splits_dir / organ_domain / task_type / str(split_ratio)
+                    
+    #                 if split_dir.exists():
+    #                     train_path = split_dir / 'train.json'
+    #                     val_path = split_dir / 'val.json'
+                        
+    #                     if train_path.exists() and val_path.exists():
+    #                         with open(train_path, 'r') as f:
+    #                             train_data = json.load(f)
+    #                         with open(val_path, 'r') as f:
+    #                             val_data = json.load(f)
+                            
+    #                         summary[organ_domain][task_type][str(split_ratio)] = {
+    #                             'train_samples': len(train_data),
+    #                             'val_samples': len(val_data),
+    #                             'total_samples': len(train_data) + len(val_data)
+    #                         }
+        
+    #     # Save summary
+    #     summary_path = self.data_dir / 'data_summary.json'
+    #     with open(summary_path, 'w') as f:
+    #         json.dump(summary, f, indent=2)
+        
+    #     logger.info(f"Data summary saved to {summary_path}")
+    #     return summary
+
+
     def generate_data_summary(self):
         """Generate a summary of processed data."""
         summary = {}
@@ -199,27 +324,28 @@ class DataPreprocessor:
         for organ_domain in self.organ_domains:
             summary[organ_domain] = {}
             
-            for task_type in self.task_types:
-                summary[organ_domain][task_type] = {}
+            # Check for combined data
+            split_dir = self.splits_dir / organ_domain / 'combined' / '0.75'
+            
+            if split_dir.exists():
+                train_path = split_dir / 'train.json'
+                val_path = split_dir / 'val.json'
+                test_path = split_dir / 'test.json'
                 
-                for split_ratio in self.splits:
-                    split_dir = self.splits_dir / organ_domain / task_type / str(split_ratio)
+                if train_path.exists() and val_path.exists() and test_path.exists():
+                    with open(train_path, 'r') as f:
+                        train_data = json.load(f)
+                    with open(val_path, 'r') as f:
+                        val_data = json.load(f)
+                    with open(test_path, 'r') as f:
+                        test_data = json.load(f)
                     
-                    if split_dir.exists():
-                        train_path = split_dir / 'train.json'
-                        val_path = split_dir / 'val.json'
-                        
-                        if train_path.exists() and val_path.exists():
-                            with open(train_path, 'r') as f:
-                                train_data = json.load(f)
-                            with open(val_path, 'r') as f:
-                                val_data = json.load(f)
-                            
-                            summary[organ_domain][task_type][str(split_ratio)] = {
-                                'train_samples': len(train_data),
-                                'val_samples': len(val_data),
-                                'total_samples': len(train_data) + len(val_data)
-                            }
+                    summary[organ_domain]['combined'] = {
+                        'train_samples': len(train_data),
+                        'val_samples': len(val_data),
+                        'test_samples': len(test_data),
+                        'total_samples': len(train_data) + len(val_data) + len(test_data)
+                    }
         
         # Save summary
         summary_path = self.data_dir / 'data_summary.json'
@@ -229,6 +355,70 @@ class DataPreprocessor:
         logger.info(f"Data summary saved to {summary_path}")
         return summary
 
+
+    def create_three_way_splits(self, data: List[Dict]) -> Tuple[List[Dict], List[Dict], List[Dict]]:
+        """Create train/validation/test splits with 60/15/25 ratio."""
+        df = pd.DataFrame(data)
+        
+        # Step 1: Split into test (25%) and train+val (75%)
+        train_val_data, test_data = train_test_split(
+            df, 
+            test_size=0.25,  # 25% for test
+            random_state=self.random_seed,
+            stratify=df['question_type']
+        )
+        
+        # Step 2: Split train+val into train (60%) and val (15%)
+        # Since train+val is 75% of total, we need 60/75 = 0.8 for train
+        train_data, val_data = train_test_split(
+            train_val_data,
+            test_size=0.2,  # 20% of 75% = 15% of total
+            random_state=self.random_seed,
+            stratify=train_val_data['question_type']
+        )
+        
+        logger.info(f"Split sizes: Train={len(train_data)}, Val={len(val_data)}, Test={len(test_data)}")
+        logger.info(f"Percentages: Train={len(train_data)/len(df)*100:.1f}%, Val={len(val_data)/len(df)*100:.1f}%, Test={len(test_data)/len(df)*100:.1f}%")
+        
+        return train_data.to_dict('records'), val_data.to_dict('records'), test_data.to_dict('records')
+
+        
+# def main():
+#     parser = argparse.ArgumentParser(description='Preprocess data for BioMedCLIP fine-tuning')
+#     parser.add_argument('--config', type=str, default='finetuning_supervised/configs/lora_config.yaml',
+#                        help='Path to configuration file')
+#     parser.add_argument('--organ-domain', type=str, default=None,
+#                        help='Process specific organ domain (optional)')
+    
+#     args = parser.parse_args()
+    
+#     # Initialize preprocessor
+#     preprocessor = DataPreprocessor(args.config)
+    
+#     if args.organ_domain:
+#         # Process specific organ domain
+#         if args.organ_domain in preprocessor.organ_domains:
+#             preprocessor.process_organ_domain(args.organ_domain)
+#         else:
+#             logger.error(f"Invalid organ domain: {args.organ_domain}")
+#             return
+#     else:
+#         # Process all domains
+#         preprocessor.process_all_domains()
+    
+#     # Generate summary
+#     summary = preprocessor.generate_data_summary()
+    
+#     # Print summary
+#     print("\n" + "="*50)
+#     print("DATA PREPROCESSING SUMMARY")
+#     print("="*50)
+#     for organ_domain, task_data in summary.items():
+#         print(f"\n{organ_domain.upper()}:")
+#         for task_type, split_data in task_data.items():
+#             print(f"  {task_type}-grained:")
+#             for split_ratio, counts in split_data.items():
+#                 print(f"    {split_ratio}% split: {counts['train_samples']} train, {counts['val_samples']} val")
 def main():
     parser = argparse.ArgumentParser(description='Preprocess data for BioMedCLIP fine-tuning')
     parser.add_argument('--config', type=str, default='finetuning_supervised/configs/lora_config.yaml',
@@ -261,10 +451,10 @@ def main():
     print("="*50)
     for organ_domain, task_data in summary.items():
         print(f"\n{organ_domain.upper()}:")
-        for task_type, split_data in task_data.items():
-            print(f"  {task_type}-grained:")
-            for split_ratio, counts in split_data.items():
-                print(f"    {split_ratio}% split: {counts['train_samples']} train, {counts['val_samples']} val")
+        for task_type, counts in task_data.items():
+            print(f"  {task_type}:")
+            print(f"    Train: {counts['train_samples']}, Val: {counts['val_samples']}, Test: {counts['test_samples']}")
+            print(f"    Total: {counts['total_samples']} samples")
 
 if __name__ == "__main__":
-    main() 
+    main()

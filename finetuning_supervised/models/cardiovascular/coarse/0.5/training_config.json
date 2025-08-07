@@ -1,0 +1,97 @@
+{
+  "model": {
+    "name": "microsoft/BiomedCLIP-PubMedBERT_256-vit_base_patch16_224",
+    "freeze_base": true,
+    "device": "cuda"
+  },
+  "lora": {
+    "target_modules": [
+      "visual.trunk.blocks.0.attn.proj",
+      "visual.trunk.blocks.1.attn.proj",
+      "visual.trunk.blocks.2.attn.proj",
+      "visual.trunk.blocks.0.mlp.fc1",
+      "visual.trunk.blocks.0.mlp.fc2",
+      "visual.trunk.blocks.1.mlp.fc1",
+      "text.transformer.encoder.layer.0.attention.self.query",
+      "text.transformer.encoder.layer.0.attention.output.dense",
+      "text.transformer.encoder.layer.0.intermediate.dense",
+      "text.transformer.encoder.layer.0.output.dense",
+      "text.transformer.encoder.layer.1.attention.self.query",
+      "text.transformer.embeddings.word_embeddings",
+      "text.transformer.embeddings.position_embeddings",
+      "text.transformer.embeddings.token_type_embeddings",
+      "visual.head.proj",
+      "text.proj.0",
+      "text.proj.2"
+    ],
+    "r": {
+      "text_encoder": 16,
+      "vision_encoder": 32,
+      "alignment": 16
+    },
+    "alpha": {
+      "text_encoder": 32,
+      "vision_encoder": 64,
+      "alignment": 32
+    },
+    "dropout": 0.1,
+    "bias": "none",
+    "task_type": "CAUSAL_LM"
+  },
+  "training": {
+    "learning_rate": "1e-4",
+    "batch_size": 32,
+    "num_epochs": 10,
+    "optimizer": "adamw",
+    "weight_decay": 0.01,
+    "scheduler": "cosine",
+    "warmup_steps": 100,
+    "use_amp": true,
+    "gradient_accumulation_steps": 1,
+    "validation_split": 0.1,
+    "early_stopping_patience": 3,
+    "early_stopping_min_delta": 0.001
+  },
+  "data": {
+    "splits": [
+      0.1,
+      0.25,
+      0.5,
+      0.75
+    ],
+    "random_seed": 42,
+    "question_types": [
+      "modality",
+      "submodality",
+      "domain",
+      "stain",
+      "classification"
+    ],
+    "organ_domains": [
+      "cardiovascular",
+      "neuropathology",
+      "hematopathology",
+      "gastrointestinal"
+    ],
+    "task_types": [
+      "coarse",
+      "fine"
+    ]
+  },
+  "evaluation": {
+    "metrics": [
+      "accuracy",
+      "confidence",
+      "per_question_type"
+    ],
+    "save_predictions": true,
+    "confidence_threshold": 0.5
+  },
+  "output": {
+    "base_dir": "/workspace/eVLLM_Sidd/eVLLM_microBench/finetuning_supervised",
+    "model_dir": "models",
+    "results_dir": "results",
+    "log_level": "INFO",
+    "save_logs": true
+  }
+}

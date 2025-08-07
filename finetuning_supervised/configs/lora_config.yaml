@@ -124,7 +124,7 @@ data:
   organ_domains: ["cardiovascular", "neuropathology", "hematopathology", "gastrointestinal"]
   
   # Task types
-  task_types: ["coarse", "fine"]
+  task_types: ["coarse", "fine", "combined"]
 
 # Evaluation Configuration
 evaluation:

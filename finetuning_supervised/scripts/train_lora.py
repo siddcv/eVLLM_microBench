@@ -121,14 +121,33 @@ class BioMedCLIPLoRATrainer:
         
         logger.info(f"LoRA config: r={self.lora_config.r}, alpha={self.lora_config.lora_alpha}")
     
-    def load_data(self, data_path: str) -> List[Dict]:
-        """Load training/validation data."""
-        logger.info(f"Loading data from 111111111111 {data_path}")
-        with open(data_path, 'r', encoding='utf-8') as f:
-            data = json.load(f)
-        # print(type(data))
-        # print(len(data))
-        return data
+    # def load_data(self, data_path: str) -> List[Dict]:
+    #     """Load training/validation data."""
+    #     logger.info(f"Loading data from 111111111111 {data_path}")
+    #     with open(data_path, 'r', encoding='utf-8') as f:
+    #         data = json.load(f)
+    #     # print(type(data))
+    #     # print(len(data))
+    #     return data
+    def load_data(self, data_file: str):
+        """Load training data."""
+        logger.info("data_path")
+        
+        # Define data file path
+        # if task_type == 'combined':
+        #     data_file = f"finetuning_supervised/data/splits/{organ_domain}/combined/{split_ratio}/train.json"
+        # else:
+        #     data_file = f"finetuning_supervised/data/splits/{organ_domain}/{task_type}/{split_ratio}/train.json"
+        
+        if not os.path.exists(data_file):
+            raise FileNotFoundError(f"Data file not found: {data_file}")
+        
+        # Load data
+        with open(data_file, 'r') as f:
+            train_data = json.load(f)
+        
+        logger.info(f"Loaded {len(train_data)} training samples")
+        return train_data
     # def load_data(self, organ_domain, task_type, split_ratio):
     #     """Load and preprocess data."""
     #     logger.info(f"Loading data for {organ_domain} - {task_type} - {split_ratio}")
@@ -887,8 +906,8 @@ def main():
                        help='Path to configuration file')
     parser.add_argument('--organ-domain', type=str, required=True,
                        help='Organ domain to train on')
-    parser.add_argument('--task-type', type=str, required=True, choices=['coarse', 'fine'],
-                       help='Task type (coarse or fine)')
+    parser.add_argument('--task-type', type=str, required=True, choices=['coarse', 'fine','combined'],
+                       help='Task type (coarse or fine or combined)')
     parser.add_argument('--split-ratio', type=str, required=True,
                        help='Split ratio (0.1, 0.25, 0.5, 0.75)')
     

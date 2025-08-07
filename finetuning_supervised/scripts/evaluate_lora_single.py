@@ -74,25 +74,87 @@ class LoRASingleEvaluator:
         
         return str(best_adapter) if best_adapter else None
     
+    # def load_evaluation_data(self, organ_domain: str, task_type: str) -> List[Dict]:
+    #     """Load evaluation data for a specific organ domain and task type."""
+    #     # Load from the original test data
+    #     if task_type == 'coarse':
+    #         data_file = f"organData/coarseGrain/{organ_domain}/test_200.jsonl"
+    #     else:  # fine
+    #         data_file = f"organData/fineGrain/{organ_domain}/test_200.jsonl"
+        
+    #     if not os.path.exists(data_file):
+    #         logger.error(f"Data file not found: {data_file}")
+    #         return []
+        
+    #     data = []
+    #     with open(data_file, 'r') as f:
+    #         for line in f:
+    #             data.append(json.loads(line))
+        
+    #     logger.info(f"Loaded {len(data)} samples from {data_file}")
+    #     return data
+
+    # def load_evaluation_data(self, organ_domain: str, task_type: str) -> List[Dict]:
+    #     """Load evaluation data for a specific organ domain and task type."""
+    #     # Load from the new test split instead of original test_200.jsonl
+    #     if task_type == 'combined':
+    #         data_file = f"finetuning_supervised/data/splits/{organ_domain}/combined/0.75/test.json"
+    #     else:
+    #         # For backward compatibility with coarse/fine separate evaluation
+    #         if task_type == 'coarse':
+    #             data_file = f"organData/coarseGrain/{organ_domain}/test_200.jsonl"
+    #         else:  # fine
+    #             data_file = f"organData/fineGrain/{organ_domain}/test_200.jsonl"
+        
+    #     if not os.path.exists(data_file):
+    #         logger.error(f"Data file not found: {data_file}")
+    #         return []
+        
+    #     data = []
+    #     if data_file.endswith('.json'):
+    #         # Load from JSON file (new test split)
+    #         with open(data_file, 'r') as f:
+    #             data = json.load(f)
+    #     else:
+    #         # Load from JSONL file (original test_200.jsonl)
+    #         with open(data_file, 'r') as f:
+    #             for line in f:
+    #                 data.append(json.loads(line))
+        
+    #     logger.info(f"Loaded {len(data)} samples from {data_file}")
+    #     return data
+
     def load_evaluation_data(self, organ_domain: str, task_type: str) -> List[Dict]:
         """Load evaluation data for a specific organ domain and task type."""
-        # Load from the original test data
-        if task_type == 'coarse':
-            data_file = f"organData/coarseGrain/{organ_domain}/test_200.jsonl"
-        else:  # fine
-            data_file = f"organData/fineGrain/{organ_domain}/test_200.jsonl"
+        # Load from the new test split location
+        if task_type == 'combined':
+            data_file = f"finetuning_supervised/data/splits/{organ_domain}/combined/0.75/test.json"
+        else:
+            # For backward compatibility with coarse/fine separate evaluation
+            if task_type == 'coarse':
+                data_file = f"organData/coarseGrain/{organ_domain}/test_200.jsonl"
+            else:  # fine
+                data_file = f"organData/fineGrain/{organ_domain}/test_200.jsonl"
         
         if not os.path.exists(data_file):
             logger.error(f"Data file not found: {data_file}")
             return []
         
         data = []
-        with open(data_file, 'r') as f:
-            for line in f:
-                data.append(json.loads(line))
+        if data_file.endswith('.json'):
+            # Load from JSON file (new test split)
+            with open(data_file, 'r') as f:
+                data = json.load(f)
+        else:
+            # Load from JSONL file (original test_200.jsonl)
+            with open(data_file, 'r') as f:
+                for line in f:
+                    data.append(json.loads(line))
         
         logger.info(f"Loaded {len(data)} samples from {data_file}")
         return data
+
+    
     
     # def evaluate_lora_model(self, adapter_path: str, eval_data: List[Dict], task_type: str, organ_domain: str) -> List[Dict]:
     #     """Evaluate LoRA model on evaluation data."""
@@ -221,150 +283,217 @@ class LoRASingleEvaluator:
         
     #     return results
 
+    # def evaluate_lora_model(self, adapter_path: str, eval_data: List[Dict], task_type: str, organ_domain: str) -> List[Dict]:
+    #     """Evaluate LoRA model on evaluation data."""
+    #     logger.info(f"Loading LoRA model from {adapter_path}")
+        
+    #     # Initialize LoRA model
+    #     # model = BioMedCLIPLoRA(adapter_path)
+    #     model = BioMedCLIPLoRA(eval_mode=True, context_length=256, verbose=True)
+    #     model.load_lora_adapter(adapter_path)
+        
+    #     results = []
+        
+    #     for data_point in tqdm(eval_data, desc=f"Evaluating {task_type}"):
+    #         # Extract metadata
+    #         metadata = data_point.get('metadata', {})
+    #         image_id = metadata.get('image_id', '')
+    #         image_file = metadata.get('image', '')
+    #         workspace = '/workspace/eVLLM_Sidd/eVLLM_microBench'
+    #         if task_type=='combined':
+    #             # image_path=f"{workspace}/finetuning_supervised/data/splits/{organ_domain}/{task_type}/0.75/test.json"
+    #             image_path = f"{workspace}/organData/{task_type}/{organ_domain}/images/{image_file}"
+    #         else:
+    #             image_path = f"{workspace}/organData/{task_type}Grain/{organ_domain}/images/{image_file}"
+            
+    #         if not os.path.exists(image_path):
+    #             logger.warning(f"Image not found: {image_path}")
+    #             continue
+    #         custom_metadata = data_point.get('custom_metadata', {})
+    #         question_dict = custom_metadata.get('questions', {})  # This is a dict of question_name → question_dict
+    #         # Extract questions based on task type
+    #         if task_type == 'coarse':
+    #             # For coarse tasks, get all questions from custom_metadata except classification
+    #             questions = [
+    #                 q for q in question_dict.values()
+    #                 if isinstance(q, dict) and q.get('question_type', '') != 'classification'
+    #             ]
+    #             # print(questions)
+    #             print("333333333333333333333333333333333")
+    #         else:
+    #             # For fine tasks, questions are in custom_metadata
+    #             questions = [
+    #                 q for q in question_dict.values()
+    #                 if isinstance(q, dict) and q.get('question_type', '') == 'classification'
+    #             ]
+            
+    #         logger.info(f"Found {len(questions)} questions for image {image_id}")
+            
+    #         # Process each question
+    #         for i, question_data in enumerate(questions):
+    #             logger.info(f"Processing question {i+1}/{len(questions)} for image {image_id}")
+                
+    #             if isinstance(question_data, dict):
+    #                 question = question_data.get('question', '')
+    #                 answer_options = question_data.get('options', [])
+    #                 correct_answer = question_data.get('answer', '')
+    #                 question_class = question_data.get('name', '')  # Optional
+            
+    #                 logger.info(f"  Question: {question[:50]}...")
+    #                 logger.info(f"  Answer options: {answer_options}")
+    #                 logger.info(f"  Correct answer: {correct_answer}")
+    #                 logger.info(f"  Question class: {question_class}")
+                    
+    #                 # Check each field individually
+    #                 if not question:
+    #                     logger.warning(f"  Skipping: question is empty")
+    #                     continue
+    #                 if not answer_options:
+    #                     logger.warning(f"  Skipping: answer_options is empty")
+    #                     continue
+    #                 if not correct_answer:
+    #                     logger.warning(f"  Skipping: correct_answer is empty")
+    #                     continue
+                    
+    #                 # # Get model prediction
+    #                 # try:
+    #                 #     logger.info(f"  Calling model.predict...")
+    #                 #     predicted_idx, confidence, scores = model.predict_single(
+    #                 #         image_path, question, answer_options
+    #                 #     )
+    #                 #     logger.info(f"  Prediction successful: idx={predicted_idx}, confidence={confidence}")
+                        
+    #                 #     # Create result entry
+    #                 #     result = {
+    #                 #         'question_class': question_class,
+    #                 #         'questions': str([f"{question} {option}" for option in answer_options]),
+    #                 #         'image_id': image_id,
+    #                 #         'correct_answer': correct_answer,
+    #                 #         'correct_idx': answer_options.index(correct_answer),
+    #                 #         'model_answers': {
+    #                 #             'pred': [predicted_idx],
+    #                 #             'probs': [scores.tolist()],
+    #                 #             'pred_prompt': [f"{question} {answer_options[predicted_idx]}"]
+    #                 #         },
+    #                 #         'microns_per_pixel': metadata.get('microns_per_pixel', 2.0),
+    #                 #         'domain': metadata.get('domain', ''),
+    #                 #         'subdomain': metadata.get('subdomain', ''),
+    #                 #         'modality': metadata.get('modality', ''),
+    #                 #         'submodality': metadata.get('submodality', ''),
+    #                 #         'normal_or_abnormal': metadata.get('normal_or_abnormal', '')
+    #                 #     }
+                        
+    #                 #     results.append(result)
+    #                 #     logger.info(f"  Added result for {question_class}")
+                        
+    #                 # except Exception as e:
+    #                 #     logger.error(f"  Error predicting for {image_id}: {e}")
+    #                 #     continue
+    #                 # Get model prediction using predict_single method
+    #                 try:
+    #                     logger.info(f"  Calling model.predict_single...")
+    #                     prediction_result = model.predict_single(image_path, question, answer_options)
+                        
+    #                     predicted_idx = prediction_result['predicted_idx']
+    #                     confidence = prediction_result['confidence']
+    #                     scores = prediction_result['all_probs']
+                        
+    #                     logger.info(f"  Prediction successful: idx={predicted_idx}, confidence={confidence}")
+                        
+    #                     # Create result entry
+    #                     result = {
+    #                         'question_class': question_class,
+    #                         'questions': str([f"{question} {option}" for option in answer_options]),
+    #                         'image_id': image_id,
+    #                         'correct_answer': correct_answer,
+    #                         'correct_idx': answer_options.index(correct_answer),
+    #                         'model_answers': {
+    #                             'pred': [predicted_idx],
+    #                             'probs': [scores],
+    #                             'pred_prompt': [f"{question} {answer_options[predicted_idx]}"]
+    #                         },
+    #                         'microns_per_pixel': metadata.get('microns_per_pixel', 2.0),
+    #                         'domain': metadata.get('domain', ''),
+    #                         'subdomain': metadata.get('subdomain', ''),
+    #                         'modality': metadata.get('modality', ''),
+    #                         'submodality': metadata.get('submodality', ''),
+    #                         'normal_or_abnormal': metadata.get('normal_or_abnormal', '')
+    #                     }
+                        
+    #                     results.append(result)
+    #                     logger.info(f"  Added result for {question_class}")
+                        
+    #                 except Exception as e:
+    #                     logger.error(f"  Error predicting for {image_id}: {e}")
+    #                     continue
+    #             else:
+    #                 logger.warning(f"  Question data is not a dict: {type(question_data)}")
+        
+    #     logger.info(f"Total results generated: {len(results)}")
+    #     return results
+
+
+
     def evaluate_lora_model(self, adapter_path: str, eval_data: List[Dict], task_type: str, organ_domain: str) -> List[Dict]:
         """Evaluate LoRA model on evaluation data."""
         logger.info(f"Loading LoRA model from {adapter_path}")
         
         # Initialize LoRA model
-        # model = BioMedCLIPLoRA(adapter_path)
         model = BioMedCLIPLoRA(eval_mode=True, context_length=256, verbose=True)
         model.load_lora_adapter(adapter_path)
         
         results = []
         
         for data_point in tqdm(eval_data, desc=f"Evaluating {task_type}"):
-            # Extract metadata
-            metadata = data_point.get('metadata', {})
-            image_id = metadata.get('image_id', '')
-            image_file = metadata.get('image', '')
-            workspace = '/workspace/eVLLM_Sidd/eVLLM_microBench'
-            image_path = f"{workspace}/organData/{task_type}Grain/{organ_domain}/images/{image_file}"
+            # For the new test data format, the data is already flattened
+            image_id = data_point.get('image_id', '')
+            image_path = data_point.get('image_path', '')  # Use the preprocessed path directly
+            question = data_point.get('question', '')
+            answer_options = data_point.get('answer_options', [])
+            correct_answer_idx = data_point.get('correct_answer_idx', 0)
+            question_class = data_point.get('question_type', '')
             
             if not os.path.exists(image_path):
                 logger.warning(f"Image not found: {image_path}")
                 continue
-            custom_metadata = data_point.get('custom_metadata', {})
-            question_dict = custom_metadata.get('questions', {})  # This is a dict of question_name → question_dict
-            # Extract questions based on task type
-            if task_type == 'coarse':
-                # For coarse tasks, get all questions from custom_metadata except classification
-                questions = [
-                    q for q in question_dict.values()
-                    if isinstance(q, dict) and q.get('question_type', '') != 'classification'
-                ]
-                # print(questions)
-                print("333333333333333333333333333333333")
-            else:
-                # For fine tasks, questions are in custom_metadata
-                questions = [
-                    q for q in question_dict.values()
-                    if isinstance(q, dict) and q.get('question_type', '') == 'classification'
-                ]
             
-            logger.info(f"Found {len(questions)} questions for image {image_id}")
-            
-            # Process each question
-            for i, question_data in enumerate(questions):
-                logger.info(f"Processing question {i+1}/{len(questions)} for image {image_id}")
+            # Get model prediction
+            try:
+                prediction_result = model.predict_single(image_path, question, answer_options)
                 
-                if isinstance(question_data, dict):
-                    question = question_data.get('question', '')
-                    answer_options = question_data.get('options', [])
-                    correct_answer = question_data.get('answer', '')
-                    question_class = question_data.get('name', '')  # Optional
-            
-                    logger.info(f"  Question: {question[:50]}...")
-                    logger.info(f"  Answer options: {answer_options}")
-                    logger.info(f"  Correct answer: {correct_answer}")
-                    logger.info(f"  Question class: {question_class}")
-                    
-                    # Check each field individually
-                    if not question:
-                        logger.warning(f"  Skipping: question is empty")
-                        continue
-                    if not answer_options:
-                        logger.warning(f"  Skipping: answer_options is empty")
-                        continue
-                    if not correct_answer:
-                        logger.warning(f"  Skipping: correct_answer is empty")
-                        continue
-                    
-                    # # Get model prediction
-                    # try:
-                    #     logger.info(f"  Calling model.predict...")
-                    #     predicted_idx, confidence, scores = model.predict_single(
-                    #         image_path, question, answer_options
-                    #     )
-                    #     logger.info(f"  Prediction successful: idx={predicted_idx}, confidence={confidence}")
-                        
-                    #     # Create result entry
-                    #     result = {
-                    #         'question_class': question_class,
-                    #         'questions': str([f"{question} {option}" for option in answer_options]),
-                    #         'image_id': image_id,
-                    #         'correct_answer': correct_answer,
-                    #         'correct_idx': answer_options.index(correct_answer),
-                    #         'model_answers': {
-                    #             'pred': [predicted_idx],
-                    #             'probs': [scores.tolist()],
-                    #             'pred_prompt': [f"{question} {answer_options[predicted_idx]}"]
-                    #         },
-                    #         'microns_per_pixel': metadata.get('microns_per_pixel', 2.0),
-                    #         'domain': metadata.get('domain', ''),
-                    #         'subdomain': metadata.get('subdomain', ''),
-                    #         'modality': metadata.get('modality', ''),
-                    #         'submodality': metadata.get('submodality', ''),
-                    #         'normal_or_abnormal': metadata.get('normal_or_abnormal', '')
-                    #     }
-                        
-                    #     results.append(result)
-                    #     logger.info(f"  Added result for {question_class}")
-                        
-                    # except Exception as e:
-                    #     logger.error(f"  Error predicting for {image_id}: {e}")
-                    #     continue
-                    # Get model prediction using predict_single method
-                    try:
-                        logger.info(f"  Calling model.predict_single...")
-                        prediction_result = model.predict_single(image_path, question, answer_options)
-                        
-                        predicted_idx = prediction_result['predicted_idx']
-                        confidence = prediction_result['confidence']
-                        scores = prediction_result['all_probs']
-                        
-                        logger.info(f"  Prediction successful: idx={predicted_idx}, confidence={confidence}")
-                        
-                        # Create result entry
-                        result = {
-                            'question_class': question_class,
-                            'questions': str([f"{question} {option}" for option in answer_options]),
-                            'image_id': image_id,
-                            'correct_answer': correct_answer,
-                            'correct_idx': answer_options.index(correct_answer),
-                            'model_answers': {
-                                'pred': [predicted_idx],
-                                'probs': [scores],
-                                'pred_prompt': [f"{question} {answer_options[predicted_idx]}"]
-                            },
-                            'microns_per_pixel': metadata.get('microns_per_pixel', 2.0),
-                            'domain': metadata.get('domain', ''),
-                            'subdomain': metadata.get('subdomain', ''),
-                            'modality': metadata.get('modality', ''),
-                            'submodality': metadata.get('submodality', ''),
-                            'normal_or_abnormal': metadata.get('normal_or_abnormal', '')
-                        }
-                        
-                        results.append(result)
-                        logger.info(f"  Added result for {question_class}")
-                        
-                    except Exception as e:
-                        logger.error(f"  Error predicting for {image_id}: {e}")
-                        continue
-                else:
-                    logger.warning(f"  Question data is not a dict: {type(question_data)}")
+                predicted_idx = prediction_result['predicted_idx']
+                confidence = prediction_result['confidence']
+                scores = prediction_result['all_probs']
+                
+                # Create result entry
+                result = {
+                    'question_class': question_class,
+                    'questions': str([f"{question} {option}" for option in answer_options]),
+                    'image_id': image_id,
+                    'correct_answer': answer_options[correct_answer_idx],
+                    'correct_idx': correct_answer_idx,
+                    'model_answers': {
+                        'pred': [predicted_idx],
+                        'probs': [scores],
+                        'pred_prompt': [f"{question} {answer_options[predicted_idx]}"]
+                    },
+                    'microns_per_pixel': data_point.get('microns_per_pixel', 2.0),
+                    'domain': data_point.get('domain', ''),
+                    'subdomain': data_point.get('subdomain', ''),
+                    'modality': data_point.get('modality', ''),
+                    'submodality': data_point.get('submodality', ''),
+                    'normal_or_abnormal': data_point.get('normal_or_abnormal', '')
+                }
+                
+                results.append(result)
+                
+            except Exception as e:
+                logger.error(f"Error predicting for {image_id}: {e}")
+                continue
         
         logger.info(f"Total results generated: {len(results)}")
         return results
+    
 
     # def evaluate_lora_model(self, adapter_path: str, eval_data: List[Dict], task_type: str, organ_domain: str) -> List[Dict]:
     #     """Evaluate LoRA model on evaluation data."""
@@ -492,8 +621,8 @@ def main():
                        help='Path to configuration file')
     parser.add_argument('--organ_domain', type=str, required=True,
                        help='Organ domain to evaluate')
-    parser.add_argument('--task_type', type=str, required=True, choices=['coarse', 'fine'],
-                       help='Task type (coarse or fine)')
+    parser.add_argument('--task_type', type=str, required=True, choices=['coarse', 'fine', 'combined'],
+                       help='Task type (coarse, fine, or combined)')
     parser.add_argument('--split_ratio', type=str, required=True,
                        help='Split ratio used for training')
     

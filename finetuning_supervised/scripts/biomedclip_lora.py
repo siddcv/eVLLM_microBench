@@ -299,80 +299,161 @@ class BioMedCLIPLoRA:
     #     return output
 
 
+    # def forward(self, images: list[str], texts: list[str]) -> dict[str, torch.Tensor]:
+    #     """
+    #     Forward pass through the model.
+        
+    #     Args:
+    #         images: Input images
+    #         texts: Input texts
+            
+    #     Returns:
+    #         Dictionary containing predictions and probabilities
+    #     """
+    #     if self.model is None:
+    #         raise ValueError("Model not loaded. Call load_base_model() or load_lora_adapter() first.")
+        
+    #     output = {}
+    #     processed_images = self.preprocess_image(images)
+    #     tokenized_texts = self.tokenize(texts)
+        
+    #     with torch.no_grad():
+    #         # Call the base model directly to bypass PEFT's problematic __call__ method
+    #         model_output = self.model.base_model(processed_images, tokenized_texts)
+            
+    #         # Debug: let's see what the model actually returns
+    #         logger.info(f"Model output type: {type(model_output)}")
+    #         if isinstance(model_output, tuple):
+    #             logger.info(f"Model output length: {len(model_output)}")
+    #             for i, item in enumerate(model_output):
+    #                 logger.info(f"Output {i}: {type(item)}, shape: {item.shape if hasattr(item, 'shape') else 'N/A'}")
+            
+    #         # Handle different possible return types
+    #         if isinstance(model_output, tuple):
+    #             if len(model_output) == 3:
+    #                 # Unpack carefully
+    #                 image_features = model_output[0]
+    #                 text_features = model_output[1]
+    #                 logit_scale = model_output[2]
+    #                 logger.info(f"Successfully unpacked 3 outputs")
+    #             elif len(model_output) == 2:
+    #                 # Some models return (features, logit_scale) or similar
+    #                 image_features = model_output[0]
+    #                 text_features = model_output[1]
+    #                 logit_scale = torch.tensor(1.0).to(self.device)
+    #                 logger.info(f"Successfully unpacked 2 outputs")
+    #             else:
+    #                 raise ValueError(f"Unexpected number of outputs: {len(model_output)}")
+    #         else:
+    #             # Single output - might be logits directly
+    #             logits = model_output
+    #             output["pred"] = torch.argmax(logits, dim=1).to("cpu")
+    #             output["probs"] = logits.to("cpu")
+    #             output["confidence"] = torch.max(logits, dim=1)[0].to("cpu")
+                
+    #             # Convert to lists for compatibility
+    #             for key, value in output.items():
+    #                 if isinstance(value, torch.Tensor):
+    #                     output[key] = value.tolist()
+                
+    #             return output
+            
+    #         # Original logic for tuple outputs
+    #         logits = (logit_scale * image_features @ text_features.T).detach().softmax(dim=-1)
+            
+    #         output["pred"] = torch.argmax(logits, dim=1).to("cpu")
+    #         output["probs"] = logits.to("cpu")
+            
+    #         # Add confidence scores
+    #         output["confidence"] = torch.max(logits, dim=1)[0].to("cpu")
+            
+    #         # Convert to lists for compatibility
+    #         for key, value in output.items():
+    #             if isinstance(value, torch.Tensor):
+    #                 output[key] = value.tolist()
+        
+    #     return output
+
+
     def forward(self, images: list[str], texts: list[str]) -> dict[str, torch.Tensor]:
-        """
-        Forward pass through the model.
-        
-        Args:
-            images: Input images
-            texts: Input texts
+            """
+            Forward pass through the model.
             
-        Returns:
-            Dictionary containing predictions and probabilities
-        """
-        if self.model is None:
-            raise ValueError("Model not loaded. Call load_base_model() or load_lora_adapter() first.")
-        
-        output = {}
-        processed_images = self.preprocess_image(images)
-        tokenized_texts = self.tokenize(texts)
-        
-        with torch.no_grad():
-            # Call the base model directly to bypass PEFT's problematic __call__ method
-            model_output = self.model.base_model(processed_images, tokenized_texts)
+            Args:
+                images: Input images
+                texts: Input texts
+                
+            Returns:
+                Dictionary containing predictions and probabilities
+            """
+            if self.model is None:
+                raise ValueError("Model not loaded. Call load_base_model() or load_lora_adapter() first.")
             
-            # Debug: let's see what the model actually returns
-            logger.info(f"Model output type: {type(model_output)}")
-            if isinstance(model_output, tuple):
-                logger.info(f"Model output length: {len(model_output)}")
-                for i, item in enumerate(model_output):
-                    logger.info(f"Output {i}: {type(item)}, shape: {item.shape if hasattr(item, 'shape') else 'N/A'}")
+            output = {}
+            processed_images = self.preprocess_image(images)
+            tokenized_texts = self.tokenize(texts)
             
-            # Handle different possible return types
-            if isinstance(model_output, tuple):
-                if len(model_output) == 3:
-                    # Unpack carefully
-                    image_features = model_output[0]
-                    text_features = model_output[1]
-                    logit_scale = model_output[2]
-                    logger.info(f"Successfully unpacked 3 outputs")
-                elif len(model_output) == 2:
-                    # Some models return (features, logit_scale) or similar
-                    image_features = model_output[0]
-                    text_features = model_output[1]
-                    logit_scale = torch.tensor(1.0).to(self.device)
-                    logger.info(f"Successfully unpacked 2 outputs")
+            with torch.no_grad():
+                # Check if we have LoRA adapters loaded
+                if hasattr(self.model, 'base_model'):
+                    # LoRA model - call base_model
+                    model_output = self.model.base_model(processed_images, tokenized_texts)
                 else:
-                    raise ValueError(f"Unexpected number of outputs: {len(model_output)}")
-            else:
-                # Single output - might be logits directly
-                logits = model_output
+                    # Base model - call directly
+                    model_output = self.model(processed_images, tokenized_texts)
+                
+                # Debug: let's see what the model actually returns
+                logger.info(f"Model output type: {type(model_output)}")
+                if isinstance(model_output, tuple):
+                    logger.info(f"Model output length: {len(model_output)}")
+                    for i, item in enumerate(model_output):
+                        logger.info(f"Output {i}: {type(item)}, shape: {item.shape if hasattr(item, 'shape') else 'N/A'}")
+                
+                # Handle different possible return types
+                if isinstance(model_output, tuple):
+                    if len(model_output) == 3:
+                        # Unpack carefully
+                        image_features = model_output[0]
+                        text_features = model_output[1]
+                        logit_scale = model_output[2]
+                        logger.info(f"Successfully unpacked 3 outputs")
+                    elif len(model_output) == 2:
+                        # Some models return (features, logit_scale) or similar
+                        image_features = model_output[0]
+                        text_features = model_output[1]
+                        logit_scale = torch.tensor(1.0).to(self.device)
+                        logger.info(f"Successfully unpacked 2 outputs")
+                    else:
+                        raise ValueError(f"Unexpected number of outputs: {len(model_output)}")
+                else:
+                    # Single output - might be logits directly
+                    logits = model_output
+                    output["pred"] = torch.argmax(logits, dim=1).to("cpu")
+                    output["probs"] = logits.to("cpu")
+                    output["confidence"] = torch.max(logits, dim=1)[0].to("cpu")
+                    
+                    # Convert to lists for compatibility
+                    for key, value in output.items():
+                        if isinstance(value, torch.Tensor):
+                            output[key] = value.tolist()
+                    
+                    return output
+                
+                # Original logic for tuple outputs
+                logits = (logit_scale * image_features @ text_features.T).detach().softmax(dim=-1)
+                
                 output["pred"] = torch.argmax(logits, dim=1).to("cpu")
                 output["probs"] = logits.to("cpu")
+                
+                # Add confidence scores
                 output["confidence"] = torch.max(logits, dim=1)[0].to("cpu")
                 
                 # Convert to lists for compatibility
                 for key, value in output.items():
                     if isinstance(value, torch.Tensor):
                         output[key] = value.tolist()
-                
-                return output
             
-            # Original logic for tuple outputs
-            logits = (logit_scale * image_features @ text_features.T).detach().softmax(dim=-1)
-            
-            output["pred"] = torch.argmax(logits, dim=1).to("cpu")
-            output["probs"] = logits.to("cpu")
-            
-            # Add confidence scores
-            output["confidence"] = torch.max(logits, dim=1)[0].to("cpu")
-            
-            # Convert to lists for compatibility
-            for key, value in output.items():
-                if isinstance(value, torch.Tensor):
-                    output[key] = value.tolist()
-        
-        return output
+            return output
 
 
 
