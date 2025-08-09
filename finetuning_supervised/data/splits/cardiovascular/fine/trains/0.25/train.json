@@ -1,0 +1,1402 @@
+[
+  {
+    "image_id": "39d1bcef-4f76-4479-8f33-37612cdbc0b5",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/cardiovascular/images/39d1bcef-4f76-4479-8f33-37612cdbc0b5.png",
+    "question": "H&E stained light micrograph of human cardiac tissue. Based on the image, what is the most likely clinical chronic heart diagnosis?",
+    "answer_options": [
+      "not chronic heart failure",
+      "chronic heart failure",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "classification",
+    "organ_domain": "cardiovascular",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "e035efd0-fbad-4e2a-afc4-255033cc39b2",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/cardiovascular/images/e035efd0-fbad-4e2a-afc4-255033cc39b2.png",
+    "question": "H&E stained light micrograph of human cardiac tissue. Based on the image, what is the most likely clinical chronic heart diagnosis?",
+    "answer_options": [
+      "not chronic heart failure",
+      "chronic heart failure",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "classification",
+    "organ_domain": "cardiovascular",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "7e9d37e5-5156-406d-a5a3-9e0f14a4b642",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/cardiovascular/images/7e9d37e5-5156-406d-a5a3-9e0f14a4b642.png",
+    "question": "H&E stained light micrograph of human cardiac tissue. Based on the image, what is the most likely clinical chronic heart diagnosis?",
+    "answer_options": [
+      "chronic heart failure",
+      "not chronic heart failure",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "classification",
+    "organ_domain": "cardiovascular",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "974235fb-1165-48a8-9531-d70a9853cce9",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/cardiovascular/images/974235fb-1165-48a8-9531-d70a9853cce9.png",
+    "question": "H&E stained light micrograph of human cardiac tissue. Based on the image, what is the most likely clinical chronic heart diagnosis?",
+    "answer_options": [
+      "chronic heart failure",
+      "not chronic heart failure",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "classification",
+    "organ_domain": "cardiovascular",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "fb5e9886-ad80-422f-ba52-5bf1505f8672",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/cardiovascular/images/fb5e9886-ad80-422f-ba52-5bf1505f8672.png",
+    "question": "H&E stained light micrograph of human cardiac tissue. Based on the image, what is the most likely clinical chronic heart diagnosis?",
+    "answer_options": [
+      "chronic heart failure",
+      "not chronic heart failure",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "classification",
+    "organ_domain": "cardiovascular",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "fdc19a50-f370-4f0a-aebc-3564cc83ae10",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/cardiovascular/images/fdc19a50-f370-4f0a-aebc-3564cc83ae10.png",
+    "question": "H&E stained light micrograph of human cardiac tissue. Based on the image, what is the most likely clinical chronic heart diagnosis?",
+    "answer_options": [
+      "chronic heart failure",
+      "not chronic heart failure",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "classification",
+    "organ_domain": "cardiovascular",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "e19c2f75-cc34-4054-8591-e4d14bc06de8",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/cardiovascular/images/e19c2f75-cc34-4054-8591-e4d14bc06de8.png",
+    "question": "H&E stained light micrograph of human cardiac tissue. Based on the image, what is the most likely clinical chronic heart diagnosis?",
+    "answer_options": [
+      "chronic heart failure",
+      "not chronic heart failure",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "classification",
+    "organ_domain": "cardiovascular",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "1e474840-ee8e-4007-8f0c-133a7ac77711",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/cardiovascular/images/1e474840-ee8e-4007-8f0c-133a7ac77711.png",
+    "question": "H&E stained light micrograph of human cardiac tissue. Based on the image, what is the most likely clinical chronic heart diagnosis?",
+    "answer_options": [
+      "not chronic heart failure",
+      "chronic heart failure",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "classification",
+    "organ_domain": "cardiovascular",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "affdf935-6dff-4ba9-9e16-68caa02fd1d8",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/cardiovascular/images/affdf935-6dff-4ba9-9e16-68caa02fd1d8.png",
+    "question": "H&E stained light micrograph of human cardiac tissue. Based on the image, what is the most likely clinical chronic heart diagnosis?",
+    "answer_options": [
+      "chronic heart failure",
+      "not chronic heart failure",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "classification",
+    "organ_domain": "cardiovascular",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "006ae0ac-ee95-4e87-ac9c-50447384ffbc",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/cardiovascular/images/006ae0ac-ee95-4e87-ac9c-50447384ffbc.png",
+    "question": "H&E stained light micrograph of human cardiac tissue. Based on the image, what is the most likely clinical chronic heart diagnosis?",
+    "answer_options": [
+      "chronic heart failure",
+      "not chronic heart failure",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "classification",
+    "organ_domain": "cardiovascular",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "2af7e79c-8d43-4d7c-ac27-c3ae445c1a08",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/cardiovascular/images/2af7e79c-8d43-4d7c-ac27-c3ae445c1a08.png",
+    "question": "H&E stained light micrograph of human cardiac tissue. Based on the image, what is the most likely clinical chronic heart diagnosis?",
+    "answer_options": [
+      "chronic heart failure",
+      "not chronic heart failure",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "classification",
+    "organ_domain": "cardiovascular",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "61020bbb-0e0c-4a77-b96d-152f85a34eec",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/cardiovascular/images/61020bbb-0e0c-4a77-b96d-152f85a34eec.png",
+    "question": "H&E stained light micrograph of human cardiac tissue. Based on the image, what is the most likely clinical chronic heart diagnosis?",
+    "answer_options": [
+      "chronic heart failure",
+      "not chronic heart failure",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "classification",
+    "organ_domain": "cardiovascular",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "c0b25100-ff26-4d54-a937-75040132e94b",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/cardiovascular/images/c0b25100-ff26-4d54-a937-75040132e94b.png",
+    "question": "H&E stained light micrograph of human cardiac tissue. Based on the image, what is the most likely clinical chronic heart diagnosis?",
+    "answer_options": [
+      "chronic heart failure",
+      "not chronic heart failure",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "classification",
+    "organ_domain": "cardiovascular",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "1f4a4a90-6ce7-4fcf-9837-5e4450bf8a69",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/cardiovascular/images/1f4a4a90-6ce7-4fcf-9837-5e4450bf8a69.png",
+    "question": "H&E stained light micrograph of human cardiac tissue. Based on the image, what is the most likely clinical chronic heart diagnosis?",
+    "answer_options": [
+      "chronic heart failure",
+      "not chronic heart failure",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "classification",
+    "organ_domain": "cardiovascular",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "d879aa53-6e14-409e-9e12-b5405ac1baa0",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/cardiovascular/images/d879aa53-6e14-409e-9e12-b5405ac1baa0.png",
+    "question": "H&E stained light micrograph of human cardiac tissue. Based on the image, what is the most likely clinical chronic heart diagnosis?",
+    "answer_options": [
+      "chronic heart failure",
+      "not chronic heart failure",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "classification",
+    "organ_domain": "cardiovascular",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "926047d6-7454-414d-aae5-06f0146ec99b",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/cardiovascular/images/926047d6-7454-414d-aae5-06f0146ec99b.png",
+    "question": "H&E stained light micrograph of human cardiac tissue. Based on the image, what is the most likely clinical chronic heart diagnosis?",
+    "answer_options": [
+      "not chronic heart failure",
+      "chronic heart failure",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "classification",
+    "organ_domain": "cardiovascular",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "bb2cfcf9-cf17-4f7e-ade6-04755b404669",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/cardiovascular/images/bb2cfcf9-cf17-4f7e-ade6-04755b404669.png",
+    "question": "H&E stained light micrograph of human cardiac tissue. Based on the image, what is the most likely clinical chronic heart diagnosis?",
+    "answer_options": [
+      "not chronic heart failure",
+      "chronic heart failure",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "classification",
+    "organ_domain": "cardiovascular",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "0722919e-d9e9-497c-9dda-368ba4d2c4ee",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/cardiovascular/images/0722919e-d9e9-497c-9dda-368ba4d2c4ee.png",
+    "question": "H&E stained light micrograph of human cardiac tissue. Based on the image, what is the most likely clinical chronic heart diagnosis?",
+    "answer_options": [
+      "not chronic heart failure",
+      "chronic heart failure",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "classification",
+    "organ_domain": "cardiovascular",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "01fe03fc-f6a7-445e-bd74-86c63cb9aa70",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/cardiovascular/images/01fe03fc-f6a7-445e-bd74-86c63cb9aa70.png",
+    "question": "H&E stained light micrograph of human cardiac tissue. Based on the image, what is the most likely clinical chronic heart diagnosis?",
+    "answer_options": [
+      "not chronic heart failure",
+      "chronic heart failure",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "classification",
+    "organ_domain": "cardiovascular",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "a04cdbda-15cb-4606-b44f-c0a641f90ba0",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/cardiovascular/images/a04cdbda-15cb-4606-b44f-c0a641f90ba0.png",
+    "question": "H&E stained light micrograph of human cardiac tissue. Based on the image, what is the most likely clinical chronic heart diagnosis?",
+    "answer_options": [
+      "chronic heart failure",
+      "not chronic heart failure",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "classification",
+    "organ_domain": "cardiovascular",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "ad1459a2-24ab-4c37-999b-9612c3397623",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/cardiovascular/images/ad1459a2-24ab-4c37-999b-9612c3397623.png",
+    "question": "H&E stained light micrograph of human cardiac tissue. Based on the image, what is the most likely clinical chronic heart diagnosis?",
+    "answer_options": [
+      "chronic heart failure",
+      "not chronic heart failure",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "classification",
+    "organ_domain": "cardiovascular",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "cefaab4e-bf4d-4084-a989-14226e39c652",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/cardiovascular/images/cefaab4e-bf4d-4084-a989-14226e39c652.png",
+    "question": "H&E stained light micrograph of human cardiac tissue. Based on the image, what is the most likely clinical chronic heart diagnosis?",
+    "answer_options": [
+      "chronic heart failure",
+      "not chronic heart failure",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "classification",
+    "organ_domain": "cardiovascular",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "ddfe70ac-c0b0-4777-9fd5-35904195e350",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/cardiovascular/images/ddfe70ac-c0b0-4777-9fd5-35904195e350.png",
+    "question": "H&E stained light micrograph of human cardiac tissue. Based on the image, what is the most likely clinical chronic heart diagnosis?",
+    "answer_options": [
+      "not chronic heart failure",
+      "chronic heart failure",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "classification",
+    "organ_domain": "cardiovascular",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "f5b67947-a097-4877-a927-445d2a27bd8d",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/cardiovascular/images/f5b67947-a097-4877-a927-445d2a27bd8d.png",
+    "question": "H&E stained light micrograph of human cardiac tissue. Based on the image, what is the most likely clinical chronic heart diagnosis?",
+    "answer_options": [
+      "not chronic heart failure",
+      "chronic heart failure",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "classification",
+    "organ_domain": "cardiovascular",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "37cc6181-74b6-4fa7-b5f0-0494d7087625",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/cardiovascular/images/37cc6181-74b6-4fa7-b5f0-0494d7087625.png",
+    "question": "H&E stained light micrograph of human cardiac tissue. Based on the image, what is the most likely clinical chronic heart diagnosis?",
+    "answer_options": [
+      "not chronic heart failure",
+      "chronic heart failure",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "classification",
+    "organ_domain": "cardiovascular",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "9286f448-b788-40aa-a825-f9b6749078c3",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/cardiovascular/images/9286f448-b788-40aa-a825-f9b6749078c3.png",
+    "question": "H&E stained light micrograph of human cardiac tissue. Based on the image, what is the most likely clinical chronic heart diagnosis?",
+    "answer_options": [
+      "chronic heart failure",
+      "not chronic heart failure",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "classification",
+    "organ_domain": "cardiovascular",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "d407b095-5823-4667-9504-9b82df93611d",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/cardiovascular/images/d407b095-5823-4667-9504-9b82df93611d.png",
+    "question": "H&E stained light micrograph of human cardiac tissue. Based on the image, what is the most likely clinical chronic heart diagnosis?",
+    "answer_options": [
+      "not chronic heart failure",
+      "chronic heart failure",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "classification",
+    "organ_domain": "cardiovascular",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "8e5090f5-9e5f-4d6e-873f-97fcb7c311ca",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/cardiovascular/images/8e5090f5-9e5f-4d6e-873f-97fcb7c311ca.png",
+    "question": "H&E stained light micrograph of human cardiac tissue. Based on the image, what is the most likely clinical chronic heart diagnosis?",
+    "answer_options": [
+      "not chronic heart failure",
+      "chronic heart failure",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "classification",
+    "organ_domain": "cardiovascular",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "a0b63063-56f1-40e3-b8f9-4ab98a47b0d4",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/cardiovascular/images/a0b63063-56f1-40e3-b8f9-4ab98a47b0d4.png",
+    "question": "H&E stained light micrograph of human cardiac tissue. Based on the image, what is the most likely clinical chronic heart diagnosis?",
+    "answer_options": [
+      "chronic heart failure",
+      "not chronic heart failure",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "classification",
+    "organ_domain": "cardiovascular",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "b7fba1ae-8965-4720-b7c7-8704944a3c0b",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/cardiovascular/images/b7fba1ae-8965-4720-b7c7-8704944a3c0b.png",
+    "question": "H&E stained light micrograph of human cardiac tissue. Based on the image, what is the most likely clinical chronic heart diagnosis?",
+    "answer_options": [
+      "not chronic heart failure",
+      "chronic heart failure",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "classification",
+    "organ_domain": "cardiovascular",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "a881fec1-b7d1-4d06-a83a-8310aac18d60",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/cardiovascular/images/a881fec1-b7d1-4d06-a83a-8310aac18d60.png",
+    "question": "H&E stained light micrograph of human cardiac tissue. Based on the image, what is the most likely clinical chronic heart diagnosis?",
+    "answer_options": [
+      "not chronic heart failure",
+      "chronic heart failure",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "classification",
+    "organ_domain": "cardiovascular",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "cd40080f-d386-44a4-835d-44309b17c126",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/cardiovascular/images/cd40080f-d386-44a4-835d-44309b17c126.png",
+    "question": "H&E stained light micrograph of human cardiac tissue. Based on the image, what is the most likely clinical chronic heart diagnosis?",
+    "answer_options": [
+      "chronic heart failure",
+      "not chronic heart failure",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "classification",
+    "organ_domain": "cardiovascular",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "bf99f344-733c-47d9-940b-f1e024e6db16",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/cardiovascular/images/bf99f344-733c-47d9-940b-f1e024e6db16.png",
+    "question": "H&E stained light micrograph of human cardiac tissue. Based on the image, what is the most likely clinical chronic heart diagnosis?",
+    "answer_options": [
+      "chronic heart failure",
+      "not chronic heart failure",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "classification",
+    "organ_domain": "cardiovascular",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "0fd03c8c-0bb3-4106-9d76-05de3ddcdf3a",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/cardiovascular/images/0fd03c8c-0bb3-4106-9d76-05de3ddcdf3a.png",
+    "question": "H&E stained light micrograph of human cardiac tissue. Based on the image, what is the most likely clinical chronic heart diagnosis?",
+    "answer_options": [
+      "not chronic heart failure",
+      "chronic heart failure",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "classification",
+    "organ_domain": "cardiovascular",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "0e6e7fa2-1ead-4139-9c20-c4b222af4813",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/cardiovascular/images/0e6e7fa2-1ead-4139-9c20-c4b222af4813.png",
+    "question": "H&E stained light micrograph of human cardiac tissue. Based on the image, what is the most likely clinical chronic heart diagnosis?",
+    "answer_options": [
+      "chronic heart failure",
+      "not chronic heart failure",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "classification",
+    "organ_domain": "cardiovascular",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "411450e0-279b-4b6b-9b61-52768bc9261f",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/cardiovascular/images/411450e0-279b-4b6b-9b61-52768bc9261f.png",
+    "question": "H&E stained light micrograph of human cardiac tissue. Based on the image, what is the most likely clinical chronic heart diagnosis?",
+    "answer_options": [
+      "not chronic heart failure",
+      "chronic heart failure",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "classification",
+    "organ_domain": "cardiovascular",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "bc99aa5f-15e9-46b5-b5fb-93bc27cc9e76",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/cardiovascular/images/bc99aa5f-15e9-46b5-b5fb-93bc27cc9e76.png",
+    "question": "H&E stained light micrograph of human cardiac tissue. Based on the image, what is the most likely clinical chronic heart diagnosis?",
+    "answer_options": [
+      "chronic heart failure",
+      "not chronic heart failure",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "classification",
+    "organ_domain": "cardiovascular",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "03dcd74e-341a-4572-9d29-a414814226c6",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/cardiovascular/images/03dcd74e-341a-4572-9d29-a414814226c6.png",
+    "question": "H&E stained light micrograph of human cardiac tissue. Based on the image, what is the most likely clinical chronic heart diagnosis?",
+    "answer_options": [
+      "not chronic heart failure",
+      "chronic heart failure",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "classification",
+    "organ_domain": "cardiovascular",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "e9e0d387-df1f-48b4-b7e7-16d35579f86c",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/cardiovascular/images/e9e0d387-df1f-48b4-b7e7-16d35579f86c.png",
+    "question": "H&E stained light micrograph of human cardiac tissue. Based on the image, what is the most likely clinical chronic heart diagnosis?",
+    "answer_options": [
+      "not chronic heart failure",
+      "chronic heart failure",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "classification",
+    "organ_domain": "cardiovascular",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "2e074ffa-aa55-4630-bc51-8fc5dd87dd78",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/cardiovascular/images/2e074ffa-aa55-4630-bc51-8fc5dd87dd78.png",
+    "question": "H&E stained light micrograph of human cardiac tissue. Based on the image, what is the most likely clinical chronic heart diagnosis?",
+    "answer_options": [
+      "chronic heart failure",
+      "not chronic heart failure",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "classification",
+    "organ_domain": "cardiovascular",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "d9e4091c-16f9-431b-94dd-1957f7bfce2c",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/cardiovascular/images/d9e4091c-16f9-431b-94dd-1957f7bfce2c.png",
+    "question": "H&E stained light micrograph of human cardiac tissue. Based on the image, what is the most likely clinical chronic heart diagnosis?",
+    "answer_options": [
+      "chronic heart failure",
+      "not chronic heart failure",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "classification",
+    "organ_domain": "cardiovascular",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "2cab74ab-8738-460e-9f94-7e035d0d8052",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/cardiovascular/images/2cab74ab-8738-460e-9f94-7e035d0d8052.png",
+    "question": "H&E stained light micrograph of human cardiac tissue. Based on the image, what is the most likely clinical chronic heart diagnosis?",
+    "answer_options": [
+      "not chronic heart failure",
+      "chronic heart failure",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "classification",
+    "organ_domain": "cardiovascular",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "18507356-61d9-4e63-97a4-59d9e29da794",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/cardiovascular/images/18507356-61d9-4e63-97a4-59d9e29da794.png",
+    "question": "H&E stained light micrograph of human cardiac tissue. Based on the image, what is the most likely clinical chronic heart diagnosis?",
+    "answer_options": [
+      "not chronic heart failure",
+      "chronic heart failure",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "classification",
+    "organ_domain": "cardiovascular",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "921b9d37-6fb0-4e20-a3c9-18ecacfb8e4a",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/cardiovascular/images/921b9d37-6fb0-4e20-a3c9-18ecacfb8e4a.png",
+    "question": "H&E stained light micrograph of human cardiac tissue. Based on the image, what is the most likely clinical chronic heart diagnosis?",
+    "answer_options": [
+      "chronic heart failure",
+      "not chronic heart failure",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "classification",
+    "organ_domain": "cardiovascular",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "82892825-d2aa-4aec-9bbd-09047428b0b7",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/cardiovascular/images/82892825-d2aa-4aec-9bbd-09047428b0b7.png",
+    "question": "H&E stained light micrograph of human cardiac tissue. Based on the image, what is the most likely clinical chronic heart diagnosis?",
+    "answer_options": [
+      "chronic heart failure",
+      "not chronic heart failure",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "classification",
+    "organ_domain": "cardiovascular",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "b16265be-e8ee-47e9-a83e-83618adbf3d3",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/cardiovascular/images/b16265be-e8ee-47e9-a83e-83618adbf3d3.png",
+    "question": "H&E stained light micrograph of human cardiac tissue. Based on the image, what is the most likely clinical chronic heart diagnosis?",
+    "answer_options": [
+      "chronic heart failure",
+      "not chronic heart failure",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "classification",
+    "organ_domain": "cardiovascular",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "8a1edc08-8ad3-4f7d-a941-94463351ab35",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/cardiovascular/images/8a1edc08-8ad3-4f7d-a941-94463351ab35.png",
+    "question": "H&E stained light micrograph of human cardiac tissue. Based on the image, what is the most likely clinical chronic heart diagnosis?",
+    "answer_options": [
+      "not chronic heart failure",
+      "chronic heart failure",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "classification",
+    "organ_domain": "cardiovascular",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "7767a5db-c308-427c-a8c3-89eb3afd473e",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/cardiovascular/images/7767a5db-c308-427c-a8c3-89eb3afd473e.png",
+    "question": "H&E stained light micrograph of human cardiac tissue. Based on the image, what is the most likely clinical chronic heart diagnosis?",
+    "answer_options": [
+      "not chronic heart failure",
+      "chronic heart failure",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "classification",
+    "organ_domain": "cardiovascular",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "84997b46-6205-47ca-8f4b-53800aa9cc73",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/cardiovascular/images/84997b46-6205-47ca-8f4b-53800aa9cc73.png",
+    "question": "H&E stained light micrograph of human cardiac tissue. Based on the image, what is the most likely clinical chronic heart diagnosis?",
+    "answer_options": [
+      "chronic heart failure",
+      "not chronic heart failure",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "classification",
+    "organ_domain": "cardiovascular",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "909560e3-c5c3-4255-baa0-5f56039691fc",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/cardiovascular/images/909560e3-c5c3-4255-baa0-5f56039691fc.png",
+    "question": "H&E stained light micrograph of human cardiac tissue. Based on the image, what is the most likely clinical chronic heart diagnosis?",
+    "answer_options": [
+      "not chronic heart failure",
+      "chronic heart failure",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "classification",
+    "organ_domain": "cardiovascular",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "db6357cf-86c0-4e0e-a09e-e7e84f271644",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/cardiovascular/images/db6357cf-86c0-4e0e-a09e-e7e84f271644.png",
+    "question": "H&E stained light micrograph of human cardiac tissue. Based on the image, what is the most likely clinical chronic heart diagnosis?",
+    "answer_options": [
+      "chronic heart failure",
+      "not chronic heart failure",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "classification",
+    "organ_domain": "cardiovascular",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "cfbed959-b51e-4d8d-a079-933c9abf7bdc",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/cardiovascular/images/cfbed959-b51e-4d8d-a079-933c9abf7bdc.png",
+    "question": "H&E stained light micrograph of human cardiac tissue. Based on the image, what is the most likely clinical chronic heart diagnosis?",
+    "answer_options": [
+      "chronic heart failure",
+      "not chronic heart failure",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "classification",
+    "organ_domain": "cardiovascular",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "8bc096af-64dd-4283-9140-07fdd5d707a0",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/cardiovascular/images/8bc096af-64dd-4283-9140-07fdd5d707a0.png",
+    "question": "H&E stained light micrograph of human cardiac tissue. Based on the image, what is the most likely clinical chronic heart diagnosis?",
+    "answer_options": [
+      "chronic heart failure",
+      "not chronic heart failure",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "classification",
+    "organ_domain": "cardiovascular",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "35c485a1-0a42-40ad-aecf-b852662c6429",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/cardiovascular/images/35c485a1-0a42-40ad-aecf-b852662c6429.png",
+    "question": "H&E stained light micrograph of human cardiac tissue. Based on the image, what is the most likely clinical chronic heart diagnosis?",
+    "answer_options": [
+      "chronic heart failure",
+      "not chronic heart failure",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "classification",
+    "organ_domain": "cardiovascular",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "c6b71ff9-3704-4b83-9899-946f570df4ec",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/cardiovascular/images/c6b71ff9-3704-4b83-9899-946f570df4ec.png",
+    "question": "H&E stained light micrograph of human cardiac tissue. Based on the image, what is the most likely clinical chronic heart diagnosis?",
+    "answer_options": [
+      "chronic heart failure",
+      "not chronic heart failure",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "classification",
+    "organ_domain": "cardiovascular",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "0438d11d-9ee2-439f-a54d-1b39dad089ed",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/cardiovascular/images/0438d11d-9ee2-439f-a54d-1b39dad089ed.png",
+    "question": "H&E stained light micrograph of human cardiac tissue. Based on the image, what is the most likely clinical chronic heart diagnosis?",
+    "answer_options": [
+      "not chronic heart failure",
+      "chronic heart failure",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "classification",
+    "organ_domain": "cardiovascular",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "6b85b823-fcec-46a2-a3d5-7c9e0a791f22",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/cardiovascular/images/6b85b823-fcec-46a2-a3d5-7c9e0a791f22.png",
+    "question": "H&E stained light micrograph of human cardiac tissue. Based on the image, what is the most likely clinical chronic heart diagnosis?",
+    "answer_options": [
+      "chronic heart failure",
+      "not chronic heart failure",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "classification",
+    "organ_domain": "cardiovascular",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "75a3ace3-da1f-47e2-a0b3-a9307651db44",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/cardiovascular/images/75a3ace3-da1f-47e2-a0b3-a9307651db44.png",
+    "question": "H&E stained light micrograph of human cardiac tissue. Based on the image, what is the most likely clinical chronic heart diagnosis?",
+    "answer_options": [
+      "not chronic heart failure",
+      "chronic heart failure",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "classification",
+    "organ_domain": "cardiovascular",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "7bc59792-1fb0-41a0-a3e1-6f4f830c639c",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/cardiovascular/images/7bc59792-1fb0-41a0-a3e1-6f4f830c639c.png",
+    "question": "H&E stained light micrograph of human cardiac tissue. Based on the image, what is the most likely clinical chronic heart diagnosis?",
+    "answer_options": [
+      "not chronic heart failure",
+      "chronic heart failure",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "classification",
+    "organ_domain": "cardiovascular",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "35ddb0d5-c286-4e80-bd7b-25ac8052d333",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/cardiovascular/images/35ddb0d5-c286-4e80-bd7b-25ac8052d333.png",
+    "question": "H&E stained light micrograph of human cardiac tissue. Based on the image, what is the most likely clinical chronic heart diagnosis?",
+    "answer_options": [
+      "chronic heart failure",
+      "not chronic heart failure",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "classification",
+    "organ_domain": "cardiovascular",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "37d20061-2cf0-483e-bf74-a1dadb38eebd",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/cardiovascular/images/37d20061-2cf0-483e-bf74-a1dadb38eebd.png",
+    "question": "H&E stained light micrograph of human cardiac tissue. Based on the image, what is the most likely clinical chronic heart diagnosis?",
+    "answer_options": [
+      "chronic heart failure",
+      "not chronic heart failure",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "classification",
+    "organ_domain": "cardiovascular",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "422596b6-9d63-47ef-b922-4aa59268ac80",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/cardiovascular/images/422596b6-9d63-47ef-b922-4aa59268ac80.png",
+    "question": "H&E stained light micrograph of human cardiac tissue. Based on the image, what is the most likely clinical chronic heart diagnosis?",
+    "answer_options": [
+      "not chronic heart failure",
+      "chronic heart failure",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "classification",
+    "organ_domain": "cardiovascular",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "4019cf41-70eb-49eb-a392-9c9b9fecaaa9",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/cardiovascular/images/4019cf41-70eb-49eb-a392-9c9b9fecaaa9.png",
+    "question": "H&E stained light micrograph of human cardiac tissue. Based on the image, what is the most likely clinical chronic heart diagnosis?",
+    "answer_options": [
+      "not chronic heart failure",
+      "chronic heart failure",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "classification",
+    "organ_domain": "cardiovascular",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "3a4107e3-62f7-471f-be3f-dfe4a86cb21f",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/cardiovascular/images/3a4107e3-62f7-471f-be3f-dfe4a86cb21f.png",
+    "question": "H&E stained light micrograph of human cardiac tissue. Based on the image, what is the most likely clinical chronic heart diagnosis?",
+    "answer_options": [
+      "not chronic heart failure",
+      "chronic heart failure",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "classification",
+    "organ_domain": "cardiovascular",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "f928ccb5-782f-4c5b-86f6-c0ee7cfe3c22",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/cardiovascular/images/f928ccb5-782f-4c5b-86f6-c0ee7cfe3c22.png",
+    "question": "H&E stained light micrograph of human cardiac tissue. Based on the image, what is the most likely clinical chronic heart diagnosis?",
+    "answer_options": [
+      "chronic heart failure",
+      "not chronic heart failure",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "classification",
+    "organ_domain": "cardiovascular",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "f2dd7ad0-3285-47a4-8466-52e085ede994",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/cardiovascular/images/f2dd7ad0-3285-47a4-8466-52e085ede994.png",
+    "question": "H&E stained light micrograph of human cardiac tissue. Based on the image, what is the most likely clinical chronic heart diagnosis?",
+    "answer_options": [
+      "chronic heart failure",
+      "not chronic heart failure",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "classification",
+    "organ_domain": "cardiovascular",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "174c2615-88f5-4022-a2af-e81a77bdc47c",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/cardiovascular/images/174c2615-88f5-4022-a2af-e81a77bdc47c.png",
+    "question": "H&E stained light micrograph of human cardiac tissue. Based on the image, what is the most likely clinical chronic heart diagnosis?",
+    "answer_options": [
+      "not chronic heart failure",
+      "chronic heart failure",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "classification",
+    "organ_domain": "cardiovascular",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "feefac4b-d2ff-4f47-a8ad-565192f68b90",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/cardiovascular/images/feefac4b-d2ff-4f47-a8ad-565192f68b90.png",
+    "question": "H&E stained light micrograph of human cardiac tissue. Based on the image, what is the most likely clinical chronic heart diagnosis?",
+    "answer_options": [
+      "not chronic heart failure",
+      "chronic heart failure",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "classification",
+    "organ_domain": "cardiovascular",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "260dff56-1e98-40b9-8fb7-c59544fa3190",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/cardiovascular/images/260dff56-1e98-40b9-8fb7-c59544fa3190.png",
+    "question": "H&E stained light micrograph of human cardiac tissue. Based on the image, what is the most likely clinical chronic heart diagnosis?",
+    "answer_options": [
+      "chronic heart failure",
+      "not chronic heart failure",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "classification",
+    "organ_domain": "cardiovascular",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "bda4eeb8-61cb-4598-8a77-eea8bf745f97",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/cardiovascular/images/bda4eeb8-61cb-4598-8a77-eea8bf745f97.png",
+    "question": "H&E stained light micrograph of human cardiac tissue. Based on the image, what is the most likely clinical chronic heart diagnosis?",
+    "answer_options": [
+      "chronic heart failure",
+      "not chronic heart failure",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "classification",
+    "organ_domain": "cardiovascular",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "211fb66a-4f76-4c26-b899-922fce75a0ac",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/cardiovascular/images/211fb66a-4f76-4c26-b899-922fce75a0ac.png",
+    "question": "H&E stained light micrograph of human cardiac tissue. Based on the image, what is the most likely clinical chronic heart diagnosis?",
+    "answer_options": [
+      "chronic heart failure",
+      "not chronic heart failure",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "classification",
+    "organ_domain": "cardiovascular",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "6a6276c8-6a4a-45ab-a3b1-e8c2ac25c12b",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/cardiovascular/images/6a6276c8-6a4a-45ab-a3b1-e8c2ac25c12b.png",
+    "question": "H&E stained light micrograph of human cardiac tissue. Based on the image, what is the most likely clinical chronic heart diagnosis?",
+    "answer_options": [
+      "chronic heart failure",
+      "not chronic heart failure",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "classification",
+    "organ_domain": "cardiovascular",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "cb6aea5f-bc56-4e38-8896-3c40f0b85275",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/cardiovascular/images/cb6aea5f-bc56-4e38-8896-3c40f0b85275.png",
+    "question": "H&E stained light micrograph of human cardiac tissue. Based on the image, what is the most likely clinical chronic heart diagnosis?",
+    "answer_options": [
+      "not chronic heart failure",
+      "chronic heart failure",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "classification",
+    "organ_domain": "cardiovascular",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "4a769b31-2f6e-45be-b409-c1a34bdec227",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/cardiovascular/images/4a769b31-2f6e-45be-b409-c1a34bdec227.png",
+    "question": "H&E stained light micrograph of human cardiac tissue. Based on the image, what is the most likely clinical chronic heart diagnosis?",
+    "answer_options": [
+      "chronic heart failure",
+      "not chronic heart failure",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "classification",
+    "organ_domain": "cardiovascular",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "6d34b623-cf41-4b64-ac23-794b1bfca08f",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/cardiovascular/images/6d34b623-cf41-4b64-ac23-794b1bfca08f.png",
+    "question": "H&E stained light micrograph of human cardiac tissue. Based on the image, what is the most likely clinical chronic heart diagnosis?",
+    "answer_options": [
+      "chronic heart failure",
+      "not chronic heart failure",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "classification",
+    "organ_domain": "cardiovascular",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "40713a87-6f77-4cf0-8b2f-cdba4f2e7d04",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/cardiovascular/images/40713a87-6f77-4cf0-8b2f-cdba4f2e7d04.png",
+    "question": "H&E stained light micrograph of human cardiac tissue. Based on the image, what is the most likely clinical chronic heart diagnosis?",
+    "answer_options": [
+      "chronic heart failure",
+      "not chronic heart failure",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "classification",
+    "organ_domain": "cardiovascular",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "0ab7d779-18b0-4298-aba8-47c5ff248f37",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/cardiovascular/images/0ab7d779-18b0-4298-aba8-47c5ff248f37.png",
+    "question": "H&E stained light micrograph of human cardiac tissue. Based on the image, what is the most likely clinical chronic heart diagnosis?",
+    "answer_options": [
+      "chronic heart failure",
+      "not chronic heart failure",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "classification",
+    "organ_domain": "cardiovascular",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "1723dde8-ec23-4b4d-913d-931f43a459dd",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/cardiovascular/images/1723dde8-ec23-4b4d-913d-931f43a459dd.png",
+    "question": "H&E stained light micrograph of human cardiac tissue. Based on the image, what is the most likely clinical chronic heart diagnosis?",
+    "answer_options": [
+      "not chronic heart failure",
+      "chronic heart failure",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "classification",
+    "organ_domain": "cardiovascular",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "ee654710-dfdd-4b8b-9f31-bae0f8e0979d",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/cardiovascular/images/ee654710-dfdd-4b8b-9f31-bae0f8e0979d.png",
+    "question": "H&E stained light micrograph of human cardiac tissue. Based on the image, what is the most likely clinical chronic heart diagnosis?",
+    "answer_options": [
+      "chronic heart failure",
+      "not chronic heart failure",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "classification",
+    "organ_domain": "cardiovascular",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "2c29c04b-4eeb-4c0b-bb32-3bdfcc3e2354",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/cardiovascular/images/2c29c04b-4eeb-4c0b-bb32-3bdfcc3e2354.png",
+    "question": "H&E stained light micrograph of human cardiac tissue. Based on the image, what is the most likely clinical chronic heart diagnosis?",
+    "answer_options": [
+      "not chronic heart failure",
+      "chronic heart failure",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "classification",
+    "organ_domain": "cardiovascular",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "0d4c456b-1dc3-4472-8798-c30d790d1c1f",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/cardiovascular/images/0d4c456b-1dc3-4472-8798-c30d790d1c1f.png",
+    "question": "H&E stained light micrograph of human cardiac tissue. Based on the image, what is the most likely clinical chronic heart diagnosis?",
+    "answer_options": [
+      "chronic heart failure",
+      "not chronic heart failure",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "classification",
+    "organ_domain": "cardiovascular",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "66f8aea4-d6bd-46d8-b3a3-0f31f0b77cae",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/cardiovascular/images/66f8aea4-d6bd-46d8-b3a3-0f31f0b77cae.png",
+    "question": "H&E stained light micrograph of human cardiac tissue. Based on the image, what is the most likely clinical chronic heart diagnosis?",
+    "answer_options": [
+      "chronic heart failure",
+      "not chronic heart failure",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "classification",
+    "organ_domain": "cardiovascular",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "3e2b9f8d-671b-4329-a23d-1ea0a1cf2b21",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/cardiovascular/images/3e2b9f8d-671b-4329-a23d-1ea0a1cf2b21.png",
+    "question": "H&E stained light micrograph of human cardiac tissue. Based on the image, what is the most likely clinical chronic heart diagnosis?",
+    "answer_options": [
+      "chronic heart failure",
+      "not chronic heart failure",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "classification",
+    "organ_domain": "cardiovascular",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "015d4e70-b58c-45b3-81d5-92e9c1d838b2",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/cardiovascular/images/015d4e70-b58c-45b3-81d5-92e9c1d838b2.png",
+    "question": "H&E stained light micrograph of human cardiac tissue. Based on the image, what is the most likely clinical chronic heart diagnosis?",
+    "answer_options": [
+      "not chronic heart failure",
+      "chronic heart failure",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "classification",
+    "organ_domain": "cardiovascular",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "b31d2d49-6f1e-4b56-8c1c-36bc7769cc1b",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/cardiovascular/images/b31d2d49-6f1e-4b56-8c1c-36bc7769cc1b.png",
+    "question": "H&E stained light micrograph of human cardiac tissue. Based on the image, what is the most likely clinical chronic heart diagnosis?",
+    "answer_options": [
+      "not chronic heart failure",
+      "chronic heart failure",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "classification",
+    "organ_domain": "cardiovascular",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "ef222bfd-4b00-4a75-a83f-720f9357f43e",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/cardiovascular/images/ef222bfd-4b00-4a75-a83f-720f9357f43e.png",
+    "question": "H&E stained light micrograph of human cardiac tissue. Based on the image, what is the most likely clinical chronic heart diagnosis?",
+    "answer_options": [
+      "not chronic heart failure",
+      "chronic heart failure",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "classification",
+    "organ_domain": "cardiovascular",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "b2369518-c2ce-46b0-8516-5bccb13053e8",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/cardiovascular/images/b2369518-c2ce-46b0-8516-5bccb13053e8.png",
+    "question": "H&E stained light micrograph of human cardiac tissue. Based on the image, what is the most likely clinical chronic heart diagnosis?",
+    "answer_options": [
+      "chronic heart failure",
+      "not chronic heart failure",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "classification",
+    "organ_domain": "cardiovascular",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "e769ad9a-f23e-4145-90e2-de748e2fbea4",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/cardiovascular/images/e769ad9a-f23e-4145-90e2-de748e2fbea4.png",
+    "question": "H&E stained light micrograph of human cardiac tissue. Based on the image, what is the most likely clinical chronic heart diagnosis?",
+    "answer_options": [
+      "not chronic heart failure",
+      "chronic heart failure",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "classification",
+    "organ_domain": "cardiovascular",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "3c83f54c-dac2-4111-8aab-fa24f9b8d417",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/cardiovascular/images/3c83f54c-dac2-4111-8aab-fa24f9b8d417.png",
+    "question": "H&E stained light micrograph of human cardiac tissue. Based on the image, what is the most likely clinical chronic heart diagnosis?",
+    "answer_options": [
+      "not chronic heart failure",
+      "chronic heart failure",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "classification",
+    "organ_domain": "cardiovascular",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "a0b4f3b2-b5d4-4b09-ad99-848ecb262ec5",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/cardiovascular/images/a0b4f3b2-b5d4-4b09-ad99-848ecb262ec5.png",
+    "question": "H&E stained light micrograph of human cardiac tissue. Based on the image, what is the most likely clinical chronic heart diagnosis?",
+    "answer_options": [
+      "not chronic heart failure",
+      "chronic heart failure",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "classification",
+    "organ_domain": "cardiovascular",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "98deb84e-c274-49ef-9dba-5cec40201d46",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/cardiovascular/images/98deb84e-c274-49ef-9dba-5cec40201d46.png",
+    "question": "H&E stained light micrograph of human cardiac tissue. Based on the image, what is the most likely clinical chronic heart diagnosis?",
+    "answer_options": [
+      "not chronic heart failure",
+      "chronic heart failure",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "classification",
+    "organ_domain": "cardiovascular",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "e88f1305-d468-4250-a079-5ff44a34b816",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/cardiovascular/images/e88f1305-d468-4250-a079-5ff44a34b816.png",
+    "question": "H&E stained light micrograph of human cardiac tissue. Based on the image, what is the most likely clinical chronic heart diagnosis?",
+    "answer_options": [
+      "not chronic heart failure",
+      "chronic heart failure",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "classification",
+    "organ_domain": "cardiovascular",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "0ce7380d-3b34-45b1-bf0c-5372a11e5941",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/cardiovascular/images/0ce7380d-3b34-45b1-bf0c-5372a11e5941.png",
+    "question": "H&E stained light micrograph of human cardiac tissue. Based on the image, what is the most likely clinical chronic heart diagnosis?",
+    "answer_options": [
+      "not chronic heart failure",
+      "chronic heart failure",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "classification",
+    "organ_domain": "cardiovascular",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "0be160ae-4117-461e-b0a3-9d76bd814dde",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/cardiovascular/images/0be160ae-4117-461e-b0a3-9d76bd814dde.png",
+    "question": "H&E stained light micrograph of human cardiac tissue. Based on the image, what is the most likely clinical chronic heart diagnosis?",
+    "answer_options": [
+      "not chronic heart failure",
+      "chronic heart failure",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "classification",
+    "organ_domain": "cardiovascular",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "4707a43b-ed98-4833-b28a-3463897fed27",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/cardiovascular/images/4707a43b-ed98-4833-b28a-3463897fed27.png",
+    "question": "H&E stained light micrograph of human cardiac tissue. Based on the image, what is the most likely clinical chronic heart diagnosis?",
+    "answer_options": [
+      "not chronic heart failure",
+      "chronic heart failure",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "classification",
+    "organ_domain": "cardiovascular",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "0c05be7a-43d7-4df2-8980-bb93239f3225",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/cardiovascular/images/0c05be7a-43d7-4df2-8980-bb93239f3225.png",
+    "question": "H&E stained light micrograph of human cardiac tissue. Based on the image, what is the most likely clinical chronic heart diagnosis?",
+    "answer_options": [
+      "chronic heart failure",
+      "not chronic heart failure",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "classification",
+    "organ_domain": "cardiovascular",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "081cf180-49c1-4ef1-8784-110c545bbf43",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/cardiovascular/images/081cf180-49c1-4ef1-8784-110c545bbf43.png",
+    "question": "H&E stained light micrograph of human cardiac tissue. Based on the image, what is the most likely clinical chronic heart diagnosis?",
+    "answer_options": [
+      "chronic heart failure",
+      "not chronic heart failure",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "classification",
+    "organ_domain": "cardiovascular",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "e366ff64-ac5d-4c79-a51f-5e2c2d02d296",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/cardiovascular/images/e366ff64-ac5d-4c79-a51f-5e2c2d02d296.png",
+    "question": "H&E stained light micrograph of human cardiac tissue. Based on the image, what is the most likely clinical chronic heart diagnosis?",
+    "answer_options": [
+      "not chronic heart failure",
+      "chronic heart failure",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "classification",
+    "organ_domain": "cardiovascular",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "c8e313e2-99df-4bf4-b406-654803e4beaf",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/cardiovascular/images/c8e313e2-99df-4bf4-b406-654803e4beaf.png",
+    "question": "H&E stained light micrograph of human cardiac tissue. Based on the image, what is the most likely clinical chronic heart diagnosis?",
+    "answer_options": [
+      "not chronic heart failure",
+      "chronic heart failure",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "classification",
+    "organ_domain": "cardiovascular",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "d3390dbf-0827-44ee-8a0b-034099f63a01",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/cardiovascular/images/d3390dbf-0827-44ee-8a0b-034099f63a01.png",
+    "question": "H&E stained light micrograph of human cardiac tissue. Based on the image, what is the most likely clinical chronic heart diagnosis?",
+    "answer_options": [
+      "not chronic heart failure",
+      "chronic heart failure",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "classification",
+    "organ_domain": "cardiovascular",
+    "task_type": "fine"
+  }
+]

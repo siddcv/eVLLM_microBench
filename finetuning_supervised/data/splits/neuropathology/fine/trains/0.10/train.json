@@ -1,0 +1,2066 @@
+[
+  {
+    "image_id": "dfa8385e-7b49-4e43-bcf3-bc3aca9727c5",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/dfa8385e-7b49-4e43-bcf3-bc3aca9727c5.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "Diffuse",
+      "Caa",
+      "Cored",
+      "Negative",
+      "none of the above"
+    ],
+    "correct_answer_idx": 2,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "b2c1e494-8919-4ac7-b746-2afe2bf200a1",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/b2c1e494-8919-4ac7-b746-2afe2bf200a1.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "Negative",
+      "Caa",
+      "Diffuse",
+      "Cored",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "fa6dccda-9ced-40cd-bac6-24a94009aeaf",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/fa6dccda-9ced-40cd-bac6-24a94009aeaf.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "negative",
+      "cerebral amyloid angiopathy",
+      "diffuse plaque",
+      "cored plaque",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "3ab21848-4ffd-4c94-bc54-49f748f9dfd4",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/3ab21848-4ffd-4c94-bc54-49f748f9dfd4.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "Cored",
+      "Negative",
+      "Caa",
+      "Diffuse",
+      "none of the above"
+    ],
+    "correct_answer_idx": 2,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "f76e71da-c670-4210-8417-bb94a869af78",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/f76e71da-c670-4210-8417-bb94a869af78.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "cerebral amyloid angiopathy",
+      "cored plaque",
+      "diffuse plaque",
+      "negative",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "25256ca5-d89f-4437-87e9-1a58b80dec82",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/25256ca5-d89f-4437-87e9-1a58b80dec82.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "diffuse plaque",
+      "cerebral amyloid angiopathy",
+      "cored plaque",
+      "negative",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "b88acde5-618e-484a-8b68-1dfdee8cfbd9",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/b88acde5-618e-484a-8b68-1dfdee8cfbd9.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "Negative",
+      "Caa",
+      "Cored",
+      "Diffuse",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "c92a273d-aec9-4fd5-bc4e-bc89ff5644b8",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/c92a273d-aec9-4fd5-bc4e-bc89ff5644b8.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "Diffuse",
+      "Cored",
+      "Negative",
+      "Caa",
+      "none of the above"
+    ],
+    "correct_answer_idx": 3,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "3ea5ef51-6af7-4184-b0a6-5002ee759a1a",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/3ea5ef51-6af7-4184-b0a6-5002ee759a1a.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "negative",
+      "cored plaque",
+      "diffuse plaque",
+      "cerebral amyloid angiopathy",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "8e34779a-e583-41b1-a0ab-a99807ee4ac7",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/8e34779a-e583-41b1-a0ab-a99807ee4ac7.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "Cored",
+      "Diffuse",
+      "Caa",
+      "Negative",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "91df16f0-5407-473a-864b-5ebb295f4afa",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/91df16f0-5407-473a-864b-5ebb295f4afa.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "cerebral amyloid angiopathy",
+      "cored plaque",
+      "diffuse plaque",
+      "negative",
+      "none of the above"
+    ],
+    "correct_answer_idx": 2,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "6d10f97d-9149-46fc-9f0e-45ae33e38591",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/6d10f97d-9149-46fc-9f0e-45ae33e38591.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "Caa",
+      "Cored",
+      "Negative",
+      "Diffuse",
+      "none of the above"
+    ],
+    "correct_answer_idx": 2,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "ae43bfef-4ede-4869-99e4-c06b98977e76",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/ae43bfef-4ede-4869-99e4-c06b98977e76.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "Negative",
+      "Caa",
+      "Diffuse",
+      "Cored",
+      "none of the above"
+    ],
+    "correct_answer_idx": 3,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "1cccdf67-ee00-4d8f-832a-bae9322b5d78",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/1cccdf67-ee00-4d8f-832a-bae9322b5d78.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "Negative",
+      "Caa",
+      "Diffuse",
+      "Cored",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "0746e39b-788d-41d7-aa50-9a2fe71851d5",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/0746e39b-788d-41d7-aa50-9a2fe71851d5.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "Negative",
+      "Cored",
+      "Diffuse",
+      "Caa",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "6d8dface-dc20-47fa-91a5-43811a84780d",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/6d8dface-dc20-47fa-91a5-43811a84780d.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "Caa",
+      "Diffuse",
+      "Negative",
+      "Cored",
+      "none of the above"
+    ],
+    "correct_answer_idx": 3,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "980552ec-7257-420f-ba81-91b4c5254e7a",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/980552ec-7257-420f-ba81-91b4c5254e7a.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "Diffuse",
+      "Cored",
+      "Negative",
+      "Caa",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "40606d9b-a914-4f07-a99f-3880857b05a4",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/40606d9b-a914-4f07-a99f-3880857b05a4.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "Diffuse",
+      "Negative",
+      "Caa",
+      "Cored",
+      "none of the above"
+    ],
+    "correct_answer_idx": 2,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "c85090e1-7f81-4d50-8b9c-3f4b52e3de78",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/c85090e1-7f81-4d50-8b9c-3f4b52e3de78.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "diffuse plaque",
+      "cerebral amyloid angiopathy",
+      "cored plaque",
+      "negative",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "418336f8-5c97-4be5-bbec-4b62adb0a093",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/418336f8-5c97-4be5-bbec-4b62adb0a093.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "Diffuse",
+      "Caa",
+      "Negative",
+      "Cored",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "3e9f6aeb-0d40-424d-a35e-6a0e411d3a2e",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/3e9f6aeb-0d40-424d-a35e-6a0e411d3a2e.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "Cored",
+      "Diffuse",
+      "Caa",
+      "Negative",
+      "none of the above"
+    ],
+    "correct_answer_idx": 3,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "dd6b4220-c0b2-47f4-8d59-ccfa1e921bcd",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/dd6b4220-c0b2-47f4-8d59-ccfa1e921bcd.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "cerebral amyloid angiopathy",
+      "negative",
+      "diffuse plaque",
+      "cored plaque",
+      "none of the above"
+    ],
+    "correct_answer_idx": 2,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "12ade5f3-b602-434d-ac39-3d95adafcf4f",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/12ade5f3-b602-434d-ac39-3d95adafcf4f.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "Diffuse",
+      "Cored",
+      "Caa",
+      "Negative",
+      "none of the above"
+    ],
+    "correct_answer_idx": 2,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "9710f006-37ad-4085-9bfb-4e1aeea09826",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/9710f006-37ad-4085-9bfb-4e1aeea09826.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "Diffuse",
+      "Caa",
+      "Negative",
+      "Cored",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "22a0a973-7c1d-40c9-b434-1cd373f5a73b",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/22a0a973-7c1d-40c9-b434-1cd373f5a73b.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "Negative",
+      "Caa",
+      "Diffuse",
+      "Cored",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "575eddbf-0d53-43be-81fa-fc4b1c1dd87d",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/575eddbf-0d53-43be-81fa-fc4b1c1dd87d.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "cerebral amyloid angiopathy",
+      "negative",
+      "diffuse plaque",
+      "cored plaque",
+      "none of the above"
+    ],
+    "correct_answer_idx": 3,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "5d384e35-5596-4d84-8450-edbd793376c4",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/5d384e35-5596-4d84-8450-edbd793376c4.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "Negative",
+      "Cored",
+      "Diffuse",
+      "Caa",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "b3338bb3-2d5c-4b90-880a-5da5fbedec14",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/b3338bb3-2d5c-4b90-880a-5da5fbedec14.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "Caa",
+      "Cored",
+      "Negative",
+      "Diffuse",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "fecf7cf6-4a24-4211-b687-8fdd72fece17",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/fecf7cf6-4a24-4211-b687-8fdd72fece17.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "Diffuse",
+      "Negative",
+      "Cored",
+      "Caa",
+      "none of the above"
+    ],
+    "correct_answer_idx": 2,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "82e0cd12-3697-43fc-bb0f-abc6ce3f0e22",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/82e0cd12-3697-43fc-bb0f-abc6ce3f0e22.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "Diffuse",
+      "Caa",
+      "Cored",
+      "Negative",
+      "none of the above"
+    ],
+    "correct_answer_idx": 3,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "ebf5f760-c459-45e5-81cc-48ded17e792c",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/ebf5f760-c459-45e5-81cc-48ded17e792c.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "Diffuse",
+      "Negative",
+      "Cored",
+      "Caa",
+      "none of the above"
+    ],
+    "correct_answer_idx": 2,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "862e7dcb-5a5c-41e0-84d4-73e55acb4b49",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/862e7dcb-5a5c-41e0-84d4-73e55acb4b49.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "Caa",
+      "Negative",
+      "Diffuse",
+      "Cored",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "f05c2da7-c692-4eae-9bf1-4459f98e1471",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/f05c2da7-c692-4eae-9bf1-4459f98e1471.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "cored plaque",
+      "negative",
+      "cerebral amyloid angiopathy",
+      "diffuse plaque",
+      "none of the above"
+    ],
+    "correct_answer_idx": 3,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "c0c4240b-a86c-4580-9059-6564a4d3bf4e",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/c0c4240b-a86c-4580-9059-6564a4d3bf4e.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "Negative",
+      "Diffuse",
+      "Caa",
+      "Cored",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "0c39c7a0-0621-4520-a7a8-625f36144028",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/0c39c7a0-0621-4520-a7a8-625f36144028.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "Caa",
+      "Diffuse",
+      "Negative",
+      "Cored",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "3185daeb-0c3b-4216-bea6-2744061308ee",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/3185daeb-0c3b-4216-bea6-2744061308ee.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "cerebral amyloid angiopathy",
+      "negative",
+      "diffuse plaque",
+      "cored plaque",
+      "none of the above"
+    ],
+    "correct_answer_idx": 2,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "dbd1a35b-704f-4d7f-9c75-a5418ca7862d",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/dbd1a35b-704f-4d7f-9c75-a5418ca7862d.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "Negative",
+      "Caa",
+      "Diffuse",
+      "Cored",
+      "none of the above"
+    ],
+    "correct_answer_idx": 2,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "f07c4ec9-2c4f-4056-90c2-bc9fdaacf728",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/f07c4ec9-2c4f-4056-90c2-bc9fdaacf728.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "cored plaque",
+      "negative",
+      "cerebral amyloid angiopathy",
+      "diffuse plaque",
+      "none of the above"
+    ],
+    "correct_answer_idx": 3,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "f61d5d79-5527-4403-b2cc-c54ae8fea4db",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/f61d5d79-5527-4403-b2cc-c54ae8fea4db.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "cerebral amyloid angiopathy",
+      "diffuse plaque",
+      "cored plaque",
+      "negative",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "34781352-cd4a-4d85-a861-63b3d8b82b50",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/34781352-cd4a-4d85-a861-63b3d8b82b50.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "Cored",
+      "Negative",
+      "Caa",
+      "Diffuse",
+      "none of the above"
+    ],
+    "correct_answer_idx": 3,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "2be9e4a2-77f1-4c79-8fac-81f55a268e37",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/2be9e4a2-77f1-4c79-8fac-81f55a268e37.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "cored plaque",
+      "cerebral amyloid angiopathy",
+      "diffuse plaque",
+      "negative",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "d29e507f-318e-4e81-a766-7c82d9e76426",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/d29e507f-318e-4e81-a766-7c82d9e76426.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "Diffuse",
+      "Caa",
+      "Negative",
+      "Cored",
+      "none of the above"
+    ],
+    "correct_answer_idx": 3,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "fbf23031-1b42-488c-926d-bee0d70ae3d1",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/fbf23031-1b42-488c-926d-bee0d70ae3d1.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "diffuse plaque",
+      "cored plaque",
+      "cerebral amyloid angiopathy",
+      "negative",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "703f6b59-b029-4fac-905a-89cddad8e433",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/703f6b59-b029-4fac-905a-89cddad8e433.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "Cored",
+      "Diffuse",
+      "Negative",
+      "Caa",
+      "none of the above"
+    ],
+    "correct_answer_idx": 2,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "8d1dafee-9be4-4490-ba76-e03a63d4e23d",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/8d1dafee-9be4-4490-ba76-e03a63d4e23d.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "diffuse plaque",
+      "cerebral amyloid angiopathy",
+      "cored plaque",
+      "negative",
+      "none of the above"
+    ],
+    "correct_answer_idx": 3,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "67cf03e3-50c1-4985-bcf1-225b6574afc5",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/67cf03e3-50c1-4985-bcf1-225b6574afc5.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "Caa",
+      "Negative",
+      "Diffuse",
+      "Cored",
+      "none of the above"
+    ],
+    "correct_answer_idx": 3,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "8f778ea0-e2e7-4383-9e56-0c2eb91b8077",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/8f778ea0-e2e7-4383-9e56-0c2eb91b8077.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "diffuse plaque",
+      "negative",
+      "cerebral amyloid angiopathy",
+      "cored plaque",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "6ec03823-99ea-4919-8353-528f70f2ba81",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/6ec03823-99ea-4919-8353-528f70f2ba81.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "Cored",
+      "Negative",
+      "Diffuse",
+      "Caa",
+      "none of the above"
+    ],
+    "correct_answer_idx": 3,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "ad94f855-8dbb-4215-bfb8-c714c901b280",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/ad94f855-8dbb-4215-bfb8-c714c901b280.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "Negative",
+      "Diffuse",
+      "Cored",
+      "Caa",
+      "none of the above"
+    ],
+    "correct_answer_idx": 2,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "4adc7348-369b-4f9c-b88a-99f7d5959845",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/4adc7348-369b-4f9c-b88a-99f7d5959845.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "Caa",
+      "Negative",
+      "Cored",
+      "Diffuse",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "a8e70fac-ac06-4817-a049-177591e9d59b",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/a8e70fac-ac06-4817-a049-177591e9d59b.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "negative",
+      "cerebral amyloid angiopathy",
+      "diffuse plaque",
+      "cored plaque",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "6cf23830-a1a1-4383-a2b2-8084ea50e71a",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/6cf23830-a1a1-4383-a2b2-8084ea50e71a.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "diffuse plaque",
+      "cerebral amyloid angiopathy",
+      "cored plaque",
+      "negative",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "aa85a51b-f203-4dd3-af9a-ff83e0806190",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/aa85a51b-f203-4dd3-af9a-ff83e0806190.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "Negative",
+      "Caa",
+      "Cored",
+      "Diffuse",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "0a17a92e-5730-4386-a163-750506f80b07",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/0a17a92e-5730-4386-a163-750506f80b07.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "Cored",
+      "Negative",
+      "Caa",
+      "Diffuse",
+      "none of the above"
+    ],
+    "correct_answer_idx": 3,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "9e110ee0-2a04-456f-9842-51a365095f26",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/9e110ee0-2a04-456f-9842-51a365095f26.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "cerebral amyloid angiopathy",
+      "negative",
+      "diffuse plaque",
+      "cored plaque",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "15f2fd9b-046b-4603-a19d-482f1381ef01",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/15f2fd9b-046b-4603-a19d-482f1381ef01.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "negative",
+      "cerebral amyloid angiopathy",
+      "cored plaque",
+      "diffuse plaque",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "848e8ae6-6193-4913-97e6-6fc43076b759",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/848e8ae6-6193-4913-97e6-6fc43076b759.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "Caa",
+      "Cored",
+      "Negative",
+      "Diffuse",
+      "none of the above"
+    ],
+    "correct_answer_idx": 2,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "56cf04c2-9908-43f3-96fc-91e8cdb74918",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/56cf04c2-9908-43f3-96fc-91e8cdb74918.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "Diffuse",
+      "Cored",
+      "Negative",
+      "Caa",
+      "none of the above"
+    ],
+    "correct_answer_idx": 3,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "deb1d83c-ec7f-4320-ad7f-aa089dbf4a45",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/deb1d83c-ec7f-4320-ad7f-aa089dbf4a45.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "Caa",
+      "Cored",
+      "Negative",
+      "Diffuse",
+      "none of the above"
+    ],
+    "correct_answer_idx": 2,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "b2ae0972-b8c5-4854-9006-e6653de0e001",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/b2ae0972-b8c5-4854-9006-e6653de0e001.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "Negative",
+      "Caa",
+      "Diffuse",
+      "Cored",
+      "none of the above"
+    ],
+    "correct_answer_idx": 2,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "8ae0a268-8f8e-4b97-9a13-ee9522078af6",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/8ae0a268-8f8e-4b97-9a13-ee9522078af6.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "cerebral amyloid angiopathy",
+      "negative",
+      "cored plaque",
+      "diffuse plaque",
+      "none of the above"
+    ],
+    "correct_answer_idx": 3,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "48149a91-8caa-4445-8fa4-5af0a5264a08",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/48149a91-8caa-4445-8fa4-5af0a5264a08.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "Negative",
+      "Cored",
+      "Diffuse",
+      "Caa",
+      "none of the above"
+    ],
+    "correct_answer_idx": 3,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "52556cb3-5bab-4d0c-b9db-cbea05f7c25f",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/52556cb3-5bab-4d0c-b9db-cbea05f7c25f.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "Negative",
+      "Caa",
+      "Diffuse",
+      "Cored",
+      "none of the above"
+    ],
+    "correct_answer_idx": 3,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "9bafca8c-594f-4115-b6ab-d4c50f24dc1e",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/9bafca8c-594f-4115-b6ab-d4c50f24dc1e.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "Caa",
+      "Diffuse",
+      "Cored",
+      "Negative",
+      "none of the above"
+    ],
+    "correct_answer_idx": 3,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "aa66ea28-4f66-4dac-abef-0995bdbf6b9f",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/aa66ea28-4f66-4dac-abef-0995bdbf6b9f.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "Diffuse",
+      "Negative",
+      "Caa",
+      "Cored",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "3b96dad7-f1f5-4336-a3e4-101442f6bfd0",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/3b96dad7-f1f5-4336-a3e4-101442f6bfd0.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "Cored",
+      "Caa",
+      "Negative",
+      "Diffuse",
+      "none of the above"
+    ],
+    "correct_answer_idx": 2,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "d343bb5a-8c4a-4ab7-b8a6-b26b5d15efbd",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/d343bb5a-8c4a-4ab7-b8a6-b26b5d15efbd.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "cerebral amyloid angiopathy",
+      "diffuse plaque",
+      "cored plaque",
+      "negative",
+      "none of the above"
+    ],
+    "correct_answer_idx": 2,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "02145d4e-e8a6-4739-874f-bf8d03730515",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/02145d4e-e8a6-4739-874f-bf8d03730515.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "cerebral amyloid angiopathy",
+      "negative",
+      "diffuse plaque",
+      "cored plaque",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "aee37be9-cacd-40f2-83d5-3b3bf43abdd4",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/aee37be9-cacd-40f2-83d5-3b3bf43abdd4.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "Diffuse",
+      "Caa",
+      "Cored",
+      "Negative",
+      "none of the above"
+    ],
+    "correct_answer_idx": 2,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "7487a493-0159-4c9b-96fe-d8d05e398a1c",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/7487a493-0159-4c9b-96fe-d8d05e398a1c.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "Negative",
+      "Diffuse",
+      "Caa",
+      "Cored",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "106db987-7413-4142-9556-92c332ab538b",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/106db987-7413-4142-9556-92c332ab538b.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "Diffuse",
+      "Negative",
+      "Caa",
+      "Cored",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "3fd30223-3dc7-4f0b-a26a-92894658544d",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/3fd30223-3dc7-4f0b-a26a-92894658544d.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "Cored",
+      "Diffuse",
+      "Caa",
+      "Negative",
+      "none of the above"
+    ],
+    "correct_answer_idx": 2,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "c40f344b-ca8b-4153-8c03-d91c2537b7cb",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/c40f344b-ca8b-4153-8c03-d91c2537b7cb.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "Cored",
+      "Caa",
+      "Diffuse",
+      "Negative",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "2dbb8528-3974-4e2d-919b-a5ba7438eb71",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/2dbb8528-3974-4e2d-919b-a5ba7438eb71.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "Diffuse",
+      "Negative",
+      "Cored",
+      "Caa",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "effd3c2d-295d-42ac-89e3-20f6c33cd578",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/effd3c2d-295d-42ac-89e3-20f6c33cd578.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "Cored",
+      "Diffuse",
+      "Negative",
+      "Caa",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "0867568d-458a-49c8-ba5e-7908ac03b1ea",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/0867568d-458a-49c8-ba5e-7908ac03b1ea.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "cored plaque",
+      "negative",
+      "cerebral amyloid angiopathy",
+      "diffuse plaque",
+      "none of the above"
+    ],
+    "correct_answer_idx": 3,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "6a2961ce-956d-4085-bf04-c855b1f7569e",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/6a2961ce-956d-4085-bf04-c855b1f7569e.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "Cored",
+      "Caa",
+      "Diffuse",
+      "Negative",
+      "none of the above"
+    ],
+    "correct_answer_idx": 3,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "83189d6c-7d23-4801-a3fc-fb30778a7975",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/83189d6c-7d23-4801-a3fc-fb30778a7975.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "negative",
+      "cerebral amyloid angiopathy",
+      "cored plaque",
+      "diffuse plaque",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "74aaccbc-36b5-442d-90ad-2b7fb9f8fa40",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/74aaccbc-36b5-442d-90ad-2b7fb9f8fa40.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "Diffuse",
+      "Caa",
+      "Negative",
+      "Cored",
+      "none of the above"
+    ],
+    "correct_answer_idx": 3,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "9cb7e266-c9eb-477a-aa5b-55bd1c58ac11",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/9cb7e266-c9eb-477a-aa5b-55bd1c58ac11.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "cerebral amyloid angiopathy",
+      "diffuse plaque",
+      "cored plaque",
+      "negative",
+      "none of the above"
+    ],
+    "correct_answer_idx": 2,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "74259e23-c418-4b21-9846-8d83a247cc78",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/74259e23-c418-4b21-9846-8d83a247cc78.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "cored plaque",
+      "cerebral amyloid angiopathy",
+      "negative",
+      "diffuse plaque",
+      "none of the above"
+    ],
+    "correct_answer_idx": 3,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "ae0e6f03-f0fa-49b0-ba22-1dc0e0712a50",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/ae0e6f03-f0fa-49b0-ba22-1dc0e0712a50.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "cored plaque",
+      "cerebral amyloid angiopathy",
+      "diffuse plaque",
+      "negative",
+      "none of the above"
+    ],
+    "correct_answer_idx": 2,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "885f8ef4-6de1-4ebc-a3c2-ccec04bd41dc",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/885f8ef4-6de1-4ebc-a3c2-ccec04bd41dc.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "cerebral amyloid angiopathy",
+      "negative",
+      "cored plaque",
+      "diffuse plaque",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "9c448b16-2f91-44bd-90ed-e4f3cb24294a",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/9c448b16-2f91-44bd-90ed-e4f3cb24294a.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "Cored",
+      "Diffuse",
+      "Caa",
+      "Negative",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "da6f434b-8e20-4ec0-bb9c-d5d2a25ee9f1",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/da6f434b-8e20-4ec0-bb9c-d5d2a25ee9f1.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "cored plaque",
+      "negative",
+      "cerebral amyloid angiopathy",
+      "diffuse plaque",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "97d24670-029c-42c2-bf0d-bddbb6dd8535",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/97d24670-029c-42c2-bf0d-bddbb6dd8535.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "Cored",
+      "Caa",
+      "Diffuse",
+      "Negative",
+      "none of the above"
+    ],
+    "correct_answer_idx": 3,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "d903bf79-ffe9-4b51-9add-0f8c6d7956a3",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/d903bf79-ffe9-4b51-9add-0f8c6d7956a3.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "cored plaque",
+      "diffuse plaque",
+      "cerebral amyloid angiopathy",
+      "negative",
+      "none of the above"
+    ],
+    "correct_answer_idx": 3,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "6e274ad5-c836-4a58-b46a-3e211693eade",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/6e274ad5-c836-4a58-b46a-3e211693eade.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "Negative",
+      "Cored",
+      "Caa",
+      "Diffuse",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "a8924a27-2ba6-4bcd-aaaa-5711db19027e",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/a8924a27-2ba6-4bcd-aaaa-5711db19027e.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "negative",
+      "cored plaque",
+      "diffuse plaque",
+      "cerebral amyloid angiopathy",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "041c6838-c113-448d-b657-c85323d0e9c4",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/041c6838-c113-448d-b657-c85323d0e9c4.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "Negative",
+      "Caa",
+      "Cored",
+      "Diffuse",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "f70a9e82-a261-4a02-bc76-6f8132390a77",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/f70a9e82-a261-4a02-bc76-6f8132390a77.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "cerebral amyloid angiopathy",
+      "cored plaque",
+      "diffuse plaque",
+      "negative",
+      "none of the above"
+    ],
+    "correct_answer_idx": 3,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "fbf7ac16-f943-4e7e-8eae-77db8a36ef03",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/fbf7ac16-f943-4e7e-8eae-77db8a36ef03.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "Negative",
+      "Diffuse",
+      "Caa",
+      "Cored",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "31d56e43-fa07-4809-aa56-090536e0eac7",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/31d56e43-fa07-4809-aa56-090536e0eac7.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "Cored",
+      "Caa",
+      "Negative",
+      "Diffuse",
+      "none of the above"
+    ],
+    "correct_answer_idx": 3,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "4522ebef-e92e-4739-a525-d62988bb5ac7",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/4522ebef-e92e-4739-a525-d62988bb5ac7.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "Caa",
+      "Cored",
+      "Negative",
+      "Diffuse",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "34fd605f-dfbd-4d7a-b2e4-e3f25b213982",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/34fd605f-dfbd-4d7a-b2e4-e3f25b213982.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "Caa",
+      "Diffuse",
+      "Cored",
+      "Negative",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "24ce177d-e65c-41eb-b6f1-de550266f62d",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/24ce177d-e65c-41eb-b6f1-de550266f62d.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "Diffuse",
+      "Cored",
+      "Caa",
+      "Negative",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "50b80464-6b67-49d6-a4a7-4f5aba04bbe0",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/50b80464-6b67-49d6-a4a7-4f5aba04bbe0.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "cored plaque",
+      "diffuse plaque",
+      "negative",
+      "cerebral amyloid angiopathy",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "b60de463-f0fc-48a9-be84-b2d057b8c945",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/b60de463-f0fc-48a9-be84-b2d057b8c945.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "Negative",
+      "Caa",
+      "Cored",
+      "Diffuse",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "a88cc043-2be7-4a2e-aed6-8667868f7ae8",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/a88cc043-2be7-4a2e-aed6-8667868f7ae8.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "Diffuse",
+      "Cored",
+      "Caa",
+      "Negative",
+      "none of the above"
+    ],
+    "correct_answer_idx": 3,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "f60369a0-9d2a-467e-aea4-63b61886f8ec",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/f60369a0-9d2a-467e-aea4-63b61886f8ec.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "cored plaque",
+      "diffuse plaque",
+      "negative",
+      "cerebral amyloid angiopathy",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "95ba7d24-3fa0-427a-9903-e09480113ae2",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/95ba7d24-3fa0-427a-9903-e09480113ae2.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "Negative",
+      "Cored",
+      "Caa",
+      "Diffuse",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "e9bd085e-f4a8-4aaa-8e3e-f5adebc69f80",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/e9bd085e-f4a8-4aaa-8e3e-f5adebc69f80.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "Caa",
+      "Diffuse",
+      "Cored",
+      "Negative",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "c82df5cc-cc50-45c8-a420-baf4c0f5906c",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/c82df5cc-cc50-45c8-a420-baf4c0f5906c.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "cerebral amyloid angiopathy",
+      "cored plaque",
+      "negative",
+      "diffuse plaque",
+      "none of the above"
+    ],
+    "correct_answer_idx": 3,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "2f77cab2-126c-46ce-b753-47d2c38de2f3",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/2f77cab2-126c-46ce-b753-47d2c38de2f3.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "Diffuse",
+      "Caa",
+      "Negative",
+      "Cored",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "2560e5cb-aaf8-4852-925e-c54faf6ba57b",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/2560e5cb-aaf8-4852-925e-c54faf6ba57b.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "Cored",
+      "Diffuse",
+      "Negative",
+      "Caa",
+      "none of the above"
+    ],
+    "correct_answer_idx": 3,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "6aed9921-e584-4336-a17d-594090e91e2c",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/6aed9921-e584-4336-a17d-594090e91e2c.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "diffuse plaque",
+      "cerebral amyloid angiopathy",
+      "cored plaque",
+      "negative",
+      "none of the above"
+    ],
+    "correct_answer_idx": 2,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "15ce9378-f782-4a79-bd1f-325d757ca2fd",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/15ce9378-f782-4a79-bd1f-325d757ca2fd.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "Cored",
+      "Diffuse",
+      "Caa",
+      "Negative",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "4522ebef-e92e-4739-a525-d62988bb5ac7",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/4522ebef-e92e-4739-a525-d62988bb5ac7.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "Caa",
+      "Diffuse",
+      "Negative",
+      "Cored",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "a1f59cd1-2a5b-40a4-8295-867a06b9b5be",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/a1f59cd1-2a5b-40a4-8295-867a06b9b5be.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "Cored",
+      "Diffuse",
+      "Caa",
+      "Negative",
+      "none of the above"
+    ],
+    "correct_answer_idx": 2,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "83a8ccd0-6ab0-40ab-9557-dd7beb68e5a0",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/83a8ccd0-6ab0-40ab-9557-dd7beb68e5a0.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "cored plaque",
+      "cerebral amyloid angiopathy",
+      "diffuse plaque",
+      "negative",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "2353cb3c-e164-4ebb-9f73-5f91b5482570",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/2353cb3c-e164-4ebb-9f73-5f91b5482570.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "Negative",
+      "Caa",
+      "Cored",
+      "Diffuse",
+      "none of the above"
+    ],
+    "correct_answer_idx": 3,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "82feb7bd-14bf-48e4-bb0f-232cd5944686",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/82feb7bd-14bf-48e4-bb0f-232cd5944686.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "Cored",
+      "Diffuse",
+      "Negative",
+      "Caa",
+      "none of the above"
+    ],
+    "correct_answer_idx": 2,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "28b7681c-63b5-4b58-91d1-e29f4f1750f9",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/28b7681c-63b5-4b58-91d1-e29f4f1750f9.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "Negative",
+      "Diffuse",
+      "Caa",
+      "Cored",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "53ed9ed2-b9ee-46a6-a048-5e4dc1b65932",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/53ed9ed2-b9ee-46a6-a048-5e4dc1b65932.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "cored plaque",
+      "negative",
+      "diffuse plaque",
+      "cerebral amyloid angiopathy",
+      "none of the above"
+    ],
+    "correct_answer_idx": 2,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "02e51ae3-6819-49f2-b4bb-dae212105e6b",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/02e51ae3-6819-49f2-b4bb-dae212105e6b.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "diffuse plaque",
+      "cerebral amyloid angiopathy",
+      "negative",
+      "cored plaque",
+      "none of the above"
+    ],
+    "correct_answer_idx": 2,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "0db4bd6a-015e-4c23-a175-a333e1448f54",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/0db4bd6a-015e-4c23-a175-a333e1448f54.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "cerebral amyloid angiopathy",
+      "cored plaque",
+      "negative",
+      "diffuse plaque",
+      "none of the above"
+    ],
+    "correct_answer_idx": 2,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "1bb52dd1-0310-433d-8c8e-7488ebf8b05e",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/1bb52dd1-0310-433d-8c8e-7488ebf8b05e.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "Diffuse",
+      "Cored",
+      "Negative",
+      "Caa",
+      "none of the above"
+    ],
+    "correct_answer_idx": 2,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "d9ba4507-9ea1-48a8-952b-b4a6d6ecdaed",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/d9ba4507-9ea1-48a8-952b-b4a6d6ecdaed.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "diffuse plaque",
+      "cerebral amyloid angiopathy",
+      "cored plaque",
+      "negative",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "e349ded4-9283-47f2-ab04-546e26d66ad3",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/e349ded4-9283-47f2-ab04-546e26d66ad3.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "Diffuse",
+      "Cored",
+      "Negative",
+      "Caa",
+      "none of the above"
+    ],
+    "correct_answer_idx": 3,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "235e2350-27d3-4d79-b74e-e7a5c6587d52",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/235e2350-27d3-4d79-b74e-e7a5c6587d52.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "Negative",
+      "Cored",
+      "Caa",
+      "Diffuse",
+      "none of the above"
+    ],
+    "correct_answer_idx": 2,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "d50bc7d4-4b46-44df-afb8-a2743eca6172",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/d50bc7d4-4b46-44df-afb8-a2743eca6172.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "Diffuse",
+      "Cored",
+      "Caa",
+      "Negative",
+      "none of the above"
+    ],
+    "correct_answer_idx": 3,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "10e0fb35-538b-44ff-be79-ae140e155e2c",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/10e0fb35-538b-44ff-be79-ae140e155e2c.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "Caa",
+      "Cored",
+      "Negative",
+      "Diffuse",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "eaf5f5c5-5e75-4cb8-a509-f161477239ff",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/eaf5f5c5-5e75-4cb8-a509-f161477239ff.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "Diffuse",
+      "Cored",
+      "Caa",
+      "Negative",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "b0968fbf-0f60-4e87-a2eb-e251d508c390",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/b0968fbf-0f60-4e87-a2eb-e251d508c390.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "negative",
+      "diffuse plaque",
+      "cored plaque",
+      "cerebral amyloid angiopathy",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "da97e471-3a7e-4f18-a46d-9ed1d946e46e",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/da97e471-3a7e-4f18-a46d-9ed1d946e46e.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "Diffuse",
+      "Caa",
+      "Negative",
+      "Cored",
+      "none of the above"
+    ],
+    "correct_answer_idx": 3,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "b403507e-1923-4003-9d4a-dc4150f5711c",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/b403507e-1923-4003-9d4a-dc4150f5711c.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "Negative",
+      "Caa",
+      "Diffuse",
+      "Cored",
+      "none of the above"
+    ],
+    "correct_answer_idx": 2,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "f86572b7-3f5d-4489-b46d-e89270172805",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/f86572b7-3f5d-4489-b46d-e89270172805.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "Negative",
+      "Cored",
+      "Caa",
+      "Diffuse",
+      "none of the above"
+    ],
+    "correct_answer_idx": 2,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "794c0dfe-f128-4f34-b786-3da4bd65e1c8",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/794c0dfe-f128-4f34-b786-3da4bd65e1c8.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "Negative",
+      "Caa",
+      "Diffuse",
+      "Cored",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  },
+  {
+    "image_id": "ae78649e-956e-4642-a930-61d681f38069",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/neuropathology/images/ae78649e-956e-4642-a930-61d681f38069.png",
+    "question": "IHC stained light micrograph of extracellular amyloid-beta deposition in the human brain tissue. Based on the image, what is the most likely amyloid beta morphology pattern?",
+    "answer_options": [
+      "Cored",
+      "Caa",
+      "Diffuse",
+      "Negative",
+      "none of the above"
+    ],
+    "correct_answer_idx": 3,
+    "question_type": "classification",
+    "organ_domain": "neuropathology",
+    "task_type": "fine"
+  }
+]

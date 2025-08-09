@@ -33,6 +33,17 @@ class DataPreprocessor:
         self.task_types = self.config['data']['task_types']
         self.question_types = self.config['data']['question_types']
         
+        # Define fine types explicitly; treat all others as coarse (avoids missing keys like 'subdomain')
+        self.fine_types = ['classification']
+        
+        # Train subset sizes (fractions of TOTAL dataset)
+        self.train_subsplits = [0.10, 0.25, 0.50, 0.70]
+        
+        # Fixed split fractions
+        self.fixed_val_frac = 0.15
+        self.fixed_test_frac = 0.15
+        self.fixed_train_frac = 0.70
+        
         # Set random seed for reproducibility
         random.seed(self.random_seed)
         
@@ -65,60 +76,91 @@ class DataPreprocessor:
             workspace = '/workspace/eVLLM_Sidd/eVLLM_microBench'
             image_file = metadata.get('image', '')
             image_path = f"{workspace}/organData/{task_type}Grain/{organ_domain}/images/{image_file}"
-            # workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/0a304668-bc79-4428-83e0-bcb09ae55e76.png
             
-            # Handle both coarse and fine-grained formats
-            if 'captions' in item:
-                # Coarse-grained format
-                captions = item['captions']
-                for question_type in self.question_types:
-                    if f"{question_type}_0" in captions:
-                        q_data = captions[f"{question_type}_0"]
-                        
-                        sample = {
-                            'image_id': image_id,
-                            'image_path': image_path,
-                            'question': q_data['question'],
-                            'answer_options': q_data['options'],
-                            'correct_answer_idx': int(q_data['answer_idx']),
-                            'question_type': question_type,
-                            'organ_domain': organ_domain,
-                            'task_type': task_type
-                        }
-                        flattened_data.append(sample)
-            
-            elif 'custom_metadata' in item and 'questions' in item['custom_metadata']:
-                # Fine-grained format
-                questions = item['custom_metadata']['questions']
-                for question_type, q_data in questions.items():
-                    sample = {
-                        'image_id': image_id,
-                        'image_path': image_path,
+            # Merge questions from custom_metadata['questions'] and captions
+            merged_questions: Dict[str, Dict[str, Any]] = {}
+            # Prefer custom_metadata['questions'] if present
+            if 'custom_metadata' in item and 'questions' in item['custom_metadata']:
+                for qtype, q_data in item['custom_metadata']['questions'].items():
+                    merged_questions[qtype] = {
                         'question': q_data.get('question', ''),
-                        'answer_options': q_data.get('options', []),
-                        'correct_answer_idx': int(q_data.get('answer_idx', 0)),
-                        'question_type': question_type,
-                        'organ_domain': organ_domain,
-                        'task_type': task_type
+                        'options': q_data.get('options', []),
+                        'answer_idx': int(q_data.get('answer_idx', 0)),
                     }
-                    flattened_data.append(sample)
+            # Add any remaining from captions not already present
+            if 'captions' in item:
+                for cap_key, q_data in item['captions'].items():
+                    qtype = str(cap_key).split('_')[0]
+                    if qtype not in merged_questions:
+                        merged_questions[qtype] = {
+                            'question': q_data.get('question', ''),
+                            'options': q_data.get('options', []),
+                            'answer_idx': int(q_data.get('answer_idx', 0)),
+                        }
+            
+            # Emit one sample per merged question type
+            for question_type, q_norm in merged_questions.items():
+                sample = {
+                    'image_id': image_id,
+                    'image_path': image_path,
+                    'question': q_norm.get('question', ''),
+                    'answer_options': q_norm.get('options', []),
+                    'correct_answer_idx': int(q_norm.get('answer_idx', 0)),
+                    'question_type': question_type,
+                    'organ_domain': organ_domain,
+                    'task_type': task_type
+                }
+                flattened_data.append(sample)
         
         return flattened_data
     
-    def create_stratified_splits(self, data: List[Dict], split_ratio: float) -> Tuple[List[Dict], List[Dict]]:
-        """Create stratified train/validation split based on question type."""
-        # Convert to DataFrame for easier manipulation
+    # Helper: filter flattened data by task granularity
+    def _filter_by_granularity(self, data: List[Dict], granularity: str) -> List[Dict]:
+        if granularity == 'fine':
+            return [d for d in data if d.get('question_type') in self.fine_types]
+        elif granularity == 'coarse':
+            return [d for d in data if d.get('question_type') not in self.fine_types]
+        else:
+            return data
+    
+    # Helper: perform fixed 70/15/15 split (stratified by question_type)
+    def _fixed_split(self, data: List[Dict]) -> Tuple[List[Dict], List[Dict], List[Dict]]:
+        if len(data) == 0:
+            return [], [], []
         df = pd.DataFrame(data)
-        
-        # Create stratified split based on question_type
-        train_data, val_data = train_test_split(
-            df, 
-            test_size=1-split_ratio, 
+        # First: split test (15%)
+        train_val_df, test_df = train_test_split(
+            df,
+            test_size=self.fixed_test_frac,
             random_state=self.random_seed,
-            stratify=df['question_type']
+            stratify=df['question_type'] if df['question_type'].nunique() > 1 else None
         )
-        
-        return train_data.to_dict('records'), val_data.to_dict('records')
+        # Second: split val from train_val to be 15% of total
+        val_frac_of_train_val = self.fixed_val_frac / (1.0 - self.fixed_test_frac)
+        train_df, val_df = train_test_split(
+            train_val_df,
+            test_size=val_frac_of_train_val,
+            random_state=self.random_seed,
+            stratify=train_val_df['question_type'] if train_val_df['question_type'].nunique() > 1 else None
+        )
+        return train_df.to_dict('records'), val_df.to_dict('records'), test_df.to_dict('records')
+    
+    # Helper: sample a stratified subset of a target size from a pool
+    def _sample_stratified_count(self, pool: List[Dict], target_count: int) -> List[Dict]:
+        if target_count <= 0 or len(pool) == 0:
+            return []
+        df = pd.DataFrame(pool)
+        if target_count >= len(df):
+            return df.to_dict('records')
+        # Use train_test_split to sample target_count rows stratified by question_type when possible
+        test_size = target_count / len(df)
+        _, subset = train_test_split(
+            df,
+            test_size=test_size,
+            random_state=self.random_seed,
+            stratify=df['question_type'] if df['question_type'].nunique() > 1 else None
+        )
+        return subset.to_dict('records')
     
     def save_processed_data(self, data: List[Dict], filename: str):
         """Save processed data to JSON file."""
@@ -127,117 +169,56 @@ class DataPreprocessor:
             json.dump(data, f, indent=2, ensure_ascii=False)
         logger.info(f"Saved processed data to {output_path}")
     
-    # def save_split_data(self, train_data: List[Dict], val_data: List[Dict], 
-    #                    organ_domain: str, task_type: str, split_ratio: str):
-    #     """Save train/validation splits."""
-    #     split_dir = self.splits_dir / organ_domain / task_type / split_ratio
-    #     split_dir.mkdir(parents=True, exist_ok=True)
-        
-    #     # Save train data
-    #     train_path = split_dir / 'train.json'
-    #     with open(train_path, 'w', encoding='utf-8') as f:
-    #         json.dump(train_data, f, indent=2, ensure_ascii=False)
-        
-    #     # Save validation data
-    #     val_path = split_dir / 'val.json'
-    #     with open(val_path, 'w', encoding='utf-8') as f:
-    #         json.dump(val_data, f, indent=2, ensure_ascii=False)
-        
-    #     logger.info(f"Saved splits to {split_dir}")
-    #     logger.info(f"Train samples: {len(train_data)}, Val samples: {len(val_data)}")
-
-    def save_split_data(self, train_data: List[Dict], val_data: List[Dict], test_data: List[Dict],
-                       organ_domain: str, task_type: str, split_ratio: str):
-        """Save train/validation/test splits."""
-        split_dir = self.splits_dir / organ_domain / task_type / split_ratio
-        split_dir.mkdir(parents=True, exist_ok=True)
-        
-        # Save train data
-        train_path = split_dir / 'train.json'
-        with open(train_path, 'w', encoding='utf-8') as f:
-            json.dump(train_data, f, indent=2, ensure_ascii=False)
-        
-        # Save validation data
-        val_path = split_dir / 'val.json'
-        with open(val_path, 'w', encoding='utf-8') as f:
+    def _save_fixed(self, organ_domain: str, granularity: str, val_data: List[Dict], test_data: List[Dict]):
+        fixed_dir = self.splits_dir / organ_domain / granularity / 'fixed'
+        fixed_dir.mkdir(parents=True, exist_ok=True)
+        with open(fixed_dir / 'val.json', 'w', encoding='utf-8') as f:
             json.dump(val_data, f, indent=2, ensure_ascii=False)
-        
-        # Save test data
-        test_path = split_dir / 'test.json'
-        with open(test_path, 'w', encoding='utf-8') as f:
+        with open(fixed_dir / 'test.json', 'w', encoding='utf-8') as f:
             json.dump(test_data, f, indent=2, ensure_ascii=False)
-        
-        logger.info(f"Saved splits to {split_dir}")
-        logger.info(f"Train samples: {len(train_data)}, Val samples: {len(val_data)}, Test samples: {len(test_data)}")
+        logger.info(f"Saved fixed splits to {fixed_dir}")
     
+    def _save_train_subset(self, organ_domain: str, granularity: str, ratio: float, train_subset: List[Dict]):
+        ratio_dir = self.splits_dir / organ_domain / granularity / 'trains' / f"{ratio:.2f}"
+        ratio_dir.mkdir(parents=True, exist_ok=True)
+        with open(ratio_dir / 'train.json', 'w', encoding='utf-8') as f:
+            json.dump(train_subset, f, indent=2, ensure_ascii=False)
+        logger.info(f"Saved train subset ({ratio:.2f}) to {ratio_dir}")
     
-    # def process_organ_domain(self, organ_domain: str):
-    #     """Process data for a specific organ domain."""
-    #     logger.info(f"Processing {organ_domain} domain...")
+    def _build_and_save_for_granularity(self, organ_domain: str, granularity: str, source_flattened: List[Dict]):
+        """Build fixed splits and train subsets for a specific granularity."""
+        # Fixed 70/15/15 for this granularity
+        train_pool, val_data, test_data = self._fixed_split(source_flattened)
+        self._save_fixed(organ_domain, granularity, val_data, test_data)
         
-    #     for task_type in self.task_types:
-    #         logger.info(f"Processing {task_type}-grained tasks...")
-            
-    #         # Define input file path
-    #         if task_type == 'coarse':
-    #             input_file = f"organData/coarseGrain/{organ_domain}/test_200.jsonl"
-    #         else:
-    #             input_file = f"organData/fineGrain/{organ_domain}/test_200.jsonl"
-            
-    #         if not os.path.exists(input_file):
-    #             logger.warning(f"File not found: {input_file}")
-    #             continue
-            
-    #         # Load and flatten data
-    #         raw_data = self.load_jsonl_data(input_file)
-    #         flattened_data = self.flatten_data(raw_data, organ_domain, task_type)
-            
-    #         logger.info(f"Flattened {len(flattened_data)} samples for {organ_domain} {task_type}")
-            
-    #         # Create splits for different ratios
-    #         for split_ratio in self.splits:
-    #             logger.info(f"Creating {split_ratio*100}% split...")
-                
-    #             # Create stratified split
-    #             train_data, val_data = self.create_stratified_splits(flattened_data, split_ratio)
-                
-    #             # Save splits
-    #             self.save_split_data(train_data, val_data, organ_domain, task_type, str(split_ratio))
-                
-    #             # Save full processed data (for reference)
-    #             full_filename = f"{organ_domain}_{task_type}_processed.json"
-    #             self.save_processed_data(flattened_data, full_filename)
-
-
-    # def process_organ_domain(self, organ_domain: str):
-    #     """Process data for a specific organ domain."""
-    #     logger.info(f"Processing {organ_domain} domain...")
+        # Train subsets: sizes are fractions of TOTAL dataset length
+        total_n = len(source_flattened)
+        for r in self.train_subsplits:
+            target_count = int(round(r * total_n))
+            subset = self._sample_stratified_count(train_pool, target_count)
+            self._save_train_subset(organ_domain, granularity, r, subset)
+    
+    def _build_and_save_combined(self, organ_domain: str, coarse_flat: List[Dict], fine_flat: List[Dict]):
+        """Build combined fixed and train subsets ensuring 70/15/15 per granularity in fixed sets."""
+        # Fixed per granularity
+        coarse_train, coarse_val, coarse_test = self._fixed_split(coarse_flat)
+        fine_train, fine_val, fine_test = self._fixed_split(fine_flat)
         
-    #     # Load both coarse and fine data
-    #     coarse_file = f"organData/coarseGrain/{organ_domain}/test_200.jsonl"
-    #     fine_file = f"organData/fineGrain/{organ_domain}/test_200.jsonl"
+        # Combined fixed are unions of per-granularity fixed
+        combined_val = coarse_val + fine_val
+        combined_test = coarse_test + fine_test
+        combined_train_pool = coarse_train + fine_train
         
-    #     combined_data = []
+        # Save fixed
+        self._save_fixed(organ_domain, 'combined', combined_val, combined_test)
         
-    #     # Process coarse data
-    #     if os.path.exists(coarse_file):
-    #         raw_coarse = self.load_jsonl_data(coarse_file)
-    #         coarse_flattened = self.flatten_data(raw_coarse, organ_domain, 'coarse')
-    #         combined_data.extend(coarse_flattened)
-        
-    #     # Process fine data  
-    #     if os.path.exists(fine_file):
-    #         raw_fine = self.load_jsonl_data(fine_file)
-    #         fine_flattened = self.flatten_data(raw_fine, organ_domain, 'fine')
-    #         combined_data.extend(fine_flattened)
-        
-    #     logger.info(f"Combined {len(combined_data)} samples for {organ_domain}")
-        
-    #     # Create splits for different ratios
-    #     for split_ratio in self.splits:
-    #         train_data, val_data = self.create_stratified_splits(combined_data, split_ratio)
-    #         self.save_split_data(train_data, val_data, organ_domain, 'combined', str(split_ratio))
-
+        # Train subsets sampled from combined train pool, sizes are fractions of TOTAL combined size
+        total_n = len(coarse_flat) + len(fine_flat)
+        for r in self.train_subsplits:
+            target_count = int(round(r * total_n))
+            subset = self._sample_stratified_count(combined_train_pool, target_count)
+            self._save_train_subset(organ_domain, 'combined', r, subset)
+    
     def process_organ_domain(self, organ_domain: str):
         """Process data for a specific organ domain."""
         logger.info(f"Processing {organ_domain} domain...")
@@ -246,29 +227,35 @@ class DataPreprocessor:
         coarse_file = f"organData/coarseGrain/{organ_domain}/test_200.jsonl"
         fine_file = f"organData/fineGrain/{organ_domain}/test_200.jsonl"
         
-        combined_data = []
+        coarse_flat = []
+        fine_flat = []
         
         # Process coarse data
         if os.path.exists(coarse_file):
             raw_coarse = self.load_jsonl_data(coarse_file)
-            coarse_flattened = self.flatten_data(raw_coarse, organ_domain, 'coarse')
-            combined_data.extend(coarse_flattened)
+            coarse_all = self.flatten_data(raw_coarse, organ_domain, 'coarse')
+            coarse_flat = self._filter_by_granularity(coarse_all, 'coarse')
+            self.save_processed_data(coarse_flat, f"{organ_domain}_coarse_processed.json")
+        else:
+            logger.warning(f"File not found: {coarse_file}")
         
         # Process fine data  
         if os.path.exists(fine_file):
             raw_fine = self.load_jsonl_data(fine_file)
-            fine_flattened = self.flatten_data(raw_fine, organ_domain, 'fine')
-            combined_data.extend(fine_flattened)
+            fine_all = self.flatten_data(raw_fine, organ_domain, 'fine')
+            fine_flat = self._filter_by_granularity(fine_all, 'fine')
+            self.save_processed_data(fine_flat, f"{organ_domain}_fine_processed.json")
+        else:
+            logger.warning(f"File not found: {fine_file}")
         
-        logger.info(f"Combined {len(combined_data)} samples for {organ_domain}")
+        # Combined flattened (reference only)
+        combined_flat = coarse_flat + fine_flat
+        self.save_processed_data(combined_flat, f"{organ_domain}_combined_processed.json")
         
-        # Create three-way splits (60/15/25)
-        train_data, val_data, test_data = self.create_three_way_splits(combined_data)
-        self.save_split_data(train_data, val_data, test_data, organ_domain, 'combined', '0.75')
-        
-        # Save full processed data (for reference)
-        full_filename = f"{organ_domain}_combined_processed.json"
-        self.save_processed_data(combined_data, full_filename)
+        # Build per-granularity outputs
+        self._build_and_save_for_granularity(organ_domain, 'coarse', coarse_flat)
+        self._build_and_save_for_granularity(organ_domain, 'fine', fine_flat)
+        self._build_and_save_combined(organ_domain, coarse_flat, fine_flat)
     
     def process_all_domains(self):
         """Process all organ domains."""
@@ -279,73 +266,43 @@ class DataPreprocessor:
         
         logger.info("Data preprocessing completed!")
     
-    # def generate_data_summary(self):
-    #     """Generate a summary of processed data."""
-    #     summary = {}
-        
-    #     for organ_domain in self.organ_domains:
-    #         summary[organ_domain] = {}
-            
-    #         for task_type in self.task_types:
-    #             summary[organ_domain][task_type] = {}
-                
-    #             for split_ratio in self.splits:
-    #                 split_dir = self.splits_dir / organ_domain / task_type / str(split_ratio)
-                    
-    #                 if split_dir.exists():
-    #                     train_path = split_dir / 'train.json'
-    #                     val_path = split_dir / 'val.json'
-                        
-    #                     if train_path.exists() and val_path.exists():
-    #                         with open(train_path, 'r') as f:
-    #                             train_data = json.load(f)
-    #                         with open(val_path, 'r') as f:
-    #                             val_data = json.load(f)
-                            
-    #                         summary[organ_domain][task_type][str(split_ratio)] = {
-    #                             'train_samples': len(train_data),
-    #                             'val_samples': len(val_data),
-    #                             'total_samples': len(train_data) + len(val_data)
-    #                         }
-        
-    #     # Save summary
-    #     summary_path = self.data_dir / 'data_summary.json'
-    #     with open(summary_path, 'w') as f:
-    #         json.dump(summary, f, indent=2)
-        
-    #     logger.info(f"Data summary saved to {summary_path}")
-    #     return summary
-
-
     def generate_data_summary(self):
         """Generate a summary of processed data."""
-        summary = {}
+        summary: Dict[str, Dict[str, Any]] = {}
+        tasks = ['combined', 'coarse', 'fine']
         
         for organ_domain in self.organ_domains:
             summary[organ_domain] = {}
-            
-            # Check for combined data
-            split_dir = self.splits_dir / organ_domain / 'combined' / '0.75'
-            
-            if split_dir.exists():
-                train_path = split_dir / 'train.json'
-                val_path = split_dir / 'val.json'
-                test_path = split_dir / 'test.json'
+            for task in tasks:
+                task_entry: Dict[str, Any] = {}
+                fixed_dir = self.splits_dir / organ_domain / task / 'fixed'
+                trains_dir = self.splits_dir / organ_domain / task / 'trains'
                 
-                if train_path.exists() and val_path.exists() and test_path.exists():
-                    with open(train_path, 'r') as f:
-                        train_data = json.load(f)
-                    with open(val_path, 'r') as f:
-                        val_data = json.load(f)
-                    with open(test_path, 'r') as f:
-                        test_data = json.load(f)
-                    
-                    summary[organ_domain]['combined'] = {
-                        'train_samples': len(train_data),
-                        'val_samples': len(val_data),
-                        'test_samples': len(test_data),
-                        'total_samples': len(train_data) + len(val_data) + len(test_data)
-                    }
+                fixed_counts = {'val': 0, 'test': 0}
+                if fixed_dir.exists():
+                    val_path = fixed_dir / 'val.json'
+                    test_path = fixed_dir / 'test.json'
+                    if val_path.exists():
+                        with open(val_path, 'r') as f:
+                            val_data = json.load(f)
+                        fixed_counts['val'] = len(val_data)
+                    if test_path.exists():
+                        with open(test_path, 'r') as f:
+                            test_data = json.load(f)
+                        fixed_counts['test'] = len(test_data)
+                
+                trains_counts: Dict[str, int] = {}
+                if trains_dir.exists():
+                    for r in self.train_subsplits:
+                        r_dir = trains_dir / f"{r:.2f}" / 'train.json'
+                        if r_dir.exists():
+                            with open(r_dir, 'r') as f:
+                                train_data = json.load(f)
+                            trains_counts[f"{r:.2f}"] = len(train_data)
+                
+                task_entry['fixed'] = fixed_counts
+                task_entry['trains'] = trains_counts
+                summary[organ_domain][task] = task_entry
         
         # Save summary
         summary_path = self.data_dir / 'data_summary.json'
@@ -356,69 +313,6 @@ class DataPreprocessor:
         return summary
 
 
-    def create_three_way_splits(self, data: List[Dict]) -> Tuple[List[Dict], List[Dict], List[Dict]]:
-        """Create train/validation/test splits with 60/15/25 ratio."""
-        df = pd.DataFrame(data)
-        
-        # Step 1: Split into test (25%) and train+val (75%)
-        train_val_data, test_data = train_test_split(
-            df, 
-            test_size=0.25,  # 25% for test
-            random_state=self.random_seed,
-            stratify=df['question_type']
-        )
-        
-        # Step 2: Split train+val into train (60%) and val (15%)
-        # Since train+val is 75% of total, we need 60/75 = 0.8 for train
-        train_data, val_data = train_test_split(
-            train_val_data,
-            test_size=0.2,  # 20% of 75% = 15% of total
-            random_state=self.random_seed,
-            stratify=train_val_data['question_type']
-        )
-        
-        logger.info(f"Split sizes: Train={len(train_data)}, Val={len(val_data)}, Test={len(test_data)}")
-        logger.info(f"Percentages: Train={len(train_data)/len(df)*100:.1f}%, Val={len(val_data)/len(df)*100:.1f}%, Test={len(test_data)/len(df)*100:.1f}%")
-        
-        return train_data.to_dict('records'), val_data.to_dict('records'), test_data.to_dict('records')
-
-        
-# def main():
-#     parser = argparse.ArgumentParser(description='Preprocess data for BioMedCLIP fine-tuning')
-#     parser.add_argument('--config', type=str, default='finetuning_supervised/configs/lora_config.yaml',
-#                        help='Path to configuration file')
-#     parser.add_argument('--organ-domain', type=str, default=None,
-#                        help='Process specific organ domain (optional)')
-    
-#     args = parser.parse_args()
-    
-#     # Initialize preprocessor
-#     preprocessor = DataPreprocessor(args.config)
-    
-#     if args.organ_domain:
-#         # Process specific organ domain
-#         if args.organ_domain in preprocessor.organ_domains:
-#             preprocessor.process_organ_domain(args.organ_domain)
-#         else:
-#             logger.error(f"Invalid organ domain: {args.organ_domain}")
-#             return
-#     else:
-#         # Process all domains
-#         preprocessor.process_all_domains()
-    
-#     # Generate summary
-#     summary = preprocessor.generate_data_summary()
-    
-#     # Print summary
-#     print("\n" + "="*50)
-#     print("DATA PREPROCESSING SUMMARY")
-#     print("="*50)
-#     for organ_domain, task_data in summary.items():
-#         print(f"\n{organ_domain.upper()}:")
-#         for task_type, split_data in task_data.items():
-#             print(f"  {task_type}-grained:")
-#             for split_ratio, counts in split_data.items():
-#                 print(f"    {split_ratio}% split: {counts['train_samples']} train, {counts['val_samples']} val")
 def main():
     parser = argparse.ArgumentParser(description='Preprocess data for BioMedCLIP fine-tuning')
     parser.add_argument('--config', type=str, default='finetuning_supervised/configs/lora_config.yaml',
@@ -453,8 +347,12 @@ def main():
         print(f"\n{organ_domain.upper()}:")
         for task_type, counts in task_data.items():
             print(f"  {task_type}:")
-            print(f"    Train: {counts['train_samples']}, Val: {counts['val_samples']}, Test: {counts['test_samples']}")
-            print(f"    Total: {counts['total_samples']} samples")
+            fixed = counts.get('fixed', {})
+            trains = counts.get('trains', {})
+            print(f"    Fixed → Val: {fixed.get('val', 0)}, Test: {fixed.get('test', 0)}")
+            if trains:
+                for r_str, n in sorted(trains.items(), key=lambda x: float(x[0])):
+                    print(f"    Train {r_str}: {n}")
 
 if __name__ == "__main__":
     main()

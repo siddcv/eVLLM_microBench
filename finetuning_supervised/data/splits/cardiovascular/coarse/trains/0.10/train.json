@@ -1,0 +1,3322 @@
+[
+  {
+    "image_id": "f3be77ed-fcd2-42e6-b061-8209770cd9e1",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/f3be77ed-fcd2-42e6-b061-8209770cd9e1.png",
+    "question": "What is the most likely field of study this micrograph would be used for?",
+    "answer_options": [
+      "ophthalmology",
+      "radiology",
+      "pathology",
+      "cytology",
+      "biology",
+      "none of the above"
+    ],
+    "correct_answer_idx": 2,
+    "question_type": "domain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "0e71b0b8-7955-4c00-bed7-37a1314cf4ee",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/0e71b0b8-7955-4c00-bed7-37a1314cf4ee.png",
+    "question": "What is the most likely technique used to stain this micrograph?",
+    "answer_options": [
+      "Basic fuchsin",
+      "IHC(HDab)",
+      "Giemsa",
+      "Toluidine Blue",
+      "H&E",
+      "none of the above"
+    ],
+    "correct_answer_idx": 4,
+    "question_type": "stain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "9fff63b8-68cd-4ffb-9b9b-f7ff3a290cbd",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/9fff63b8-68cd-4ffb-9b9b-f7ff3a290cbd.png",
+    "question": "What is the most likely microscopy modality used to acquire this image?",
+    "answer_options": [
+      "fluorescence microscopy",
+      "light microscopy",
+      "electron microscopy",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "modality",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "11afdc85-dd86-4143-aa78-58686f9e36ea",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/11afdc85-dd86-4143-aa78-58686f9e36ea.png",
+    "question": "What is the most likely technique used to stain this micrograph?",
+    "answer_options": [
+      "Wright-Giemsa",
+      "H&E",
+      "IHC(HDab)",
+      "Basic fuchsin",
+      "IHC(Red)",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "stain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "f9469031-bdae-4011-ab7a-3f30e43b9331",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/f9469031-bdae-4011-ab7a-3f30e43b9331.png",
+    "question": "What is the most likely microscopy submodality used to acquire this image?",
+    "answer_options": [
+      "differential interference contrast microscopy",
+      "phase contrast microscopy",
+      "brightfield microscopy",
+      "mixed",
+      "polarized light microscopy",
+      "none of the above"
+    ],
+    "correct_answer_idx": 2,
+    "question_type": "submodality",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "a6e4ff86-6abf-4b9b-956e-c68e713d8b31",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/a6e4ff86-6abf-4b9b-956e-c68e713d8b31.png",
+    "question": "What is the most likely field of study this micrograph would be used for?",
+    "answer_options": [
+      "pathology",
+      "cytology",
+      "radiology",
+      "ophthalmology",
+      "biology",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "domain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "bb2cfcf9-cf17-4f7e-ade6-04755b404669",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/bb2cfcf9-cf17-4f7e-ade6-04755b404669.png",
+    "question": "What is the most likely microscopy modality used to acquire this image?",
+    "answer_options": [
+      "light microscopy",
+      "electron microscopy",
+      "fluorescence microscopy",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "modality",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "b2369518-c2ce-46b0-8516-5bccb13053e8",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/b2369518-c2ce-46b0-8516-5bccb13053e8.png",
+    "question": "What is the most likely field of study this micrograph would be used for?",
+    "answer_options": [
+      "ophthalmology",
+      "biology",
+      "dermatology",
+      "pathology",
+      "cytology",
+      "none of the above"
+    ],
+    "correct_answer_idx": 3,
+    "question_type": "domain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "1f6baeae-9910-48f4-8e72-014983a877b9",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/1f6baeae-9910-48f4-8e72-014983a877b9.png",
+    "question": "What is the most likely technique used to stain this micrograph?",
+    "answer_options": [
+      "H&E",
+      "Gram",
+      "Giemsa",
+      "Alcian Blue",
+      "IHC(Red)",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "stain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "1f6baeae-9910-48f4-8e72-014983a877b9",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/1f6baeae-9910-48f4-8e72-014983a877b9.png",
+    "question": "What is the most likely microscopy modality used to acquire this image?",
+    "answer_options": [
+      "light microscopy",
+      "fluorescence microscopy",
+      "electron microscopy",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "modality",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "01fe03fc-f6a7-445e-bd74-86c63cb9aa70",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/01fe03fc-f6a7-445e-bd74-86c63cb9aa70.png",
+    "question": "What is the most likely technique used to stain this micrograph?",
+    "answer_options": [
+      "Gram",
+      "H&E",
+      "Toluidine Blue",
+      "Wright-Giemsa",
+      "None",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "stain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "5be0b2b6-efce-4726-bb0d-66fb45117c6a",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/5be0b2b6-efce-4726-bb0d-66fb45117c6a.png",
+    "question": "What is the most likely technique used to stain this micrograph?",
+    "answer_options": [
+      "Giemsa",
+      "synthetic",
+      "Wright-Giemsa",
+      "H&E",
+      "Toluidine Blue",
+      "none of the above"
+    ],
+    "correct_answer_idx": 3,
+    "question_type": "stain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "0d4c456b-1dc3-4472-8798-c30d790d1c1f",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/0d4c456b-1dc3-4472-8798-c30d790d1c1f.png",
+    "question": "What is the most likely microscopy modality used to acquire this image?",
+    "answer_options": [
+      "fluorescence microscopy",
+      "electron microscopy",
+      "light microscopy",
+      "none of the above"
+    ],
+    "correct_answer_idx": 2,
+    "question_type": "modality",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "4a9f0700-933a-4ba8-ab35-551171b2c8be",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/4a9f0700-933a-4ba8-ab35-551171b2c8be.png",
+    "question": "What is the most likely subfield of study this micrograph would be used for?",
+    "answer_options": [
+      "neuropathology",
+      "autopsy pathology",
+      "surgical pathology",
+      "cardiovascular pathology",
+      "breast pathology",
+      "none of the above"
+    ],
+    "correct_answer_idx": 3,
+    "question_type": "subdomain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "981e8b71-ba1e-4fac-85c7-6c0ea5c39ef6",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/981e8b71-ba1e-4fac-85c7-6c0ea5c39ef6.png",
+    "question": "What is the most likely microscopy submodality used to acquire this image?",
+    "answer_options": [
+      "synthetic",
+      "brightfield microscopy",
+      "differential interference contrast microscopy",
+      "polarized light microscopy",
+      "darkfield microscopy",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "submodality",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "038dfc33-b321-48a0-8a42-a2e3aa49ab0f",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/038dfc33-b321-48a0-8a42-a2e3aa49ab0f.png",
+    "question": "What is the most likely field of study this micrograph would be used for?",
+    "answer_options": [
+      "biology",
+      "cytology",
+      "radiology",
+      "pathology",
+      "ophthalmology",
+      "none of the above"
+    ],
+    "correct_answer_idx": 3,
+    "question_type": "domain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "eefdc369-e1a7-4d82-8fe6-c8dcd83f26b5",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/eefdc369-e1a7-4d82-8fe6-c8dcd83f26b5.png",
+    "question": "What is the most likely field of study this micrograph would be used for?",
+    "answer_options": [
+      "pathology",
+      "cytology",
+      "dermatology",
+      "radiology",
+      "biology",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "domain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "b65fb050-c340-419e-bde9-485f6f6c7920",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/b65fb050-c340-419e-bde9-485f6f6c7920.png",
+    "question": "What is the most likely technique used to stain this micrograph?",
+    "answer_options": [
+      "PAS",
+      "Gram",
+      "H&E",
+      "IHC(HDab)",
+      "synthetic",
+      "none of the above"
+    ],
+    "correct_answer_idx": 2,
+    "question_type": "stain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "b65fb050-c340-419e-bde9-485f6f6c7920",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/b65fb050-c340-419e-bde9-485f6f6c7920.png",
+    "question": "What is the most likely field of study this micrograph would be used for?",
+    "answer_options": [
+      "cytology",
+      "radiology",
+      "dermatology",
+      "biology",
+      "pathology",
+      "none of the above"
+    ],
+    "correct_answer_idx": 4,
+    "question_type": "domain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "4c857674-3241-453f-82a5-20444e9d93c4",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/4c857674-3241-453f-82a5-20444e9d93c4.png",
+    "question": "What is the most likely microscopy submodality used to acquire this image?",
+    "answer_options": [
+      "brightfield microscopy",
+      "mixed",
+      "synthetic",
+      "phase contrast microscopy",
+      "polarized light microscopy",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "submodality",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "260dff56-1e98-40b9-8fb7-c59544fa3190",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/260dff56-1e98-40b9-8fb7-c59544fa3190.png",
+    "question": "What is the most likely technique used to stain this micrograph?",
+    "answer_options": [
+      "H&E",
+      "PAS",
+      "Congo Red",
+      "Toluidine Blue",
+      "Wright-Giemsa",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "stain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "bdb70584-318d-4002-acbf-33880d0a5ea0",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/bdb70584-318d-4002-acbf-33880d0a5ea0.png",
+    "question": "What is the most likely microscopy submodality used to acquire this image?",
+    "answer_options": [
+      "brightfield microscopy",
+      "mixed",
+      "phase contrast microscopy",
+      "darkfield microscopy",
+      "differential interference contrast microscopy",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "submodality",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "99981e41-8a53-48e6-ae92-28ff12962fe6",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/99981e41-8a53-48e6-ae92-28ff12962fe6.png",
+    "question": "What is the most likely microscopy submodality used to acquire this image?",
+    "answer_options": [
+      "brightfield microscopy",
+      "synthetic",
+      "polarized light microscopy",
+      "phase contrast microscopy",
+      "darkfield microscopy",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "submodality",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "6279768b-b73e-4722-b494-76da7276c273",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/6279768b-b73e-4722-b494-76da7276c273.png",
+    "question": "What is the most likely subfield of study this micrograph would be used for?",
+    "answer_options": [
+      "gynecologic pathology",
+      "forensic pathology",
+      "surgical pathology",
+      "cardiovascular pathology",
+      "neuropathology",
+      "none of the above"
+    ],
+    "correct_answer_idx": 3,
+    "question_type": "subdomain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "6bb2f509-e6e0-40c3-b6b9-b9ef5a1d7c49",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/6bb2f509-e6e0-40c3-b6b9-b9ef5a1d7c49.png",
+    "question": "What is the most likely microscopy submodality used to acquire this image?",
+    "answer_options": [
+      "synthetic",
+      "darkfield microscopy",
+      "brightfield microscopy",
+      "phase contrast microscopy",
+      "differential interference contrast microscopy",
+      "none of the above"
+    ],
+    "correct_answer_idx": 2,
+    "question_type": "submodality",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "9623a6cc-8d4b-4d2f-9032-7b053131139d",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/9623a6cc-8d4b-4d2f-9032-7b053131139d.png",
+    "question": "What is the most likely technique used to stain this micrograph?",
+    "answer_options": [
+      "Giemsa",
+      "Gram",
+      "H&E",
+      "None",
+      "Toluidine Blue",
+      "none of the above"
+    ],
+    "correct_answer_idx": 2,
+    "question_type": "stain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "1830c410-e622-405e-86a9-ea1a5f3dea48",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/1830c410-e622-405e-86a9-ea1a5f3dea48.png",
+    "question": "What is the most likely technique used to stain this micrograph?",
+    "answer_options": [
+      "H&E",
+      "Masson Trichrome",
+      "Gram",
+      "IHC(Red)",
+      "Papanicolaou",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "stain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "98deb84e-c274-49ef-9dba-5cec40201d46",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/98deb84e-c274-49ef-9dba-5cec40201d46.png",
+    "question": "What is the most likely field of study this micrograph would be used for?",
+    "answer_options": [
+      "ophthalmology",
+      "dermatology",
+      "cytology",
+      "radiology",
+      "pathology",
+      "none of the above"
+    ],
+    "correct_answer_idx": 4,
+    "question_type": "domain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "07b5bfd8-e3ef-41d9-ace5-cc92da3cc87c",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/07b5bfd8-e3ef-41d9-ace5-cc92da3cc87c.png",
+    "question": "What is the most likely field of study this micrograph would be used for?",
+    "answer_options": [
+      "dermatology",
+      "radiology",
+      "pathology",
+      "biology",
+      "cytology",
+      "none of the above"
+    ],
+    "correct_answer_idx": 2,
+    "question_type": "domain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "32181e81-0b01-4e7f-a08f-7653c9599e2d",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/32181e81-0b01-4e7f-a08f-7653c9599e2d.png",
+    "question": "What is the most likely field of study this micrograph would be used for?",
+    "answer_options": [
+      "radiology",
+      "biology",
+      "dermatology",
+      "cytology",
+      "pathology",
+      "none of the above"
+    ],
+    "correct_answer_idx": 4,
+    "question_type": "domain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "dbe05db0-aab3-47d5-85be-e266b5132f3b",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/dbe05db0-aab3-47d5-85be-e266b5132f3b.png",
+    "question": "What is the most likely field of study this micrograph would be used for?",
+    "answer_options": [
+      "radiology",
+      "cytology",
+      "dermatology",
+      "pathology",
+      "ophthalmology",
+      "none of the above"
+    ],
+    "correct_answer_idx": 3,
+    "question_type": "domain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "5d2c6052-8450-486b-828b-c01f0a9315af",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/5d2c6052-8450-486b-828b-c01f0a9315af.png",
+    "question": "What is the most likely microscopy modality used to acquire this image?",
+    "answer_options": [
+      "electron microscopy",
+      "fluorescence microscopy",
+      "light microscopy",
+      "none of the above"
+    ],
+    "correct_answer_idx": 2,
+    "question_type": "modality",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "70024f3f-c86f-4640-8a69-29e0786a00ab",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/70024f3f-c86f-4640-8a69-29e0786a00ab.png",
+    "question": "What is the most likely subfield of study this micrograph would be used for?",
+    "answer_options": [
+      "clinical pathology",
+      "oral pathology",
+      "molecular pathology",
+      "cardiovascular pathology",
+      "gynecologic pathology",
+      "none of the above"
+    ],
+    "correct_answer_idx": 3,
+    "question_type": "subdomain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "afbd947a-f8e1-4aba-becc-48d75441d3c7",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/afbd947a-f8e1-4aba-becc-48d75441d3c7.png",
+    "question": "What is the most likely field of study this micrograph would be used for?",
+    "answer_options": [
+      "radiology",
+      "cytology",
+      "dermatology",
+      "ophthalmology",
+      "pathology",
+      "none of the above"
+    ],
+    "correct_answer_idx": 4,
+    "question_type": "domain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "926047d6-7454-414d-aae5-06f0146ec99b",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/926047d6-7454-414d-aae5-06f0146ec99b.png",
+    "question": "What is the most likely microscopy submodality used to acquire this image?",
+    "answer_options": [
+      "mixed",
+      "brightfield microscopy",
+      "differential interference contrast microscopy",
+      "phase contrast microscopy",
+      "darkfield microscopy",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "submodality",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "927f7691-9ea3-4b5f-a7ed-5c3dedb69b8a",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/927f7691-9ea3-4b5f-a7ed-5c3dedb69b8a.png",
+    "question": "What is the most likely microscopy modality used to acquire this image?",
+    "answer_options": [
+      "electron microscopy",
+      "light microscopy",
+      "fluorescence microscopy",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "modality",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "0be160ae-4117-461e-b0a3-9d76bd814dde",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/0be160ae-4117-461e-b0a3-9d76bd814dde.png",
+    "question": "What is the most likely technique used to stain this micrograph?",
+    "answer_options": [
+      "H&E",
+      "Giemsa",
+      "Toluidine Blue",
+      "None",
+      "Basic fuchsin",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "stain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "350418f1-7919-4fbd-b53f-ea2cafc3f91e",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/350418f1-7919-4fbd-b53f-ea2cafc3f91e.png",
+    "question": "What is the most likely field of study this micrograph would be used for?",
+    "answer_options": [
+      "pathology",
+      "ophthalmology",
+      "radiology",
+      "biology",
+      "dermatology",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "domain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "5f9b4166-631d-4ee2-9d77-23b2e9982fed",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/5f9b4166-631d-4ee2-9d77-23b2e9982fed.png",
+    "question": "What is the most likely subfield of study this micrograph would be used for?",
+    "answer_options": [
+      "oral pathology",
+      "renal and medical kidney pathology",
+      "gynecologic pathology",
+      "clinical pathology",
+      "cardiovascular pathology",
+      "none of the above"
+    ],
+    "correct_answer_idx": 4,
+    "question_type": "subdomain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "6279768b-b73e-4722-b494-76da7276c273",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/6279768b-b73e-4722-b494-76da7276c273.png",
+    "question": "What is the most likely technique used to stain this micrograph?",
+    "answer_options": [
+      "Wright-Giemsa",
+      "IHC(Red)",
+      "IHC(HDab)",
+      "PAS",
+      "H&E",
+      "none of the above"
+    ],
+    "correct_answer_idx": 4,
+    "question_type": "stain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "2c3699af-d03e-4ef4-81b1-a8a352b2e3bc",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/2c3699af-d03e-4ef4-81b1-a8a352b2e3bc.png",
+    "question": "What is the most likely microscopy modality used to acquire this image?",
+    "answer_options": [
+      "light microscopy",
+      "fluorescence microscopy",
+      "electron microscopy",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "modality",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "6c8e61e3-8d48-4754-9673-d17a2b244192",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/6c8e61e3-8d48-4754-9673-d17a2b244192.png",
+    "question": "What is the most likely microscopy modality used to acquire this image?",
+    "answer_options": [
+      "electron microscopy",
+      "light microscopy",
+      "fluorescence microscopy",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "modality",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "2575c00a-f6c1-4300-9d35-8e859c6308ac",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/2575c00a-f6c1-4300-9d35-8e859c6308ac.png",
+    "question": "What is the most likely subfield of study this micrograph would be used for?",
+    "answer_options": [
+      "head and neck pathology",
+      "renal and medical kidney pathology",
+      "cardiovascular pathology",
+      "gynecologic pathology",
+      "breast pathology",
+      "none of the above"
+    ],
+    "correct_answer_idx": 2,
+    "question_type": "subdomain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "21f3a67d-608d-4d64-8cbc-b03d56bf0207",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/21f3a67d-608d-4d64-8cbc-b03d56bf0207.png",
+    "question": "What is the most likely microscopy modality used to acquire this image?",
+    "answer_options": [
+      "electron microscopy",
+      "light microscopy",
+      "fluorescence microscopy",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "modality",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "dfa063ea-d343-48d2-87f6-3557ae4501c9",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/dfa063ea-d343-48d2-87f6-3557ae4501c9.png",
+    "question": "What is the most likely microscopy modality used to acquire this image?",
+    "answer_options": [
+      "electron microscopy",
+      "light microscopy",
+      "fluorescence microscopy",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "modality",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "b8f27902-1a98-4662-bdfa-a353a9377489",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/b8f27902-1a98-4662-bdfa-a353a9377489.png",
+    "question": "What is the most likely microscopy submodality used to acquire this image?",
+    "answer_options": [
+      "polarized light microscopy",
+      "differential interference contrast microscopy",
+      "phase contrast microscopy",
+      "brightfield microscopy",
+      "mixed",
+      "none of the above"
+    ],
+    "correct_answer_idx": 3,
+    "question_type": "submodality",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "1c406924-b0c3-44e0-b604-063ec8c5b598",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/1c406924-b0c3-44e0-b604-063ec8c5b598.png",
+    "question": "What is the most likely subfield of study this micrograph would be used for?",
+    "answer_options": [
+      "ophthalmic pathology",
+      "neuropathology",
+      "oral pathology",
+      "cardiovascular pathology",
+      "blood banking and transfusion medicine",
+      "none of the above"
+    ],
+    "correct_answer_idx": 3,
+    "question_type": "subdomain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "d9af0f02-0142-4ff5-9095-43a9fa0f71ce",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/d9af0f02-0142-4ff5-9095-43a9fa0f71ce.png",
+    "question": "What is the most likely technique used to stain this micrograph?",
+    "answer_options": [
+      "Ziehl-Neelsen",
+      "IHC(HDab)",
+      "H&E",
+      "None",
+      "Basic fuchsin",
+      "none of the above"
+    ],
+    "correct_answer_idx": 2,
+    "question_type": "stain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "c959042f-a592-4b51-ab10-6c7a9e9cb455",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/c959042f-a592-4b51-ab10-6c7a9e9cb455.png",
+    "question": "What is the most likely microscopy modality used to acquire this image?",
+    "answer_options": [
+      "fluorescence microscopy",
+      "light microscopy",
+      "electron microscopy",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "modality",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "5cc76131-4fd6-4a3e-b231-de48f7590da8",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/5cc76131-4fd6-4a3e-b231-de48f7590da8.png",
+    "question": "What is the most likely microscopy modality used to acquire this image?",
+    "answer_options": [
+      "light microscopy",
+      "fluorescence microscopy",
+      "electron microscopy",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "modality",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "46e432c0-b285-45e7-ad92-67e7afe0e675",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/46e432c0-b285-45e7-ad92-67e7afe0e675.png",
+    "question": "What is the most likely microscopy modality used to acquire this image?",
+    "answer_options": [
+      "light microscopy",
+      "electron microscopy",
+      "fluorescence microscopy",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "modality",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "f2dd7ad0-3285-47a4-8466-52e085ede994",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/f2dd7ad0-3285-47a4-8466-52e085ede994.png",
+    "question": "What is the most likely microscopy submodality used to acquire this image?",
+    "answer_options": [
+      "darkfield microscopy",
+      "synthetic",
+      "brightfield microscopy",
+      "polarized light microscopy",
+      "differential interference contrast microscopy",
+      "none of the above"
+    ],
+    "correct_answer_idx": 2,
+    "question_type": "submodality",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "48ec6101-9f07-4b5f-92a4-4aa51b24f452",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/48ec6101-9f07-4b5f-92a4-4aa51b24f452.png",
+    "question": "What is the most likely microscopy submodality used to acquire this image?",
+    "answer_options": [
+      "mixed",
+      "differential interference contrast microscopy",
+      "brightfield microscopy",
+      "phase contrast microscopy",
+      "polarized light microscopy",
+      "none of the above"
+    ],
+    "correct_answer_idx": 2,
+    "question_type": "submodality",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "af7b023e-3a59-4f2a-a2c1-f728312ea44d",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/af7b023e-3a59-4f2a-a2c1-f728312ea44d.png",
+    "question": "What is the most likely field of study this micrograph would be used for?",
+    "answer_options": [
+      "biology",
+      "pathology",
+      "cytology",
+      "ophthalmology",
+      "radiology",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "domain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "b6fca0bb-f16e-46ff-88e0-3330ea3bcb06",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/b6fca0bb-f16e-46ff-88e0-3330ea3bcb06.png",
+    "question": "What is the most likely field of study this micrograph would be used for?",
+    "answer_options": [
+      "pathology",
+      "ophthalmology",
+      "dermatology",
+      "radiology",
+      "cytology",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "domain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "dcef7afa-8b4c-49f4-9698-bbc3dd20a122",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/dcef7afa-8b4c-49f4-9698-bbc3dd20a122.png",
+    "question": "What is the most likely field of study this micrograph would be used for?",
+    "answer_options": [
+      "radiology",
+      "biology",
+      "ophthalmology",
+      "pathology",
+      "cytology",
+      "none of the above"
+    ],
+    "correct_answer_idx": 3,
+    "question_type": "domain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "7864fee6-9902-49d4-9c8b-dd6000bfbad1",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/7864fee6-9902-49d4-9c8b-dd6000bfbad1.png",
+    "question": "What is the most likely field of study this micrograph would be used for?",
+    "answer_options": [
+      "radiology",
+      "pathology",
+      "cytology",
+      "ophthalmology",
+      "dermatology",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "domain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "c0b25100-ff26-4d54-a937-75040132e94b",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/c0b25100-ff26-4d54-a937-75040132e94b.png",
+    "question": "What is the most likely field of study this micrograph would be used for?",
+    "answer_options": [
+      "biology",
+      "pathology",
+      "cytology",
+      "dermatology",
+      "ophthalmology",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "domain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "11afdc85-dd86-4143-aa78-58686f9e36ea",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/11afdc85-dd86-4143-aa78-58686f9e36ea.png",
+    "question": "What is the most likely subfield of study this micrograph would be used for?",
+    "answer_options": [
+      "gastrointestinal pathology",
+      "breast pathology",
+      "cardiovascular pathology",
+      "infectious disease pathology",
+      "ophthalmic pathology",
+      "none of the above"
+    ],
+    "correct_answer_idx": 2,
+    "question_type": "subdomain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "889e5397-04b1-413d-b4c8-76166f5ab429",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/889e5397-04b1-413d-b4c8-76166f5ab429.png",
+    "question": "What is the most likely field of study this micrograph would be used for?",
+    "answer_options": [
+      "biology",
+      "pathology",
+      "dermatology",
+      "ophthalmology",
+      "cytology",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "domain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "078dc825-0063-4276-8fb4-f1a9fd5725c2",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/078dc825-0063-4276-8fb4-f1a9fd5725c2.png",
+    "question": "What is the most likely field of study this micrograph would be used for?",
+    "answer_options": [
+      "radiology",
+      "biology",
+      "cytology",
+      "dermatology",
+      "pathology",
+      "none of the above"
+    ],
+    "correct_answer_idx": 4,
+    "question_type": "domain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "e2c1e384-5e4e-4201-ab96-9dfacf1aad72",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/e2c1e384-5e4e-4201-ab96-9dfacf1aad72.png",
+    "question": "What is the most likely subfield of study this micrograph would be used for?",
+    "answer_options": [
+      "cardiovascular pathology",
+      "pediatric pathology",
+      "neuropathology",
+      "pancreatic pathology",
+      "hematopathology",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "subdomain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "3a4107e3-62f7-471f-be3f-dfe4a86cb21f",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/3a4107e3-62f7-471f-be3f-dfe4a86cb21f.png",
+    "question": "What is the most likely subfield of study this micrograph would be used for?",
+    "answer_options": [
+      "breast pathology",
+      "genitourinary pathology",
+      "nephropathology",
+      "forensic pathology",
+      "cardiovascular pathology",
+      "none of the above"
+    ],
+    "correct_answer_idx": 4,
+    "question_type": "subdomain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "51aeb816-0f1f-49a9-8c45-832fc5742914",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/51aeb816-0f1f-49a9-8c45-832fc5742914.png",
+    "question": "What is the most likely microscopy submodality used to acquire this image?",
+    "answer_options": [
+      "phase contrast microscopy",
+      "synthetic",
+      "polarized light microscopy",
+      "brightfield microscopy",
+      "darkfield microscopy",
+      "none of the above"
+    ],
+    "correct_answer_idx": 3,
+    "question_type": "submodality",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "2575c00a-f6c1-4300-9d35-8e859c6308ac",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/2575c00a-f6c1-4300-9d35-8e859c6308ac.png",
+    "question": "What is the most likely microscopy submodality used to acquire this image?",
+    "answer_options": [
+      "brightfield microscopy",
+      "darkfield microscopy",
+      "polarized light microscopy",
+      "phase contrast microscopy",
+      "differential interference contrast microscopy",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "submodality",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "f622bb86-9879-4ba1-af93-81f15571e1fc",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/f622bb86-9879-4ba1-af93-81f15571e1fc.png",
+    "question": "What is the most likely microscopy submodality used to acquire this image?",
+    "answer_options": [
+      "phase contrast microscopy",
+      "differential interference contrast microscopy",
+      "synthetic",
+      "mixed",
+      "brightfield microscopy",
+      "none of the above"
+    ],
+    "correct_answer_idx": 4,
+    "question_type": "submodality",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "94033694-c7a1-44fb-899c-bebeec2965ec",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/94033694-c7a1-44fb-899c-bebeec2965ec.png",
+    "question": "What is the most likely subfield of study this micrograph would be used for?",
+    "answer_options": [
+      "forensic pathology",
+      "ophthalmic pathology",
+      "autopsy pathology",
+      "infectious disease pathology",
+      "cardiovascular pathology",
+      "none of the above"
+    ],
+    "correct_answer_idx": 4,
+    "question_type": "subdomain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "fb5e9886-ad80-422f-ba52-5bf1505f8672",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/fb5e9886-ad80-422f-ba52-5bf1505f8672.png",
+    "question": "What is the most likely microscopy modality used to acquire this image?",
+    "answer_options": [
+      "light microscopy",
+      "electron microscopy",
+      "fluorescence microscopy",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "modality",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "852f8f3d-a540-4604-89f2-d2dee7cec3f3",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/852f8f3d-a540-4604-89f2-d2dee7cec3f3.png",
+    "question": "What is the most likely technique used to stain this micrograph?",
+    "answer_options": [
+      "Ziehl-Neelsen",
+      "H&E",
+      "Gram",
+      "Wright-Giemsa",
+      "Alcian Blue",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "stain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "358c19ea-bc9f-4d03-807b-53194159206e",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/358c19ea-bc9f-4d03-807b-53194159206e.png",
+    "question": "What is the most likely subfield of study this micrograph would be used for?",
+    "answer_options": [
+      "pancreatic pathology",
+      "cardiovascular pathology",
+      "pediatric pathology",
+      "clinical pathology",
+      "bone and soft tissue pathology",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "subdomain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "6bb2f509-e6e0-40c3-b6b9-b9ef5a1d7c49",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/6bb2f509-e6e0-40c3-b6b9-b9ef5a1d7c49.png",
+    "question": "What is the most likely subfield of study this micrograph would be used for?",
+    "answer_options": [
+      "ophthalmic pathology",
+      "cardiovascular pathology",
+      "dermatopathology",
+      "pancreatic pathology",
+      "gynecologic pathology",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "subdomain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "3e2b9f8d-671b-4329-a23d-1ea0a1cf2b21",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/3e2b9f8d-671b-4329-a23d-1ea0a1cf2b21.png",
+    "question": "What is the most likely microscopy submodality used to acquire this image?",
+    "answer_options": [
+      "polarized light microscopy",
+      "phase contrast microscopy",
+      "differential interference contrast microscopy",
+      "brightfield microscopy",
+      "mixed",
+      "none of the above"
+    ],
+    "correct_answer_idx": 3,
+    "question_type": "submodality",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "f49602f4-8ee1-4274-8715-d697c9ad7bb4",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/f49602f4-8ee1-4274-8715-d697c9ad7bb4.png",
+    "question": "What is the most likely microscopy submodality used to acquire this image?",
+    "answer_options": [
+      "synthetic",
+      "mixed",
+      "phase contrast microscopy",
+      "differential interference contrast microscopy",
+      "brightfield microscopy",
+      "none of the above"
+    ],
+    "correct_answer_idx": 4,
+    "question_type": "submodality",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "84997b46-6205-47ca-8f4b-53800aa9cc73",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/84997b46-6205-47ca-8f4b-53800aa9cc73.png",
+    "question": "What is the most likely technique used to stain this micrograph?",
+    "answer_options": [
+      "Wright-Giemsa",
+      "Gram",
+      "IHC(HDab)",
+      "H&E",
+      "PAS",
+      "none of the above"
+    ],
+    "correct_answer_idx": 3,
+    "question_type": "stain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "66f8aea4-d6bd-46d8-b3a3-0f31f0b77cae",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/66f8aea4-d6bd-46d8-b3a3-0f31f0b77cae.png",
+    "question": "What is the most likely field of study this micrograph would be used for?",
+    "answer_options": [
+      "cytology",
+      "ophthalmology",
+      "biology",
+      "pathology",
+      "radiology",
+      "none of the above"
+    ],
+    "correct_answer_idx": 3,
+    "question_type": "domain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "926047d6-7454-414d-aae5-06f0146ec99b",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/926047d6-7454-414d-aae5-06f0146ec99b.png",
+    "question": "What is the most likely subfield of study this micrograph would be used for?",
+    "answer_options": [
+      "molecular pathology",
+      "cardiovascular pathology",
+      "pediatric pathology",
+      "hepatobiliary pathology",
+      "forensic pathology",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "subdomain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "1f4a4a90-6ce7-4fcf-9837-5e4450bf8a69",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/1f4a4a90-6ce7-4fcf-9837-5e4450bf8a69.png",
+    "question": "What is the most likely microscopy submodality used to acquire this image?",
+    "answer_options": [
+      "brightfield microscopy",
+      "differential interference contrast microscopy",
+      "polarized light microscopy",
+      "darkfield microscopy",
+      "phase contrast microscopy",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "submodality",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "068e51cb-ef31-41f2-8999-2fbca1024497",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/068e51cb-ef31-41f2-8999-2fbca1024497.png",
+    "question": "What is the most likely microscopy submodality used to acquire this image?",
+    "answer_options": [
+      "synthetic",
+      "brightfield microscopy",
+      "polarized light microscopy",
+      "phase contrast microscopy",
+      "darkfield microscopy",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "submodality",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "b86e271a-9e25-4a94-9f2e-c1f8f7cb6a92",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/b86e271a-9e25-4a94-9f2e-c1f8f7cb6a92.png",
+    "question": "What is the most likely field of study this micrograph would be used for?",
+    "answer_options": [
+      "radiology",
+      "cytology",
+      "ophthalmology",
+      "dermatology",
+      "pathology",
+      "none of the above"
+    ],
+    "correct_answer_idx": 4,
+    "question_type": "domain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "e769ad9a-f23e-4145-90e2-de748e2fbea4",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/e769ad9a-f23e-4145-90e2-de748e2fbea4.png",
+    "question": "What is the most likely technique used to stain this micrograph?",
+    "answer_options": [
+      "H&E",
+      "IHC(HDab)",
+      "Toluidine Blue",
+      "Wright-Giemsa",
+      "synthetic",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "stain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "2575c00a-f6c1-4300-9d35-8e859c6308ac",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/2575c00a-f6c1-4300-9d35-8e859c6308ac.png",
+    "question": "What is the most likely field of study this micrograph would be used for?",
+    "answer_options": [
+      "cytology",
+      "ophthalmology",
+      "radiology",
+      "pathology",
+      "dermatology",
+      "none of the above"
+    ],
+    "correct_answer_idx": 3,
+    "question_type": "domain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "ac4273f8-0ea3-486b-946e-ad153db55c13",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/ac4273f8-0ea3-486b-946e-ad153db55c13.png",
+    "question": "What is the most likely technique used to stain this micrograph?",
+    "answer_options": [
+      "H&E",
+      "None",
+      "synthetic",
+      "Toluidine Blue",
+      "Giemsa",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "stain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "3c98d6e5-5013-4b6b-a992-e3dee9327426",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/3c98d6e5-5013-4b6b-a992-e3dee9327426.png",
+    "question": "What is the most likely technique used to stain this micrograph?",
+    "answer_options": [
+      "PAS",
+      "Congo Red",
+      "H&E",
+      "IHC(HDab)",
+      "Toluidine Blue",
+      "none of the above"
+    ],
+    "correct_answer_idx": 2,
+    "question_type": "stain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "37cc6181-74b6-4fa7-b5f0-0494d7087625",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/37cc6181-74b6-4fa7-b5f0-0494d7087625.png",
+    "question": "What is the most likely subfield of study this micrograph would be used for?",
+    "answer_options": [
+      "hepatobiliary pathology",
+      "cardiovascular pathology",
+      "genitourinary pathology",
+      "ophthalmic pathology",
+      "nephropathology",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "subdomain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "2af7e79c-8d43-4d7c-ac27-c3ae445c1a08",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/2af7e79c-8d43-4d7c-ac27-c3ae445c1a08.png",
+    "question": "What is the most likely technique used to stain this micrograph?",
+    "answer_options": [
+      "IHC(HDab)",
+      "Masson Trichrome",
+      "Basic fuchsin",
+      "H&E",
+      "IHC(Red)",
+      "none of the above"
+    ],
+    "correct_answer_idx": 3,
+    "question_type": "stain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "791641f0-b0ad-498b-abc2-dc341470c34c",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/791641f0-b0ad-498b-abc2-dc341470c34c.png",
+    "question": "What is the most likely microscopy submodality used to acquire this image?",
+    "answer_options": [
+      "phase contrast microscopy",
+      "darkfield microscopy",
+      "polarized light microscopy",
+      "brightfield microscopy",
+      "mixed",
+      "none of the above"
+    ],
+    "correct_answer_idx": 3,
+    "question_type": "submodality",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "f3be77ed-fcd2-42e6-b061-8209770cd9e1",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/f3be77ed-fcd2-42e6-b061-8209770cd9e1.png",
+    "question": "What is the most likely microscopy modality used to acquire this image?",
+    "answer_options": [
+      "electron microscopy",
+      "light microscopy",
+      "fluorescence microscopy",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "modality",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "aa46b59a-9ae2-407e-b694-9c64d4370a55",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/aa46b59a-9ae2-407e-b694-9c64d4370a55.png",
+    "question": "What is the most likely technique used to stain this micrograph?",
+    "answer_options": [
+      "Basic fuchsin",
+      "Ziehl-Neelsen",
+      "IHC(Red)",
+      "PAS",
+      "H&E",
+      "none of the above"
+    ],
+    "correct_answer_idx": 4,
+    "question_type": "stain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "b41aa66d-5062-44ea-83aa-a596c87c6823",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/b41aa66d-5062-44ea-83aa-a596c87c6823.png",
+    "question": "What is the most likely subfield of study this micrograph would be used for?",
+    "answer_options": [
+      "infectious disease pathology",
+      "bone and soft tissue pathology",
+      "surgical pathology",
+      "blood banking and transfusion medicine",
+      "cardiovascular pathology",
+      "none of the above"
+    ],
+    "correct_answer_idx": 4,
+    "question_type": "subdomain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "f90d42d2-4d86-403f-8912-a172227804a2",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/f90d42d2-4d86-403f-8912-a172227804a2.png",
+    "question": "What is the most likely microscopy submodality used to acquire this image?",
+    "answer_options": [
+      "phase contrast microscopy",
+      "darkfield microscopy",
+      "brightfield microscopy",
+      "synthetic",
+      "differential interference contrast microscopy",
+      "none of the above"
+    ],
+    "correct_answer_idx": 2,
+    "question_type": "submodality",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "ffa56ab6-9398-4afa-8abc-c1b243a46601",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/ffa56ab6-9398-4afa-8abc-c1b243a46601.png",
+    "question": "What is the most likely field of study this micrograph would be used for?",
+    "answer_options": [
+      "cytology",
+      "radiology",
+      "pathology",
+      "ophthalmology",
+      "dermatology",
+      "none of the above"
+    ],
+    "correct_answer_idx": 2,
+    "question_type": "domain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "90725353-0973-4e30-b294-44182876a34d",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/90725353-0973-4e30-b294-44182876a34d.png",
+    "question": "What is the most likely microscopy submodality used to acquire this image?",
+    "answer_options": [
+      "darkfield microscopy",
+      "polarized light microscopy",
+      "differential interference contrast microscopy",
+      "brightfield microscopy",
+      "phase contrast microscopy",
+      "none of the above"
+    ],
+    "correct_answer_idx": 3,
+    "question_type": "submodality",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "5be0b2b6-efce-4726-bb0d-66fb45117c6a",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/5be0b2b6-efce-4726-bb0d-66fb45117c6a.png",
+    "question": "What is the most likely field of study this micrograph would be used for?",
+    "answer_options": [
+      "pathology",
+      "dermatology",
+      "radiology",
+      "biology",
+      "ophthalmology",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "domain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "dc38cd62-61a0-4390-b307-f1603cfbc77a",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/dc38cd62-61a0-4390-b307-f1603cfbc77a.png",
+    "question": "What is the most likely subfield of study this micrograph would be used for?",
+    "answer_options": [
+      "hematopathology",
+      "endocrine pathology",
+      "dermatopathology",
+      "bone and soft tissue pathology",
+      "cardiovascular pathology",
+      "none of the above"
+    ],
+    "correct_answer_idx": 4,
+    "question_type": "subdomain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "75a3ace3-da1f-47e2-a0b3-a9307651db44",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/75a3ace3-da1f-47e2-a0b3-a9307651db44.png",
+    "question": "What is the most likely subfield of study this micrograph would be used for?",
+    "answer_options": [
+      "cardiovascular pathology",
+      "bone and soft tissue pathology",
+      "ophthalmic pathology",
+      "pulmonary and pleural pathology",
+      "autopsy pathology",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "subdomain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "e0eb2133-c847-48ec-91a4-02e07599a8fc",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/e0eb2133-c847-48ec-91a4-02e07599a8fc.png",
+    "question": "What is the most likely technique used to stain this micrograph?",
+    "answer_options": [
+      "None",
+      "Giemsa",
+      "Congo Red",
+      "Papanicolaou",
+      "H&E",
+      "none of the above"
+    ],
+    "correct_answer_idx": 4,
+    "question_type": "stain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "a881fec1-b7d1-4d06-a83a-8310aac18d60",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/a881fec1-b7d1-4d06-a83a-8310aac18d60.png",
+    "question": "What is the most likely field of study this micrograph would be used for?",
+    "answer_options": [
+      "cytology",
+      "pathology",
+      "radiology",
+      "biology",
+      "ophthalmology",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "domain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "b906ac56-69e9-4ebb-9a84-15277235c764",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/b906ac56-69e9-4ebb-9a84-15277235c764.png",
+    "question": "What is the most likely technique used to stain this micrograph?",
+    "answer_options": [
+      "Papanicolaou",
+      "Congo Red",
+      "Ziehl-Neelsen",
+      "H&E",
+      "Basic fuchsin",
+      "none of the above"
+    ],
+    "correct_answer_idx": 3,
+    "question_type": "stain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "feb8e438-009e-4749-b866-5d4cb65250fc",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/feb8e438-009e-4749-b866-5d4cb65250fc.png",
+    "question": "What is the most likely microscopy modality used to acquire this image?",
+    "answer_options": [
+      "light microscopy",
+      "fluorescence microscopy",
+      "electron microscopy",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "modality",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "f6be9b7d-26ea-48fe-807b-b54efa2f7f03",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/f6be9b7d-26ea-48fe-807b-b54efa2f7f03.png",
+    "question": "What is the most likely field of study this micrograph would be used for?",
+    "answer_options": [
+      "pathology",
+      "cytology",
+      "dermatology",
+      "ophthalmology",
+      "radiology",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "domain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "ae72b4d4-ace3-419f-ba0b-a94e6fce34f2",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/ae72b4d4-ace3-419f-ba0b-a94e6fce34f2.png",
+    "question": "What is the most likely subfield of study this micrograph would be used for?",
+    "answer_options": [
+      "bone and soft tissue pathology",
+      "gastrointestinal pathology",
+      "cardiovascular pathology",
+      "nephropathology",
+      "endocrine pathology",
+      "none of the above"
+    ],
+    "correct_answer_idx": 2,
+    "question_type": "subdomain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "4c5694a4-ef9f-4a14-b0da-0cb7c627a38d",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/4c5694a4-ef9f-4a14-b0da-0cb7c627a38d.png",
+    "question": "What is the most likely technique used to stain this micrograph?",
+    "answer_options": [
+      "PAS",
+      "Toluidine Blue",
+      "H&E",
+      "Congo Red",
+      "Basic fuchsin",
+      "none of the above"
+    ],
+    "correct_answer_idx": 2,
+    "question_type": "stain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "b41aa66d-5062-44ea-83aa-a596c87c6823",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/b41aa66d-5062-44ea-83aa-a596c87c6823.png",
+    "question": "What is the most likely microscopy submodality used to acquire this image?",
+    "answer_options": [
+      "polarized light microscopy",
+      "brightfield microscopy",
+      "differential interference contrast microscopy",
+      "mixed",
+      "synthetic",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "submodality",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "dbe05db0-aab3-47d5-85be-e266b5132f3b",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/dbe05db0-aab3-47d5-85be-e266b5132f3b.png",
+    "question": "What is the most likely microscopy modality used to acquire this image?",
+    "answer_options": [
+      "electron microscopy",
+      "light microscopy",
+      "fluorescence microscopy",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "modality",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "66f8aea4-d6bd-46d8-b3a3-0f31f0b77cae",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/66f8aea4-d6bd-46d8-b3a3-0f31f0b77cae.png",
+    "question": "What is the most likely technique used to stain this micrograph?",
+    "answer_options": [
+      "IHC(Red)",
+      "H&E",
+      "Toluidine Blue",
+      "Masson Trichrome",
+      "Papanicolaou",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "stain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "e19c2f75-cc34-4054-8591-e4d14bc06de8",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/e19c2f75-cc34-4054-8591-e4d14bc06de8.png",
+    "question": "What is the most likely subfield of study this micrograph would be used for?",
+    "answer_options": [
+      "cardiovascular pathology",
+      "autopsy pathology",
+      "endocrine pathology",
+      "oral pathology",
+      "hepatobiliary pathology",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "subdomain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "05b8dba7-4a3f-40c7-8b00-3681ff5f2181",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/05b8dba7-4a3f-40c7-8b00-3681ff5f2181.png",
+    "question": "What is the most likely field of study this micrograph would be used for?",
+    "answer_options": [
+      "dermatology",
+      "cytology",
+      "ophthalmology",
+      "biology",
+      "pathology",
+      "none of the above"
+    ],
+    "correct_answer_idx": 4,
+    "question_type": "domain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "6bb2f509-e6e0-40c3-b6b9-b9ef5a1d7c49",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/6bb2f509-e6e0-40c3-b6b9-b9ef5a1d7c49.png",
+    "question": "What is the most likely microscopy modality used to acquire this image?",
+    "answer_options": [
+      "electron microscopy",
+      "light microscopy",
+      "fluorescence microscopy",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "modality",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "bda4eeb8-61cb-4598-8a77-eea8bf745f97",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/bda4eeb8-61cb-4598-8a77-eea8bf745f97.png",
+    "question": "What is the most likely field of study this micrograph would be used for?",
+    "answer_options": [
+      "cytology",
+      "biology",
+      "radiology",
+      "pathology",
+      "dermatology",
+      "none of the above"
+    ],
+    "correct_answer_idx": 3,
+    "question_type": "domain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "c0c96002-09fb-472a-a883-87304e98dc6c",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/c0c96002-09fb-472a-a883-87304e98dc6c.png",
+    "question": "What is the most likely microscopy modality used to acquire this image?",
+    "answer_options": [
+      "light microscopy",
+      "fluorescence microscopy",
+      "electron microscopy",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "modality",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "faa6d336-cccb-44e1-8f9b-7436ad8494d7",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/faa6d336-cccb-44e1-8f9b-7436ad8494d7.png",
+    "question": "What is the most likely subfield of study this micrograph would be used for?",
+    "answer_options": [
+      "cardiovascular pathology",
+      "endocrine pathology",
+      "blood banking and transfusion medicine",
+      "surgical pathology",
+      "infectious disease pathology",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "subdomain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "868ccb4a-eeec-4388-9b73-fc711b2d22d3",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/868ccb4a-eeec-4388-9b73-fc711b2d22d3.png",
+    "question": "What is the most likely microscopy modality used to acquire this image?",
+    "answer_options": [
+      "fluorescence microscopy",
+      "electron microscopy",
+      "light microscopy",
+      "none of the above"
+    ],
+    "correct_answer_idx": 2,
+    "question_type": "modality",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "789e0321-0542-416f-a916-c5fcacd42a93",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/789e0321-0542-416f-a916-c5fcacd42a93.png",
+    "question": "What is the most likely microscopy submodality used to acquire this image?",
+    "answer_options": [
+      "mixed",
+      "differential interference contrast microscopy",
+      "brightfield microscopy",
+      "darkfield microscopy",
+      "polarized light microscopy",
+      "none of the above"
+    ],
+    "correct_answer_idx": 2,
+    "question_type": "submodality",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "07b5bfd8-e3ef-41d9-ace5-cc92da3cc87c",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/07b5bfd8-e3ef-41d9-ace5-cc92da3cc87c.png",
+    "question": "What is the most likely technique used to stain this micrograph?",
+    "answer_options": [
+      "IHC(Red)",
+      "Giemsa",
+      "Papanicolaou",
+      "Gram",
+      "H&E",
+      "none of the above"
+    ],
+    "correct_answer_idx": 4,
+    "question_type": "stain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "9e7c943c-c5a9-48a1-b30e-bcb2f92b2a4e",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/9e7c943c-c5a9-48a1-b30e-bcb2f92b2a4e.png",
+    "question": "What is the most likely microscopy submodality used to acquire this image?",
+    "answer_options": [
+      "synthetic",
+      "phase contrast microscopy",
+      "brightfield microscopy",
+      "darkfield microscopy",
+      "differential interference contrast microscopy",
+      "none of the above"
+    ],
+    "correct_answer_idx": 2,
+    "question_type": "submodality",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "b69b9639-3947-453b-9684-db8d839f1ebc",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/b69b9639-3947-453b-9684-db8d839f1ebc.png",
+    "question": "What is the most likely subfield of study this micrograph would be used for?",
+    "answer_options": [
+      "molecular pathology",
+      "oral pathology",
+      "cardiovascular pathology",
+      "pulmonary and pleural pathology",
+      "blood banking and transfusion medicine",
+      "none of the above"
+    ],
+    "correct_answer_idx": 2,
+    "question_type": "subdomain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "c18bd869-5490-4c54-8cb3-5b9e5573f407",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/c18bd869-5490-4c54-8cb3-5b9e5573f407.png",
+    "question": "What is the most likely subfield of study this micrograph would be used for?",
+    "answer_options": [
+      "breast pathology",
+      "cardiovascular pathology",
+      "genitourinary pathology",
+      "nephropathology",
+      "pancreatic pathology",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "subdomain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "f97bba7e-3582-44da-a899-034710651dea",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/f97bba7e-3582-44da-a899-034710651dea.png",
+    "question": "What is the most likely subfield of study this micrograph would be used for?",
+    "answer_options": [
+      "bone and soft tissue pathology",
+      "head and neck pathology",
+      "oral pathology",
+      "cardiovascular pathology",
+      "forensic pathology",
+      "none of the above"
+    ],
+    "correct_answer_idx": 3,
+    "question_type": "subdomain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "4eb8add3-1775-4601-94f8-45d5262cb31f",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/4eb8add3-1775-4601-94f8-45d5262cb31f.png",
+    "question": "What is the most likely technique used to stain this micrograph?",
+    "answer_options": [
+      "synthetic",
+      "Toluidine Blue",
+      "Masson Trichrome",
+      "H&E",
+      "Gram",
+      "none of the above"
+    ],
+    "correct_answer_idx": 3,
+    "question_type": "stain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "5be0b2b6-efce-4726-bb0d-66fb45117c6a",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/5be0b2b6-efce-4726-bb0d-66fb45117c6a.png",
+    "question": "What is the most likely microscopy modality used to acquire this image?",
+    "answer_options": [
+      "light microscopy",
+      "fluorescence microscopy",
+      "electron microscopy",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "modality",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "5f41eab2-c20e-4a8d-99c4-f7c1ec0028a6",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/5f41eab2-c20e-4a8d-99c4-f7c1ec0028a6.png",
+    "question": "What is the most likely microscopy submodality used to acquire this image?",
+    "answer_options": [
+      "differential interference contrast microscopy",
+      "synthetic",
+      "phase contrast microscopy",
+      "brightfield microscopy",
+      "polarized light microscopy",
+      "none of the above"
+    ],
+    "correct_answer_idx": 3,
+    "question_type": "submodality",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "2d788b8c-2be7-45fe-9726-d17af5d5ac9d",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/2d788b8c-2be7-45fe-9726-d17af5d5ac9d.png",
+    "question": "What is the most likely microscopy modality used to acquire this image?",
+    "answer_options": [
+      "light microscopy",
+      "fluorescence microscopy",
+      "electron microscopy",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "modality",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "b69b9639-3947-453b-9684-db8d839f1ebc",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/b69b9639-3947-453b-9684-db8d839f1ebc.png",
+    "question": "What is the most likely field of study this micrograph would be used for?",
+    "answer_options": [
+      "pathology",
+      "dermatology",
+      "radiology",
+      "cytology",
+      "biology",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "domain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "9286f448-b788-40aa-a825-f9b6749078c3",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/9286f448-b788-40aa-a825-f9b6749078c3.png",
+    "question": "What is the most likely microscopy modality used to acquire this image?",
+    "answer_options": [
+      "light microscopy",
+      "electron microscopy",
+      "fluorescence microscopy",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "modality",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "3e2b9f8d-671b-4329-a23d-1ea0a1cf2b21",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/3e2b9f8d-671b-4329-a23d-1ea0a1cf2b21.png",
+    "question": "What is the most likely subfield of study this micrograph would be used for?",
+    "answer_options": [
+      "blood banking and transfusion medicine",
+      "molecular pathology",
+      "renal and medical kidney pathology",
+      "gynecologic pathology",
+      "cardiovascular pathology",
+      "none of the above"
+    ],
+    "correct_answer_idx": 4,
+    "question_type": "subdomain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "f89bff5f-ad2d-4b33-90f4-9211c3a78a4c",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/f89bff5f-ad2d-4b33-90f4-9211c3a78a4c.png",
+    "question": "What is the most likely subfield of study this micrograph would be used for?",
+    "answer_options": [
+      "pancreatic pathology",
+      "head and neck pathology",
+      "cardiovascular pathology",
+      "genitourinary pathology",
+      "molecular pathology",
+      "none of the above"
+    ],
+    "correct_answer_idx": 2,
+    "question_type": "subdomain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "b16265be-e8ee-47e9-a83e-83618adbf3d3",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/b16265be-e8ee-47e9-a83e-83618adbf3d3.png",
+    "question": "What is the most likely microscopy modality used to acquire this image?",
+    "answer_options": [
+      "fluorescence microscopy",
+      "light microscopy",
+      "electron microscopy",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "modality",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "aefe4bfa-0dd1-4dbc-af30-b355ddd2edab",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/aefe4bfa-0dd1-4dbc-af30-b355ddd2edab.png",
+    "question": "What is the most likely field of study this micrograph would be used for?",
+    "answer_options": [
+      "pathology",
+      "radiology",
+      "cytology",
+      "dermatology",
+      "ophthalmology",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "domain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "24a99976-a575-4209-b438-91c6f33da2dc",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/24a99976-a575-4209-b438-91c6f33da2dc.png",
+    "question": "What is the most likely technique used to stain this micrograph?",
+    "answer_options": [
+      "H&E",
+      "synthetic",
+      "PAS",
+      "Masson Trichrome",
+      "IHC(HDab)",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "stain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "fd888486-565e-4fa0-b4fd-71767489c2a8",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/fd888486-565e-4fa0-b4fd-71767489c2a8.png",
+    "question": "What is the most likely microscopy submodality used to acquire this image?",
+    "answer_options": [
+      "polarized light microscopy",
+      "differential interference contrast microscopy",
+      "synthetic",
+      "darkfield microscopy",
+      "brightfield microscopy",
+      "none of the above"
+    ],
+    "correct_answer_idx": 4,
+    "question_type": "submodality",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "b69b9639-3947-453b-9684-db8d839f1ebc",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/b69b9639-3947-453b-9684-db8d839f1ebc.png",
+    "question": "What is the most likely microscopy submodality used to acquire this image?",
+    "answer_options": [
+      "mixed",
+      "differential interference contrast microscopy",
+      "brightfield microscopy",
+      "phase contrast microscopy",
+      "darkfield microscopy",
+      "none of the above"
+    ],
+    "correct_answer_idx": 2,
+    "question_type": "submodality",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "b0b92ea8-8b32-4ffc-9020-0acdcf1e04b6",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/b0b92ea8-8b32-4ffc-9020-0acdcf1e04b6.png",
+    "question": "What is the most likely subfield of study this micrograph would be used for?",
+    "answer_options": [
+      "hematopathology",
+      "dermatopathology",
+      "nephropathology",
+      "cardiovascular pathology",
+      "bone and soft tissue pathology",
+      "none of the above"
+    ],
+    "correct_answer_idx": 3,
+    "question_type": "subdomain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "d02fe1cc-44d0-4757-baac-32716f5ab57e",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/d02fe1cc-44d0-4757-baac-32716f5ab57e.png",
+    "question": "What is the most likely microscopy modality used to acquire this image?",
+    "answer_options": [
+      "light microscopy",
+      "electron microscopy",
+      "fluorescence microscopy",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "modality",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "a04cdbda-15cb-4606-b44f-c0a641f90ba0",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/a04cdbda-15cb-4606-b44f-c0a641f90ba0.png",
+    "question": "What is the most likely subfield of study this micrograph would be used for?",
+    "answer_options": [
+      "cardiovascular pathology",
+      "pediatric pathology",
+      "hepatobiliary pathology",
+      "renal and medical kidney pathology",
+      "molecular pathology",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "subdomain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "f928ccb5-782f-4c5b-86f6-c0ee7cfe3c22",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/f928ccb5-782f-4c5b-86f6-c0ee7cfe3c22.png",
+    "question": "What is the most likely subfield of study this micrograph would be used for?",
+    "answer_options": [
+      "renal and medical kidney pathology",
+      "forensic pathology",
+      "endocrine pathology",
+      "oral pathology",
+      "cardiovascular pathology",
+      "none of the above"
+    ],
+    "correct_answer_idx": 4,
+    "question_type": "subdomain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "43516f41-8014-4d4a-a5f9-b0c21fb2b599",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/43516f41-8014-4d4a-a5f9-b0c21fb2b599.png",
+    "question": "What is the most likely microscopy submodality used to acquire this image?",
+    "answer_options": [
+      "brightfield microscopy",
+      "mixed",
+      "synthetic",
+      "differential interference contrast microscopy",
+      "darkfield microscopy",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "submodality",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "0e71b0b8-7955-4c00-bed7-37a1314cf4ee",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/0e71b0b8-7955-4c00-bed7-37a1314cf4ee.png",
+    "question": "What is the most likely microscopy modality used to acquire this image?",
+    "answer_options": [
+      "fluorescence microscopy",
+      "light microscopy",
+      "electron microscopy",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "modality",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "affdf935-6dff-4ba9-9e16-68caa02fd1d8",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/affdf935-6dff-4ba9-9e16-68caa02fd1d8.png",
+    "question": "What is the most likely technique used to stain this micrograph?",
+    "answer_options": [
+      "H&E",
+      "Papanicolaou",
+      "IHC(Red)",
+      "Toluidine Blue",
+      "IHC(HDab)",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "stain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "b392a2a2-e1dd-4093-9d64-96fe61344a62",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/b392a2a2-e1dd-4093-9d64-96fe61344a62.png",
+    "question": "What is the most likely microscopy submodality used to acquire this image?",
+    "answer_options": [
+      "polarized light microscopy",
+      "mixed",
+      "differential interference contrast microscopy",
+      "phase contrast microscopy",
+      "brightfield microscopy",
+      "none of the above"
+    ],
+    "correct_answer_idx": 4,
+    "question_type": "submodality",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "15510344-3a46-4a16-abf7-f935338f43a1",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/15510344-3a46-4a16-abf7-f935338f43a1.png",
+    "question": "What is the most likely microscopy modality used to acquire this image?",
+    "answer_options": [
+      "electron microscopy",
+      "fluorescence microscopy",
+      "light microscopy",
+      "none of the above"
+    ],
+    "correct_answer_idx": 2,
+    "question_type": "modality",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "b31d2d49-6f1e-4b56-8c1c-36bc7769cc1b",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/b31d2d49-6f1e-4b56-8c1c-36bc7769cc1b.png",
+    "question": "What is the most likely microscopy submodality used to acquire this image?",
+    "answer_options": [
+      "differential interference contrast microscopy",
+      "polarized light microscopy",
+      "synthetic",
+      "phase contrast microscopy",
+      "brightfield microscopy",
+      "none of the above"
+    ],
+    "correct_answer_idx": 4,
+    "question_type": "submodality",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "b0b92ea8-8b32-4ffc-9020-0acdcf1e04b6",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/b0b92ea8-8b32-4ffc-9020-0acdcf1e04b6.png",
+    "question": "What is the most likely technique used to stain this micrograph?",
+    "answer_options": [
+      "Congo Red",
+      "Basic fuchsin",
+      "H&E",
+      "Masson Trichrome",
+      "Ziehl-Neelsen",
+      "none of the above"
+    ],
+    "correct_answer_idx": 2,
+    "question_type": "stain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "34398b84-ac25-4160-9629-2ef7d0916120",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/34398b84-ac25-4160-9629-2ef7d0916120.png",
+    "question": "What is the most likely subfield of study this micrograph would be used for?",
+    "answer_options": [
+      "cardiovascular pathology",
+      "nephropathology",
+      "gastrointestinal pathology",
+      "hepatobiliary pathology",
+      "endocrine pathology",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "subdomain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "4c857674-3241-453f-82a5-20444e9d93c4",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/4c857674-3241-453f-82a5-20444e9d93c4.png",
+    "question": "What is the most likely technique used to stain this micrograph?",
+    "answer_options": [
+      "H&E",
+      "Gram",
+      "PAS",
+      "Masson Trichrome",
+      "Papanicolaou",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "stain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "29c8da31-50e8-4a23-9a2b-02d18282c61a",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/29c8da31-50e8-4a23-9a2b-02d18282c61a.png",
+    "question": "What is the most likely technique used to stain this micrograph?",
+    "answer_options": [
+      "Giemsa",
+      "Wright-Giemsa",
+      "H&E",
+      "Congo Red",
+      "PAS",
+      "none of the above"
+    ],
+    "correct_answer_idx": 2,
+    "question_type": "stain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "525d93b7-00c3-4436-9248-ccc711b4de07",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/525d93b7-00c3-4436-9248-ccc711b4de07.png",
+    "question": "What is the most likely field of study this micrograph would be used for?",
+    "answer_options": [
+      "ophthalmology",
+      "dermatology",
+      "pathology",
+      "cytology",
+      "radiology",
+      "none of the above"
+    ],
+    "correct_answer_idx": 2,
+    "question_type": "domain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "2575c00a-f6c1-4300-9d35-8e859c6308ac",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/2575c00a-f6c1-4300-9d35-8e859c6308ac.png",
+    "question": "What is the most likely technique used to stain this micrograph?",
+    "answer_options": [
+      "H&E",
+      "Ziehl-Neelsen",
+      "None",
+      "IHC(Red)",
+      "Toluidine Blue",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "stain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "593e3c11-705e-405d-baa4-df5a4d035eaa",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/593e3c11-705e-405d-baa4-df5a4d035eaa.png",
+    "question": "What is the most likely technique used to stain this micrograph?",
+    "answer_options": [
+      "H&E",
+      "Gram",
+      "Ziehl-Neelsen",
+      "None",
+      "Papanicolaou",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "stain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "e9e0d387-df1f-48b4-b7e7-16d35579f86c",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/e9e0d387-df1f-48b4-b7e7-16d35579f86c.png",
+    "question": "What is the most likely microscopy modality used to acquire this image?",
+    "answer_options": [
+      "light microscopy",
+      "electron microscopy",
+      "fluorescence microscopy",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "modality",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "ac4273f8-0ea3-486b-946e-ad153db55c13",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/ac4273f8-0ea3-486b-946e-ad153db55c13.png",
+    "question": "What is the most likely field of study this micrograph would be used for?",
+    "answer_options": [
+      "biology",
+      "radiology",
+      "ophthalmology",
+      "pathology",
+      "dermatology",
+      "none of the above"
+    ],
+    "correct_answer_idx": 3,
+    "question_type": "domain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "03dcd74e-341a-4572-9d29-a414814226c6",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/03dcd74e-341a-4572-9d29-a414814226c6.png",
+    "question": "What is the most likely microscopy modality used to acquire this image?",
+    "answer_options": [
+      "light microscopy",
+      "fluorescence microscopy",
+      "electron microscopy",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "modality",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "b392a2a2-e1dd-4093-9d64-96fe61344a62",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/b392a2a2-e1dd-4093-9d64-96fe61344a62.png",
+    "question": "What is the most likely technique used to stain this micrograph?",
+    "answer_options": [
+      "Toluidine Blue",
+      "H&E",
+      "None",
+      "Gram",
+      "Alcian Blue",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "stain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "0809836f-af3b-4ce8-932f-8e0792c1b944",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/0809836f-af3b-4ce8-932f-8e0792c1b944.png",
+    "question": "What is the most likely subfield of study this micrograph would be used for?",
+    "answer_options": [
+      "ophthalmic pathology",
+      "head and neck pathology",
+      "cardiovascular pathology",
+      "surgical pathology",
+      "endocrine pathology",
+      "none of the above"
+    ],
+    "correct_answer_idx": 2,
+    "question_type": "subdomain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "f96cc540-6465-4745-8c9b-1218d0b60098",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/f96cc540-6465-4745-8c9b-1218d0b60098.png",
+    "question": "What is the most likely subfield of study this micrograph would be used for?",
+    "answer_options": [
+      "pulmonary and pleural pathology",
+      "blood banking and transfusion medicine",
+      "cardiovascular pathology",
+      "head and neck pathology",
+      "nephropathology",
+      "none of the above"
+    ],
+    "correct_answer_idx": 2,
+    "question_type": "subdomain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "bc8886c2-9cfd-446d-a072-e4bdcc7b11b7",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/bc8886c2-9cfd-446d-a072-e4bdcc7b11b7.png",
+    "question": "What is the most likely technique used to stain this micrograph?",
+    "answer_options": [
+      "Papanicolaou",
+      "H&E",
+      "Basic fuchsin",
+      "Wright-Giemsa",
+      "Congo Red",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "stain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "ce413b9a-9f8c-4ea7-87d2-f9b01b881b27",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/ce413b9a-9f8c-4ea7-87d2-f9b01b881b27.png",
+    "question": "What is the most likely microscopy modality used to acquire this image?",
+    "answer_options": [
+      "electron microscopy",
+      "light microscopy",
+      "fluorescence microscopy",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "modality",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "88e93f0b-d4eb-4163-8284-e889b5fef439",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/88e93f0b-d4eb-4163-8284-e889b5fef439.png",
+    "question": "What is the most likely microscopy modality used to acquire this image?",
+    "answer_options": [
+      "fluorescence microscopy",
+      "electron microscopy",
+      "light microscopy",
+      "none of the above"
+    ],
+    "correct_answer_idx": 2,
+    "question_type": "modality",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "d6355808-715e-4b36-a5e5-d2b844c774db",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/d6355808-715e-4b36-a5e5-d2b844c774db.png",
+    "question": "What is the most likely microscopy submodality used to acquire this image?",
+    "answer_options": [
+      "brightfield microscopy",
+      "differential interference contrast microscopy",
+      "mixed",
+      "phase contrast microscopy",
+      "polarized light microscopy",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "submodality",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "d8294d93-e710-4d3f-8a98-7ec0e2525282",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/d8294d93-e710-4d3f-8a98-7ec0e2525282.png",
+    "question": "What is the most likely microscopy modality used to acquire this image?",
+    "answer_options": [
+      "light microscopy",
+      "fluorescence microscopy",
+      "electron microscopy",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "modality",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "09fd2280-07f5-4245-b968-1bcece38fdfd",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/09fd2280-07f5-4245-b968-1bcece38fdfd.png",
+    "question": "What is the most likely subfield of study this micrograph would be used for?",
+    "answer_options": [
+      "clinical pathology",
+      "head and neck pathology",
+      "molecular pathology",
+      "cardiovascular pathology",
+      "genitourinary pathology",
+      "none of the above"
+    ],
+    "correct_answer_idx": 3,
+    "question_type": "subdomain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "de5d4177-e409-4bdf-a9a8-8b42e2967051",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/de5d4177-e409-4bdf-a9a8-8b42e2967051.png",
+    "question": "What is the most likely subfield of study this micrograph would be used for?",
+    "answer_options": [
+      "infectious disease pathology",
+      "breast pathology",
+      "renal and medical kidney pathology",
+      "pediatric pathology",
+      "cardiovascular pathology",
+      "none of the above"
+    ],
+    "correct_answer_idx": 4,
+    "question_type": "subdomain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "5f41eab2-c20e-4a8d-99c4-f7c1ec0028a6",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/5f41eab2-c20e-4a8d-99c4-f7c1ec0028a6.png",
+    "question": "What is the most likely technique used to stain this micrograph?",
+    "answer_options": [
+      "Congo Red",
+      "IHC(HDab)",
+      "H&E",
+      "None",
+      "Giemsa",
+      "none of the above"
+    ],
+    "correct_answer_idx": 2,
+    "question_type": "stain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "d52e9484-2488-44c0-b948-f859c2c4a5ec",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/d52e9484-2488-44c0-b948-f859c2c4a5ec.png",
+    "question": "What is the most likely subfield of study this micrograph would be used for?",
+    "answer_options": [
+      "breast pathology",
+      "dermatopathology",
+      "cardiovascular pathology",
+      "gastrointestinal pathology",
+      "hematopathology",
+      "none of the above"
+    ],
+    "correct_answer_idx": 2,
+    "question_type": "subdomain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "7475ca1b-52d6-4c1a-933b-0c04aa102a6a",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/7475ca1b-52d6-4c1a-933b-0c04aa102a6a.png",
+    "question": "What is the most likely microscopy submodality used to acquire this image?",
+    "answer_options": [
+      "phase contrast microscopy",
+      "differential interference contrast microscopy",
+      "synthetic",
+      "mixed",
+      "brightfield microscopy",
+      "none of the above"
+    ],
+    "correct_answer_idx": 4,
+    "question_type": "submodality",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "e769ad9a-f23e-4145-90e2-de748e2fbea4",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/e769ad9a-f23e-4145-90e2-de748e2fbea4.png",
+    "question": "What is the most likely microscopy submodality used to acquire this image?",
+    "answer_options": [
+      "phase contrast microscopy",
+      "mixed",
+      "differential interference contrast microscopy",
+      "brightfield microscopy",
+      "darkfield microscopy",
+      "none of the above"
+    ],
+    "correct_answer_idx": 3,
+    "question_type": "submodality",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "48ec6101-9f07-4b5f-92a4-4aa51b24f452",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/48ec6101-9f07-4b5f-92a4-4aa51b24f452.png",
+    "question": "What is the most likely technique used to stain this micrograph?",
+    "answer_options": [
+      "Wright-Giemsa",
+      "None",
+      "Ziehl-Neelsen",
+      "Alcian Blue",
+      "H&E",
+      "none of the above"
+    ],
+    "correct_answer_idx": 4,
+    "question_type": "stain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "0c3d4ab2-0b58-4cbf-8582-090018b294f8",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/0c3d4ab2-0b58-4cbf-8582-090018b294f8.png",
+    "question": "What is the most likely microscopy submodality used to acquire this image?",
+    "answer_options": [
+      "differential interference contrast microscopy",
+      "phase contrast microscopy",
+      "darkfield microscopy",
+      "brightfield microscopy",
+      "synthetic",
+      "none of the above"
+    ],
+    "correct_answer_idx": 3,
+    "question_type": "submodality",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "f2dd7ad0-3285-47a4-8466-52e085ede994",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/f2dd7ad0-3285-47a4-8466-52e085ede994.png",
+    "question": "What is the most likely microscopy modality used to acquire this image?",
+    "answer_options": [
+      "light microscopy",
+      "electron microscopy",
+      "fluorescence microscopy",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "modality",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "71a57167-54aa-419e-b28a-a8cf75b1d6e5",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/71a57167-54aa-419e-b28a-a8cf75b1d6e5.png",
+    "question": "What is the most likely microscopy modality used to acquire this image?",
+    "answer_options": [
+      "light microscopy",
+      "electron microscopy",
+      "fluorescence microscopy",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "modality",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "72df0267-0720-4abe-aeea-2e46695e7a3e",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/72df0267-0720-4abe-aeea-2e46695e7a3e.png",
+    "question": "What is the most likely field of study this micrograph would be used for?",
+    "answer_options": [
+      "cytology",
+      "radiology",
+      "ophthalmology",
+      "biology",
+      "pathology",
+      "none of the above"
+    ],
+    "correct_answer_idx": 4,
+    "question_type": "domain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "f4f87320-5b91-4077-a2b6-c64ecd9ef0ec",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/f4f87320-5b91-4077-a2b6-c64ecd9ef0ec.png",
+    "question": "What is the most likely field of study this micrograph would be used for?",
+    "answer_options": [
+      "biology",
+      "radiology",
+      "cytology",
+      "ophthalmology",
+      "pathology",
+      "none of the above"
+    ],
+    "correct_answer_idx": 4,
+    "question_type": "domain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "09fd2280-07f5-4245-b968-1bcece38fdfd",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/09fd2280-07f5-4245-b968-1bcece38fdfd.png",
+    "question": "What is the most likely microscopy submodality used to acquire this image?",
+    "answer_options": [
+      "differential interference contrast microscopy",
+      "phase contrast microscopy",
+      "polarized light microscopy",
+      "brightfield microscopy",
+      "synthetic",
+      "none of the above"
+    ],
+    "correct_answer_idx": 3,
+    "question_type": "submodality",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "f928ccb5-782f-4c5b-86f6-c0ee7cfe3c22",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/f928ccb5-782f-4c5b-86f6-c0ee7cfe3c22.png",
+    "question": "What is the most likely microscopy modality used to acquire this image?",
+    "answer_options": [
+      "light microscopy",
+      "fluorescence microscopy",
+      "electron microscopy",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "modality",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "4540aa31-870c-442a-9a27-8e298630c1f7",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/4540aa31-870c-442a-9a27-8e298630c1f7.png",
+    "question": "What is the most likely technique used to stain this micrograph?",
+    "answer_options": [
+      "H&E",
+      "Papanicolaou",
+      "Alcian Blue",
+      "None",
+      "Wright-Giemsa",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "stain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "d9e4091c-16f9-431b-94dd-1957f7bfce2c",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/d9e4091c-16f9-431b-94dd-1957f7bfce2c.png",
+    "question": "What is the most likely field of study this micrograph would be used for?",
+    "answer_options": [
+      "biology",
+      "cytology",
+      "pathology",
+      "dermatology",
+      "ophthalmology",
+      "none of the above"
+    ],
+    "correct_answer_idx": 2,
+    "question_type": "domain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "c8e313e2-99df-4bf4-b406-654803e4beaf",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/c8e313e2-99df-4bf4-b406-654803e4beaf.png",
+    "question": "What is the most likely microscopy submodality used to acquire this image?",
+    "answer_options": [
+      "phase contrast microscopy",
+      "differential interference contrast microscopy",
+      "brightfield microscopy",
+      "polarized light microscopy",
+      "darkfield microscopy",
+      "none of the above"
+    ],
+    "correct_answer_idx": 2,
+    "question_type": "submodality",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "062b1dd5-4a7e-41d0-94cd-ac7b8a2dd02c",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/062b1dd5-4a7e-41d0-94cd-ac7b8a2dd02c.png",
+    "question": "What is the most likely microscopy submodality used to acquire this image?",
+    "answer_options": [
+      "polarized light microscopy",
+      "darkfield microscopy",
+      "synthetic",
+      "brightfield microscopy",
+      "mixed",
+      "none of the above"
+    ],
+    "correct_answer_idx": 3,
+    "question_type": "submodality",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "dee1b8bf-7d29-4dfb-9619-355ce872a60f",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/dee1b8bf-7d29-4dfb-9619-355ce872a60f.png",
+    "question": "What is the most likely microscopy modality used to acquire this image?",
+    "answer_options": [
+      "electron microscopy",
+      "light microscopy",
+      "fluorescence microscopy",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "modality",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "f6bb207f-157b-476a-8298-675af8b71742",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/f6bb207f-157b-476a-8298-675af8b71742.png",
+    "question": "What is the most likely field of study this micrograph would be used for?",
+    "answer_options": [
+      "pathology",
+      "dermatology",
+      "radiology",
+      "ophthalmology",
+      "biology",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "domain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "af7b023e-3a59-4f2a-a2c1-f728312ea44d",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/af7b023e-3a59-4f2a-a2c1-f728312ea44d.png",
+    "question": "What is the most likely microscopy submodality used to acquire this image?",
+    "answer_options": [
+      "polarized light microscopy",
+      "brightfield microscopy",
+      "synthetic",
+      "differential interference contrast microscopy",
+      "mixed",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "submodality",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "d3390dbf-0827-44ee-8a0b-034099f63a01",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/d3390dbf-0827-44ee-8a0b-034099f63a01.png",
+    "question": "What is the most likely field of study this micrograph would be used for?",
+    "answer_options": [
+      "radiology",
+      "dermatology",
+      "ophthalmology",
+      "cytology",
+      "pathology",
+      "none of the above"
+    ],
+    "correct_answer_idx": 4,
+    "question_type": "domain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "f6be9b7d-26ea-48fe-807b-b54efa2f7f03",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/f6be9b7d-26ea-48fe-807b-b54efa2f7f03.png",
+    "question": "What is the most likely subfield of study this micrograph would be used for?",
+    "answer_options": [
+      "breast pathology",
+      "dermatopathology",
+      "blood banking and transfusion medicine",
+      "gastrointestinal pathology",
+      "cardiovascular pathology",
+      "none of the above"
+    ],
+    "correct_answer_idx": 4,
+    "question_type": "subdomain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "791641f0-b0ad-498b-abc2-dc341470c34c",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/791641f0-b0ad-498b-abc2-dc341470c34c.png",
+    "question": "What is the most likely technique used to stain this micrograph?",
+    "answer_options": [
+      "synthetic",
+      "Giemsa",
+      "Ziehl-Neelsen",
+      "Toluidine Blue",
+      "H&E",
+      "none of the above"
+    ],
+    "correct_answer_idx": 4,
+    "question_type": "stain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "872ebd0a-96a2-4dc0-b00c-91b748d7b015",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/872ebd0a-96a2-4dc0-b00c-91b748d7b015.png",
+    "question": "What is the most likely microscopy modality used to acquire this image?",
+    "answer_options": [
+      "electron microscopy",
+      "fluorescence microscopy",
+      "light microscopy",
+      "none of the above"
+    ],
+    "correct_answer_idx": 2,
+    "question_type": "modality",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "61aa3a78-4dab-4c5c-b445-95503b4e3366",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/61aa3a78-4dab-4c5c-b445-95503b4e3366.png",
+    "question": "What is the most likely field of study this micrograph would be used for?",
+    "answer_options": [
+      "pathology",
+      "radiology",
+      "cytology",
+      "biology",
+      "dermatology",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "domain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "909560e3-c5c3-4255-baa0-5f56039691fc",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/909560e3-c5c3-4255-baa0-5f56039691fc.png",
+    "question": "What is the most likely subfield of study this micrograph would be used for?",
+    "answer_options": [
+      "genitourinary pathology",
+      "gynecologic pathology",
+      "surgical pathology",
+      "breast pathology",
+      "cardiovascular pathology",
+      "none of the above"
+    ],
+    "correct_answer_idx": 4,
+    "question_type": "subdomain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "bc7dad88-7b07-402c-8667-9e8b22b6734c",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/bc7dad88-7b07-402c-8667-9e8b22b6734c.png",
+    "question": "What is the most likely field of study this micrograph would be used for?",
+    "answer_options": [
+      "radiology",
+      "cytology",
+      "pathology",
+      "dermatology",
+      "biology",
+      "none of the above"
+    ],
+    "correct_answer_idx": 2,
+    "question_type": "domain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "7bf008f9-2765-4819-8d7c-a83ca086202e",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/7bf008f9-2765-4819-8d7c-a83ca086202e.png",
+    "question": "What is the most likely subfield of study this micrograph would be used for?",
+    "answer_options": [
+      "neuropathology",
+      "pancreatic pathology",
+      "pulmonary and pleural pathology",
+      "cardiovascular pathology",
+      "molecular pathology",
+      "none of the above"
+    ],
+    "correct_answer_idx": 3,
+    "question_type": "subdomain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "97c5d5a6-a97d-4161-917b-09bcdb7e4cf4",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/97c5d5a6-a97d-4161-917b-09bcdb7e4cf4.png",
+    "question": "What is the most likely microscopy submodality used to acquire this image?",
+    "answer_options": [
+      "polarized light microscopy",
+      "differential interference contrast microscopy",
+      "phase contrast microscopy",
+      "mixed",
+      "brightfield microscopy",
+      "none of the above"
+    ],
+    "correct_answer_idx": 4,
+    "question_type": "submodality",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "1830c410-e622-405e-86a9-ea1a5f3dea48",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/1830c410-e622-405e-86a9-ea1a5f3dea48.png",
+    "question": "What is the most likely microscopy submodality used to acquire this image?",
+    "answer_options": [
+      "brightfield microscopy",
+      "darkfield microscopy",
+      "differential interference contrast microscopy",
+      "polarized light microscopy",
+      "mixed",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "submodality",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "a5334483-a2a2-4667-ae15-b0e807598cea",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/a5334483-a2a2-4667-ae15-b0e807598cea.png",
+    "question": "What is the most likely subfield of study this micrograph would be used for?",
+    "answer_options": [
+      "ophthalmic pathology",
+      "genitourinary pathology",
+      "autopsy pathology",
+      "cardiovascular pathology",
+      "forensic pathology",
+      "none of the above"
+    ],
+    "correct_answer_idx": 3,
+    "question_type": "subdomain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "73e0fff3-35ce-444a-bb24-a475c715893d",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/73e0fff3-35ce-444a-bb24-a475c715893d.png",
+    "question": "What is the most likely technique used to stain this micrograph?",
+    "answer_options": [
+      "H&E",
+      "Wright-Giemsa",
+      "Ziehl-Neelsen",
+      "Giemsa",
+      "Basic fuchsin",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "stain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "b16265be-e8ee-47e9-a83e-83618adbf3d3",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/b16265be-e8ee-47e9-a83e-83618adbf3d3.png",
+    "question": "What is the most likely subfield of study this micrograph would be used for?",
+    "answer_options": [
+      "gastrointestinal pathology",
+      "cardiovascular pathology",
+      "autopsy pathology",
+      "forensic pathology",
+      "breast pathology",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "subdomain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "d407b095-5823-4667-9504-9b82df93611d",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/d407b095-5823-4667-9504-9b82df93611d.png",
+    "question": "What is the most likely microscopy submodality used to acquire this image?",
+    "answer_options": [
+      "phase contrast microscopy",
+      "polarized light microscopy",
+      "mixed",
+      "brightfield microscopy",
+      "darkfield microscopy",
+      "none of the above"
+    ],
+    "correct_answer_idx": 3,
+    "question_type": "submodality",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "35c485a1-0a42-40ad-aecf-b852662c6429",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/35c485a1-0a42-40ad-aecf-b852662c6429.png",
+    "question": "What is the most likely technique used to stain this micrograph?",
+    "answer_options": [
+      "None",
+      "Wright-Giemsa",
+      "PAS",
+      "H&E",
+      "Papanicolaou",
+      "none of the above"
+    ],
+    "correct_answer_idx": 3,
+    "question_type": "stain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "2e492bf9-190d-4532-b546-93cc4b99fa0d",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/2e492bf9-190d-4532-b546-93cc4b99fa0d.png",
+    "question": "What is the most likely microscopy modality used to acquire this image?",
+    "answer_options": [
+      "light microscopy",
+      "electron microscopy",
+      "fluorescence microscopy",
+      "none of the above"
+    ],
+    "correct_answer_idx": 0,
+    "question_type": "modality",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "525d93b7-00c3-4436-9248-ccc711b4de07",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/525d93b7-00c3-4436-9248-ccc711b4de07.png",
+    "question": "What is the most likely microscopy modality used to acquire this image?",
+    "answer_options": [
+      "electron microscopy",
+      "light microscopy",
+      "fluorescence microscopy",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "modality",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "dfa063ea-d343-48d2-87f6-3557ae4501c9",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/dfa063ea-d343-48d2-87f6-3557ae4501c9.png",
+    "question": "What is the most likely subfield of study this micrograph would be used for?",
+    "answer_options": [
+      "pediatric pathology",
+      "dermatopathology",
+      "pulmonary and pleural pathology",
+      "pancreatic pathology",
+      "cardiovascular pathology",
+      "none of the above"
+    ],
+    "correct_answer_idx": 4,
+    "question_type": "subdomain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "4540aa31-870c-442a-9a27-8e298630c1f7",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/4540aa31-870c-442a-9a27-8e298630c1f7.png",
+    "question": "What is the most likely microscopy modality used to acquire this image?",
+    "answer_options": [
+      "fluorescence microscopy",
+      "light microscopy",
+      "electron microscopy",
+      "none of the above"
+    ],
+    "correct_answer_idx": 1,
+    "question_type": "modality",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  },
+  {
+    "image_id": "0fd03c8c-0bb3-4106-9d76-05de3ddcdf3a",
+    "image_path": "/workspace/eVLLM_Sidd/eVLLM_microBench/organData/coarseGrain/cardiovascular/images/0fd03c8c-0bb3-4106-9d76-05de3ddcdf3a.png",
+    "question": "What is the most likely field of study this micrograph would be used for?",
+    "answer_options": [
+      "dermatology",
+      "radiology",
+      "pathology",
+      "ophthalmology",
+      "cytology",
+      "none of the above"
+    ],
+    "correct_answer_idx": 2,
+    "question_type": "domain",
+    "organ_domain": "cardiovascular",
+    "task_type": "coarse"
+  }
+]

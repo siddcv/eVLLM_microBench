@@ -1,20 +1,124 @@
 {
   "cardiovascular": {
     "combined": {
-      "train_samples": 1440,
-      "val_samples": 360,
-      "test_samples": 600,
-      "total_samples": 2400
+      "fixed": {
+        "val": 361,
+        "test": 360
+      },
+      "trains": {
+        "0.10": 241,
+        "0.25": 600,
+        "0.50": 1200,
+        "0.70": 1679
+      }
+    },
+    "coarse": {
+      "fixed": {
+        "val": 300,
+        "test": 300
+      },
+      "trains": {
+        "0.10": 200,
+        "0.25": 500,
+        "0.50": 1000,
+        "0.70": 1400
+      }
+    },
+    "fine": {
+      "fixed": {
+        "val": 61,
+        "test": 60
+      },
+      "trains": {
+        "0.10": 40,
+        "0.25": 100,
+        "0.50": 200,
+        "0.70": 279
+      }
     }
   },
   "neuropathology": {
     "combined": {
-      "train_samples": 4647,
-      "val_samples": 1162,
-      "test_samples": 1937,
-      "total_samples": 7746
+      "fixed": {
+        "val": 969,
+        "test": 969
+      },
+      "trains": {
+        "0.10": 646,
+        "0.25": 1614,
+        "0.50": 3228,
+        "0.70": 4517
+      }
+    },
+    "coarse": {
+      "fixed": {
+        "val": 775,
+        "test": 775
+      },
+      "trains": {
+        "0.10": 516,
+        "0.25": 1291,
+        "0.50": 2582,
+        "0.70": 3614
+      }
+    },
+    "fine": {
+      "fixed": {
+        "val": 194,
+        "test": 194
+      },
+      "trains": {
+        "0.10": 129,
+        "0.25": 323,
+        "0.50": 646,
+        "0.70": 903
+      }
     }
   },
-  "hematopathology": {},
-  "gastrointestinal": {}
+  "hematopathology": {
+    "combined": {
+      "fixed": {
+        "val": 0,
+        "test": 0
+      },
+      "trains": {}
+    },
+    "coarse": {
+      "fixed": {
+        "val": 0,
+        "test": 0
+      },
+      "trains": {}
+    },
+    "fine": {
+      "fixed": {
+        "val": 0,
+        "test": 0
+      },
+      "trains": {}
+    }
+  },
+  "gastrointestinal": {
+    "combined": {
+      "fixed": {
+        "val": 0,
+        "test": 0
+      },
+      "trains": {}
+    },
+    "coarse": {
+      "fixed": {
+        "val": 0,
+        "test": 0
+      },
+      "trains": {}
+    },
+    "fine": {
+      "fixed": {
+        "val": 0,
+        "test": 0
+      },
+      "trains": {}
+    }
+  }
 }

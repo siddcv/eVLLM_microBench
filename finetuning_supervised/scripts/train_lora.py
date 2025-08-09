@@ -80,6 +80,11 @@ class BioMedCLIPLoRATrainer:
         
         # Move to device
         self.model = self.model.to(self.device)
+
+        # logger.info("Listing possible LoRA target modules...")
+        # for name, _ in self.model.named_modules():
+        #     if any(k in name.lower() for k in ["qkv", "proj", "fc1", "fc2", "query", "key", "value", "dense"]):
+        #         logger.info(f"  {name}")
         
         # Freeze base model if specified
         if self.config['model']['freeze_base']:
@@ -118,6 +123,7 @@ class BioMedCLIPLoRATrainer:
             target_modules=target_modules,
             bias=lora_config['bias']
         )
+
         
         logger.info(f"LoRA config: r={self.lora_config.r}, alpha={self.lora_config.lora_alpha}")
     
@@ -829,17 +835,23 @@ class BioMedCLIPLoRATrainer:
         """Main training loop."""
         logger.info(f"Starting training for {organ_domain} {task_type} {split_ratio}")
         
-        # Load data
-        data_dir = self.base_dir / 'data' / 'splits' / organ_domain / task_type / split_ratio
-        train_path = data_dir / 'train.json'
-        val_path = data_dir / 'val.json'
+        # Normalize ratio to two-decimal string for directory naming (e.g., 0.1 -> "0.10")
+        try:
+            ratio_dir = f"{float(split_ratio):.2f}"
+        except Exception:
+            ratio_dir = split_ratio
+        
+        # Load data from new folder structure
+        trains_dir = self.base_dir / 'data' / 'splits' / organ_domain / task_type / 'trains' / ratio_dir
+        fixed_dir = self.base_dir / 'data' / 'splits' / organ_domain / task_type / 'fixed'
+        train_path = trains_dir / 'train.json'
+        val_path = fixed_dir / 'val.json'
         
         if not train_path.exists() or not val_path.exists():
             logger.error(f"Data files not found: {train_path}, {val_path}")
             return
 
         train_data = self.load_data(train_path)
-        # train_data = self.load_data(organ_domain,task_type, split_ratio)
         val_data = self.load_data(val_path)
         
         logger.info(f"Train samples: {len(train_data)}, Val samples: {len(val_data)}")
@@ -889,7 +901,7 @@ class BioMedCLIPLoRATrainer:
             if val_acc > best_val_acc:
                 best_val_acc = val_acc
                 patience_counter = 0
-                self.save_model(organ_domain, task_type, split_ratio, epoch, val_acc)
+                self.save_model(organ_domain, task_type, ratio_dir, epoch, val_acc)
             else:
                 patience_counter += 1
             
