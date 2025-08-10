@@ -1,0 +1,25 @@
+{
+  "organ_domain": "gastrointestinal",
+  "task_type": "fine",
+  "split_ratio": "0.70",
+  "overall": {
+    "accuracy": 0.9514563106796117,
+    "correct": 588,
+    "total": 618,
+    "confidence_interval_95": {
+      "lower": 0.9256867546025078,
+      "upper": 0.9599271885788885
+    }
+  },
+  "per_question_type": {
+    "classification": {
+      "accuracy": 0.9514563106796117,
+      "correct": 588,
+      "total": 618,
+      "confidence_interval_95": {
+        "lower": 0.9256867546025078,
+        "upper": 0.9599271885788885
+      }
+    }
+  }
+}

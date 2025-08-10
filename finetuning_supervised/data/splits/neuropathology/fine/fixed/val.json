@@ -13,7 +13,14 @@
     "correct_answer_idx": 3,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "f3e9f249-15b9-41f3-b0f8-3d463dc8212b",
@@ -29,7 +36,14 @@
     "correct_answer_idx": 2,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "56a8310c-dd07-4e07-b38c-63ce28384489",
@@ -45,7 +59,14 @@
     "correct_answer_idx": 2,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "955d56e6-ddfc-4a1b-9861-4fa4aed97488",
@@ -61,7 +82,14 @@
     "correct_answer_idx": 0,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "5028d3cc-c25f-4525-8caf-79c82f9f2950",
@@ -77,7 +105,14 @@
     "correct_answer_idx": 2,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "98a21e0e-bb18-4ed8-9d19-e6f29a4cf1d6",
@@ -93,7 +128,14 @@
     "correct_answer_idx": 0,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "55c394f8-ed3f-49f6-9baa-8a19930ab53e",
@@ -109,7 +151,14 @@
     "correct_answer_idx": 1,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "4e7f885d-6f18-470f-8e8e-b57e9c553f62",
@@ -125,7 +174,14 @@
     "correct_answer_idx": 2,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "41fa5735-98ad-46c7-819b-f941dbf42585",
@@ -141,7 +197,14 @@
     "correct_answer_idx": 1,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "b62e1320-4b74-456b-8773-f73a75e9ccd3",
@@ -157,7 +220,14 @@
     "correct_answer_idx": 2,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "08301bd0-de33-4dd3-9230-a01ce17d9d03",
@@ -173,7 +243,14 @@
     "correct_answer_idx": 3,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "ee77e359-a9b5-4202-802c-bf66167c2bcb",
@@ -189,7 +266,14 @@
     "correct_answer_idx": 2,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "a8719569-46dd-484b-af41-5e222aa63e65",
@@ -205,7 +289,14 @@
     "correct_answer_idx": 1,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "bf4e7932-6229-418c-b465-d5dcf8395c44",
@@ -221,7 +312,14 @@
     "correct_answer_idx": 3,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "a176dbb4-f742-4cea-b3fc-2f389ebd1baf",
@@ -237,7 +335,14 @@
     "correct_answer_idx": 2,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "164f73c8-8447-4d4e-bb3b-4d568c5aaf04",
@@ -253,7 +358,14 @@
     "correct_answer_idx": 0,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "ba951de0-cfe7-46e6-a05c-108d1a21c848",
@@ -269,7 +381,14 @@
     "correct_answer_idx": 3,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "fa07e8bf-ecc9-4b6e-9721-d16dc794fd9c",
@@ -285,7 +404,14 @@
     "correct_answer_idx": 3,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "70c3aa33-8629-4bf5-9d0e-66f221dd7ba9",
@@ -301,7 +427,14 @@
     "correct_answer_idx": 3,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "ebbc1ba6-9f2c-4db2-b50d-9f728f427994",
@@ -317,7 +450,14 @@
     "correct_answer_idx": 0,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "dfa8385e-7b49-4e43-bcf3-bc3aca9727c5",
@@ -333,7 +473,14 @@
     "correct_answer_idx": 2,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "254b9313-48b6-4575-93c0-2431bfd114f0",
@@ -349,7 +496,14 @@
     "correct_answer_idx": 0,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "c2ff6723-1f95-4372-8154-7d47afe36af0",
@@ -365,7 +519,14 @@
     "correct_answer_idx": 2,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "43b1c073-bf3d-4c42-a89e-28012d119481",
@@ -381,7 +542,14 @@
     "correct_answer_idx": 2,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "bbec9d92-76b6-4dd4-a891-86f52cf86f93",
@@ -397,7 +565,14 @@
     "correct_answer_idx": 2,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "0c1cd006-bf31-408f-91e5-6c83d06a4fa6",
@@ -413,7 +588,14 @@
     "correct_answer_idx": 3,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "172134b4-048d-4424-ad04-02489fef056c",
@@ -429,7 +611,14 @@
     "correct_answer_idx": 0,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "91493003-eb7f-4d1e-a55a-c71f84ddfa00",
@@ -445,7 +634,14 @@
     "correct_answer_idx": 0,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "0bb7a592-f198-4811-876b-93324850d2ad",
@@ -461,7 +657,14 @@
     "correct_answer_idx": 0,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "66a6a7fd-3ae1-4698-af8c-00e606c14653",
@@ -477,7 +680,14 @@
     "correct_answer_idx": 2,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "0e43deef-d0fe-47bb-a7c8-66f84dbf7d39",
@@ -493,7 +703,14 @@
     "correct_answer_idx": 1,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "a74b5da0-79cf-4d10-8a6a-80c10fe19bcb",
@@ -509,7 +726,14 @@
     "correct_answer_idx": 1,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "17a73f12-e13d-4cc4-9d71-4ddb363f1190",
@@ -525,7 +749,14 @@
     "correct_answer_idx": 1,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "8f6f71a5-fb59-4060-a292-718c86cb74e9",
@@ -541,7 +772,14 @@
     "correct_answer_idx": 2,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "d189df39-fcf9-473f-898c-e85f715fcd7a",
@@ -557,7 +795,14 @@
     "correct_answer_idx": 3,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "61110011-adcd-4715-a8d8-f46a192b6d61",
@@ -573,7 +818,14 @@
     "correct_answer_idx": 3,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "1bec6f9f-b455-48d0-9c14-4a5f6d4c5ef0",
@@ -589,7 +841,14 @@
     "correct_answer_idx": 1,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "8e6ab2ff-3dc1-4c08-9396-cbbe1be6af41",
@@ -605,7 +864,14 @@
     "correct_answer_idx": 3,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "a6dda0fd-d79c-455f-98f1-90fff0cfb36e",
@@ -621,7 +887,14 @@
     "correct_answer_idx": 1,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "c541cb00-1223-4188-b7e5-3aafc63b876c",
@@ -637,7 +910,14 @@
     "correct_answer_idx": 3,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "a80bc631-0510-4dab-bf5f-3f65d7e3ea34",
@@ -653,7 +933,14 @@
     "correct_answer_idx": 2,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "6cee74ff-6ec3-49bd-985f-a6c9d7cea736",
@@ -669,7 +956,14 @@
     "correct_answer_idx": 0,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "4dc58df1-83e2-48d8-9f56-84caf30c99e2",
@@ -685,7 +979,14 @@
     "correct_answer_idx": 1,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "33383d47-a79b-4a58-963a-c7ff9c7f0aa6",
@@ -701,7 +1002,14 @@
     "correct_answer_idx": 2,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "4ff4d9a8-1fd3-4359-8cfb-2d8ced473a25",
@@ -717,7 +1025,14 @@
     "correct_answer_idx": 2,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "8ac42d67-9ac9-4b29-afc2-e3e259c821bb",
@@ -733,7 +1048,14 @@
     "correct_answer_idx": 1,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "6ec03823-99ea-4919-8353-528f70f2ba81",
@@ -749,7 +1071,14 @@
     "correct_answer_idx": 3,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "f88c0350-9e7c-4f45-acc6-b0f77064ba94",
@@ -765,7 +1094,14 @@
     "correct_answer_idx": 2,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "9556678b-1aef-4dd4-91ae-4470147253c3",
@@ -781,7 +1117,14 @@
     "correct_answer_idx": 3,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "ab65d49a-58a2-488c-b4e7-4ef09f244858",
@@ -797,7 +1140,14 @@
     "correct_answer_idx": 1,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "96b226f1-6ac8-4a91-a4ff-1e75fb102542",
@@ -813,7 +1163,14 @@
     "correct_answer_idx": 1,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "c92a273d-aec9-4fd5-bc4e-bc89ff5644b8",
@@ -829,7 +1186,14 @@
     "correct_answer_idx": 3,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "94725006-c806-4ed9-9fe0-01445cae7638",
@@ -845,7 +1209,14 @@
     "correct_answer_idx": 2,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "b9cb3774-934e-4f7f-a87d-6908f77f8d4f",
@@ -861,7 +1232,14 @@
     "correct_answer_idx": 2,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "c5ccaad6-2823-49ac-af40-4a088e0997ac",
@@ -877,7 +1255,14 @@
     "correct_answer_idx": 3,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "5b1c2dc3-a0fc-4a07-8c8f-a9355b5c31ae",
@@ -893,7 +1278,14 @@
     "correct_answer_idx": 0,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "222f6c6a-0ee3-44f2-994c-d066e1f413f1",
@@ -909,7 +1301,14 @@
     "correct_answer_idx": 0,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "d2ef8748-6902-4ee1-9026-cdfda0f72a98",
@@ -925,7 +1324,14 @@
     "correct_answer_idx": 1,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "71eadd5d-9e81-4235-9319-4fc066e0be79",
@@ -941,7 +1347,14 @@
     "correct_answer_idx": 3,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "654d9306-7e30-44d9-8fe0-dfbabf2c1a46",
@@ -957,7 +1370,14 @@
     "correct_answer_idx": 0,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "05d8d9cb-38fa-4d31-94c1-5456db400134",
@@ -973,7 +1393,14 @@
     "correct_answer_idx": 2,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "ba82505d-6145-44f8-a2c6-98754071ed3a",
@@ -989,7 +1416,14 @@
     "correct_answer_idx": 0,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "b2090f4b-3c92-40e1-99d6-f2095db75ebc",
@@ -1005,7 +1439,14 @@
     "correct_answer_idx": 1,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "f449e7ef-047a-422d-b46e-a29f65577dbf",
@@ -1021,7 +1462,14 @@
     "correct_answer_idx": 1,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "a492a6e4-04f0-4831-a299-cc462a47d15a",
@@ -1037,7 +1485,14 @@
     "correct_answer_idx": 2,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "602d1b55-7603-44cb-b3d3-11a9d46aa763",
@@ -1053,7 +1508,14 @@
     "correct_answer_idx": 0,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "e704ea55-99cc-4f5b-acb8-a74b848d1ad6",
@@ -1069,7 +1531,14 @@
     "correct_answer_idx": 2,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "7fd3b328-483e-4485-a71d-ce5eda963597",
@@ -1085,7 +1554,14 @@
     "correct_answer_idx": 2,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "b04dca3f-3a7b-4d85-a7d6-f1c4d052b633",
@@ -1101,7 +1577,14 @@
     "correct_answer_idx": 2,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "526d907c-9c27-4058-b028-ca9fe949f91e",
@@ -1117,7 +1600,14 @@
     "correct_answer_idx": 3,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "853debc3-040b-44fe-8052-7681c61007a8",
@@ -1133,7 +1623,14 @@
     "correct_answer_idx": 0,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "e91d6d24-8e1b-458f-b627-aedf3de14ccd",
@@ -1149,7 +1646,14 @@
     "correct_answer_idx": 2,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "084c267c-b1c2-4a1d-a04c-0f5e23761127",
@@ -1165,7 +1669,14 @@
     "correct_answer_idx": 1,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "c4386633-5cea-46d2-97c4-07d00293a22f",
@@ -1181,7 +1692,14 @@
     "correct_answer_idx": 1,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "98538ab4-e99b-4729-b673-0e2c5a9fd5f5",
@@ -1197,7 +1715,14 @@
     "correct_answer_idx": 0,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "2a7b2859-378b-49ad-89e1-8b10a64d2110",
@@ -1213,7 +1738,14 @@
     "correct_answer_idx": 1,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "6ff71f5c-87ba-4326-ba04-253541724763",
@@ -1229,7 +1761,14 @@
     "correct_answer_idx": 2,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "035316cb-816c-4b0f-8468-7e70cef37df0",
@@ -1245,7 +1784,14 @@
     "correct_answer_idx": 1,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "e3c0148c-8ad0-44bd-9443-ab99d0b65446",
@@ -1261,7 +1807,14 @@
     "correct_answer_idx": 3,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "1c37a36c-d13c-47cd-81e7-9adde5eefde3",
@@ -1277,7 +1830,14 @@
     "correct_answer_idx": 2,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "9566c757-bdf9-49bf-b6cd-5f258300c342",
@@ -1293,7 +1853,14 @@
     "correct_answer_idx": 2,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "b726c7b8-bcc9-4184-b0ad-3490859fcbd9",
@@ -1309,7 +1876,14 @@
     "correct_answer_idx": 0,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "08ed46c2-8ea4-4fb6-a4a3-c3abde1572da",
@@ -1325,7 +1899,14 @@
     "correct_answer_idx": 0,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "89f094e4-ea4e-4581-83fa-a0b9894bdf92",
@@ -1341,7 +1922,14 @@
     "correct_answer_idx": 3,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "620f0d35-8c95-4ad0-8ec5-29a32206d1da",
@@ -1357,7 +1945,14 @@
     "correct_answer_idx": 3,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "9ab988e0-a0ad-4350-b972-3c65aacd1de5",
@@ -1373,7 +1968,14 @@
     "correct_answer_idx": 1,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "8c352352-a042-4f3b-acd2-ab98596794ec",
@@ -1389,7 +1991,14 @@
     "correct_answer_idx": 2,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "270ee0ad-e37a-4700-abed-24c763991ac4",
@@ -1405,7 +2014,14 @@
     "correct_answer_idx": 2,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "a469627a-4a73-4395-b242-29c15d8ec1f5",
@@ -1421,7 +2037,14 @@
     "correct_answer_idx": 3,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "33cdad2e-2f85-4a1a-84fb-f09b7f4f0aa1",
@@ -1437,7 +2060,14 @@
     "correct_answer_idx": 2,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "3aff1dbe-cf10-490e-9e12-800fa72fd75e",
@@ -1453,7 +2083,14 @@
     "correct_answer_idx": 2,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "c51d867c-0a25-45b1-bcc7-824ede342db9",
@@ -1469,7 +2106,14 @@
     "correct_answer_idx": 1,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "b30ef27a-ad9e-48b9-813e-3b08f44a690e",
@@ -1485,7 +2129,14 @@
     "correct_answer_idx": 2,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "b2d7bafe-e4aa-4037-bd42-c52258874046",
@@ -1501,7 +2152,14 @@
     "correct_answer_idx": 0,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "8c458fee-b14e-4e24-a9ea-6036248f95e7",
@@ -1517,7 +2175,14 @@
     "correct_answer_idx": 3,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "c68662b6-b4d6-4e3f-9056-6b13cf0d0304",
@@ -1533,7 +2198,14 @@
     "correct_answer_idx": 1,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "3fab56fc-15c4-4a95-a6d8-aa25963efd17",
@@ -1549,7 +2221,14 @@
     "correct_answer_idx": 0,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "ee68e62a-a6b6-47a5-8133-d51e0a351e56",
@@ -1565,7 +2244,14 @@
     "correct_answer_idx": 1,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "8a5b99e2-59d6-4e6f-a314-272d4e4d4750",
@@ -1581,7 +2267,14 @@
     "correct_answer_idx": 2,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "9209c8ea-fb7d-42e0-ba8d-0336c2f8d3d8",
@@ -1597,7 +2290,14 @@
     "correct_answer_idx": 3,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "fe145fa6-940a-4d8d-a009-9383d9018c70",
@@ -1613,7 +2313,14 @@
     "correct_answer_idx": 0,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "3cec9f9e-d4d3-43a5-b446-a5339cbf1961",
@@ -1629,7 +2336,14 @@
     "correct_answer_idx": 2,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "d2fb237d-a46d-4e15-ae15-a5424fa5d1c0",
@@ -1645,7 +2359,14 @@
     "correct_answer_idx": 2,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "7d0ff7e3-60df-4c4c-b5a0-bf32c49288bf",
@@ -1661,7 +2382,14 @@
     "correct_answer_idx": 3,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "4cfa521b-3dd3-4af8-abbe-df6f0441897c",
@@ -1677,7 +2405,14 @@
     "correct_answer_idx": 2,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "c92a273d-aec9-4fd5-bc4e-bc89ff5644b8",
@@ -1693,7 +2428,14 @@
     "correct_answer_idx": 3,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "c8d64987-b93a-445b-ba6a-ddba051329f1",
@@ -1709,7 +2451,14 @@
     "correct_answer_idx": 3,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "62244bc2-8a27-40b8-a272-ce990d4a4412",
@@ -1725,7 +2474,14 @@
     "correct_answer_idx": 1,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "e54e0ced-a31f-4ad4-9b5d-446b99bd089a",
@@ -1741,7 +2497,14 @@
     "correct_answer_idx": 0,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "0c2adc1d-22db-4c62-988c-27bfaf6e77e7",
@@ -1757,7 +2520,14 @@
     "correct_answer_idx": 0,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "01f63b4c-32a5-4d5f-ad74-55ad353b423d",
@@ -1773,7 +2543,14 @@
     "correct_answer_idx": 2,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "45f8ca08-f73c-41f5-8863-512e7456b68a",
@@ -1789,7 +2566,14 @@
     "correct_answer_idx": 0,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "4a37174e-e762-40f3-a1a1-ba4ce33ee0d1",
@@ -1805,7 +2589,14 @@
     "correct_answer_idx": 3,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "daf2277c-0cb1-4497-a993-1efc3d4643a1",
@@ -1821,7 +2612,14 @@
     "correct_answer_idx": 2,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "8ac7d1b7-75e2-46e4-a5a9-434b96116ec1",
@@ -1837,7 +2635,14 @@
     "correct_answer_idx": 1,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "6ea8fd45-076e-49e7-8083-613c87019f00",
@@ -1853,7 +2658,14 @@
     "correct_answer_idx": 2,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "854d6bee-8b35-4b66-8d94-7a3dd9357214",
@@ -1869,7 +2681,14 @@
     "correct_answer_idx": 3,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "43e1c136-fe8d-4bc4-b3ba-b49077d324ac",
@@ -1885,7 +2704,14 @@
     "correct_answer_idx": 1,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "55e07aca-8a9f-4ba6-a977-dc31571ebb0d",
@@ -1901,7 +2727,14 @@
     "correct_answer_idx": 0,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "2caea549-1ba8-477e-a10f-79f1073350e3",
@@ -1917,7 +2750,14 @@
     "correct_answer_idx": 1,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "c634be2b-1583-404d-9dca-a65aab6b6554",
@@ -1933,7 +2773,14 @@
     "correct_answer_idx": 2,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "38857e09-d36a-46c8-929e-f5afa0dc4741",
@@ -1949,7 +2796,14 @@
     "correct_answer_idx": 0,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "d7ab4272-89e5-49fd-91e3-cf8992b4a6f4",
@@ -1965,7 +2819,14 @@
     "correct_answer_idx": 0,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "da072fd8-a307-4569-bfbd-13d5725e8428",
@@ -1981,7 +2842,14 @@
     "correct_answer_idx": 0,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "0203e117-307d-4fd4-bff0-2aca881cf04b",
@@ -1997,7 +2865,14 @@
     "correct_answer_idx": 0,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "15330218-4b41-4436-9f3a-3a4191939349",
@@ -2013,7 +2888,14 @@
     "correct_answer_idx": 0,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "07e6bcd9-7dfb-4d56-bab1-ac1f456e4252",
@@ -2029,7 +2911,14 @@
     "correct_answer_idx": 0,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "f4df8e26-23e8-415e-b0b7-b8b44a458a2f",
@@ -2045,7 +2934,14 @@
     "correct_answer_idx": 1,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "c982c2de-eee3-4617-bcd7-179a9e8fbbd5",
@@ -2061,7 +2957,14 @@
     "correct_answer_idx": 1,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "22083ee1-9a0e-477a-b7b0-287fd24f3b1b",
@@ -2077,7 +2980,14 @@
     "correct_answer_idx": 1,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "a00ce965-72a1-41da-8e10-e4ee02089437",
@@ -2093,7 +3003,14 @@
     "correct_answer_idx": 2,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "5a0a0ea5-e6b8-42c9-99fe-fd79f4016f8f",
@@ -2109,7 +3026,14 @@
     "correct_answer_idx": 0,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "d4787ce2-9596-45fd-a5e4-27b183dbaa7f",
@@ -2125,7 +3049,14 @@
     "correct_answer_idx": 1,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "6c1c4cb4-5023-461b-8952-6393dc42b5b9",
@@ -2141,7 +3072,14 @@
     "correct_answer_idx": 2,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "4ce42e19-f794-4e50-adcb-19f9716414ad",
@@ -2157,7 +3095,14 @@
     "correct_answer_idx": 3,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "6c74897e-67cb-4db7-859c-f59b8116a0a2",
@@ -2173,7 +3118,14 @@
     "correct_answer_idx": 3,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "601ad950-0446-4ec7-b011-8eb5a30bf763",
@@ -2189,7 +3141,14 @@
     "correct_answer_idx": 0,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "9df78d63-3f28-4207-bf34-7fc055f29a2e",
@@ -2205,7 +3164,14 @@
     "correct_answer_idx": 3,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "dc3c79a6-2a04-40ee-8289-18658639fee4",
@@ -2221,7 +3187,14 @@
     "correct_answer_idx": 0,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "0af0f3d9-1408-47e8-bb64-eff017aea2fd",
@@ -2237,7 +3210,14 @@
     "correct_answer_idx": 0,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "917bd482-f023-4cf2-a9c8-d16e2345b012",
@@ -2253,7 +3233,14 @@
     "correct_answer_idx": 3,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "f4ffef1e-fb31-44ce-8052-25f9ce3472b4",
@@ -2269,7 +3256,14 @@
     "correct_answer_idx": 2,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "d9bedc06-4a97-407e-bdd9-268a41f18041",
@@ -2285,7 +3279,14 @@
     "correct_answer_idx": 1,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "abdb2a9d-cc7a-48a5-be6b-71fd769c7b6e",
@@ -2301,7 +3302,14 @@
     "correct_answer_idx": 2,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "2ccf19ff-6e2a-421a-9e5a-a50890454948",
@@ -2317,7 +3325,14 @@
     "correct_answer_idx": 0,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "4dac841c-727c-4d7f-bf7d-d24ee8ab91d9",
@@ -2333,7 +3348,14 @@
     "correct_answer_idx": 2,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "24503192-d598-498a-a45f-29a3142e53c6",
@@ -2349,7 +3371,14 @@
     "correct_answer_idx": 1,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "200ee7c0-ca27-471f-a0ef-853d42d31b97",
@@ -2365,7 +3394,14 @@
     "correct_answer_idx": 3,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "b4123130-8cc4-44ed-b80b-751963c94255",
@@ -2381,7 +3417,14 @@
     "correct_answer_idx": 2,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "e712709e-ef5e-4ae1-9a43-79c8cc42c8b6",
@@ -2397,7 +3440,14 @@
     "correct_answer_idx": 2,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "25ba6e8b-c50f-46cd-ad7c-153fcddfaff7",
@@ -2413,7 +3463,14 @@
     "correct_answer_idx": 0,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "1d0853fe-8bd0-4eda-bb9d-44ad4ded8917",
@@ -2429,7 +3486,14 @@
     "correct_answer_idx": 2,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "e77373e6-6d1f-4208-86fb-43e32707ecab",
@@ -2445,7 +3509,14 @@
     "correct_answer_idx": 2,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "ccf69df1-4aa5-43df-bd85-4f67af17ac0e",
@@ -2461,7 +3532,14 @@
     "correct_answer_idx": 3,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "ee164fc2-d8c9-4069-8708-af02b4cc444e",
@@ -2477,7 +3555,14 @@
     "correct_answer_idx": 3,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "69eefc35-6659-4004-a484-839d9bfff2ba",
@@ -2493,7 +3578,14 @@
     "correct_answer_idx": 3,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "bed806b8-a603-4fc5-b13e-7ce7c3d197c9",
@@ -2509,7 +3601,14 @@
     "correct_answer_idx": 2,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "e4aa5bdb-b6af-45ed-80e8-dbab7687ec04",
@@ -2525,7 +3624,14 @@
     "correct_answer_idx": 3,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "23dad20c-859a-4e85-ab3e-2f38983bef4b",
@@ -2541,7 +3647,14 @@
     "correct_answer_idx": 1,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "2f7a2869-f305-4142-89bf-9f5a209af23f",
@@ -2557,7 +3670,14 @@
     "correct_answer_idx": 1,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "1d0d52ad-3793-445c-a7c4-e6ee57ee9152",
@@ -2573,7 +3693,14 @@
     "correct_answer_idx": 3,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "d53b8108-3a4c-412a-b5d8-55e1bcc1c23d",
@@ -2589,7 +3716,14 @@
     "correct_answer_idx": 2,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "a5494bf6-7708-4f5c-86e7-2bfa19698f17",
@@ -2605,7 +3739,14 @@
     "correct_answer_idx": 2,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "dd421a84-23f3-4fb5-83c2-4aacdb88aebf",
@@ -2621,7 +3762,14 @@
     "correct_answer_idx": 1,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "f2998fa3-866c-4dc3-b784-0b27fabd1511",
@@ -2637,7 +3785,14 @@
     "correct_answer_idx": 2,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "1014ccb9-2dc3-4f59-bdc3-855f88c24bc8",
@@ -2653,7 +3808,14 @@
     "correct_answer_idx": 3,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "d7d090a9-ecce-481b-b141-da0cc98d13bf",
@@ -2669,7 +3831,14 @@
     "correct_answer_idx": 0,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "f3c600bf-bb45-4bdc-87c4-52f02c582ee2",
@@ -2685,7 +3854,14 @@
     "correct_answer_idx": 1,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "1e2b9124-91a7-491f-9a34-671a95504f4a",
@@ -2701,7 +3877,14 @@
     "correct_answer_idx": 3,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "c703ceba-5e81-4fbb-8b98-ff25fafe0528",
@@ -2717,7 +3900,14 @@
     "correct_answer_idx": 3,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "5a9c079b-cd05-48e1-bde7-6dc098759276",
@@ -2733,7 +3923,14 @@
     "correct_answer_idx": 3,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "f86572b7-3f5d-4489-b46d-e89270172805",
@@ -2749,7 +3946,14 @@
     "correct_answer_idx": 0,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "a5cd0f03-6c9e-4adb-a84b-a73dda61a324",
@@ -2765,7 +3969,14 @@
     "correct_answer_idx": 2,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "a033928b-7f25-4701-bb9e-93d1a19f2e90",
@@ -2781,7 +3992,14 @@
     "correct_answer_idx": 0,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "8474f401-52c8-4ff5-999d-10bc9ece8522",
@@ -2797,7 +4015,14 @@
     "correct_answer_idx": 1,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "61d1ce77-a2b0-4a0b-9d0f-401f579ef240",
@@ -2813,7 +4038,14 @@
     "correct_answer_idx": 0,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "15a0aaee-82d3-48fb-9415-4430e0765636",
@@ -2829,7 +4061,14 @@
     "correct_answer_idx": 0,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "b0532288-2de1-430d-bfc8-58d38e4ff0ad",
@@ -2845,7 +4084,14 @@
     "correct_answer_idx": 3,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "f807fcc7-1329-4492-8a6f-5931198cf90e",
@@ -2861,7 +4107,14 @@
     "correct_answer_idx": 2,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "ddd2eeff-5edc-41ad-ada2-cf546bf51c95",
@@ -2877,7 +4130,14 @@
     "correct_answer_idx": 2,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "bd295cff-622c-4124-9954-08ecdbe06bfa",
@@ -2893,7 +4153,14 @@
     "correct_answer_idx": 2,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "880dd3fb-87d5-4ff5-8d6c-97a13cb7c421",
@@ -2909,7 +4176,14 @@
     "correct_answer_idx": 1,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "4b848650-027f-4698-9070-ef5425dd622a",
@@ -2925,7 +4199,14 @@
     "correct_answer_idx": 0,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "d27e9467-d912-44fb-8c08-8eb26281fad8",
@@ -2941,7 +4222,14 @@
     "correct_answer_idx": 1,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "7029a3fc-52a5-44cd-8218-74bc056aa28f",
@@ -2957,7 +4245,14 @@
     "correct_answer_idx": 1,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "e964a691-e3f3-4564-ad34-a99270fa8b48",
@@ -2973,7 +4268,14 @@
     "correct_answer_idx": 0,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "674f63cb-384c-4f1a-92e1-0d97428c8830",
@@ -2989,7 +4291,14 @@
     "correct_answer_idx": 3,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "67de69c9-c427-45a4-80ee-f63265ded94e",
@@ -3005,7 +4314,14 @@
     "correct_answer_idx": 3,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "de35dbd5-2245-4bec-8390-35519aa08d80",
@@ -3021,7 +4337,14 @@
     "correct_answer_idx": 1,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "f2d9ee8b-35ca-484e-a8a6-b06c6ca7088b",
@@ -3037,7 +4360,14 @@
     "correct_answer_idx": 1,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "15110b33-f9e3-41d3-8cbf-4be60edca186",
@@ -3053,7 +4383,14 @@
     "correct_answer_idx": 0,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "8ff52c5d-267f-4f46-ad0f-9d453fa505fa",
@@ -3069,7 +4406,14 @@
     "correct_answer_idx": 3,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "e791f5d4-483d-44ed-b357-e22835bb6f6f",
@@ -3085,7 +4429,14 @@
     "correct_answer_idx": 2,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   },
   {
     "image_id": "94c29ca3-fbf8-4952-8de1-312a52406e65",
@@ -3101,6 +4452,13 @@
     "correct_answer_idx": 3,
     "question_type": "classification",
     "organ_domain": "neuropathology",
-    "task_type": "fine"
+    "task_type": "fine",
+    "domain": "pathology",
+    "subdomain": "neuropathology",
+    "modality": "light microscopy",
+    "submodality": "brightfield microscopy",
+    "stain": "",
+    "normal_or_abnormal": "",
+    "microns_per_pixel": 0.5026999711990356
   }
 ]

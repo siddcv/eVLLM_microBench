@@ -1,0 +1,25 @@
+{
+  "organ_domain": "neuropathology",
+  "task_type": "fine",
+  "split_ratio": "0.25",
+  "overall": {
+    "accuracy": 0.7061855670103093,
+    "correct": 137,
+    "total": 194,
+    "confidence_interval_95": {
+      "lower": 0.6249493186635758,
+      "upper": 0.7521465300211849
+    }
+  },
+  "per_question_type": {
+    "classification": {
+      "accuracy": 0.7061855670103093,
+      "correct": 137,
+      "total": 194,
+      "confidence_interval_95": {
+        "lower": 0.6249493186635758,
+        "upper": 0.7521465300211849
+      }
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "organ_domain": "neuropathology",
+  "task_type": "coarse",
+  "split_ratio": "0.70",
+  "overall": {
+    "accuracy": 1.0,
+    "correct": 775,
+    "total": 775,
+    "confidence_interval_95": {
+      "lower": 0.9950677268432644,
+      "upper": 1.0
+    }
+  },
+  "per_question_type": {
+    "stain": {
+      "accuracy": 1.0,
+      "correct": 194,
+      "total": 194,
+      "confidence_interval_95": {
+        "lower": 0.9805831454964367,
+        "upper": 1.0
+      }
+    },
+    "modality": {
+      "accuracy": 1.0,
+      "correct": 193,
+      "total": 193,
+      "confidence_interval_95": {
+        "lower": 0.9804845033982735,
+        "upper": 1.0
+      }
+    },
+    "domain": {
+      "accuracy": 1.0,
+      "correct": 194,
+      "total": 194,
+      "confidence_interval_95": {
+        "lower": 0.9805831454964367,
+        "upper": 1.0
+      }
+    },
+    "submodality": {
+      "accuracy": 1.0,
+      "correct": 194,
+      "total": 194,
+      "confidence_interval_95": {
+        "lower": 0.9805831454964367,
+        "upper": 1.0
+      }
+    }
+  }
+}

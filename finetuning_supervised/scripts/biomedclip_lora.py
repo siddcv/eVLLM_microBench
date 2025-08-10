@@ -403,11 +403,11 @@ class BioMedCLIPLoRA:
                     model_output = self.model(processed_images, tokenized_texts)
                 
                 # Debug: let's see what the model actually returns
-                logger.info(f"Model output type: {type(model_output)}")
-                if isinstance(model_output, tuple):
-                    logger.info(f"Model output length: {len(model_output)}")
-                    for i, item in enumerate(model_output):
-                        logger.info(f"Output {i}: {type(item)}, shape: {item.shape if hasattr(item, 'shape') else 'N/A'}")
+                # logger.info(f"Model output type: {type(model_output)}")
+                # if isinstance(model_output, tuple):
+                #     logger.info(f"Model output length: {len(model_output)}")
+                #     for i, item in enumerate(model_output):
+                #         logger.info(f"Output {i}: {type(item)}, shape: {item.shape if hasattr(item, 'shape') else 'N/A'}")
                 
                 # Handle different possible return types
                 if isinstance(model_output, tuple):
@@ -416,7 +416,7 @@ class BioMedCLIPLoRA:
                         image_features = model_output[0]
                         text_features = model_output[1]
                         logit_scale = model_output[2]
-                        logger.info(f"Successfully unpacked 3 outputs")
+                        # logger.info(f"Successfully unpacked 3 outputs")
                     elif len(model_output) == 2:
                         # Some models return (features, logit_scale) or similar
                         image_features = model_output[0]
@@ -503,7 +503,7 @@ class BioMedCLIPLoRA:
         full_questions = [f"{question} {option}" for option in answer_options]
         
         logger.info(f"predict_single: image_path={image_path}")
-        logger.info(f"predict_single: full_questions={full_questions}")
+        # logger.info(f"predict_single: full_questions={full_questions}")
         
         # Run inference
         try:
