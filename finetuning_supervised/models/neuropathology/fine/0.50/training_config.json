@@ -71,7 +71,8 @@
       "cardiovascular",
       "neuropathology",
       "hematopathology",
-      "gastrointestinal"
+      "gastrointestinal",
+      "completeDataset"
     ],
     "task_types": [
       "coarse",

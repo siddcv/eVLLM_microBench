@@ -3,22 +3,22 @@
   "task_type": "fine",
   "split_ratio": "0.25",
   "overall": {
-    "accuracy": 0.7061855670103093,
-    "correct": 137,
+    "accuracy": 0.6752577319587629,
+    "correct": 131,
     "total": 194,
     "confidence_interval_95": {
-      "lower": 0.6249493186635758,
-      "upper": 0.7521465300211849
+      "lower": 0.5934688277306799,
+      "upper": 0.7241501154758323
     }
   },
   "per_question_type": {
     "classification": {
-      "accuracy": 0.7061855670103093,
-      "correct": 137,
+      "accuracy": 0.6752577319587629,
+      "correct": 131,
       "total": 194,
       "confidence_interval_95": {
-        "lower": 0.6249493186635758,
-        "upper": 0.7521465300211849
+        "lower": 0.5934688277306799,
+        "upper": 0.7241501154758323
       }
     }
   }

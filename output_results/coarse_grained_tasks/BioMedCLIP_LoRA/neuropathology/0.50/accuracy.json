@@ -4,15 +4,24 @@
   "split_ratio": "0.50",
   "overall": {
     "accuracy": 1.0,
-    "correct": 775,
-    "total": 775,
+    "correct": 969,
+    "total": 969,
     "confidence_interval_95": {
-      "lower": 0.9950677268432644,
+      "lower": 0.9960513002546676,
       "upper": 1.0
     }
   },
   "per_question_type": {
-    "stain": {
+    "subdomain": {
+      "accuracy": 1.0,
+      "correct": 194,
+      "total": 194,
+      "confidence_interval_95": {
+        "lower": 0.9805831454964367,
+        "upper": 1.0
+      }
+    },
+    "submodality": {
       "accuracy": 1.0,
       "correct": 194,
       "total": 194,
@@ -39,7 +48,7 @@
         "upper": 1.0
       }
     },
-    "submodality": {
+    "stain": {
       "accuracy": 1.0,
       "correct": 194,
       "total": 194,

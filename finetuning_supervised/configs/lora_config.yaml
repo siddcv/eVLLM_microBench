@@ -121,7 +121,7 @@ data:
   question_types: ["modality", "submodality", "domain", "stain", "classification"]
   
   # Organ domains
-  organ_domains: ["cardiovascular", "neuropathology", "hematopathology", "gastrointestinal"]
+  organ_domains: ["cardiovascular", "neuropathology", "hematopathology", "gastrointestinal","completeDataset"]
   
   # Task types
   task_types: ["coarse", "fine", "combined"]

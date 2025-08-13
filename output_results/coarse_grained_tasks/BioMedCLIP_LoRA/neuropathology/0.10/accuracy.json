@@ -3,22 +3,31 @@
   "task_type": "coarse",
   "split_ratio": "0.10",
   "overall": {
-    "accuracy": 0.9974193548387097,
-    "correct": 773,
-    "total": 775,
+    "accuracy": 1.0,
+    "correct": 969,
+    "total": 969,
     "confidence_interval_95": {
-      "lower": 0.9857324410748104,
-      "upper": 0.994384564677966
+      "lower": 0.9960513002546676,
+      "upper": 1.0
     }
   },
   "per_question_type": {
-    "stain": {
-      "accuracy": 0.9948453608247423,
-      "correct": 193,
+    "subdomain": {
+      "accuracy": 1.0,
+      "correct": 194,
       "total": 194,
       "confidence_interval_95": {
-        "lower": 0.952254337667565,
-        "upper": 0.9799592954808494
+        "lower": 0.9805831454964367,
+        "upper": 1.0
+      }
+    },
+    "submodality": {
+      "accuracy": 1.0,
+      "correct": 194,
+      "total": 194,
+      "confidence_interval_95": {
+        "lower": 0.9805831454964367,
+        "upper": 1.0
       }
     },
     "modality": {
@@ -31,15 +40,15 @@
       }
     },
     "domain": {
-      "accuracy": 0.9948453608247423,
-      "correct": 193,
+      "accuracy": 1.0,
+      "correct": 194,
       "total": 194,
       "confidence_interval_95": {
-        "lower": 0.952254337667565,
-        "upper": 0.9799592954808494
+        "lower": 0.9805831454964367,
+        "upper": 1.0
       }
     },
-    "submodality": {
+    "stain": {
       "accuracy": 1.0,
       "correct": 194,
       "total": 194,
