@@ -6,23 +6,9 @@ import torch
 from safetensors.torch import load_file, save_file
 import re
 
-def is_lora_key(key: str) -> bool:
-    """Check if a key looks like a LoRA parameter."""
-    lora_patterns = [
-        'lora_A', 'lora_B', 'lora_embedding_A', 'lora_embedding_B',
-        'lora_scaling', 'lora_dropout'
-    ]
-    return any(pattern in key for pattern in lora_patterns)
-
-def normalize_weights(weights: List[float]) -> List[float]:
-    """Normalize weights to sum to 1.0."""
-    total = sum(weights)
-    if total == 0:
-        raise ValueError("Weights cannot all be zero")
-    return [w / total for w in weights]
-
 def _linear_avg(tensors: List[torch.Tensor], weights: List[float]) -> torch.Tensor:
     w = torch.tensor(weights, dtype=tensors[0].dtype, device=tensors[0].device)
+    w = w / w.sum()
     out = torch.zeros_like(tensors[0])
     for ti, wi in zip(tensors, w):
         out.add_(ti * wi)
@@ -53,12 +39,13 @@ def _slerp(t0: torch.Tensor, t1: torch.Tensor, alpha: float) -> torch.Tensor:
     return out.view(shape)
 
 def _pairwise_slerp(tensors: List[torch.Tensor], weights: List[float]) -> torch.Tensor:
-    # reduce list by weighted SLERP (weights already normalized)
+    # reduce list by weighted SLERP (normalize weights to sum=1)
+    w = [w / sum(weights) for w in weights]
     # start from the highest-weight tensor
-    idx = max(range(len(weights)), key=lambda i: weights[i])
+    idx = max(range(len(w)), key=lambda i: w[i])
     acc = tensors[idx]
-    acc_w = weights[idx]
-    for i, (ti, wi) in enumerate(zip(tensors, weights)):
+    acc_w = w[idx]
+    for i, (ti, wi) in enumerate(zip(tensors, w)):
         if i == idx: 
             continue
         if wi <= 0: 
@@ -82,54 +69,27 @@ def merge_adapters(adapter_paths: List[Path], out_dir: Path, method: str, weight
             diff = (set(keys) ^ set(sd.keys()))
             raise ValueError(f"Adapter key mismatch. Diff keys: {list(diff)[:10]}")
 
-    # Normalize weights upfront
+    # default: equal weights
     if weights is None:
         weights = [1.0] * len(sd_list)
     else:
-        assert len(weights) == len(sd_list), f"Expected {len(sd_list)} weights, got {len(weights)}"
-    
-    # Normalize weights to sum to 1.0
-    original_weights = weights.copy()
-    weights = normalize_weights(weights)
-    
-    print("Weights summary:")
-    for i, (original, normalized) in enumerate(zip(original_weights, weights)):
-        print(f"  Adapter {i+1}: original={original:.3f}, normalized={normalized:.3f}")
-
-    # Identify LoRA keys
-    lora_keys = {k for k in keys if is_lora_key(k)}
-    non_lora_keys = keys - lora_keys
-    
-    print(f"Found {len(lora_keys)} LoRA keys and {len(non_lora_keys)} non-LoRA keys")
+        assert len(weights) == len(sd_list)
 
     merged = {}
-    merged_count = 0
-    passed_through_count = 0
-    
     for k in keys:
-        if k in lora_keys:
-            # Merge LoRA parameters
-            if not torch.is_floating_point(sd_list[0][k]):
-                print(f"Warning: Non-floating point LoRA key {k}, passing through from first adapter")
-                merged[k] = sd_list[0][k]
-                passed_through_count += 1
-                continue
-
-            tensors = [sd[k] for sd in sd_list]
-            if method == "avg":
-                merged[k] = _linear_avg(tensors, weights)
-            elif method == "slerp":
-                merged[k] = _pairwise_slerp(tensors, weights)
-            else:
-                raise ValueError(f"Unknown method: {method}")
-            merged_count += 1
-            
-        else:
-            # Pass through non-LoRA parameters from first adapter
+        # only merge LoRA params and related biases; skip non-float tensors safely
+        if not torch.is_floating_point(sd_list[0][k]):
             merged[k] = sd_list[0][k]
-            passed_through_count += 1
+            continue
 
-    print(f"Merging complete: {merged_count} keys merged, {passed_through_count} keys passed through")
+        tensors = [sd[k] for sd in sd_list]
+        if method == "avg":
+            merged[k] = _linear_avg(tensors, weights)
+        elif method == "slerp":
+            # for >2 tensors, reduce by pairwise slerp
+            merged[k] = _pairwise_slerp(tensors, weights)
+        else:
+            raise ValueError(f"Unknown method: {method}")
 
     # Save as a new adapter safetensors
     out_path = out_dir / "adapter_model.safetensors"
@@ -225,7 +185,7 @@ def main():
     ap.add_argument("--data-ratio", type=float, default=0.70,
                     help="Data ratio to use when finding adapters (default: 0.70)")
     ap.add_argument("--weights", nargs="*", type=float, default=None,
-                    help="Optional weights per adapter (will be normalized to sum to 1.0)")
+                    help="Optional weights per adapter (same order)")
     ap.add_argument("--method", choices=["avg", "slerp"], default="avg")
     ap.add_argument("--out-dir", type=str, required=True,
                     help="Output directory for the merged adapter")
