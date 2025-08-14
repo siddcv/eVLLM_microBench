@@ -1,0 +1,27 @@
+{
+  "organ_domain": "hematopathology",
+  "task_type": "fine",
+  "split_ratio": "0.70",
+  "test_file": "finetuning_supervised/data/splits/gastrointestinal/fine/fixed/test.json",
+  "test_path": "gastrointestinal_fine",
+  "overall": {
+    "accuracy": 0.13106796116504854,
+    "correct": 81,
+    "total": 618,
+    "confidence_interval_95": {
+      "lower": 0.10590092975292978,
+      "upper": 0.15914567017111023
+    }
+  },
+  "per_question_type": {
+    "classification": {
+      "accuracy": 0.13106796116504854,
+      "correct": 81,
+      "total": 618,
+      "confidence_interval_95": {
+        "lower": 0.10590092975292978,
+        "upper": 0.15914567017111023
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "organ_domain": "cardiovascular",
+  "task_type": "combined",
+  "split_ratio": "0.50",
+  "test_file": "finetuning_supervised/data/splits/gastrointestinal/fine/fixed/test.json",
+  "test_path": "gastrointestinal_fine",
+  "overall": {
+    "accuracy": 0.48705501618122976,
+    "correct": 301,
+    "total": 618,
+    "confidence_interval_95": {
+      "lower": 0.4448400669846752,
+      "upper": 0.5234112972719454
+    }
+  },
+  "per_question_type": {
+    "classification": {
+      "accuracy": 0.48705501618122976,
+      "correct": 301,
+      "total": 618,
+      "confidence_interval_95": {
+        "lower": 0.4448400669846752,
+        "upper": 0.5234112972719454
+      }
+    }
+  }
+}

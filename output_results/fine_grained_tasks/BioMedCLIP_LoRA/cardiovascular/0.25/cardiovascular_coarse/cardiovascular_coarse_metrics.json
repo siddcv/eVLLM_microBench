@@ -1,0 +1,63 @@
+{
+  "organ_domain": "cardiovascular",
+  "task_type": "fine",
+  "split_ratio": "0.25",
+  "test_file": "finetuning_supervised/data/splits/cardiovascular/coarse/fixed/test.json",
+  "test_path": "cardiovascular_coarse",
+  "overall": {
+    "accuracy": 0.6033333333333334,
+    "correct": 181,
+    "total": 300,
+    "confidence_interval_95": {
+      "lower": 0.5393932092057016,
+      "upper": 0.6494377593726928
+    }
+  },
+  "per_question_type": {
+    "subdomain": {
+      "accuracy": 0.36666666666666664,
+      "correct": 22,
+      "total": 60,
+      "confidence_interval_95": {
+        "lower": 0.2336634008481267,
+        "upper": 0.4706242276748421
+      }
+    },
+    "submodality": {
+      "accuracy": 0.36666666666666664,
+      "correct": 22,
+      "total": 60,
+      "confidence_interval_95": {
+        "lower": 0.2336634008481267,
+        "upper": 0.4706242276748421
+      }
+    },
+    "stain": {
+      "accuracy": 0.45,
+      "correct": 27,
+      "total": 60,
+      "confidence_interval_95": {
+        "lower": 0.30367817801410146,
+        "upper": 0.5478222750932057
+      }
+    },
+    "domain": {
+      "accuracy": 0.8333333333333334,
+      "correct": 50,
+      "total": 60,
+      "confidence_interval_95": {
+        "lower": 0.6707475421755162,
+        "upper": 0.8579319040197471
+      }
+    },
+    "modality": {
+      "accuracy": 1.0,
+      "correct": 60,
+      "total": 60,
+      "confidence_interval_95": {
+        "lower": 0.9398281478579101,
+        "upper": 1.0
+      }
+    }
+  }
+}

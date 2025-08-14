@@ -1,0 +1,72 @@
+{
+  "organ_domain": "cardiovascular",
+  "task_type": "coarse",
+  "split_ratio": "0.10",
+  "test_file": "finetuning_supervised/data/splits/hematopathology/combined/fixed/test.json",
+  "test_path": "hematopathology_combined",
+  "overall": {
+    "accuracy": 0.5376068376068376,
+    "correct": 1258,
+    "total": 2340,
+    "confidence_interval_95": {
+      "lower": 0.5164794039018474,
+      "upper": 0.5568489706949371
+    }
+  },
+  "per_question_type": {
+    "domain": {
+      "accuracy": 0.41025641025641024,
+      "correct": 160,
+      "total": 390,
+      "confidence_interval_95": {
+        "lower": 0.35853497382767624,
+        "upper": 0.45570832189358024
+      }
+    },
+    "submodality": {
+      "accuracy": 0.8435897435897436,
+      "correct": 329,
+      "total": 390,
+      "confidence_interval_95": {
+        "lower": 0.7960122186652874,
+        "upper": 0.8680735739246808
+      }
+    },
+    "subdomain": {
+      "accuracy": 0.002564102564102564,
+      "correct": 1,
+      "total": 390,
+      "confidence_interval_95": {
+        "lower": 0.00038043619027710776,
+        "upper": 0.014306900938523052
+      }
+    },
+    "stain": {
+      "accuracy": 0.7307692307692307,
+      "correct": 285,
+      "total": 390,
+      "confidence_interval_95": {
+        "lower": 0.6775480922438469,
+        "upper": 0.7652769319305984
+      }
+    },
+    "modality": {
+      "accuracy": 1.0,
+      "correct": 390,
+      "total": 390,
+      "confidence_interval_95": {
+        "lower": 0.9902461796881494,
+        "upper": 1.0
+      }
+    },
+    "classification": {
+      "accuracy": 0.23846153846153847,
+      "correct": 93,
+      "total": 390,
+      "confidence_interval_95": {
+        "lower": 0.19649803655140324,
+        "upper": 0.28082545271894405
+      }
+    }
+  }
+}

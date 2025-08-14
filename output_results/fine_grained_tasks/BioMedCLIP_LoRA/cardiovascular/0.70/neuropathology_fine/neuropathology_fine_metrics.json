@@ -1,0 +1,27 @@
+{
+  "organ_domain": "cardiovascular",
+  "task_type": "fine",
+  "split_ratio": "0.70",
+  "test_file": "finetuning_supervised/data/splits/neuropathology/fine/fixed/test.json",
+  "test_path": "neuropathology_fine",
+  "overall": {
+    "accuracy": 0.42783505154639173,
+    "correct": 83,
+    "total": 194,
+    "confidence_interval_95": {
+      "lower": 0.35194491870689715,
+      "upper": 0.489858780673626
+    }
+  },
+  "per_question_type": {
+    "classification": {
+      "accuracy": 0.42783505154639173,
+      "correct": 83,
+      "total": 194,
+      "confidence_interval_95": {
+        "lower": 0.35194491870689715,
+        "upper": 0.489858780673626
+      }
+    }
+  }
+}
