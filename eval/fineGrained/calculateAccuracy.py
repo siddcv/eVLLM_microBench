@@ -4,7 +4,7 @@ import re
 import math
 
 # Load the CSV
-df = pd.read_csv("../../output_results/fine_grained_tasks/BioMedCLIP/questions/completeDataset.csv")
+df = pd.read_csv("/workspace/eVLLM_Ayman/output_results/soup_evaluation/completeDataset_0.70/neuropathology_fine/neuropathology_fine_results_20250814_072818.csv")
 
 right_answers = 0
 questions = 0

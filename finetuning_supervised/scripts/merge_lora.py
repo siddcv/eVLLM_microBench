@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import argparse, math
+import shutil
 from pathlib import Path
 from typing import List
 import torch
@@ -95,6 +96,15 @@ def merge_adapters(adapter_paths: List[Path], out_dir: Path, method: str, weight
     out_path = out_dir / "adapter_model.safetensors"
     save_file(merged, str(out_path))
     print(f"[ModelSoup] Saved merged adapter to: {out_path}")
+    
+    # Copy adapter_config.json from the first adapter
+    config_source = adapter_paths[0].parent / "adapter_config.json"
+    config_dest = out_dir / "adapter_config.json"
+    if config_source.exists():
+        shutil.copy2(config_source, config_dest)
+        print(f"[ModelSoup] Copied adapter_config.json to: {config_dest}")
+    else:
+        print(f"[ModelSoup] Warning: adapter_config.json not found at {config_source}")
 
 def extract_domain_info(adapter_path: Path) -> str:
     """Extract domain information from adapter path"""

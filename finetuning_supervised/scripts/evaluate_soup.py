@@ -97,11 +97,13 @@ class SoupEvaluator:
     
     def evaluate_soup_model(self, soup_adapter_path: str, eval_data: List[Dict], task_type: str, test_domain: str) -> List[Dict]:
         """Evaluate soup model on evaluation data."""
-        logger.info(f"Loading soup model from {soup_adapter_path}")
+        # Convert file path to directory path for PEFT
+        soup_adapter_dir = str(Path(soup_adapter_path).parent)
+        logger.info(f"Loading soup model from {soup_adapter_dir}")
         
         # Initialize LoRA model
         model = BioMedCLIPLoRA(eval_mode=True, context_length=256, verbose=True)
-        model.load_lora_adapter(soup_adapter_path)
+        model.load_lora_adapter(soup_adapter_dir)
         
         results = []
         

@@ -1,0 +1,27 @@
+{
+  "soup_name": "completeDataset_0.70",
+  "test_domain": "gastrointestinal",
+  "task_type": "fine",
+  "test_file": "finetuning_supervised/data/splits/gastrointestinal/fine/fixed/test.json",
+  "timestamp": "20250814_071107",
+  "overall": {
+    "accuracy": 0.9919093851132686,
+    "correct": 613,
+    "total": 618,
+    "confidence_interval_95": {
+      "lower": 0.9750930121535889,
+      "upper": 0.9904305633383279
+    }
+  },
+  "per_question_type": {
+    "classification": {
+      "accuracy": 0.9919093851132686,
+      "correct": 613,
+      "total": 618,
+      "confidence_interval_95": {
+        "lower": 0.9750930121535889,
+        "upper": 0.9904305633383279
+      }
+    }
+  }
+}
