@@ -1,0 +1,37 @@
+{
+  "organ_domain": "completeDataset",
+  "task_type": "coarse",
+  "split_ratio": "0.70",
+  "overall": {
+    "accuracy": 0.4947850821744627,
+    "correct": 3131,
+    "total": 6328
+  },
+  "per_question_type": {
+    "stain": {
+      "accuracy": 0.5130848532910388,
+      "correct": 647,
+      "total": 1261
+    },
+    "subdomain": {
+      "accuracy": 0.3534956794972506,
+      "correct": 450,
+      "total": 1273
+    },
+    "domain": {
+      "accuracy": 0.29379418695993714,
+      "correct": 374,
+      "total": 1273
+    },
+    "submodality": {
+      "accuracy": 0.4599524187153053,
+      "correct": 580,
+      "total": 1261
+    },
+    "modality": {
+      "accuracy": 0.8571428571428571,
+      "correct": 1080,
+      "total": 1260
+    }
+  }
+}

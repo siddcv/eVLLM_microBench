@@ -3,7 +3,7 @@ import ast
 import re
 import math
 # Load the CSV
-df = pd.read_csv("/workspace/eVLLM_Ayman/output_results/soup_evaluation/completeDataset_0.70/cardiovascular_coarse/cardiovascular_coarse_results_20250814_065357.csv")
+df = pd.read_csv("/workspace/eVLLM_Ayman/output_results/coarse_grained_tasks/BioMedCLIP_Base/completeDataset/0.70/completeDataset.csv")
 # workspace/eVLLM_Sidd/eVLLM_microBench/output_results/coarse_grained_tasks/BioMedCLIP/questions/hematopathology.csv
 
 right_answers=0
