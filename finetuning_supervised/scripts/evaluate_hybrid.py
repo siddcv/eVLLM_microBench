@@ -111,9 +111,9 @@ def save_results(results: List[Dict], hybrid_domain: str, task_type: str, test_f
     
     # Per-question-type accuracy (also collect to save)
     per_qtype_metrics: Dict[str, Dict[str, Any]] = {}
-    question_types = df['question_class'].unique()
+    question_types = df['question_type'].unique()
     for q_type in question_types:
-        q_results = df[df['question_class'] == q_type]
+        q_results = df[df['question_type'] == q_type]
         q_correct = sum(1 for _, row in q_results.iterrows()
                       if row['correct_idx'] == row['model_answers']['pred'][0])
         q_total = len(q_results)
@@ -169,8 +169,13 @@ def evaluate_hybrid_model(hybrid_adapter_path: str, test_file: str, hybrid_domai
     # Initialize LoRA model and load hybrid adapter
     model = BioMedCLIPLoRA(eval_mode=True, context_length=256, verbose=True)
     
-    # Convert file path to directory path for PEFT
-    hybrid_adapter_dir = str(Path(hybrid_adapter_path).parent)
+    # The hybrid_adapter_path should already be the directory path
+    # If it ends with a file, extract the parent directory
+    if hybrid_adapter_path.endswith('.safetensors'):
+        hybrid_adapter_dir = str(Path(hybrid_adapter_path).parent)
+    else:
+        hybrid_adapter_dir = hybrid_adapter_path
+    
     logger.info(f"Loading hybrid model from {hybrid_adapter_dir}")
     
     try:

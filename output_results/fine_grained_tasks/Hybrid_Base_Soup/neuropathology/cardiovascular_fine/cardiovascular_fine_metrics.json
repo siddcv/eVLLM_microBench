@@ -1,0 +1,27 @@
+{
+  "hybrid_domain": "neuropathology",
+  "task_type": "fine",
+  "test_file": "finetuning_supervised/data/splits/cardiovascular/fine/fixed/test.json",
+  "test_path": "cardiovascular_fine",
+  "model_type": "hybrid_base_soup",
+  "overall": {
+    "accuracy": 0.45,
+    "correct": 27,
+    "total": 60,
+    "confidence_interval_95": {
+      "lower": 0.30367817801410146,
+      "upper": 0.5478222750932057
+    }
+  },
+  "per_question_type": {
+    "classification": {
+      "accuracy": 0.45,
+      "correct": 27,
+      "total": 60,
+      "confidence_interval_95": {
+        "lower": 0.30367817801410146,
+        "upper": 0.5478222750932057
+      }
+    }
+  }
+}

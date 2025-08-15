@@ -1,0 +1,27 @@
+{
+  "hybrid_domain": "neuropathology",
+  "task_type": "fine",
+  "test_file": "finetuning_supervised/data/splits/hematopathology/fine/fixed/test.json",
+  "test_path": "hematopathology_fine",
+  "model_type": "hybrid_base_soup",
+  "overall": {
+    "accuracy": 0.2512820512820513,
+    "correct": 98,
+    "total": 390,
+    "confidence_interval_95": {
+      "lower": 0.20832693493596952,
+      "upper": 0.2941398234725053
+    }
+  },
+  "per_question_type": {
+    "classification": {
+      "accuracy": 0.2512820512820513,
+      "correct": 98,
+      "total": 390,
+      "confidence_interval_95": {
+        "lower": 0.20832693493596952,
+        "upper": 0.2941398234725053
+      }
+    }
+  }
+}

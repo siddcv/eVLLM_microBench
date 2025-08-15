@@ -1,0 +1,27 @@
+{
+  "hybrid_domain": "cardiovascular",
+  "task_type": "fine",
+  "test_file": "finetuning_supervised/data/splits/cardiovascular/fine/fixed/test.json",
+  "test_path": "cardiovascular_fine",
+  "model_type": "hybrid_base_soup",
+  "overall": {
+    "accuracy": 0.8,
+    "correct": 48,
+    "total": 60,
+    "confidence_interval_95": {
+      "lower": 0.635130655767112,
+      "upper": 0.834663660594416
+    }
+  },
+  "per_question_type": {
+    "classification": {
+      "accuracy": 0.8,
+      "correct": 48,
+      "total": 60,
+      "confidence_interval_95": {
+        "lower": 0.635130655767112,
+        "upper": 0.834663660594416
+      }
+    }
+  }
+}

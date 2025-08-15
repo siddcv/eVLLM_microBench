@@ -1,0 +1,9 @@
+{
+  "merge_method": "avg",
+  "base_weight": 0.3,
+  "soup_weight": 0.7,
+  "base_model_path": "BioMedCLIP_Base_Model",
+  "soup_adapter_path": "finetuning_supervised/models/neuropathology/combined/0.70/lora_adapters_epoch_4_acc_0.9716/adapter_model.safetensors",
+  "merge_timestamp": "2025-08-15T05:11:23.347981",
+  "model_type": "hybrid_base_soup"
+}

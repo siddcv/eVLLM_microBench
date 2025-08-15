@@ -1,0 +1,27 @@
+{
+  "hybrid_domain": "neuropathology",
+  "task_type": "fine",
+  "test_file": "finetuning_supervised/data/splits/completeDataset/fine/fixed/test.json",
+  "test_path": "completeDataset_fine",
+  "model_type": "hybrid_base_soup",
+  "overall": {
+    "accuracy": 0.44805709754163364,
+    "correct": 565,
+    "total": 1261,
+    "confidence_interval_95": {
+      "lower": 0.41944724002600514,
+      "upper": 0.4742599144406717
+    }
+  },
+  "per_question_type": {
+    "classification": {
+      "accuracy": 0.44805709754163364,
+      "correct": 565,
+      "total": 1261,
+      "confidence_interval_95": {
+        "lower": 0.41944724002600514,
+        "upper": 0.4742599144406717
+      }
+    }
+  }
+}

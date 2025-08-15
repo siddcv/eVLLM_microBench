@@ -1,0 +1,63 @@
+{
+  "hybrid_domain": "neuropathology",
+  "task_type": "coarse",
+  "test_file": "finetuning_supervised/data/splits/neuropathology/coarse/fixed/test.json",
+  "test_path": "neuropathology_coarse",
+  "model_type": "hybrid_base_soup",
+  "overall": {
+    "accuracy": 0.9948400412796697,
+    "correct": 964,
+    "total": 969,
+    "confidence_interval_95": {
+      "lower": 0.9840575038104202,
+      "upper": 0.9938734113428175
+    }
+  },
+  "per_question_type": {
+    "subdomain": {
+      "accuracy": 1.0,
+      "correct": 194,
+      "total": 194,
+      "confidence_interval_95": {
+        "lower": 0.9805831454964367,
+        "upper": 1.0
+      }
+    },
+    "submodality": {
+      "accuracy": 1.0,
+      "correct": 194,
+      "total": 194,
+      "confidence_interval_95": {
+        "lower": 0.9805831454964367,
+        "upper": 1.0
+      }
+    },
+    "modality": {
+      "accuracy": 1.0,
+      "correct": 193,
+      "total": 193,
+      "confidence_interval_95": {
+        "lower": 0.9804845033982735,
+        "upper": 1.0
+      }
+    },
+    "domain": {
+      "accuracy": 1.0,
+      "correct": 194,
+      "total": 194,
+      "confidence_interval_95": {
+        "lower": 0.9805831454964367,
+        "upper": 1.0
+      }
+    },
+    "stain": {
+      "accuracy": 0.9742268041237113,
+      "correct": 189,
+      "total": 194,
+      "confidence_interval_95": {
+        "lower": 0.9223578929031281,
+        "upper": 0.9702044699264538
+      }
+    }
+  }
+}
