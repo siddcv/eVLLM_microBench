@@ -25,21 +25,32 @@ logger = logging.getLogger(__name__)
 
 def find_best_adapter(domain: str, data_ratio: str) -> str:
     """Find the best adapter for a given domain and data ratio."""
-    base_path = Path(f"finetuning_supervised/models/{domain}/combined/{data_ratio}")
     
+    # Special case for soup_all_avg
+    if domain == "soup_all_avg":
+        soup_path = Path("finetuning_supervised/models/soup/soup_all_avg/adapter_model.safetensors")
+        if soup_path.exists():
+            logger.info(f"Found soup_all_avg adapter: {soup_path}")
+            return str(soup_path)
+        else:
+            raise FileNotFoundError(f"Soup adapter not found: {soup_path}")
+    
+    # Original logic for domain-specific adapters
+    base_path = Path(f"finetuning_supervised/models/{domain}/combined/{data_ratio}")
+
     if not base_path.exists():
         raise FileNotFoundError(f"Path not found: {base_path}")
-    
+
     # Look for adapter directories with accuracy in the name
     adapter_dirs = [d for d in base_path.iterdir() if d.is_dir() and d.name.startswith("lora_adapters_epoch_")]
-    
+
     if not adapter_dirs:
         raise FileNotFoundError(f"No adapter directories found in {base_path}")
-    
+
     # Extract accuracy from directory names and find the best one
     best_adapter = None
     best_acc = -1.0
-    
+
     for adapter_dir in adapter_dirs:
         # Extract accuracy from directory name (e.g., "lora_adapters_epoch_9_acc_0.9640")
         if "_acc_" in adapter_dir.name:
@@ -51,16 +62,16 @@ def find_best_adapter(domain: str, data_ratio: str) -> str:
                     best_adapter = adapter_dir
             except (ValueError, IndexError):
                 continue
-    
+
     if best_adapter is None:
         # Fallback: use the first adapter directory
         best_adapter = adapter_dirs[0]
         logger.warning(f"Could not determine best adapter for {domain}, using {best_adapter.name}")
-    
+
     adapter_path = best_adapter / "adapter_model.safetensors"
     if not adapter_path.exists():
         raise FileNotFoundError(f"Adapter file not found: {adapter_path}")
-    
+
     logger.info(f"Found best adapter for {domain}: {adapter_path} (acc: {best_acc:.4f})")
     return str(adapter_path)
 
