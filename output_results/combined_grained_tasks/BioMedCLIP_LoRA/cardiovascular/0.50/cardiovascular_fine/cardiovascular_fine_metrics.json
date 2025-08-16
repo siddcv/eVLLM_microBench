@@ -1,0 +1,27 @@
+{
+  "organ_domain": "cardiovascular",
+  "task_type": "combined",
+  "split_ratio": "0.50",
+  "test_file": "finetuning_supervised/data/splits/cardiovascular/fine/fixed/test.json",
+  "test_path": "cardiovascular_fine",
+  "overall": {
+    "accuracy": 0.6666666666666666,
+    "correct": 40,
+    "total": 60,
+    "confidence_interval_95": {
+      "lower": 0.5010575383915051,
+      "upper": 0.7331962586350814
+    }
+  },
+  "per_question_type": {
+    "classification": {
+      "accuracy": 0.6666666666666666,
+      "correct": 40,
+      "total": 60,
+      "confidence_interval_95": {
+        "lower": 0.5010575383915051,
+        "upper": 0.7331962586350814
+      }
+    }
+  }
+}

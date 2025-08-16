@@ -1,0 +1,170 @@
+# LoRA Configuration for BioMedCLIP Fine-tuning
+# This configuration file contains all parameters for LoRA fine-tuning
+
+# Model Configuration
+model:
+  name: "microsoft/BiomedCLIP-PubMedBERT_256-vit_base_patch16_224"
+  freeze_base: true  # Freeze base model parameters
+  device: "cuda"
+
+# LoRA Configuration
+lora:
+  # Target modules for LoRA
+  # target_modules:
+  #   text_encoder: ["q_proj", "k_proj", "v_proj", "out_proj"]  # Attention layers
+  #   vision_encoder: ["qkv", "proj"]  # Vision transformer layers
+  #   alignment: ["text_projection", "visual_projection"]  # Alignment layers
+  # target_modules:
+  #   - "qkv"           # Vision attention
+  #   - "proj"          # Vision attention output
+  #   - "fc1"           # Vision MLP
+  #   - "fc2"           # Vision MLP
+  #   - "query"         # Text attention
+  #   - "key"           # Text attention  
+  #   - "value"         # Text attention
+  #   - "dense"         # Text attention output and MLP
+  target_modules:
+    # - "visual.trunk.blocks.0.attn.proj"
+    # - "visual.trunk.blocks.1.attn.proj"
+    # - "visual.trunk.blocks.2.attn.proj"
+    # - "visual.trunk.blocks.0.mlp.fc1"
+    # - "visual.trunk.blocks.0.mlp.fc2"
+    # - "visual.trunk.blocks.1.mlp.fc1"
+    
+    # - "text.transformer.encoder.layer.0.attention.self.query"
+    # - "text.transformer.encoder.layer.0.attention.output.dense"
+    # - "text.transformer.encoder.layer.0.intermediate.dense"
+    # - "text.transformer.encoder.layer.0.output.dense"
+    # - "text.transformer.encoder.layer.1.attention.self.query"
+    
+    # - "text.transformer.embeddings.word_embeddings"
+    # - "text.transformer.embeddings.position_embeddings"
+    # - "text.transformer.embeddings.token_type_embeddings"
+
+    # - "visual.head.proj"
+    # - "text.proj.0"
+    # - "text.proj.2"
+
+
+    - "text.transformer.encoder.layer.*.attention.self.query"
+    - "text.transformer.encoder.layer.*.attention.self.key"
+    - "text.transformer.encoder.layer.*.attention.self.value"
+    - "text.transformer.encoder.layer.*.attention.output.dense"
+    
+    # Text encoder MLP/feed-forward layers
+    - "text.transformer.encoder.layer.*.intermediate.dense"
+    - "text.transformer.encoder.layer.*.output.dense"
+    
+    # Text encoder embedding layers
+    - "text.transformer.embeddings.word_embeddings"
+    - "text.transformer.embeddings.position_embeddings"
+    - "text.transformer.embeddings.token_type_embeddings"
+    - "text.proj.0"
+    - "text.proj.2"
+    
+    # # Vision encoder attention layers
+    # - "visual.trunk.blocks.*.attn.qkv"
+    # - "visual.trunk.blocks.*.attn.proj"
+    
+    # # Vision encoder MLP/feed-forward layers
+    # - "visual.trunk.blocks.*.mlp.fc1"
+    # - "visual.trunk.blocks.*.mlp.fc2"
+    
+    # # Vision head projection
+    # - "visual.head.proj"
+  
+  # LoRA ranks for different components
+  r:
+    text_encoder: 16
+    vision_encoder: 32
+    alignment: 16
+  
+  # Alpha parameter (scaling)
+  alpha:
+    text_encoder: 32
+    vision_encoder: 64
+    alignment: 32
+  
+  # Dropout for LoRA layers
+  dropout: 0.1
+  
+  # Bias configuration
+  bias: "none"  # "none", "all", or "lora_only"
+  
+  # Task type
+  task_type: "CAUSAL_LM"
+
+# Training Configuration
+training:
+  # Learning rate
+  learning_rate: 1e-4
+  
+  # Batch size (adjust based on GPU memory)
+  batch_size: 32
+  
+  # Number of epochs
+  num_epochs: 10
+  
+  # Optimizer
+  optimizer: "adamw"
+  weight_decay: 0.01
+  
+  # Learning rate scheduler
+  scheduler: "cosine"
+  warmup_steps: 100
+  
+  # Mixed precision training
+  use_amp: true
+  
+  # Gradient accumulation
+  gradient_accumulation_steps: 1
+  
+  # Validation
+  validation_split: 0.1
+  
+  # Early stopping
+  early_stopping_patience: 3
+  early_stopping_min_delta: 0.001
+
+# Data Configuration
+data:
+  # Data splits
+  splits: [0.1, 0.25, 0.5, 0.75]
+  
+  # Random seed for reproducibility
+  random_seed: 42
+  
+  # Question types to track
+  question_types: ["modality", "submodality", "domain", "stain", "classification"]
+  
+  # Organ domains
+  organ_domains: ["cardiovascular", "neuropathology", "hematopathology", "gastrointestinal","completeDataset"]
+  
+  # Task types
+  task_types: ["coarse", "fine", "combined"]
+
+# Evaluation Configuration
+evaluation:
+  # Metrics to track
+  metrics: ["accuracy", "confidence", "per_question_type"]
+  
+  # Save predictions
+  save_predictions: true
+  
+  # Confidence threshold
+  confidence_threshold: 0.5
+
+# Output Configuration
+output:
+  # Base directory for outputs
+  base_dir: "/workspace/eVLLM_Sidd/eVLLM_microBench/finetuning_supervised"
+  
+  # Model save directory
+  model_dir: "models"
+  
+  # Results directory
+  results_dir: "results"
+  
+  # Logging
+  log_level: "INFO"
+  save_logs: true 

@@ -1,0 +1,25 @@
+{
+  "organ_domain": "hematopathology",
+  "task_type": "fine",
+  "split_ratio": "0.50",
+  "overall": {
+    "accuracy": 0.9307692307692308,
+    "correct": 363,
+    "total": 390,
+    "confidence_interval_95": {
+      "lower": 0.8921101523979227,
+      "upper": 0.9429498703313128
+    }
+  },
+  "per_question_type": {
+    "classification": {
+      "accuracy": 0.9307692307692308,
+      "correct": 363,
+      "total": 390,
+      "confidence_interval_95": {
+        "lower": 0.8921101523979227,
+        "upper": 0.9429498703313128
+      }
+    }
+  }
+}

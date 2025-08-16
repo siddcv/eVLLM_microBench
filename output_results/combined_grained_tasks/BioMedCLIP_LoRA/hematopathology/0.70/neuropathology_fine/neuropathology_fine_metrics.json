@@ -1,0 +1,27 @@
+{
+  "organ_domain": "hematopathology",
+  "task_type": "combined",
+  "split_ratio": "0.70",
+  "test_file": "finetuning_supervised/data/splits/neuropathology/fine/fixed/test.json",
+  "test_path": "neuropathology_fine",
+  "overall": {
+    "accuracy": 0.3402061855670103,
+    "correct": 66,
+    "total": 194,
+    "confidence_interval_95": {
+      "lower": 0.27055168191593304,
+      "upper": 0.40273411860955244
+    }
+  },
+  "per_question_type": {
+    "classification": {
+      "accuracy": 0.3402061855670103,
+      "correct": 66,
+      "total": 194,
+      "confidence_interval_95": {
+        "lower": 0.27055168191593304,
+        "upper": 0.40273411860955244
+      }
+    }
+  }
+}

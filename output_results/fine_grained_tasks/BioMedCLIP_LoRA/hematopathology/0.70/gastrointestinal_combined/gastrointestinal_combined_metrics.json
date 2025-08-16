@@ -1,0 +1,72 @@
+{
+  "organ_domain": "hematopathology",
+  "task_type": "fine",
+  "split_ratio": "0.70",
+  "test_file": "finetuning_supervised/data/splits/gastrointestinal/combined/fixed/test.json",
+  "test_path": "gastrointestinal_combined",
+  "overall": {
+    "accuracy": 0.47317596566523606,
+    "correct": 1764,
+    "total": 3728,
+    "confidence_interval_95": {
+      "lower": 0.45669762668823494,
+      "upper": 0.4887353220687077
+    }
+  },
+  "per_question_type": {
+    "submodality": {
+      "accuracy": 0.713128038897893,
+      "correct": 440,
+      "total": 617,
+      "confidence_interval_95": {
+        "lower": 0.6718022256000472,
+        "upper": 0.7430077456873251
+      }
+    },
+    "domain": {
+      "accuracy": 0.6476190476190476,
+      "correct": 408,
+      "total": 630,
+      "confidence_interval_95": {
+        "lower": 0.6056042956237196,
+        "upper": 0.6800054057813767
+      }
+    },
+    "modality": {
+      "accuracy": 0.8541329011345219,
+      "correct": 527,
+      "total": 617,
+      "confidence_interval_95": {
+        "lower": 0.8188188873763521,
+        "upper": 0.8745217327589208
+      }
+    },
+    "stain": {
+      "accuracy": 0.353322528363047,
+      "correct": 218,
+      "total": 617,
+      "confidence_interval_95": {
+        "lower": 0.3144273942404718,
+        "upper": 0.3896491972281202
+      }
+    },
+    "subdomain": {
+      "accuracy": 0.14308426073131955,
+      "correct": 90,
+      "total": 629,
+      "confidence_interval_95": {
+        "lower": 0.11700187641537049,
+        "upper": 0.1717363317487451
+      }
+    },
+    "classification": {
+      "accuracy": 0.13106796116504854,
+      "correct": 81,
+      "total": 618,
+      "confidence_interval_95": {
+        "lower": 0.10590092975292978,
+        "upper": 0.15914567017111023
+      }
+    }
+  }
+}
