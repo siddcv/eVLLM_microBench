@@ -1,0 +1,27 @@
+{
+  "soup_name": "soup_all_slerp",
+  "test_domain": "cardiovascular",
+  "task_type": "fine",
+  "test_file": "finetuning_supervised/data/splits/cardiovascular/fine/fixed/test.json",
+  "timestamp": "20250816_014128",
+  "overall": {
+    "accuracy": 0.6166666666666667,
+    "correct": 37,
+    "total": 60,
+    "confidence_interval_95": {
+      "lower": 0.4534923921289016,
+      "upper": 0.6924337101470821
+    }
+  },
+  "per_question_type": {
+    "classification": {
+      "accuracy": 0.6166666666666667,
+      "correct": 37,
+      "total": 60,
+      "confidence_interval_95": {
+        "lower": 0.4534923921289016,
+        "upper": 0.6924337101470821
+      }
+    }
+  }
+}
