@@ -1,0 +1,26 @@
+{
+  "organ_domain": "neuropathology",
+  "model_type": "vision_encoder",
+  "test_file": "finetuning_supervised/data/splits/neuropathology/fine/fixed/test.json",
+  "test_path": "test",
+  "overall": {
+    "accuracy": 0.5567010309278351,
+    "correct": 108,
+    "total": 194,
+    "confidence_interval_95": {
+      "lower": 0.4755805707679641,
+      "upper": 0.6140435681052617
+    }
+  },
+  "per_question_type": {
+    "classification": {
+      "correct": 108,
+      "total": 194,
+      "accuracy": 0.5567010309278351,
+      "confidence_interval_95": {
+        "lower": 0.4755805707679641,
+        "upper": 0.6140435681052617
+      }
+    }
+  }
+}

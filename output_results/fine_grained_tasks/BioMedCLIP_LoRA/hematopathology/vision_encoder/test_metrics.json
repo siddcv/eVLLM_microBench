@@ -1,0 +1,26 @@
+{
+  "organ_domain": "hematopathology",
+  "model_type": "vision_encoder",
+  "test_file": "finetuning_supervised/data/splits/hematopathology/fine/fixed/test.json",
+  "test_path": "test",
+  "overall": {
+    "accuracy": 0.3333333333333333,
+    "correct": 130,
+    "total": 390,
+    "confidence_interval_95": {
+      "lower": 0.28510688236322623,
+      "upper": 0.37827679852926493
+    }
+  },
+  "per_question_type": {
+    "classification": {
+      "correct": 130,
+      "total": 390,
+      "accuracy": 0.3333333333333333,
+      "confidence_interval_95": {
+        "lower": 0.28510688236322623,
+        "upper": 0.37827679852926493
+      }
+    }
+  }
+}

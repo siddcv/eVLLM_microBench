@@ -1,0 +1,62 @@
+{
+  "organ_domain": "hematopathology",
+  "model_type": "vision_encoder",
+  "test_file": "finetuning_supervised/data/splits/hematopathology/coarse/fixed/test.json",
+  "test_path": "test",
+  "overall": {
+    "accuracy": 1.0,
+    "correct": 1950,
+    "total": 1950,
+    "confidence_interval_95": {
+      "lower": 0.9980338943042939,
+      "upper": 1.0
+    }
+  },
+  "per_question_type": {
+    "domain": {
+      "correct": 390,
+      "total": 390,
+      "accuracy": 1.0,
+      "confidence_interval_95": {
+        "lower": 0.9902461796881494,
+        "upper": 1.0
+      }
+    },
+    "submodality": {
+      "correct": 390,
+      "total": 390,
+      "accuracy": 1.0,
+      "confidence_interval_95": {
+        "lower": 0.9902461796881494,
+        "upper": 1.0
+      }
+    },
+    "subdomain": {
+      "correct": 390,
+      "total": 390,
+      "accuracy": 1.0,
+      "confidence_interval_95": {
+        "lower": 0.9902461796881494,
+        "upper": 1.0
+      }
+    },
+    "stain": {
+      "correct": 390,
+      "total": 390,
+      "accuracy": 1.0,
+      "confidence_interval_95": {
+        "lower": 0.9902461796881494,
+        "upper": 1.0
+      }
+    },
+    "modality": {
+      "correct": 390,
+      "total": 390,
+      "accuracy": 1.0,
+      "confidence_interval_95": {
+        "lower": 0.9902461796881494,
+        "upper": 1.0
+      }
+    }
+  }
+}
