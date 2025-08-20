@@ -56,7 +56,101 @@ def _pairwise_slerp(tensors: List[torch.Tensor], weights: List[float]) -> torch.
         acc_w += wi
     return acc
 
-def merge_adapters(adapter_paths: List[Path], out_dir: Path, method: str, weights: List[float] = None):
+def _task_arithmetic(tensors: List[torch.Tensor], weights: List[float], beta: float = 0.5) -> torch.Tensor:
+    """
+    Task Arithmetic: Center deltas to emphasize complementary information, then recombine.
+    
+    Args:
+        tensors: List of organ-specific delta tensors
+        weights: Organ weights (alpha_o)
+        beta: Controls how much generic skill to keep (default: 0.5)
+    
+    Returns:
+        Merged tensor using task arithmetic
+    """
+    # Normalize weights
+    w = torch.tensor(weights, dtype=tensors[0].dtype, device=tensors[0].device)
+    w = w / w.sum()
+    
+    # Compute mean delta across organs (shared "generic" skill)
+    mean_delta = torch.stack(tensors).mean(dim=0)
+    
+    # Center each organ's delta (remove common mean)
+    centered_tensors = [t - mean_delta for t in tensors]
+    
+    # Weighted combination of centered deltas
+    centered_sum = torch.zeros_like(tensors[0])
+    for centered_tensor, weight in zip(centered_tensors, w):
+        centered_sum.add_(centered_tensor * weight)
+    
+    # Add back beta * mean_delta (shared component)
+    result = centered_sum + beta * mean_delta
+    
+    return result
+
+def _ties_merging(tensors: List[torch.Tensor], weights: List[float], trim_threshold: float = 0.75) -> torch.Tensor:
+    """
+    TIES-Merging: Trim-Intersect-Expand-Sign merging to resolve interference.
+    
+    Args:
+        tensors: List of organ-specific tensors
+        weights: Organ weights (not used in TIES, but kept for consistency)
+        trim_threshold: Threshold for trimming small magnitudes (default: 0.75)
+    
+    Returns:
+        Merged tensor using TIES strategy
+    """
+    # Stack all tensors for easier processing
+    stacked = torch.stack(tensors)  # Shape: [n_organs, ...]
+    n_organs = stacked.shape[0]
+    
+    # Step 1: TRIM - Zero out small magnitudes per organ
+    trimmed = stacked.clone()
+    for i in range(n_organs):
+        tensor = stacked[i]
+        # Calculate threshold based on median of absolute values
+        median_abs = torch.median(torch.abs(tensor))
+        threshold = trim_threshold * median_abs
+        # Zero out small magnitudes
+        mask = torch.abs(tensor) < threshold
+        trimmed[i][mask] = 0.0
+    
+    # Step 2: INTERSECT - Handle sign agreement/disagreement
+    # Get signs of all tensors
+    signs = torch.sign(trimmed)  # Shape: [n_organs, ...]
+    
+    # Find where all organs have the same sign (agreement)
+    sign_agreement = torch.all(signs == signs[0], dim=0)
+    
+    # Find where signs disagree (conflict)
+    sign_disagreement = ~sign_agreement
+    
+    # Initialize result tensor
+    result = torch.zeros_like(tensors[0])
+    
+    # Step 3: Handle agreement regions - average the values
+    if torch.any(sign_agreement):
+        agreement_mask = sign_agreement
+        # Average the trimmed values where signs agree
+        agreement_values = trimmed[:, agreement_mask].mean(dim=0)
+        result[agreement_mask] = agreement_values
+    
+    # Step 4: Handle disagreement regions - keep strongest signal
+    if torch.any(sign_disagreement):
+        disagreement_mask = sign_disagreement
+        disagreement_tensors = trimmed[:, disagreement_mask]  # Shape: [n_organs, n_disagreement]
+        
+        # Find the organ with largest magnitude for each disagreement position
+        magnitudes = torch.abs(disagreement_tensors)  # Shape: [n_organs, n_disagreement]
+        max_indices = torch.argmax(magnitudes, dim=0)  # Shape: [n_disagreement]
+        
+        # Keep the values from the strongest organ
+        for i, max_idx in enumerate(max_indices):
+            result[disagreement_mask][i] = disagreement_tensors[max_idx, i]
+    
+    return result
+
+def merge_adapters(adapter_paths: List[Path], out_dir: Path, method: str, weights: List[float] = None, beta: float = 0.5, trim_threshold: float = 0.75):
     assert len(adapter_paths) >= 2, "Need at least 2 adapters to create a soup"
     out_dir.mkdir(parents=True, exist_ok=True)
 
@@ -89,6 +183,12 @@ def merge_adapters(adapter_paths: List[Path], out_dir: Path, method: str, weight
         elif method == "slerp":
             # for >2 tensors, reduce by pairwise slerp
             merged[k] = _pairwise_slerp(tensors, weights)
+        elif method == "task_arithmetic":
+            # Task arithmetic: center deltas and recombine
+            merged[k] = _task_arithmetic(tensors, weights, beta)
+        elif method == "ties":
+            # TIES-Merging: trim-intersect-expand-sign
+            merged[k] = _ties_merging(tensors, weights, trim_threshold)
         else:
             raise ValueError(f"Unknown method: {method}")
 
@@ -196,7 +296,11 @@ def main():
                     help="Data ratio to use when finding adapters (default: 0.70)")
     ap.add_argument("--weights", nargs="*", type=float, default=None,
                     help="Optional weights per adapter (same order)")
-    ap.add_argument("--method", choices=["avg", "slerp"], default="avg")
+    ap.add_argument("--method", choices=["avg", "slerp", "task_arithmetic", "ties"], default="avg")
+    ap.add_argument("--beta", type=float, default=0.5,
+                    help="Beta parameter for task arithmetic (controls shared component, default: 0.5)")
+    ap.add_argument("--trim-threshold", type=float, default=0.75,
+                    help="Trim threshold for TIES-Merging (default: 0.75)")
     ap.add_argument("--out-dir", type=str, required=True,
                     help="Output directory for the merged adapter")
     args = ap.parse_args()
@@ -213,7 +317,7 @@ def main():
         return
 
     out_dir = Path(args.out_dir)
-    merge_adapters(adapter_paths, out_dir, args.method, args.weights)
+    merge_adapters(adapter_paths, out_dir, args.method, args.weights, args.beta, args.trim_threshold)
 
 if __name__ == "__main__":
     main()
