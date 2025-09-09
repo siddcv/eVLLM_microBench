@@ -1,0 +1,27 @@
+{
+  "soup_name": "soup_all_wiseft_slerp_tau0p7",
+  "test_domain": "gastrointestinal",
+  "task_type": "fine",
+  "test_file": "finetuning_supervised/data/splits/gastrointestinal/fine/fixed/test.json",
+  "timestamp": "20250823_050652",
+  "overall": {
+    "accuracy": 0.7443365695792881,
+    "correct": 460,
+    "total": 618,
+    "confidence_interval_95": {
+      "lower": 0.7039182824471556,
+      "upper": 0.7725583433043757
+    }
+  },
+  "per_question_type": {
+    "classification": {
+      "accuracy": 0.7443365695792881,
+      "correct": 460,
+      "total": 618,
+      "confidence_interval_95": {
+        "lower": 0.7039182824471556,
+        "upper": 0.7725583433043757
+      }
+    }
+  }
+}

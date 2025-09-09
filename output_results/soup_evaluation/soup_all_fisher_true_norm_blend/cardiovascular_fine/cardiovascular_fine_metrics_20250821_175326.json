@@ -1,0 +1,27 @@
+{
+  "soup_name": "soup_all_fisher_true_norm_blend",
+  "test_domain": "cardiovascular",
+  "task_type": "fine",
+  "test_file": "finetuning_supervised/data/splits/cardiovascular/fine/fixed/test.json",
+  "timestamp": "20250821_175326",
+  "overall": {
+    "accuracy": 0.5,
+    "correct": 30,
+    "total": 60,
+    "confidence_interval_95": {
+      "lower": 0.3472643163445127,
+      "upper": 0.5925638315133973
+    }
+  },
+  "per_question_type": {
+    "classification": {
+      "accuracy": 0.5,
+      "correct": 30,
+      "total": 60,
+      "confidence_interval_95": {
+        "lower": 0.3472643163445127,
+        "upper": 0.5925638315133973
+      }
+    }
+  }
+}

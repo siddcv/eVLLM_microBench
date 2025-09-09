@@ -5,40 +5,49 @@
   "test_path": "completeDataset_coarse",
   "model_type": "hybrid_base_soup",
   "overall": {
-    "accuracy": 0.7853982300884956,
-    "correct": 4970,
+    "accuracy": 0.7278761061946902,
+    "correct": 4606,
     "total": 6328,
     "confidence_interval_95": {
-      "lower": 0.7746350348945862,
-      "upper": 0.7948623544218871
+      "lower": 0.7167748495509704,
+      "upper": 0.7387008629658659
     }
   },
   "per_question_type": {
+    "domain": {
+      "accuracy": 0.9387274155538099,
+      "correct": 1195,
+      "total": 1273,
+      "confidence_interval_95": {
+        "lower": 0.9241866754753921,
+        "upper": 0.9506282769084962
+      }
+    },
+    "modality": {
+      "accuracy": 0.9063492063492063,
+      "correct": 1142,
+      "total": 1260,
+      "confidence_interval_95": {
+        "lower": 0.8890044771701002,
+        "upper": 0.9212237305320801
+      }
+    },
     "stain": {
-      "accuracy": 0.5725614591593973,
-      "correct": 722,
+      "accuracy": 0.34099920697858843,
+      "correct": 430,
       "total": 1261,
       "confidence_interval_95": {
-        "lower": 0.5433386607922783,
-        "upper": 0.5978669815092081
+        "lower": 0.3153530437446991,
+        "upper": 0.3676111750484752
       }
     },
     "subdomain": {
-      "accuracy": 0.5271013354281225,
-      "correct": 671,
+      "accuracy": 0.4752553024351925,
+      "correct": 605,
       "total": 1273,
       "confidence_interval_95": {
-        "lower": 0.4980492339690473,
-        "upper": 0.5528192194615902
-      }
-    },
-    "domain": {
-      "accuracy": 0.8743126472898665,
-      "correct": 1113,
-      "total": 1273,
-      "confidence_interval_95": {
-        "lower": 0.8523419095637136,
-        "upper": 0.8887770237761253
+        "lower": 0.4479380651135087,
+        "upper": 0.5027214317529327
       }
     },
     "submodality": {
@@ -46,18 +55,20 @@
       "correct": 1234,
       "total": 1261,
       "confidence_interval_95": {
-        "lower": 0.9660586212949327,
-        "upper": 0.9822758475761244
-      }
-    },
-    "modality": {
-      "accuracy": 0.9761904761904762,
-      "correct": 1230,
-      "total": 1260,
-      "confidence_interval_95": {
-        "lower": 0.9632515077096448,
-        "upper": 0.9803091903444472
+        "lower": 0.9690262845110735,
+        "upper": 0.9852435107922651
       }
     }
+  },
+  "merge_metadata": {
+    "merge_method": "avg",
+    "adapter_strength": 0.7,
+    "scaled_A": 0.8366600265340756,
+    "scaled_B": 0.8366600265340756,
+    "soup_adapter_path": "finetuning_supervised/models/hematopathology/combined/0.70/lora_adapters_epoch_9_acc_0.9944/adapter_model.safetensors",
+    "merge_timestamp": "2025-08-22T04:45:46.174825",
+    "model_type": "hybrid_base_soup",
+    "scaling_method": "sqrt_weighted_lora",
+    "note": "Adapter tensors pre-scaled; rely on original alpha in adapter_config (unchanged)."
   }
 }

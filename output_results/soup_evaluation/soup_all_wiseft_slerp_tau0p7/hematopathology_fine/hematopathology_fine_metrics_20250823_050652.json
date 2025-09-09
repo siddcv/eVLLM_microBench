@@ -1,0 +1,27 @@
+{
+  "soup_name": "soup_all_wiseft_slerp_tau0p7",
+  "test_domain": "hematopathology",
+  "task_type": "fine",
+  "test_file": "finetuning_supervised/data/splits/hematopathology/fine/fixed/test.json",
+  "timestamp": "20250823_050652",
+  "overall": {
+    "accuracy": 0.3076923076923077,
+    "correct": 120,
+    "total": 390,
+    "confidence_interval_95": {
+      "lower": 0.26092779477224837,
+      "upper": 0.35216934784398773
+    }
+  },
+  "per_question_type": {
+    "classification": {
+      "accuracy": 0.3076923076923077,
+      "correct": 120,
+      "total": 390,
+      "confidence_interval_95": {
+        "lower": 0.26092779477224837,
+        "upper": 0.35216934784398773
+      }
+    }
+  }
+}

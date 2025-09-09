@@ -5,23 +5,34 @@
   "test_path": "completeDataset_fine",
   "model_type": "hybrid_base_soup",
   "overall": {
-    "accuracy": 0.5820777160983347,
-    "correct": 734,
+    "accuracy": 0.5654242664551943,
+    "correct": 713,
     "total": 1261,
     "confidence_interval_95": {
-      "lower": 0.5528790397157106,
-      "upper": 0.6072436844585002
+      "lower": 0.537906774034967,
+      "upper": 0.5925443578830536
     }
   },
   "per_question_type": {
     "classification": {
-      "accuracy": 0.5820777160983347,
-      "correct": 734,
+      "accuracy": 0.5654242664551943,
+      "correct": 713,
       "total": 1261,
       "confidence_interval_95": {
-        "lower": 0.5528790397157106,
-        "upper": 0.6072436844585002
+        "lower": 0.537906774034967,
+        "upper": 0.5925443578830536
       }
     }
+  },
+  "merge_metadata": {
+    "merge_method": "avg",
+    "adapter_strength": 0.7,
+    "scaled_A": 0.8366600265340756,
+    "scaled_B": 0.8366600265340756,
+    "soup_adapter_path": "finetuning_supervised/models/hematopathology/combined/0.70/lora_adapters_epoch_9_acc_0.9944/adapter_model.safetensors",
+    "merge_timestamp": "2025-08-22T04:45:46.174825",
+    "model_type": "hybrid_base_soup",
+    "scaling_method": "sqrt_weighted_lora",
+    "note": "Adapter tensors pre-scaled; rely on original alpha in adapter_config (unchanged)."
   }
 }

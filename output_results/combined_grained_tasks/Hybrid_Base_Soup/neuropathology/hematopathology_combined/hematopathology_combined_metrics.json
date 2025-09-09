@@ -5,68 +5,79 @@
   "test_path": "hematopathology_combined",
   "model_type": "hybrid_base_soup",
   "overall": {
-    "accuracy": 0.6004273504273504,
-    "correct": 1405,
+    "accuracy": 0.5871794871794872,
+    "correct": 1374,
     "total": 2340,
     "confidence_interval_95": {
-      "lower": 0.5794487506512209,
-      "upper": 0.6191091462342948
+      "lower": 0.5671041296444945,
+      "upper": 0.6069690775959328
     }
   },
   "per_question_type": {
+    "classification": {
+      "accuracy": 0.23076923076923078,
+      "correct": 90,
+      "total": 390,
+      "confidence_interval_95": {
+        "lower": 0.19170181356413218,
+        "upper": 0.2750887050653258
+      }
+    },
     "domain": {
-      "accuracy": 0.9717948717948718,
-      "correct": 379,
+      "accuracy": 1.0,
+      "correct": 390,
       "total": 390,
       "confidence_interval_95": {
-        "lower": 0.9407732216064838,
-        "upper": 0.97474526236476
-      }
-    },
-    "submodality": {
-      "accuracy": 0.21025641025641026,
-      "correct": 82,
-      "total": 390,
-      "confidence_interval_95": {
-        "lower": 0.17066067827043307,
-        "upper": 0.2513476188960336
-      }
-    },
-    "subdomain": {
-      "accuracy": 0.44871794871794873,
-      "correct": 175,
-      "total": 390,
-      "confidence_interval_95": {
-        "lower": 0.3957137035087857,
-        "upper": 0.49395939962685365
-      }
-    },
-    "stain": {
-      "accuracy": 0.7256410256410256,
-      "correct": 283,
-      "total": 390,
-      "confidence_interval_95": {
-        "lower": 0.6722625016586365,
-        "upper": 0.760505214860558
+        "lower": 0.9902461796881495,
+        "upper": 1.0
       }
     },
     "modality": {
-      "accuracy": 0.9948717948717949,
-      "correct": 388,
+      "accuracy": 0.9846153846153847,
+      "correct": 384,
       "total": 390,
       "confidence_interval_95": {
-        "lower": 0.9718405557002012,
-        "upper": 0.9889358127196721
+        "lower": 0.9668465509650023,
+        "upper": 0.9929305155019735
       }
     },
-    "classification": {
-      "accuracy": 0.2512820512820513,
-      "correct": 98,
+    "stain": {
+      "accuracy": 0.7333333333333333,
+      "correct": 286,
       "total": 390,
       "confidence_interval_95": {
-        "lower": 0.20832693493596952,
-        "upper": 0.2941398234725053
+        "lower": 0.6873242345035236,
+        "upper": 0.774790649350946
+      }
+    },
+    "subdomain": {
+      "accuracy": 0.46923076923076923,
+      "correct": 183,
+      "total": 390,
+      "confidence_interval_95": {
+        "lower": 0.42024284804313267,
+        "upper": 0.5188189255145197
+      }
+    },
+    "submodality": {
+      "accuracy": 0.10512820512820513,
+      "correct": 41,
+      "total": 390,
+      "confidence_interval_95": {
+        "lower": 0.07844388047501985,
+        "upper": 0.13951554684818515
       }
     }
+  },
+  "merge_metadata": {
+    "merge_method": "avg",
+    "adapter_strength": 0.7,
+    "scaled_A": 0.8366600265340756,
+    "scaled_B": 0.8366600265340756,
+    "soup_adapter_path": "finetuning_supervised/models/neuropathology/combined/0.70/lora_adapters_epoch_4_acc_0.9716/adapter_model.safetensors",
+    "merge_timestamp": "2025-08-22T04:45:29.209195",
+    "model_type": "hybrid_base_soup",
+    "scaling_method": "sqrt_weighted_lora",
+    "note": "Adapter tensors pre-scaled; rely on original alpha in adapter_config (unchanged)."
   }
 }

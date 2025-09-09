@@ -5,40 +5,22 @@
   "test_path": "neuropathology_combined",
   "model_type": "hybrid_base_soup",
   "overall": {
-    "accuracy": 0.7970765262252795,
-    "correct": 927,
+    "accuracy": 0.766122098022356,
+    "correct": 891,
     "total": 1163,
     "confidence_interval_95": {
-      "lower": 0.7703809917181741,
-      "upper": 0.8165741902820974
+      "lower": 0.7409425132121618,
+      "upper": 0.7895494360759723
     }
   },
   "per_question_type": {
-    "subdomain": {
-      "accuracy": 0.520618556701031,
-      "correct": 101,
+    "classification": {
+      "accuracy": 0.39690721649484534,
+      "correct": 77,
       "total": 194,
       "confidence_interval_95": {
-        "lower": 0.4405031337841156,
-        "upper": 0.5797312820311535
-      }
-    },
-    "submodality": {
-      "accuracy": 1.0,
-      "correct": 194,
-      "total": 194,
-      "confidence_interval_95": {
-        "lower": 0.9805831454964367,
-        "upper": 1.0
-      }
-    },
-    "modality": {
-      "accuracy": 1.0,
-      "correct": 193,
-      "total": 193,
-      "confidence_interval_95": {
-        "lower": 0.9804845033982735,
-        "upper": 1.0
+        "lower": 0.3307044389691307,
+        "upper": 0.4671134691759338
       }
     },
     "domain": {
@@ -46,27 +28,56 @@
       "correct": 194,
       "total": 194,
       "confidence_interval_95": {
-        "lower": 0.9805831454964367,
-        "upper": 1.0
+        "lower": 0.9805831454964365,
+        "upper": 0.9999999999999998
+      }
+    },
+    "modality": {
+      "accuracy": 1.0,
+      "correct": 193,
+      "total": 193,
+      "confidence_interval_95": {
+        "lower": 0.9804845033982734,
+        "upper": 0.9999999999999998
       }
     },
     "stain": {
-      "accuracy": 0.9226804123711341,
-      "correct": 179,
+      "accuracy": 0.4948453608247423,
+      "correct": 96,
       "total": 194,
       "confidence_interval_95": {
-        "lower": 0.8586043669579833,
-        "upper": 0.9348298200745179
+        "lower": 0.42527689144237407,
+        "upper": 0.5646140039648793
       }
     },
-    "classification": {
-      "accuracy": 0.3402061855670103,
-      "correct": 66,
+    "subdomain": {
+      "accuracy": 0.7061855670103093,
+      "correct": 137,
       "total": 194,
       "confidence_interval_95": {
-        "lower": 0.27055168191593304,
-        "upper": 0.40273411860955244
+        "lower": 0.6385834861761309,
+        "upper": 0.7657806975337399
+      }
+    },
+    "submodality": {
+      "accuracy": 1.0,
+      "correct": 194,
+      "total": 194,
+      "confidence_interval_95": {
+        "lower": 0.9805831454964365,
+        "upper": 0.9999999999999998
       }
     }
+  },
+  "merge_metadata": {
+    "merge_method": "avg",
+    "adapter_strength": 0.7,
+    "scaled_A": 0.8366600265340756,
+    "scaled_B": 0.8366600265340756,
+    "soup_adapter_path": "finetuning_supervised/models/gastrointestinal/combined/0.70/lora_adapters_epoch_7_acc_0.9909/adapter_model.safetensors",
+    "merge_timestamp": "2025-08-22T04:45:38.887071",
+    "model_type": "hybrid_base_soup",
+    "scaling_method": "sqrt_weighted_lora",
+    "note": "Adapter tensors pre-scaled; rely on original alpha in adapter_config (unchanged)."
   }
 }

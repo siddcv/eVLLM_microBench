@@ -5,22 +5,49 @@
   "test_path": "neuropathology_coarse",
   "model_type": "hybrid_base_soup",
   "overall": {
-    "accuracy": 0.8802889576883385,
-    "correct": 853,
+    "accuracy": 0.932920536635707,
+    "correct": 904,
     "total": 969,
     "confidence_interval_95": {
-      "lower": 0.8548631451463077,
-      "upper": 0.8957713419490753
+      "lower": 0.9153986893328618,
+      "upper": 0.9470234375130269
     }
   },
   "per_question_type": {
-    "subdomain": {
-      "accuracy": 0.8298969072164949,
-      "correct": 161,
+    "domain": {
+      "accuracy": 0.9690721649484536,
+      "correct": 188,
       "total": 194,
       "confidence_interval_95": {
-        "lower": 0.7547564007849344,
-        "upper": 0.860247069812821
+        "lower": 0.934178557472189,
+        "upper": 0.985749960467767
+      }
+    },
+    "modality": {
+      "accuracy": 1.0,
+      "correct": 193,
+      "total": 193,
+      "confidence_interval_95": {
+        "lower": 0.9804845033982734,
+        "upper": 0.9999999999999998
+      }
+    },
+    "stain": {
+      "accuracy": 0.9123711340206185,
+      "correct": 177,
+      "total": 194,
+      "confidence_interval_95": {
+        "lower": 0.8641585908218183,
+        "upper": 0.9445697765979232
+      }
+    },
+    "subdomain": {
+      "accuracy": 0.7835051546391752,
+      "correct": 152,
+      "total": 194,
+      "confidence_interval_95": {
+        "lower": 0.7203472482301693,
+        "upper": 0.835653504370903
       }
     },
     "submodality": {
@@ -28,36 +55,20 @@
       "correct": 194,
       "total": 194,
       "confidence_interval_95": {
-        "lower": 0.9805831454964367,
-        "upper": 1.0
-      }
-    },
-    "modality": {
-      "accuracy": 0.9948186528497409,
-      "correct": 192,
-      "total": 193,
-      "confidence_interval_95": {
-        "lower": 0.9520133374354467,
-        "upper": 0.9798588526374089
-      }
-    },
-    "domain": {
-      "accuracy": 0.7061855670103093,
-      "correct": 137,
-      "total": 194,
-      "confidence_interval_95": {
-        "lower": 0.6249493186635758,
-        "upper": 0.7521465300211849
-      }
-    },
-    "stain": {
-      "accuracy": 0.8711340206185567,
-      "correct": 169,
-      "total": 194,
-      "confidence_interval_95": {
-        "lower": 0.7999125860016874,
-        "upper": 0.8943934252337327
+        "lower": 0.9805831454964365,
+        "upper": 0.9999999999999998
       }
     }
+  },
+  "merge_metadata": {
+    "merge_method": "avg",
+    "adapter_strength": 0.7,
+    "scaled_A": 0.8366600265340756,
+    "scaled_B": 0.8366600265340756,
+    "soup_adapter_path": "finetuning_supervised/models/cardiovascular/combined/0.70/lora_adapters_epoch_9_acc_0.9640/adapter_model.safetensors",
+    "merge_timestamp": "2025-08-22T03:27:38.783506",
+    "model_type": "hybrid_base_soup",
+    "scaling_method": "sqrt_weighted_lora",
+    "note": "Adapter tensors pre-scaled; rely on original alpha in adapter_config (unchanged)."
   }
 }

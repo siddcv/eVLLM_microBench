@@ -1,0 +1,72 @@
+{
+  "soup_name": "soup_all_ties_weighted_trim03",
+  "test_domain": "completeDataset",
+  "task_type": "combined",
+  "test_file": "finetuning_supervised/data/splits/completeDataset/combined/fixed/test.json",
+  "timestamp": "20250820_065309",
+  "overall": {
+    "accuracy": 0.29819475556726843,
+    "correct": 2263,
+    "total": 7589,
+    "confidence_interval_95": {
+      "lower": 0.2878556949269321,
+      "upper": 0.3084361798875466
+    }
+  },
+  "per_question_type": {
+    "stain": {
+      "accuracy": 0.05392545598731166,
+      "correct": 68,
+      "total": 1261,
+      "confidence_interval_95": {
+        "lower": 0.04259111704948563,
+        "upper": 0.0676335631885259
+      }
+    },
+    "subdomain": {
+      "accuracy": 0.31343283582089554,
+      "correct": 399,
+      "total": 1273,
+      "confidence_interval_95": {
+        "lower": 0.2875988060135681,
+        "upper": 0.3385001213190995
+      }
+    },
+    "domain": {
+      "accuracy": 0.28043990573448546,
+      "correct": 357,
+      "total": 1273,
+      "confidence_interval_95": {
+        "lower": 0.25560633927526666,
+        "upper": 0.3049031759393321
+      }
+    },
+    "submodality": {
+      "accuracy": 0.7565424266455194,
+      "correct": 954,
+      "total": 1261,
+      "confidence_interval_95": {
+        "lower": 0.7298036351348138,
+        "upper": 0.7771322567060094
+      }
+    },
+    "modality": {
+      "accuracy": 0.08015873015873017,
+      "correct": 101,
+      "total": 1260,
+      "confidence_interval_95": {
+        "lower": 0.06616262047999354,
+        "upper": 0.09621201931745119
+      }
+    },
+    "classification": {
+      "accuracy": 0.3045202220459952,
+      "correct": 384,
+      "total": 1261,
+      "confidence_interval_95": {
+        "lower": 0.27881848638608636,
+        "upper": 0.3295560165003321
+      }
+    }
+  }
+}

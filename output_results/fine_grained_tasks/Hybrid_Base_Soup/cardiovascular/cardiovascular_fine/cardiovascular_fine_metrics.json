@@ -5,23 +5,34 @@
   "test_path": "cardiovascular_fine",
   "model_type": "hybrid_base_soup",
   "overall": {
-    "accuracy": 0.8,
-    "correct": 48,
+    "accuracy": 0.7333333333333333,
+    "correct": 44,
     "total": 60,
     "confidence_interval_95": {
-      "lower": 0.635130655767112,
-      "upper": 0.834663660594416
+      "lower": 0.6099128690331636,
+      "upper": 0.8286735999671944
     }
   },
   "per_question_type": {
     "classification": {
-      "accuracy": 0.8,
-      "correct": 48,
+      "accuracy": 0.7333333333333333,
+      "correct": 44,
       "total": 60,
       "confidence_interval_95": {
-        "lower": 0.635130655767112,
-        "upper": 0.834663660594416
+        "lower": 0.6099128690331636,
+        "upper": 0.8286735999671944
       }
     }
+  },
+  "merge_metadata": {
+    "merge_method": "avg",
+    "adapter_strength": 0.7,
+    "scaled_A": 0.8366600265340756,
+    "scaled_B": 0.8366600265340756,
+    "soup_adapter_path": "finetuning_supervised/models/cardiovascular/combined/0.70/lora_adapters_epoch_9_acc_0.9640/adapter_model.safetensors",
+    "merge_timestamp": "2025-08-22T03:27:38.783506",
+    "model_type": "hybrid_base_soup",
+    "scaling_method": "sqrt_weighted_lora",
+    "note": "Adapter tensors pre-scaled; rely on original alpha in adapter_config (unchanged)."
   }
 }

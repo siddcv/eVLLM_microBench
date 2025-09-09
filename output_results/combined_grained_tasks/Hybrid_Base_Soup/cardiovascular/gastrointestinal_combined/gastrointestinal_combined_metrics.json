@@ -5,68 +5,79 @@
   "test_path": "gastrointestinal_combined",
   "model_type": "hybrid_base_soup",
   "overall": {
-    "accuracy": 0.6448497854077253,
-    "correct": 2404,
+    "accuracy": 0.6899141630901288,
+    "correct": 2572,
     "total": 3728,
     "confidence_interval_95": {
-      "lower": 0.628682309093215,
-      "upper": 0.6593917770190166
+      "lower": 0.6748776872130572,
+      "upper": 0.7045596537417949
     }
   },
   "per_question_type": {
-    "submodality": {
-      "accuracy": 0.9529983792544571,
-      "correct": 588,
-      "total": 617,
+    "classification": {
+      "accuracy": 0.441747572815534,
+      "correct": 273,
+      "total": 618,
       "confidence_interval_95": {
-        "lower": 0.9274338737875558,
-        "upper": 0.961198350712337
+        "lower": 0.4030746840844408,
+        "upper": 0.481140176506318
       }
     },
     "domain": {
-      "accuracy": 0.7825396825396825,
-      "correct": 493,
+      "accuracy": 0.9396825396825397,
+      "correct": 592,
       "total": 630,
       "confidence_interval_95": {
-        "lower": 0.7439349370444974,
-        "upper": 0.8082551463203574
+        "lower": 0.9182931874790122,
+        "upper": 0.9557424128913948
       }
     },
     "modality": {
-      "accuracy": 0.993517017828201,
-      "correct": 613,
+      "accuracy": 0.9983792544570502,
+      "correct": 616,
       "total": 617,
       "confidence_interval_95": {
-        "lower": 0.9773221717143143,
-        "upper": 0.9913475955579636
+        "lower": 0.9908772206571768,
+        "upper": 0.9997138412996223
       }
     },
     "stain": {
-      "accuracy": 0.5332252836304701,
-      "correct": 329,
+      "accuracy": 0.713128038897893,
+      "correct": 440,
       "total": 617,
       "confidence_interval_95": {
-        "lower": 0.49047768979450374,
-        "upper": 0.5689655915834785
+        "lower": 0.6762065483259856,
+        "upper": 0.7474120684132636
       }
     },
     "subdomain": {
-      "accuracy": 0.1271860095389507,
-      "correct": 80,
+      "accuracy": 0.08108108108108109,
+      "correct": 51,
       "total": 629,
       "confidence_interval_95": {
-        "lower": 0.10260622597236566,
-        "upper": 0.15472032891002413
+        "lower": 0.06220585513484678,
+        "upper": 0.10504212987854135
       }
     },
-    "classification": {
-      "accuracy": 0.48705501618122976,
-      "correct": 301,
-      "total": 618,
+    "submodality": {
+      "accuracy": 0.9724473257698542,
+      "correct": 600,
+      "total": 617,
       "confidence_interval_95": {
-        "lower": 0.4448400669846752,
-        "upper": 0.5234112972719454
+        "lower": 0.9563206272444785,
+        "upper": 0.9827274851470891
       }
     }
+  },
+  "merge_metadata": {
+    "merge_method": "avg",
+    "adapter_strength": 0.7,
+    "scaled_A": 0.8366600265340756,
+    "scaled_B": 0.8366600265340756,
+    "soup_adapter_path": "finetuning_supervised/models/cardiovascular/combined/0.70/lora_adapters_epoch_9_acc_0.9640/adapter_model.safetensors",
+    "merge_timestamp": "2025-08-22T03:27:38.783506",
+    "model_type": "hybrid_base_soup",
+    "scaling_method": "sqrt_weighted_lora",
+    "note": "Adapter tensors pre-scaled; rely on original alpha in adapter_config (unchanged)."
   }
 }

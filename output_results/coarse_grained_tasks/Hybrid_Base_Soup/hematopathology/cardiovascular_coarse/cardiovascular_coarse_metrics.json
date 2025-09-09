@@ -5,31 +5,31 @@
   "test_path": "cardiovascular_coarse",
   "model_type": "hybrid_base_soup",
   "overall": {
-    "accuracy": 0.7033333333333334,
-    "correct": 211,
+    "accuracy": 0.7333333333333333,
+    "correct": 220,
     "total": 300,
     "confidence_interval_95": {
-      "lower": 0.6404768609052822,
-      "upper": 0.7433288881275706
+      "lower": 0.6805726058685488,
+      "upper": 0.7801940075599961
     }
   },
   "per_question_type": {
-    "subdomain": {
-      "accuracy": 0.48333333333333334,
-      "correct": 29,
+    "domain": {
+      "accuracy": 1.0,
+      "correct": 60,
       "total": 60,
       "confidence_interval_95": {
-        "lower": 0.3326070893321476,
-        "upper": 0.5777784936088948
+        "lower": 0.93982814785791,
+        "upper": 0.9999999999999998
       }
     },
-    "submodality": {
-      "accuracy": 0.95,
-      "correct": 57,
+    "modality": {
+      "accuracy": 0.9666666666666667,
+      "correct": 58,
       "total": 60,
       "confidence_interval_95": {
-        "lower": 0.8074608690071237,
-        "upper": 0.9273165316062131
+        "lower": 0.886362257256914,
+        "upper": 0.990810680743802
       }
     },
     "stain": {
@@ -37,27 +37,38 @@
       "correct": 5,
       "total": 60,
       "confidence_interval_95": {
-        "lower": 0.02959753067730264,
-        "upper": 0.17416649425891598
+        "lower": 0.03612045660173077,
+        "upper": 0.1806894201833441
       }
     },
-    "domain": {
-      "accuracy": 1.0,
-      "correct": 60,
+    "subdomain": {
+      "accuracy": 0.6666666666666666,
+      "correct": 40,
       "total": 60,
       "confidence_interval_95": {
-        "lower": 0.9398281478579101,
-        "upper": 1.0
+        "lower": 0.5405686645211968,
+        "upper": 0.7727073847647732
       }
     },
-    "modality": {
-      "accuracy": 1.0,
-      "correct": 60,
+    "submodality": {
+      "accuracy": 0.95,
+      "correct": 57,
       "total": 60,
       "confidence_interval_95": {
-        "lower": 0.9398281478579101,
-        "upper": 1.0
+        "lower": 0.8629948352365148,
+        "upper": 0.9828504978356043
       }
     }
+  },
+  "merge_metadata": {
+    "merge_method": "avg",
+    "adapter_strength": 0.7,
+    "scaled_A": 0.8366600265340756,
+    "scaled_B": 0.8366600265340756,
+    "soup_adapter_path": "finetuning_supervised/models/hematopathology/combined/0.70/lora_adapters_epoch_9_acc_0.9944/adapter_model.safetensors",
+    "merge_timestamp": "2025-08-22T04:45:46.174825",
+    "model_type": "hybrid_base_soup",
+    "scaling_method": "sqrt_weighted_lora",
+    "note": "Adapter tensors pre-scaled; rely on original alpha in adapter_config (unchanged)."
   }
 }

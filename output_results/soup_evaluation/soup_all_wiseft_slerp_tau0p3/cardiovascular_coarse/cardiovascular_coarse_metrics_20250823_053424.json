@@ -1,0 +1,63 @@
+{
+  "soup_name": "soup_all_wiseft_slerp_tau0p3",
+  "test_domain": "cardiovascular",
+  "task_type": "coarse",
+  "test_file": "finetuning_supervised/data/splits/cardiovascular/coarse/fixed/test.json",
+  "timestamp": "20250823_053424",
+  "overall": {
+    "accuracy": 0.97,
+    "correct": 291,
+    "total": 300,
+    "confidence_interval_95": {
+      "lower": 0.9317889057895999,
+      "upper": 0.9719495911218086
+    }
+  },
+  "per_question_type": {
+    "subdomain": {
+      "accuracy": 0.9833333333333333,
+      "correct": 59,
+      "total": 60,
+      "confidence_interval_95": {
+        "lower": 0.8540296964829788,
+        "upper": 0.9396328339640933
+      }
+    },
+    "submodality": {
+      "accuracy": 1.0,
+      "correct": 60,
+      "total": 60,
+      "confidence_interval_95": {
+        "lower": 0.9398281478579101,
+        "upper": 1.0
+      }
+    },
+    "stain": {
+      "accuracy": 0.8666666666666667,
+      "correct": 52,
+      "total": 60,
+      "confidence_interval_95": {
+        "lower": 0.7075270370349361,
+        "upper": 0.8800375389940626
+      }
+    },
+    "domain": {
+      "accuracy": 1.0,
+      "correct": 60,
+      "total": 60,
+      "confidence_interval_95": {
+        "lower": 0.9398281478579101,
+        "upper": 1.0
+      }
+    },
+    "modality": {
+      "accuracy": 1.0,
+      "correct": 60,
+      "total": 60,
+      "confidence_interval_95": {
+        "lower": 0.9398281478579101,
+        "upper": 1.0
+      }
+    }
+  }
+}

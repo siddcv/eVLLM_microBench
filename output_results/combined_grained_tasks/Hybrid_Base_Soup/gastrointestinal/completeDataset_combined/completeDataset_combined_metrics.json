@@ -5,31 +5,22 @@
   "test_path": "completeDataset_combined",
   "model_type": "hybrid_base_soup",
   "overall": {
-    "accuracy": 0.8641454737119515,
-    "correct": 6558,
+    "accuracy": 0.8380550797206483,
+    "correct": 6360,
     "total": 7589,
     "confidence_interval_95": {
-      "lower": 0.8558150927053154,
-      "upper": 0.8712331786012117
+      "lower": 0.829595882491808,
+      "upper": 0.8461722114197613
     }
   },
   "per_question_type": {
-    "stain": {
-      "accuracy": 0.8572561459159397,
-      "correct": 1081,
+    "classification": {
+      "accuracy": 0.6225218080888184,
+      "correct": 785,
       "total": 1261,
       "confidence_interval_95": {
-        "lower": 0.8342622350990277,
-        "upper": 0.8728794398947944
-      }
-    },
-    "subdomain": {
-      "accuracy": 0.7619795758051846,
-      "correct": 970,
-      "total": 1273,
-      "confidence_interval_95": {
-        "lower": 0.7355287848757083,
-        "upper": 0.7822738167288008
+        "lower": 0.5954322226332583,
+        "upper": 0.648867169867762
       }
     },
     "domain": {
@@ -37,17 +28,8 @@
       "correct": 1273,
       "total": 1273,
       "confidence_interval_95": {
-        "lower": 0.9969914363336525,
+        "lower": 0.9969914363336524,
         "upper": 1.0
-      }
-    },
-    "submodality": {
-      "accuracy": 0.9920697858842189,
-      "correct": 1251,
-      "total": 1261,
-      "confidence_interval_95": {
-        "lower": 0.9824553424849201,
-        "upper": 0.99267832570583
       }
     },
     "modality": {
@@ -55,18 +37,47 @@
       "correct": 1260,
       "total": 1260,
       "confidence_interval_95": {
-        "lower": 0.9969604899460424,
+        "lower": 0.9969604899460421,
         "upper": 1.0
       }
     },
-    "classification": {
-      "accuracy": 0.5733544805709754,
-      "correct": 723,
+    "stain": {
+      "accuracy": 0.6328310864393338,
+      "correct": 798,
       "total": 1261,
       "confidence_interval_95": {
-        "lower": 0.5441332987600263,
-        "upper": 0.5986487670308539
+        "lower": 0.6058597798049172,
+        "upper": 0.6589955486347003
+      }
+    },
+    "subdomain": {
+      "accuracy": 0.772191673212883,
+      "correct": 983,
+      "total": 1273,
+      "confidence_interval_95": {
+        "lower": 0.7483529467498726,
+        "upper": 0.794392587719272
+      }
+    },
+    "submodality": {
+      "accuracy": 1.0,
+      "correct": 1261,
+      "total": 1261,
+      "confidence_interval_95": {
+        "lower": 0.9969628930219636,
+        "upper": 1.0
       }
     }
+  },
+  "merge_metadata": {
+    "merge_method": "avg",
+    "adapter_strength": 0.7,
+    "scaled_A": 0.8366600265340756,
+    "scaled_B": 0.8366600265340756,
+    "soup_adapter_path": "finetuning_supervised/models/gastrointestinal/combined/0.70/lora_adapters_epoch_7_acc_0.9909/adapter_model.safetensors",
+    "merge_timestamp": "2025-08-22T04:45:38.887071",
+    "model_type": "hybrid_base_soup",
+    "scaling_method": "sqrt_weighted_lora",
+    "note": "Adapter tensors pre-scaled; rely on original alpha in adapter_config (unchanged)."
   }
 }

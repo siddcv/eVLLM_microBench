@@ -2,7 +2,7 @@
 import argparse, math
 import shutil
 from pathlib import Path
-from typing import List
+from typing import List, Optional
 import torch
 from safetensors.torch import load_file, save_file
 import re
@@ -56,6 +56,26 @@ def _pairwise_slerp(tensors: List[torch.Tensor], weights: List[float]) -> torch.
         acc_w += wi
     return acc
 
+def _apply_wiseft_scaling(param_dict: dict, tau: float) -> dict:
+    """
+    WiSE-FT for LoRA: scale A/B so the effective delta (B@A) is multiplied by tau.
+    We scale A and B by sqrt(tau). Norms/bias/heads are left untouched.
+    """
+    s = tau ** 0.5
+    out = {}
+    for k, t in param_dict.items():
+        kl = k.lower()
+        if ("w_a" in kl) or ("lora_a" in kl):
+            out[k] = t * s
+        elif ("w_b" in kl) or ("lora_b" in kl):
+            out[k] = t * s
+        else:
+            out[k] = t
+    return out
+
+
+
+
 def _task_arithmetic(tensors: List[torch.Tensor], weights: List[float], beta: float = 0.5) -> torch.Tensor:
     """
     Task Arithmetic: Center deltas to emphasize complementary information, then recombine.
@@ -88,69 +108,86 @@ def _task_arithmetic(tensors: List[torch.Tensor], weights: List[float], beta: fl
     
     return result
 
-def _ties_merging(tensors: List[torch.Tensor], weights: List[float], trim_threshold: float = 0.75) -> torch.Tensor:
-    """
-    TIES-Merging: Trim-Intersect-Expand-Sign merging to resolve interference.
-    
-    Args:
-        tensors: List of organ-specific tensors
-        weights: Organ weights (not used in TIES, but kept for consistency)
-        trim_threshold: Threshold for trimming small magnitudes (default: 0.75)
-    
-    Returns:
-        Merged tensor using TIES strategy
-    """
-    # Stack all tensors for easier processing
-    stacked = torch.stack(tensors)  # Shape: [n_organs, ...]
-    n_organs = stacked.shape[0]
-    
-    # Step 1: TRIM - Zero out small magnitudes per organ
-    trimmed = stacked.clone()
-    for i in range(n_organs):
-        tensor = stacked[i]
-        # Calculate threshold based on median of absolute values
-        median_abs = torch.median(torch.abs(tensor))
-        threshold = trim_threshold * median_abs
-        # Zero out small magnitudes
-        mask = torch.abs(tensor) < threshold
-        trimmed[i][mask] = 0.0
-    
-    # Step 2: INTERSECT - Handle sign agreement/disagreement
-    # Get signs of all tensors
-    signs = torch.sign(trimmed)  # Shape: [n_organs, ...]
-    
-    # Find where all organs have the same sign (agreement)
-    sign_agreement = torch.all(signs == signs[0], dim=0)
-    
-    # Find where signs disagree (conflict)
-    sign_disagreement = ~sign_agreement
-    
-    # Initialize result tensor
-    result = torch.zeros_like(tensors[0])
-    
-    # Step 3: Handle agreement regions - average the values
-    if torch.any(sign_agreement):
-        agreement_mask = sign_agreement
-        # Average the trimmed values where signs agree
-        agreement_values = trimmed[:, agreement_mask].mean(dim=0)
-        result[agreement_mask] = agreement_values
-    
-    # Step 4: Handle disagreement regions - keep strongest signal
-    if torch.any(sign_disagreement):
-        disagreement_mask = sign_disagreement
-        disagreement_tensors = trimmed[:, disagreement_mask]  # Shape: [n_organs, n_disagreement]
-        
-        # Find the organ with largest magnitude for each disagreement position
-        magnitudes = torch.abs(disagreement_tensors)  # Shape: [n_organs, n_disagreement]
-        max_indices = torch.argmax(magnitudes, dim=0)  # Shape: [n_disagreement]
-        
-        # Keep the values from the strongest organ
-        for i, max_idx in enumerate(max_indices):
-            result[disagreement_mask][i] = disagreement_tensors[max_idx, i]
-    
-    return result
 
-def merge_adapters(adapter_paths: List[Path], out_dir: Path, method: str, weights: List[float] = None, beta: float = 0.5, trim_threshold: float = 0.75):
+
+
+def _ties_merging(
+    tensors: List[torch.Tensor],
+    weights: List[float],
+    keep_top_p: float = 0.25,
+    eps: float = 1e-12,
+) -> torch.Tensor:
+    """
+    TIES-style merge (Trim-Intersect-Resolve) with quantile trimming,
+    agreement on non-zero signs, and weighted mean over non-zeros.
+
+    Args:
+        tensors: list of tensors (same shape)
+        weights: per-adapter weights (used in agreement averaging)
+        keep_top_p: fraction to keep per adapter by magnitude (e.g., 0.25)
+        eps: numerical stability for denominators
+
+    Returns:
+        merged tensor
+    """
+    # Stack as [n, ...] and flatten to [n, K] for trimming
+    T = torch.stack(tensors, dim=0)
+    n = T.shape[0]
+    flat = T.view(n, -1)
+
+    # TRIM: keep top-p by magnitude per adapter via quantile
+    mags = flat.abs()
+    kth = torch.quantile(mags, q=max(0.0, min(1.0, 1.0 - keep_top_p)), dim=1, keepdim=True)
+    keep = (mags >= kth).view_as(T)
+    T_trim = T * keep
+
+    # AGREEMENT on non-zero signs
+    signs = torch.sign(T_trim)  # -1, 0, +1
+    nonzero = (signs != 0)
+    nz_count = nonzero.sum(dim=0)
+    pos_count = (signs > 0).sum(dim=0)
+    neg_count = (signs < 0).sum(dim=0)
+    agree_pos = (nz_count > 0) & (neg_count == 0)
+    agree_neg = (nz_count > 0) & (pos_count == 0)
+    agree = agree_pos | agree_neg
+    disagree = (nz_count > 1) & (~agree)
+
+    out = torch.zeros_like(tensors[0])
+
+    # AGREEMENT: weighted mean over non-zero contributors only
+    if agree.any():
+        mask = agree
+        vals = T_trim[:, mask]  # [n, K]
+        w = torch.tensor(weights, dtype=vals.dtype, device=vals.device)
+        w = w / (w.sum() + eps)
+        nz = (vals != 0).to(vals.dtype)
+        denom = (w.view(-1, 1) * nz).sum(dim=0).clamp_min(eps)
+        num = (w.view(-1, 1) * vals).sum(dim=0)
+        out[mask] = num / denom
+
+    # DISAGREEMENT: take contributor with max magnitude among non-zeros
+    if disagree.any():
+        mask = disagree
+        vals = T_trim[:, mask]       # [n, K]
+        mags = vals.abs()
+        idx = mags.argmax(dim=0)     # [K]
+        gathered = vals.gather(0, idx.unsqueeze(0)).squeeze(0)
+        out[mask] = gathered
+
+    # Elsewhere no contributors -> zeros remain
+    return out
+
+def merge_adapters(
+    adapter_paths: List[Path],
+    out_dir: Path,
+    method: str,
+    weights: List[float] = None,
+    beta: float = 0.5,
+    trim_threshold: float = 0.75,
+    ties_keep_top_p: float = 0.25,
+    wiseft_tau: float = 0.7,
+    wiseft_premerge: str = "avg",
+):
     assert len(adapter_paths) >= 2, "Need at least 2 adapters to create a soup"
     out_dir.mkdir(parents=True, exist_ok=True)
 
@@ -178,19 +215,36 @@ def merge_adapters(adapter_paths: List[Path], out_dir: Path, method: str, weight
             continue
 
         tensors = [sd[k] for sd in sd_list]
-        if method == "avg":
-            merged[k] = _linear_avg(tensors, weights)
-        elif method == "slerp":
-            # for >2 tensors, reduce by pairwise slerp
-            merged[k] = _pairwise_slerp(tensors, weights)
+        
+        if method in {"avg", "slerp", "wiseft"}:
+            # First do the organ pre-merge (avg or slerp).
+            if (method == "avg") or (method == "wiseft" and wiseft_premerge == "avg"):
+                premerged = _linear_avg(tensors, weights)
+            else:  # slerp or wiseft with slerp premerge
+                premerged = _pairwise_slerp(tensors, weights)
+
+            if method == "wiseft":
+                # We can't scale per-key here because we need key context (A/B vs others).
+                # So temporarily store premerged tensors; we'll apply WiSE-FT after we build whole dict.
+                merged[k] = premerged
+            else:
+                merged[k] = premerged
+                
         elif method == "task_arithmetic":
             # Task arithmetic: center deltas and recombine
             merged[k] = _task_arithmetic(tensors, weights, beta)
         elif method == "ties":
-            # TIES-Merging: trim-intersect-expand-sign
-            merged[k] = _ties_merging(tensors, weights, trim_threshold)
+            # TIES with quantile trimming and weighted agreement averaging
+            merged[k] = _ties_merging(tensors, weights, keep_top_p=ties_keep_top_p)
+
         else:
             raise ValueError(f"Unknown method: {method}")
+
+    # If WiSE-FT, now scale A/B by √tau to get base ⊕ tau*Δ_soup
+    if method == "wiseft":
+        if not (0.0 <= wiseft_tau <= 1.0):
+            raise ValueError("--wiseft-tau must be in [0,1]")
+        merged = _apply_wiseft_scaling(merged, wiseft_tau)
 
     # Save as a new adapter safetensors
     out_path = out_dir / "adapter_model.safetensors"
@@ -296,11 +350,17 @@ def main():
                     help="Data ratio to use when finding adapters (default: 0.70)")
     ap.add_argument("--weights", nargs="*", type=float, default=None,
                     help="Optional weights per adapter (same order)")
-    ap.add_argument("--method", choices=["avg", "slerp", "task_arithmetic", "ties"], default="avg")
+    ap.add_argument("--method", choices=["avg", "slerp", "task_arithmetic", "ties", "wiseft"], default="avg")
     ap.add_argument("--beta", type=float, default=0.5,
                     help="Beta parameter for task arithmetic (controls shared component, default: 0.5)")
     ap.add_argument("--trim-threshold", type=float, default=0.75,
-                    help="Trim threshold for TIES-Merging (default: 0.75)")
+                    help="[Deprecated for TIES] legacy threshold; use --ties-keep-top-p instead")
+    ap.add_argument("--ties-keep-top-p", type=float, default=0.25,
+                    help="Fraction to keep per adapter by magnitude in TIES (default: 0.25)")
+    ap.add_argument("--wiseft-tau", type=float, default=0.7,
+                    help="WiSE-FT mix with base (0..1). Scales LoRA delta by tau (via √tau on A/B).")
+    ap.add_argument("--wiseft-premerge", choices=["avg", "slerp"], default="avg",
+                    help="How to pre-merge the organ adapters before WiSE-FT scaling.")
     ap.add_argument("--out-dir", type=str, required=True,
                     help="Output directory for the merged adapter")
     args = ap.parse_args()
@@ -317,7 +377,11 @@ def main():
         return
 
     out_dir = Path(args.out_dir)
-    merge_adapters(adapter_paths, out_dir, args.method, args.weights, args.beta, args.trim_threshold)
+    merge_adapters(
+        adapter_paths, out_dir, args.method, args.weights, args.beta,
+        args.trim_threshold, args.ties_keep_top_p,
+        wiseft_tau=args.wiseft_tau, wiseft_premerge=args.wiseft_premerge,
+    )
 
 if __name__ == "__main__":
     main()

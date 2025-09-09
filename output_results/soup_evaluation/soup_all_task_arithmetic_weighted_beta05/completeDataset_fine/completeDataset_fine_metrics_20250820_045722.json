@@ -1,0 +1,27 @@
+{
+  "soup_name": "soup_all_task_arithmetic_weighted_beta05",
+  "test_domain": "completeDataset",
+  "task_type": "fine",
+  "test_file": "finetuning_supervised/data/splits/completeDataset/fine/fixed/test.json",
+  "timestamp": "20250820_045722",
+  "overall": {
+    "accuracy": 0.3838223632038065,
+    "correct": 484,
+    "total": 1261,
+    "confidence_interval_95": {
+      "lower": 0.3562052792403498,
+      "upper": 0.409811572585438
+    }
+  },
+  "per_question_type": {
+    "classification": {
+      "accuracy": 0.3838223632038065,
+      "correct": 484,
+      "total": 1261,
+      "confidence_interval_95": {
+        "lower": 0.3562052792403498,
+        "upper": 0.409811572585438
+      }
+    }
+  }
+}

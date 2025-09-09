@@ -1,0 +1,27 @@
+{
+  "soup_name": "soup_all_ties_soft_p90",
+  "test_domain": "cardiovascular",
+  "task_type": "fine",
+  "test_file": "finetuning_supervised/data/splits/cardiovascular/fine/fixed/test.json",
+  "timestamp": "20250821_073005",
+  "overall": {
+    "accuracy": 0.4,
+    "correct": 24,
+    "total": 60,
+    "confidence_interval_95": {
+      "lower": 0.2612640993129686,
+      "upper": 0.5019086590437355
+    }
+  },
+  "per_question_type": {
+    "classification": {
+      "accuracy": 0.4,
+      "correct": 24,
+      "total": 60,
+      "confidence_interval_95": {
+        "lower": 0.2612640993129686,
+        "upper": 0.5019086590437355
+      }
+    }
+  }
+}

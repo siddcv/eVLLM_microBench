@@ -5,31 +5,22 @@
   "test_path": "gastrointestinal_coarse",
   "model_type": "hybrid_base_soup",
   "overall": {
-    "accuracy": 0.9787781350482315,
-    "correct": 3044,
+    "accuracy": 1.0,
+    "correct": 3110,
     "total": 3110,
     "confidence_interval_95": {
-      "lower": 0.9718842395644223,
-      "upper": 0.9820771953504775
+      "lower": 0.9987663280640661,
+      "upper": 0.9999999999999998
     }
   },
   "per_question_type": {
-    "submodality": {
-      "accuracy": 1.0,
-      "correct": 617,
-      "total": 617,
-      "confidence_interval_95": {
-        "lower": 0.9938124963046265,
-        "upper": 1.0
-      }
-    },
     "domain": {
-      "accuracy": 0.9984126984126984,
-      "correct": 629,
+      "accuracy": 1.0,
+      "correct": 630,
       "total": 630,
       "confidence_interval_95": {
-        "lower": 0.9850316189123033,
-        "upper": 0.9936870755881656
+        "lower": 0.9939394011432426,
+        "upper": 1.0
       }
     },
     "modality": {
@@ -37,17 +28,17 @@
       "correct": 617,
       "total": 617,
       "confidence_interval_95": {
-        "lower": 0.9938124963046265,
-        "upper": 1.0
+        "lower": 0.9938124963046263,
+        "upper": 0.9999999999999998
       }
     },
     "stain": {
-      "accuracy": 0.8946515397082658,
-      "correct": 552,
+      "accuracy": 1.0,
+      "correct": 617,
       "total": 617,
       "confidence_interval_95": {
-        "lower": 0.8624169546220727,
-        "upper": 0.9109612082855855
+        "lower": 0.9938124963046263,
+        "upper": 0.9999999999999998
       }
     },
     "subdomain": {
@@ -58,6 +49,26 @@
         "lower": 0.9939298243388593,
         "upper": 1.0
       }
+    },
+    "submodality": {
+      "accuracy": 1.0,
+      "correct": 617,
+      "total": 617,
+      "confidence_interval_95": {
+        "lower": 0.9938124963046263,
+        "upper": 0.9999999999999998
+      }
     }
+  },
+  "merge_metadata": {
+    "merge_method": "avg",
+    "adapter_strength": 0.7,
+    "scaled_A": 0.8366600265340756,
+    "scaled_B": 0.8366600265340756,
+    "soup_adapter_path": "finetuning_supervised/models/gastrointestinal/combined/0.70/lora_adapters_epoch_7_acc_0.9909/adapter_model.safetensors",
+    "merge_timestamp": "2025-08-22T04:45:38.887071",
+    "model_type": "hybrid_base_soup",
+    "scaling_method": "sqrt_weighted_lora",
+    "note": "Adapter tensors pre-scaled; rely on original alpha in adapter_config (unchanged)."
   }
 }
