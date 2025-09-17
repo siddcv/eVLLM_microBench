@@ -1,0 +1,26 @@
+{
+  "organ_domain": "gastrointestinal",
+  "model_type": "vision_encoder",
+  "test_file": "finetuning_supervised/data/splits/gastrointestinal/fine/fixed/test.json",
+  "test_path": "test",
+  "overall": {
+    "accuracy": 0.8818770226537217,
+    "correct": 545,
+    "total": 618,
+    "confidence_interval_95": {
+      "lower": 0.8486076284018335,
+      "upper": 0.8995617472054674
+    }
+  },
+  "per_question_type": {
+    "classification": {
+      "correct": 545,
+      "total": 618,
+      "accuracy": 0.8818770226537217,
+      "confidence_interval_95": {
+        "lower": 0.8486076284018335,
+        "upper": 0.8995617472054674
+      }
+    }
+  }
+}

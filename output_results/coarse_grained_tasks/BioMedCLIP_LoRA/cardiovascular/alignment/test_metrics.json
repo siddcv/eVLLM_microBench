@@ -1,0 +1,62 @@
+{
+  "organ_domain": "cardiovascular",
+  "model_type": "alignment",
+  "test_file": "finetuning_supervised/data/splits/cardiovascular/coarse/fixed/test.json",
+  "test_path": "test",
+  "overall": {
+    "accuracy": 1.0,
+    "correct": 300,
+    "total": 300,
+    "confidence_interval_95": {
+      "lower": 0.987357028775454,
+      "upper": 1.0
+    }
+  },
+  "per_question_type": {
+    "subdomain": {
+      "correct": 60,
+      "total": 60,
+      "accuracy": 1.0,
+      "confidence_interval_95": {
+        "lower": 0.9398281478579101,
+        "upper": 1.0
+      }
+    },
+    "submodality": {
+      "correct": 60,
+      "total": 60,
+      "accuracy": 1.0,
+      "confidence_interval_95": {
+        "lower": 0.9398281478579101,
+        "upper": 1.0
+      }
+    },
+    "stain": {
+      "correct": 60,
+      "total": 60,
+      "accuracy": 1.0,
+      "confidence_interval_95": {
+        "lower": 0.9398281478579101,
+        "upper": 1.0
+      }
+    },
+    "domain": {
+      "correct": 60,
+      "total": 60,
+      "accuracy": 1.0,
+      "confidence_interval_95": {
+        "lower": 0.9398281478579101,
+        "upper": 1.0
+      }
+    },
+    "modality": {
+      "correct": 60,
+      "total": 60,
+      "accuracy": 1.0,
+      "confidence_interval_95": {
+        "lower": 0.9398281478579101,
+        "upper": 1.0
+      }
+    }
+  }
+}

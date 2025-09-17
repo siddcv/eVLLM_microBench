@@ -1,0 +1,27 @@
+{
+  "organ_domain": "cardiovascular",
+  "task_type": "fine",
+  "split_ratio": "0.25",
+  "test_file": "finetuning_supervised/data/splits/hematopathology/fine/fixed/test.json",
+  "test_path": "hematopathology_fine",
+  "overall": {
+    "accuracy": 0.21794871794871795,
+    "correct": 85,
+    "total": 390,
+    "confidence_interval_95": {
+      "lower": 0.17768053461849323,
+      "upper": 0.25941372403084995
+    }
+  },
+  "per_question_type": {
+    "classification": {
+      "accuracy": 0.21794871794871795,
+      "correct": 85,
+      "total": 390,
+      "confidence_interval_95": {
+        "lower": 0.17768053461849323,
+        "upper": 0.25941372403084995
+      }
+    }
+  }
+}

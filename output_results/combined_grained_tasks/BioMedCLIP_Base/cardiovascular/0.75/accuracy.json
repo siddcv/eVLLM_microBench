@@ -1,0 +1,42 @@
+{
+  "organ_domain": "cardiovascular",
+  "task_type": "combined",
+  "split_ratio": "0.75",
+  "overall": {
+    "accuracy": 0.6166666666666667,
+    "correct": 222,
+    "total": 360
+  },
+  "per_question_type": {
+    "subdomain": {
+      "accuracy": 0.4666666666666667,
+      "correct": 28,
+      "total": 60
+    },
+    "submodality": {
+      "accuracy": 0.4,
+      "correct": 24,
+      "total": 60
+    },
+    "stain": {
+      "accuracy": 0.48333333333333334,
+      "correct": 29,
+      "total": 60
+    },
+    "domain": {
+      "accuracy": 0.9666666666666667,
+      "correct": 58,
+      "total": 60
+    },
+    "modality": {
+      "accuracy": 1.0,
+      "correct": 60,
+      "total": 60
+    },
+    "classification": {
+      "accuracy": 0.38333333333333336,
+      "correct": 23,
+      "total": 60
+    }
+  }
+}

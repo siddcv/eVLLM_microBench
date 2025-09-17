@@ -1,0 +1,63 @@
+{
+  "organ_domain": "neuropathology",
+  "task_type": "fine",
+  "split_ratio": "0.70",
+  "test_file": "finetuning_supervised/data/splits/gastrointestinal/coarse/fixed/test.json",
+  "test_path": "gastrointestinal_coarse",
+  "overall": {
+    "accuracy": 0.5067524115755627,
+    "correct": 1576,
+    "total": 3110,
+    "confidence_interval_95": {
+      "lower": 0.4885586917647462,
+      "upper": 0.5236791589614206
+    }
+  },
+  "per_question_type": {
+    "submodality": {
+      "accuracy": 0.5186385737439222,
+      "correct": 320,
+      "total": 617,
+      "confidence_interval_95": {
+        "lower": 0.47601170618090405,
+        "upper": 0.5546180597990196
+      }
+    },
+    "domain": {
+      "accuracy": 0.5079365079365079,
+      "correct": 320,
+      "total": 630,
+      "confidence_interval_95": {
+        "lower": 0.4658902501715983,
+        "upper": 0.5437303499104537
+      }
+    },
+    "modality": {
+      "accuracy": 0.9854132901134521,
+      "correct": 608,
+      "total": 617,
+      "confidence_interval_95": {
+        "lower": 0.966433665819068,
+        "upper": 0.9862285928987328
+      }
+    },
+    "stain": {
+      "accuracy": 0.42301458670988656,
+      "correct": 261,
+      "total": 617,
+      "confidence_interval_95": {
+        "lower": 0.38200631847810695,
+        "upper": 0.4597348465589875
+      }
+    },
+    "subdomain": {
+      "accuracy": 0.10651828298887123,
+      "correct": 67,
+      "total": 629,
+      "confidence_interval_95": {
+        "lower": 0.0840916856420069,
+        "upper": 0.13239971997413935
+      }
+    }
+  }
+}
