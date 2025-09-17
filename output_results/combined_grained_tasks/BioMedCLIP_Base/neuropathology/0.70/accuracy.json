@@ -1,0 +1,70 @@
+{
+  "organ_domain": "neuropathology",
+  "task_type": "combined",
+  "split_ratio": "0.70",
+  "overall": {
+    "accuracy": 0.6448839208942391,
+    "correct": 750,
+    "total": 1163,
+    "confidence_interval_95": {
+      "lower": 0.6148233362492876,
+      "upper": 0.6697475213185323
+    }
+  },
+  "per_question_type": {
+    "subdomain": {
+      "accuracy": 0.8556701030927835,
+      "correct": 166,
+      "total": 194,
+      "confidence_interval_95": {
+        "lower": 0.7828302600482047,
+        "upper": 0.8817372984480908
+      }
+    },
+    "submodality": {
+      "accuracy": 0.9020618556701031,
+      "correct": 175,
+      "total": 194,
+      "confidence_interval_95": {
+        "lower": 0.8347446634805171,
+        "upper": 0.9190382532331514
+      }
+    },
+    "modality": {
+      "accuracy": 0.8186528497409327,
+      "correct": 158,
+      "total": 193,
+      "confidence_interval_95": {
+        "lower": 0.742394721742292,
+        "upper": 0.8507635275249534
+      }
+    },
+    "domain": {
+      "accuracy": 0.09278350515463918,
+      "correct": 18,
+      "total": 194,
+      "confidence_interval_95": {
+        "lower": 0.05754150572236459,
+        "upper": 0.13992905097713196
+      }
+    },
+    "stain": {
+      "accuracy": 0.8505154639175257,
+      "correct": 165,
+      "total": 194,
+      "confidence_interval_95": {
+        "lower": 0.7771780126452682,
+        "upper": 0.8774767282713194
+      }
+    },
+    "classification": {
+      "accuracy": 0.35051546391752575,
+      "correct": 68,
+      "total": 194,
+      "confidence_interval_95": {
+        "lower": 0.2800068150251551,
+        "upper": 0.41310462065974657
+      }
+    }
+  }
+}
