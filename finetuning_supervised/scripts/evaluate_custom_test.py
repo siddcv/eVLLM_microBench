@@ -41,7 +41,7 @@ class CustomTestEvaluator:
         self.results_dir = self.base_dir / self.config['output']['results_dir']
         
         # Use all available split ratios
-        self.split_ratios = ["0.10", "0.25", "0.50", "0.70"]
+        self.split_ratios = ["0.70"]
         
         # Create results directory
         self.results_dir.mkdir(parents=True, exist_ok=True)

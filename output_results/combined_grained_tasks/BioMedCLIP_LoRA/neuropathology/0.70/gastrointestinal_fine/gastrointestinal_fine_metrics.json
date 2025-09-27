@@ -1,0 +1,27 @@
+{
+  "organ_domain": "neuropathology",
+  "task_type": "combined",
+  "split_ratio": "0.70",
+  "test_file": "finetuning_supervised/data/splits/gastrointestinal/fine/fixed/test.json",
+  "test_path": "gastrointestinal_fine",
+  "overall": {
+    "accuracy": 0.511326860841424,
+    "correct": 316,
+    "total": 618,
+    "confidence_interval_95": {
+      "lower": 0.4688098879448309,
+      "upper": 0.547387255698102
+    }
+  },
+  "per_question_type": {
+    "classification": {
+      "accuracy": 0.511326860841424,
+      "correct": 316,
+      "total": 618,
+      "confidence_interval_95": {
+        "lower": 0.4688098879448309,
+        "upper": 0.547387255698102
+      }
+    }
+  }
+}

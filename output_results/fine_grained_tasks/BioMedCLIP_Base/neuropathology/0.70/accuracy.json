@@ -5,13 +5,21 @@
   "overall": {
     "accuracy": 0.35051546391752575,
     "correct": 68,
-    "total": 194
+    "total": 194,
+    "confidence_interval_95": {
+      "lower": 0.2800068150251551,
+      "upper": 0.41310462065974657
+    }
   },
   "per_question_type": {
     "classification": {
       "accuracy": 0.35051546391752575,
       "correct": 68,
-      "total": 194
+      "total": 194,
+      "confidence_interval_95": {
+        "lower": 0.2800068150251551,
+        "upper": 0.41310462065974657
+      }
     }
   }
 }

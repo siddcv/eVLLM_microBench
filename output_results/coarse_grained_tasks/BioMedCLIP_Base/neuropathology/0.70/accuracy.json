@@ -5,33 +5,57 @@
   "overall": {
     "accuracy": 0.7038183694530443,
     "correct": 682,
-    "total": 969
+    "total": 969,
+    "confidence_interval_95": {
+      "lower": 0.6715358888632732,
+      "upper": 0.7289392360889283
+    }
   },
   "per_question_type": {
     "subdomain": {
       "accuracy": 0.8556701030927835,
       "correct": 166,
-      "total": 194
+      "total": 194,
+      "confidence_interval_95": {
+        "lower": 0.7828302600482047,
+        "upper": 0.8817372984480908
+      }
     },
     "submodality": {
       "accuracy": 0.9020618556701031,
       "correct": 175,
-      "total": 194
+      "total": 194,
+      "confidence_interval_95": {
+        "lower": 0.8347446634805171,
+        "upper": 0.9190382532331514
+      }
     },
     "modality": {
       "accuracy": 0.8186528497409327,
       "correct": 158,
-      "total": 193
+      "total": 193,
+      "confidence_interval_95": {
+        "lower": 0.742394721742292,
+        "upper": 0.8507635275249534
+      }
     },
     "domain": {
       "accuracy": 0.09278350515463918,
       "correct": 18,
-      "total": 194
+      "total": 194,
+      "confidence_interval_95": {
+        "lower": 0.05754150572236459,
+        "upper": 0.13992905097713196
+      }
     },
     "stain": {
       "accuracy": 0.8505154639175257,
       "correct": 165,
-      "total": 194
+      "total": 194,
+      "confidence_interval_95": {
+        "lower": 0.7771780126452682,
+        "upper": 0.8774767282713194
+      }
     }
   }
 }

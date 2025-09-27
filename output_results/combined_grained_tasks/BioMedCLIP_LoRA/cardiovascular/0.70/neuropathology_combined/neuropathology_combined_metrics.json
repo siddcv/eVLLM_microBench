@@ -1,0 +1,72 @@
+{
+  "organ_domain": "cardiovascular",
+  "task_type": "combined",
+  "split_ratio": "0.70",
+  "test_file": "finetuning_supervised/data/splits/neuropathology/combined/fixed/test.json",
+  "test_path": "neuropathology_combined",
+  "overall": {
+    "accuracy": 0.8452278589853827,
+    "correct": 983,
+    "total": 1163,
+    "confidence_interval_95": {
+      "lower": 0.8205285593501039,
+      "upper": 0.862096239419757
+    }
+  },
+  "per_question_type": {
+    "subdomain": {
+      "accuracy": 0.7680412371134021,
+      "correct": 149,
+      "total": 194,
+      "confidence_interval_95": {
+        "lower": 0.6889801410926649,
+        "upper": 0.8070695185485931
+      }
+    },
+    "submodality": {
+      "accuracy": 1.0,
+      "correct": 194,
+      "total": 194,
+      "confidence_interval_95": {
+        "lower": 0.9805831454964367,
+        "upper": 1.0
+      }
+    },
+    "modality": {
+      "accuracy": 1.0,
+      "correct": 193,
+      "total": 193,
+      "confidence_interval_95": {
+        "lower": 0.9804845033982735,
+        "upper": 1.0
+      }
+    },
+    "domain": {
+      "accuracy": 0.979381443298969,
+      "correct": 190,
+      "total": 194,
+      "confidence_interval_95": {
+        "lower": 0.9293576158910302,
+        "upper": 0.9731175645182599
+      }
+    },
+    "stain": {
+      "accuracy": 0.9175257731958762,
+      "correct": 178,
+      "total": 194,
+      "confidence_interval_95": {
+        "lower": 0.852581089182848,
+        "upper": 0.9309402802699448
+      }
+    },
+    "classification": {
+      "accuracy": 0.4072164948453608,
+      "correct": 79,
+      "total": 194,
+      "confidence_interval_95": {
+        "lower": 0.332590421463113,
+        "upper": 0.46956200759857786
+      }
+    }
+  }
+}
