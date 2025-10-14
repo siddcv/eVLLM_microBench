@@ -5,14 +5,12 @@ import requests
 from io import BytesIO
 
 # Output directory for images
-#output_dir = Path("/workspace/datasets/cardiovascular")
 output_dir=Path("/workspace/eVLLM_Sidd/eVLLM_microBench/organData/fineGrain/completeDataset/images")
 output_dir.mkdir(parents=True, exist_ok=True)
 
 # Load the test split of the dataset
 dataset = load_dataset("teamasap/complete-dataset", split="test")
 
-# Download and save each image
 # Download and save each image
 
 for example in dataset:
