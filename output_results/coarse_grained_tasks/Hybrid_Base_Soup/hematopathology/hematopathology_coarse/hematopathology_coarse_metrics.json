@@ -1,0 +1,74 @@
+{
+  "hybrid_domain": "hematopathology",
+  "task_type": "coarse",
+  "test_file": "finetuning_supervised/data/splits/hematopathology/coarse/fixed/test.json",
+  "test_path": "hematopathology_coarse",
+  "model_type": "hybrid_base_soup",
+  "overall": {
+    "accuracy": 1.0,
+    "correct": 1950,
+    "total": 1950,
+    "confidence_interval_95": {
+      "lower": 0.9980338943042939,
+      "upper": 1.0
+    }
+  },
+  "per_question_type": {
+    "domain": {
+      "accuracy": 1.0,
+      "correct": 390,
+      "total": 390,
+      "confidence_interval_95": {
+        "lower": 0.9902461796881495,
+        "upper": 1.0
+      }
+    },
+    "modality": {
+      "accuracy": 1.0,
+      "correct": 390,
+      "total": 390,
+      "confidence_interval_95": {
+        "lower": 0.9902461796881495,
+        "upper": 1.0
+      }
+    },
+    "stain": {
+      "accuracy": 1.0,
+      "correct": 390,
+      "total": 390,
+      "confidence_interval_95": {
+        "lower": 0.9902461796881495,
+        "upper": 1.0
+      }
+    },
+    "subdomain": {
+      "accuracy": 1.0,
+      "correct": 390,
+      "total": 390,
+      "confidence_interval_95": {
+        "lower": 0.9902461796881495,
+        "upper": 1.0
+      }
+    },
+    "submodality": {
+      "accuracy": 1.0,
+      "correct": 390,
+      "total": 390,
+      "confidence_interval_95": {
+        "lower": 0.9902461796881495,
+        "upper": 1.0
+      }
+    }
+  },
+  "merge_metadata": {
+    "merge_method": "avg",
+    "adapter_strength": 0.7,
+    "scaled_A": 0.8366600265340756,
+    "scaled_B": 0.8366600265340756,
+    "soup_adapter_path": "finetuning_supervised/models/hematopathology/combined/0.70/lora_adapters_epoch_9_acc_0.9944/adapter_model.safetensors",
+    "merge_timestamp": "2025-08-22T04:45:46.174825",
+    "model_type": "hybrid_base_soup",
+    "scaling_method": "sqrt_weighted_lora",
+    "note": "Adapter tensors pre-scaled; rely on original alpha in adapter_config (unchanged)."
+  }
+}

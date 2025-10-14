@@ -301,14 +301,15 @@ import os
 import sys
 import torch
 import pandas as pd
+import numpy as np
 from pathlib import Path
 import argparse
 import logging
 from datetime import datetime
 from tqdm import tqdm
 from PIL import Image
-import numpy as np
-from scipy import stats  # For confidence interval calculations
+from scipy import stats
+from typing import Dict, List, Tuple, Any
 
 # Add the current directory to the path
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
@@ -321,7 +322,7 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 logger = logging.getLogger(__name__)
 
 
-def calculate_confidence_interval(correct: int, total: int, confidence: float = 0.95) -> tuple[float, float]:
+def calculate_confidence_interval(correct: int, total: int, confidence: float = 0.95) -> Tuple[float, float]:
     """Calculate confidence interval for accuracy using Wilson score interval."""
     if total == 0:
         return 0.0, 0.0
@@ -358,6 +359,108 @@ def _normalize_ratio(split_ratio: str) -> str:
         return f"{float(split_ratio):.2f}"
     except Exception:
         return split_ratio
+
+
+def extract_test_path(test_file: str) -> str:
+    """Extract test path from test file path for output directory naming."""
+    test_path = Path(test_file)
+    # Extract the domain and task type from the path
+    # e.g., "finetuning_supervised/data/splits/cardiovascular/fine/fixed/test.json"
+    # becomes "cardiovascular_fine"
+    parts = test_path.parts
+    if 'splits' in parts:
+        splits_idx = parts.index('splits')
+        if splits_idx + 2 < len(parts):
+            domain = parts[splits_idx + 1]  # cardiovascular
+            task_type = parts[splits_idx + 2]  # fine
+            return f"{domain}_{task_type}"
+    # Fallback: use the filename without extension
+    return test_path.stem
+
+
+def save_results(results: List[Dict], organ_domain: str, task_type: str, split_ratio: str, test_file: str):
+    """Save evaluation results to CSV and accuracy metrics to JSON."""
+    if not results:
+        logger.warning("No results to save")
+        return
+    
+    # Create DataFrame
+    df = pd.DataFrame(results)
+    
+    # Extract test path for output directory
+    test_path = extract_test_path(test_file)
+    
+    # Save to CSV: include task_type, organ, split ratio, and test path
+    ratio_dir = _normalize_ratio(split_ratio)
+    out_dir = Path(f"output_results/{task_type}_grained_tasks/BioMedCLIP_Base/{organ_domain}/{ratio_dir}/{test_path}")
+    out_dir.mkdir(parents=True, exist_ok=True)
+    
+    # Generate output filename based on test path
+    csv_path = out_dir / f"{test_path}_results.csv"
+    df.to_csv(csv_path, index=False)
+    logger.info(f"Results saved to {csv_path}")
+    
+    # Calculate and print accuracy
+    correct = 0
+    total = 0
+    for result in results:
+        if result['correct_idx'] == result['model_answers']['pred'][0]:
+            correct += 1
+        total += 1
+    accuracy = correct / total if total > 0 else 0.0
+    
+    # Calculate 95% confidence interval
+    ci_lower, ci_upper = calculate_confidence_interval(correct, total, confidence=0.95)
+    logger.info(f"Overall accuracy: {accuracy:.4f} ({correct}/{total})")
+    logger.info(f"95% Confidence Interval: [{ci_lower:.4f}, {ci_upper:.4f}]")
+    
+    # Per-question-type accuracy (also collect to save)
+    per_qtype_metrics: Dict[str, Dict[str, Any]] = {}
+    question_types = df['question_class'].unique()
+    for q_type in question_types:
+        q_results = df[df['question_class'] == q_type]
+        q_correct = sum(1 for _, row in q_results.iterrows()
+                      if row['correct_idx'] == row['model_answers']['pred'][0])
+        q_total = len(q_results)
+        q_accuracy = q_correct / q_total if q_total > 0 else 0.0
+        
+        # Calculate confidence interval for this question type
+        q_ci_lower, q_ci_upper = calculate_confidence_interval(q_correct, q_total, confidence=0.95)
+        
+        per_qtype_metrics[q_type] = {
+            'accuracy': q_accuracy,
+            'correct': q_correct,
+            'total': q_total,
+            'confidence_interval_95': {
+                'lower': q_ci_lower,
+                'upper': q_ci_upper
+            }
+        }
+        logger.info(f"{q_type} accuracy: {q_accuracy:.4f} ({q_correct}/{q_total})")
+        logger.info(f"{q_type} 95% CI: [{q_ci_lower:.4f}, {q_ci_upper:.4f}]")
+    
+    # Save accuracy metrics alongside CSV
+    metrics = {
+        'organ_domain': organ_domain,
+        'task_type': task_type,
+        'split_ratio': ratio_dir,
+        'test_file': test_file,
+        'test_path': test_path,
+        'overall': {
+            'accuracy': accuracy,
+            'correct': correct,
+            'total': total,
+            'confidence_interval_95': {
+                'lower': ci_lower,
+                'upper': ci_upper
+            }
+        },
+        'per_question_type': per_qtype_metrics,
+    }
+    metrics_path = out_dir / f"{test_path}_metrics.json"
+    with open(metrics_path, 'w') as f:
+        json.dump(metrics, f, indent=2)
+    logger.info(f"Accuracy metrics saved to {metrics_path}")
 
 
 def evaluate_base_model(test_file: str, organ_domain: str, task_type: str, split_ratio: str):
@@ -418,6 +521,8 @@ def evaluate_base_model(test_file: str, organ_domain: str, task_type: str, split
             logger.error(f"Error predicting for {data_point.get('image_id', '')}: {e}")
             continue
     
+    # Save results using the enhanced save_results function
+    save_results(results, organ_domain, task_type, split_ratio, test_file)
     # Save results
     df = pd.DataFrame(results)
     ratio_dir = _normalize_ratio(split_ratio)

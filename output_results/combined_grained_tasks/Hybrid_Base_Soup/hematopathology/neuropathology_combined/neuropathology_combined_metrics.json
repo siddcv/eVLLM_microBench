@@ -1,0 +1,83 @@
+{
+  "hybrid_domain": "hematopathology",
+  "task_type": "combined",
+  "test_file": "finetuning_supervised/data/splits/neuropathology/combined/fixed/test.json",
+  "test_path": "neuropathology_combined",
+  "model_type": "hybrid_base_soup",
+  "overall": {
+    "accuracy": 0.5141874462596733,
+    "correct": 598,
+    "total": 1163,
+    "confidence_interval_95": {
+      "lower": 0.4854634660962283,
+      "upper": 0.5428180110063701
+    }
+  },
+  "per_question_type": {
+    "classification": {
+      "accuracy": 0.33505154639175255,
+      "correct": 65,
+      "total": 194,
+      "confidence_interval_95": {
+        "lower": 0.2724046659424006,
+        "upper": 0.40410398708970274
+      }
+    },
+    "domain": {
+      "accuracy": 0.8608247422680413,
+      "correct": 167,
+      "total": 194,
+      "confidence_interval_95": {
+        "lower": 0.8050812906413356,
+        "upper": 0.9025560308509384
+      }
+    },
+    "modality": {
+      "accuracy": 0.6476683937823834,
+      "correct": 125,
+      "total": 193,
+      "confidence_interval_95": {
+        "lower": 0.5779911750678149,
+        "upper": 0.7115819684228668
+      }
+    },
+    "stain": {
+      "accuracy": 0.06701030927835051,
+      "correct": 13,
+      "total": 194,
+      "confidence_interval_95": {
+        "lower": 0.03957596934877013,
+        "upper": 0.11125924486050115
+      }
+    },
+    "subdomain": {
+      "accuracy": 0.19072164948453607,
+      "correct": 37,
+      "total": 194,
+      "confidence_interval_95": {
+        "lower": 0.14165423819000372,
+        "upper": 0.25179948624519
+      }
+    },
+    "submodality": {
+      "accuracy": 0.9845360824742269,
+      "correct": 191,
+      "total": 194,
+      "confidence_interval_95": {
+        "lower": 0.9555286549039086,
+        "upper": 0.9947271768142879
+      }
+    }
+  },
+  "merge_metadata": {
+    "merge_method": "avg",
+    "adapter_strength": 0.7,
+    "scaled_A": 0.8366600265340756,
+    "scaled_B": 0.8366600265340756,
+    "soup_adapter_path": "finetuning_supervised/models/hematopathology/combined/0.70/lora_adapters_epoch_9_acc_0.9944/adapter_model.safetensors",
+    "merge_timestamp": "2025-08-22T04:45:46.174825",
+    "model_type": "hybrid_base_soup",
+    "scaling_method": "sqrt_weighted_lora",
+    "note": "Adapter tensors pre-scaled; rely on original alpha in adapter_config (unchanged)."
+  }
+}

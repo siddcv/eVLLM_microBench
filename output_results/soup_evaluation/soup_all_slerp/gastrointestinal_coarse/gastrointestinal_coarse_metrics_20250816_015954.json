@@ -1,0 +1,63 @@
+{
+  "soup_name": "soup_all_slerp",
+  "test_domain": "gastrointestinal",
+  "task_type": "coarse",
+  "test_file": "finetuning_supervised/data/splits/gastrointestinal/coarse/fixed/test.json",
+  "timestamp": "20250816_015954",
+  "overall": {
+    "accuracy": 0.9080385852090033,
+    "correct": 2824,
+    "total": 3110,
+    "confidence_interval_95": {
+      "lower": 0.8962533858326233,
+      "upper": 0.9165778116697963
+    }
+  },
+  "per_question_type": {
+    "submodality": {
+      "accuracy": 1.0,
+      "correct": 617,
+      "total": 617,
+      "confidence_interval_95": {
+        "lower": 0.9938124963046265,
+        "upper": 1.0
+      }
+    },
+    "domain": {
+      "accuracy": 0.9968253968253968,
+      "correct": 628,
+      "total": 630,
+      "confidence_interval_95": {
+        "lower": 0.9824765875830307,
+        "upper": 0.9931058671296763
+      }
+    },
+    "modality": {
+      "accuracy": 1.0,
+      "correct": 617,
+      "total": 617,
+      "confidence_interval_95": {
+        "lower": 0.9938124963046265,
+        "upper": 1.0
+      }
+    },
+    "stain": {
+      "accuracy": 0.9562398703403565,
+      "correct": 590,
+      "total": 617,
+      "confidence_interval_95": {
+        "lower": 0.9311809539721065,
+        "upper": 0.9638542739495768
+      }
+    },
+    "subdomain": {
+      "accuracy": 0.5914149443561209,
+      "correct": 372,
+      "total": 629,
+      "confidence_interval_95": {
+        "lower": 0.5489703443823427,
+        "upper": 0.6255764863264399
+      }
+    }
+  }
+}

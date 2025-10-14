@@ -1,0 +1,74 @@
+{
+  "hybrid_domain": "hematopathology",
+  "task_type": "coarse",
+  "test_file": "finetuning_supervised/data/splits/completeDataset/coarse/fixed/test.json",
+  "test_path": "completeDataset_coarse",
+  "model_type": "hybrid_base_soup",
+  "overall": {
+    "accuracy": 0.7278761061946902,
+    "correct": 4606,
+    "total": 6328,
+    "confidence_interval_95": {
+      "lower": 0.7167748495509704,
+      "upper": 0.7387008629658659
+    }
+  },
+  "per_question_type": {
+    "domain": {
+      "accuracy": 0.9387274155538099,
+      "correct": 1195,
+      "total": 1273,
+      "confidence_interval_95": {
+        "lower": 0.9241866754753921,
+        "upper": 0.9506282769084962
+      }
+    },
+    "modality": {
+      "accuracy": 0.9063492063492063,
+      "correct": 1142,
+      "total": 1260,
+      "confidence_interval_95": {
+        "lower": 0.8890044771701002,
+        "upper": 0.9212237305320801
+      }
+    },
+    "stain": {
+      "accuracy": 0.34099920697858843,
+      "correct": 430,
+      "total": 1261,
+      "confidence_interval_95": {
+        "lower": 0.3153530437446991,
+        "upper": 0.3676111750484752
+      }
+    },
+    "subdomain": {
+      "accuracy": 0.4752553024351925,
+      "correct": 605,
+      "total": 1273,
+      "confidence_interval_95": {
+        "lower": 0.4479380651135087,
+        "upper": 0.5027214317529327
+      }
+    },
+    "submodality": {
+      "accuracy": 0.9785884218873909,
+      "correct": 1234,
+      "total": 1261,
+      "confidence_interval_95": {
+        "lower": 0.9690262845110735,
+        "upper": 0.9852435107922651
+      }
+    }
+  },
+  "merge_metadata": {
+    "merge_method": "avg",
+    "adapter_strength": 0.7,
+    "scaled_A": 0.8366600265340756,
+    "scaled_B": 0.8366600265340756,
+    "soup_adapter_path": "finetuning_supervised/models/hematopathology/combined/0.70/lora_adapters_epoch_9_acc_0.9944/adapter_model.safetensors",
+    "merge_timestamp": "2025-08-22T04:45:46.174825",
+    "model_type": "hybrid_base_soup",
+    "scaling_method": "sqrt_weighted_lora",
+    "note": "Adapter tensors pre-scaled; rely on original alpha in adapter_config (unchanged)."
+  }
+}

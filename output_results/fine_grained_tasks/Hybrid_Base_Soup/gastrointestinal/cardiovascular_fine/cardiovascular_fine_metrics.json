@@ -1,0 +1,38 @@
+{
+  "hybrid_domain": "gastrointestinal",
+  "task_type": "fine",
+  "test_file": "finetuning_supervised/data/splits/cardiovascular/fine/fixed/test.json",
+  "test_path": "cardiovascular_fine",
+  "model_type": "hybrid_base_soup",
+  "overall": {
+    "accuracy": 0.45,
+    "correct": 27,
+    "total": 60,
+    "confidence_interval_95": {
+      "lower": 0.3309365440675524,
+      "upper": 0.5750806411466566
+    }
+  },
+  "per_question_type": {
+    "classification": {
+      "accuracy": 0.45,
+      "correct": 27,
+      "total": 60,
+      "confidence_interval_95": {
+        "lower": 0.3309365440675524,
+        "upper": 0.5750806411466566
+      }
+    }
+  },
+  "merge_metadata": {
+    "merge_method": "avg",
+    "adapter_strength": 0.7,
+    "scaled_A": 0.8366600265340756,
+    "scaled_B": 0.8366600265340756,
+    "soup_adapter_path": "finetuning_supervised/models/gastrointestinal/combined/0.70/lora_adapters_epoch_7_acc_0.9909/adapter_model.safetensors",
+    "merge_timestamp": "2025-08-22T04:45:38.887071",
+    "model_type": "hybrid_base_soup",
+    "scaling_method": "sqrt_weighted_lora",
+    "note": "Adapter tensors pre-scaled; rely on original alpha in adapter_config (unchanged)."
+  }
+}

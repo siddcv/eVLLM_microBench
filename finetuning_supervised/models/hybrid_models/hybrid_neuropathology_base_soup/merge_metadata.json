@@ -1,0 +1,11 @@
+{
+  "merge_method": "avg",
+  "adapter_strength": 0.7,
+  "scaled_A": 0.8366600265340756,
+  "scaled_B": 0.8366600265340756,
+  "soup_adapter_path": "finetuning_supervised/models/neuropathology/combined/0.70/lora_adapters_epoch_4_acc_0.9716/adapter_model.safetensors",
+  "merge_timestamp": "2025-08-22T04:45:29.209195",
+  "model_type": "hybrid_base_soup",
+  "scaling_method": "sqrt_weighted_lora",
+  "note": "Adapter tensors pre-scaled; rely on original alpha in adapter_config (unchanged)."
+}

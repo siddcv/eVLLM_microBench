@@ -1,0 +1,83 @@
+{
+  "hybrid_domain": "gastrointestinal",
+  "task_type": "combined",
+  "test_file": "finetuning_supervised/data/splits/hematopathology/combined/fixed/test.json",
+  "test_path": "hematopathology_combined",
+  "model_type": "hybrid_base_soup",
+  "overall": {
+    "accuracy": 0.6405982905982905,
+    "correct": 1499,
+    "total": 2340,
+    "confidence_interval_95": {
+      "lower": 0.6209412250096417,
+      "upper": 0.6597944866673217
+    }
+  },
+  "per_question_type": {
+    "classification": {
+      "accuracy": 0.258974358974359,
+      "correct": 101,
+      "total": 390,
+      "confidence_interval_95": {
+        "lower": 0.21799688589719737,
+        "upper": 0.304653673637746
+      }
+    },
+    "domain": {
+      "accuracy": 1.0,
+      "correct": 390,
+      "total": 390,
+      "confidence_interval_95": {
+        "lower": 0.9902461796881495,
+        "upper": 1.0
+      }
+    },
+    "modality": {
+      "accuracy": 1.0,
+      "correct": 390,
+      "total": 390,
+      "confidence_interval_95": {
+        "lower": 0.9902461796881495,
+        "upper": 1.0
+      }
+    },
+    "stain": {
+      "accuracy": 0.09230769230769231,
+      "correct": 36,
+      "total": 390,
+      "confidence_interval_95": {
+        "lower": 0.067421537213585,
+        "upper": 0.1251469624253085
+      }
+    },
+    "subdomain": {
+      "accuracy": 0.49743589743589745,
+      "correct": 194,
+      "total": 390,
+      "confidence_interval_95": {
+        "lower": 0.4480808345729417,
+        "upper": 0.546840979890196
+      }
+    },
+    "submodality": {
+      "accuracy": 0.9948717948717949,
+      "correct": 388,
+      "total": 390,
+      "confidence_interval_95": {
+        "lower": 0.981497275797477,
+        "upper": 0.998592532816948
+      }
+    }
+  },
+  "merge_metadata": {
+    "merge_method": "avg",
+    "adapter_strength": 0.7,
+    "scaled_A": 0.8366600265340756,
+    "scaled_B": 0.8366600265340756,
+    "soup_adapter_path": "finetuning_supervised/models/gastrointestinal/combined/0.70/lora_adapters_epoch_7_acc_0.9909/adapter_model.safetensors",
+    "merge_timestamp": "2025-08-22T04:45:38.887071",
+    "model_type": "hybrid_base_soup",
+    "scaling_method": "sqrt_weighted_lora",
+    "note": "Adapter tensors pre-scaled; rely on original alpha in adapter_config (unchanged)."
+  }
+}

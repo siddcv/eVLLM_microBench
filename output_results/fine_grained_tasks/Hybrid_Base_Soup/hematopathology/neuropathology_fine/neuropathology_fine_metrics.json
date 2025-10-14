@@ -1,0 +1,38 @@
+{
+  "hybrid_domain": "hematopathology",
+  "task_type": "fine",
+  "test_file": "finetuning_supervised/data/splits/neuropathology/fine/fixed/test.json",
+  "test_path": "neuropathology_fine",
+  "model_type": "hybrid_base_soup",
+  "overall": {
+    "accuracy": 0.33505154639175255,
+    "correct": 65,
+    "total": 194,
+    "confidence_interval_95": {
+      "lower": 0.2724046659424006,
+      "upper": 0.40410398708970274
+    }
+  },
+  "per_question_type": {
+    "classification": {
+      "accuracy": 0.33505154639175255,
+      "correct": 65,
+      "total": 194,
+      "confidence_interval_95": {
+        "lower": 0.2724046659424006,
+        "upper": 0.40410398708970274
+      }
+    }
+  },
+  "merge_metadata": {
+    "merge_method": "avg",
+    "adapter_strength": 0.7,
+    "scaled_A": 0.8366600265340756,
+    "scaled_B": 0.8366600265340756,
+    "soup_adapter_path": "finetuning_supervised/models/hematopathology/combined/0.70/lora_adapters_epoch_9_acc_0.9944/adapter_model.safetensors",
+    "merge_timestamp": "2025-08-22T04:45:46.174825",
+    "model_type": "hybrid_base_soup",
+    "scaling_method": "sqrt_weighted_lora",
+    "note": "Adapter tensors pre-scaled; rely on original alpha in adapter_config (unchanged)."
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "hybrid_domain": "cardiovascular",
+  "task_type": "coarse",
+  "test_file": "finetuning_supervised/data/splits/neuropathology/coarse/fixed/test.json",
+  "test_path": "neuropathology_coarse",
+  "model_type": "hybrid_base_soup",
+  "overall": {
+    "accuracy": 0.932920536635707,
+    "correct": 904,
+    "total": 969,
+    "confidence_interval_95": {
+      "lower": 0.9153986893328618,
+      "upper": 0.9470234375130269
+    }
+  },
+  "per_question_type": {
+    "domain": {
+      "accuracy": 0.9690721649484536,
+      "correct": 188,
+      "total": 194,
+      "confidence_interval_95": {
+        "lower": 0.934178557472189,
+        "upper": 0.985749960467767
+      }
+    },
+    "modality": {
+      "accuracy": 1.0,
+      "correct": 193,
+      "total": 193,
+      "confidence_interval_95": {
+        "lower": 0.9804845033982734,
+        "upper": 0.9999999999999998
+      }
+    },
+    "stain": {
+      "accuracy": 0.9123711340206185,
+      "correct": 177,
+      "total": 194,
+      "confidence_interval_95": {
+        "lower": 0.8641585908218183,
+        "upper": 0.9445697765979232
+      }
+    },
+    "subdomain": {
+      "accuracy": 0.7835051546391752,
+      "correct": 152,
+      "total": 194,
+      "confidence_interval_95": {
+        "lower": 0.7203472482301693,
+        "upper": 0.835653504370903
+      }
+    },
+    "submodality": {
+      "accuracy": 1.0,
+      "correct": 194,
+      "total": 194,
+      "confidence_interval_95": {
+        "lower": 0.9805831454964365,
+        "upper": 0.9999999999999998
+      }
+    }
+  },
+  "merge_metadata": {
+    "merge_method": "avg",
+    "adapter_strength": 0.7,
+    "scaled_A": 0.8366600265340756,
+    "scaled_B": 0.8366600265340756,
+    "soup_adapter_path": "finetuning_supervised/models/cardiovascular/combined/0.70/lora_adapters_epoch_9_acc_0.9640/adapter_model.safetensors",
+    "merge_timestamp": "2025-08-22T03:27:38.783506",
+    "model_type": "hybrid_base_soup",
+    "scaling_method": "sqrt_weighted_lora",
+    "note": "Adapter tensors pre-scaled; rely on original alpha in adapter_config (unchanged)."
+  }
+}

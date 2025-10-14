@@ -1,0 +1,27 @@
+{
+  "hybrid_domain": "soup_all_avg",
+  "task_type": "fine",
+  "test_file": "finetuning_supervised/data/splits/completeDataset/fine/fixed/test.json",
+  "test_path": "completeDataset_fine",
+  "model_type": "hybrid_base_soup",
+  "overall": {
+    "accuracy": 0.3909595559080095,
+    "correct": 493,
+    "total": 1261,
+    "confidence_interval_95": {
+      "lower": 0.36320854486352677,
+      "upper": 0.4169961183668043
+    }
+  },
+  "per_question_type": {
+    "classification": {
+      "accuracy": 0.3909595559080095,
+      "correct": 493,
+      "total": 1261,
+      "confidence_interval_95": {
+        "lower": 0.36320854486352677,
+        "upper": 0.4169961183668043
+      }
+    }
+  }
+}

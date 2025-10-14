@@ -1,0 +1,74 @@
+{
+  "hybrid_domain": "gastrointestinal",
+  "task_type": "coarse",
+  "test_file": "finetuning_supervised/data/splits/cardiovascular/coarse/fixed/test.json",
+  "test_path": "cardiovascular_coarse",
+  "model_type": "hybrid_base_soup",
+  "overall": {
+    "accuracy": 0.9566666666666667,
+    "correct": 287,
+    "total": 300,
+    "confidence_interval_95": {
+      "lower": 0.9272825343659885,
+      "upper": 0.9745035519155927
+    }
+  },
+  "per_question_type": {
+    "domain": {
+      "accuracy": 1.0,
+      "correct": 60,
+      "total": 60,
+      "confidence_interval_95": {
+        "lower": 0.93982814785791,
+        "upper": 0.9999999999999998
+      }
+    },
+    "modality": {
+      "accuracy": 1.0,
+      "correct": 60,
+      "total": 60,
+      "confidence_interval_95": {
+        "lower": 0.93982814785791,
+        "upper": 0.9999999999999998
+      }
+    },
+    "stain": {
+      "accuracy": 1.0,
+      "correct": 60,
+      "total": 60,
+      "confidence_interval_95": {
+        "lower": 0.93982814785791,
+        "upper": 0.9999999999999998
+      }
+    },
+    "subdomain": {
+      "accuracy": 0.7833333333333333,
+      "correct": 47,
+      "total": 60,
+      "confidence_interval_95": {
+        "lower": 0.6637997242680521,
+        "upper": 0.868769559518097
+      }
+    },
+    "submodality": {
+      "accuracy": 1.0,
+      "correct": 60,
+      "total": 60,
+      "confidence_interval_95": {
+        "lower": 0.93982814785791,
+        "upper": 0.9999999999999998
+      }
+    }
+  },
+  "merge_metadata": {
+    "merge_method": "avg",
+    "adapter_strength": 0.7,
+    "scaled_A": 0.8366600265340756,
+    "scaled_B": 0.8366600265340756,
+    "soup_adapter_path": "finetuning_supervised/models/gastrointestinal/combined/0.70/lora_adapters_epoch_7_acc_0.9909/adapter_model.safetensors",
+    "merge_timestamp": "2025-08-22T04:45:38.887071",
+    "model_type": "hybrid_base_soup",
+    "scaling_method": "sqrt_weighted_lora",
+    "note": "Adapter tensors pre-scaled; rely on original alpha in adapter_config (unchanged)."
+  }
+}

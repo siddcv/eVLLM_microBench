@@ -1,0 +1,27 @@
+{
+  "soup_name": "soup_all_ties_weighted_p25",
+  "test_domain": "completeDataset",
+  "task_type": "fine",
+  "test_file": "finetuning_supervised/data/splits/completeDataset/fine/fixed/test.json",
+  "timestamp": "20250821_172256",
+  "overall": {
+    "accuracy": 0.30927835051546393,
+    "correct": 390,
+    "total": 1261,
+    "confidence_interval_95": {
+      "lower": 0.2834383299394589,
+      "upper": 0.33439471388332176
+    }
+  },
+  "per_question_type": {
+    "classification": {
+      "accuracy": 0.30927835051546393,
+      "correct": 390,
+      "total": 1261,
+      "confidence_interval_95": {
+        "lower": 0.2834383299394589,
+        "upper": 0.33439471388332176
+      }
+    }
+  }
+}

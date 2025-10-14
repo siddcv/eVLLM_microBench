@@ -1,0 +1,27 @@
+{
+  "soup_name": "soup_all_wiseft_slerp_tau0p7",
+  "test_domain": "neuropathology",
+  "task_type": "fine",
+  "test_file": "finetuning_supervised/data/splits/neuropathology/fine/fixed/test.json",
+  "timestamp": "20250823_051136",
+  "overall": {
+    "accuracy": 0.41237113402061853,
+    "correct": 80,
+    "total": 194,
+    "confidence_interval_95": {
+      "lower": 0.33741768212828255,
+      "upper": 0.47464756451311635
+    }
+  },
+  "per_question_type": {
+    "classification": {
+      "accuracy": 0.41237113402061853,
+      "correct": 80,
+      "total": 194,
+      "confidence_interval_95": {
+        "lower": 0.33741768212828255,
+        "upper": 0.47464756451311635
+      }
+    }
+  }
+}

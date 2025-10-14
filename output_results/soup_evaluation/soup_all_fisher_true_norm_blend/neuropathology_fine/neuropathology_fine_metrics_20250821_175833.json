@@ -1,0 +1,27 @@
+{
+  "soup_name": "soup_all_fisher_true_norm_blend",
+  "test_domain": "neuropathology",
+  "task_type": "fine",
+  "test_file": "finetuning_supervised/data/splits/neuropathology/fine/fixed/test.json",
+  "timestamp": "20250821_175833",
+  "overall": {
+    "accuracy": 0.36597938144329895,
+    "correct": 71,
+    "total": 194,
+    "confidence_interval_95": {
+      "lower": 0.29425181687552776,
+      "upper": 0.4285980715484982
+    }
+  },
+  "per_question_type": {
+    "classification": {
+      "accuracy": 0.36597938144329895,
+      "correct": 71,
+      "total": 194,
+      "confidence_interval_95": {
+        "lower": 0.29425181687552776,
+        "upper": 0.4285980715484982
+      }
+    }
+  }
+}
