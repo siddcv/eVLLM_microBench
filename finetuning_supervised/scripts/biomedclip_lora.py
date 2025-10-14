@@ -487,6 +487,7 @@ class BioMedCLIPLoRA:
     #         "confidence": confidence,
     #         "all_probs": results["probs"][0]
     #     }
+    
     def predict_single(self, image_path: str, question: str, answer_options: list[str]) -> dict:
         """
         Predict the correct answer for a single image-question pair.
